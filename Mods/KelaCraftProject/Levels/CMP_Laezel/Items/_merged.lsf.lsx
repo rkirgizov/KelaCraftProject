@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+
+				<!-- Делаем юзабельным S_CAMP_Laezel_WhetstoneAtTent -->
+				<!-- <node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CMP_Laezel" />
+					<attribute id="MapKey" type="FixedString" value="c1b38797-d6bb-4aab-9b2c-53edc070ded3" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_005" />
+					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CMP_Laezel" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-4.19342 -0.02365763 -4.581879" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.04858413 0 0.9988195" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node> -->
+				<!-- Скрываем -->
+				<!-- <node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsInteractionDisabled" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="CMP_Laezel" />
+					<attribute id="MapKey" type="FixedString" value="fccad941-1861-4ac9-87e4-75509a890757" />
+					<attribute id="Name" type="LSString" value="S_CAMP_Laezel_WhetstoneAtTent" />
+					<attribute id="TemplateName" type="FixedString" value="985bb624-6726-4243-bc6a-9274a95bf5fd" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CMP_Laezel" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-2.19342 -0.02365763 -4.581879" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.04858413 0 0.9988195" />
+							<attribute id="Scale" type="float" value="0.01" />
+						</node>
+					</children>
+				</node> -->
+			</children>
+		</node>
+	</region>
+</save>

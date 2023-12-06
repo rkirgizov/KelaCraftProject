@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="h37c868fbg6ac3g4570g9d2aga2cefe77fd3c" version="1">Наставления подмастерью</content>
+	<content contentuid="h0b4e5183g622fg4993ga87dg83f6b56e4f39" version="1">Потрепанный блокнот, содержащий записи о способах улучшения оружия и необходимых для этого ингредиентах.</content>
+	<content contentuid="h170918f8g2bf5g40a7gba00ga49660f6d7fc" version="1">&lt;b&gt;Улучшение обычного оружия&lt;/b&gt;&lt;br&gt;&lt;br&gt;Улучшить обычное, не уникальное, оружие можно практически в любой кузнице, были бы рядом огонь и наковальня.&lt;br&gt; Для перековки такого оружия от обычного до необычного уровня понадобится слиток бронзы, от необычного до редкого - слиток серебра.&lt;br&gt;&lt;br&gt;&lt;b&gt; Если же поблизости есть точильный камень, то колюще-режущее оружие можно дополнительно заточить, что временно придаст ему бонус +[2] к урону</content>
+	<content contentuid="hcd87c806g2b79g4088ga2fegfb70a9dfd982" version="1">Может использоваться для улучшения &lt;br&gt;или ковки оружия, при наличии &lt;br&gt;необходимых ингредиентов.</content>	
+
+	<content contentuid="h36d2a7acg79cfg4382gbb52g4263548fb0b9" version="1">Кузнечная заготовка</content>
+	<content contentuid="hbdcecd53g93ebg41cdgaf0eg2f119a1fa5c4" version="1">Кузнечная заготовка для улучшения уникального оружия до её уровня.</content>
+
+	<content contentuid="h438a0df9g5db2g4c5fg9f90g53702ab908dd" version="1">Точильный камень</content>
+	<content contentuid="hbfefff07gb289g4128gae31gbd1f6d906b80" version="1">Оружие, заточенное на точильном камне, получает бонус к урону.</content>
+	<content contentuid="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1">Заточить оружие</content>
+
+	<content contentuid="hcaaf20edg147eg4ff5g804ega27ac88bdf7e" version="1">Заточенное оружие</content>
+	<content contentuid="hacd9e5c1g7238g46c8gae66gabaf8658d06b" version="1">Это оружие заточено на точильном камне, что временно придаёт ему бонус +[1] к урону.</content>
+
+
+
+</contentList>

@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- Новая юзабельная наковальня Даммона-->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="8807f53b-8dab-4511-8824-480d9aa59c20" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Anvil_002" />
+					<attribute id="TemplateName" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+					
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="46bf2460-7de1-6bba-140d-dd1238dbe671" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="cfbcf0de-a416-4650-9a15-4a847e822020" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5b01982e-2b69-5c12-34a3-c58a82e7ee5a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="174.5354 19.28238 561.8457" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9901111 0 0.1402856" />
+							<attribute id="Scale" type="float" value="1.1" />
+						</node>
+					</children>
+				</node>
+				<!-- Скрываем старую наковальню -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="5dc1391a-323d-4123-8b7c-3858d7aa36cd" />
+					<attribute id="Name" type="LSString" value="S_DEN_Weaponsmith_Anvil" />
+					<attribute id="TemplateName" type="FixedString" value="84dc46a0-eb7e-43fb-b3cd-9200bd017a15" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="46bf2460-7de1-6bba-140d-dd1238dbe671" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="cfbcf0de-a416-4650-9a15-4a847e822020" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5b01982e-2b69-5c12-34a3-c58a82e7ee5a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="174.5354 19.28238 561.8457" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9901111 0 0.1402856" />
+							<attribute id="Scale" type="float" value="0.01" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Юзабельный Точильный камень Даммона -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="c58d18e0-7b3c-4e98-b018-2b0348818076" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_002" />
+					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="46bf2460-7de1-6bba-140d-dd1238dbe671" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="cfbcf0de-a416-4650-9a15-4a847e822020" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5b01982e-2b69-5c12-34a3-c58a82e7ee5a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="178.8391 19.39592 563.9032" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.4090919 0 0.9124931" />
+							<attribute id="Scale" type="float" value="1.1" />
+						</node>
+					</children>
+				</node>
+				<!-- Скрываем -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsInteractionDisabled" type="bool" value="True" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="7260e9e5-02c3-4591-82ac-825b57a266a9" />
+					<attribute id="Name" type="LSString" value="S_DEN_Weaponsmith_Whetstone" />
+					<attribute id="TemplateName" type="FixedString" value="985bb624-6726-4243-bc6a-9274a95bf5fd" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="46bf2460-7de1-6bba-140d-dd1238dbe671" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="cfbcf0de-a416-4650-9a15-4a847e822020" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5b01982e-2b69-5c12-34a3-c58a82e7ee5a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="178.8391 19.39592 563.9032" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.4090919 0 0.9124931" />
+							<attribute id="Scale" type="float" value="0.01" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Юзабельный S_GOB_Raiders_Whetstone -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="b02d357a-7cc7-4cad-8e01-43cf474da0fc" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_003" />
+					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="46bf2460-7de1-6bba-140d-dd1238dbe671" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="cfbcf0de-a416-4650-9a15-4a847e822020" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5b01982e-2b69-5c12-34a3-c58a82e7ee5a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="272.4762 40.85387 16.79568" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.7082404 0 0.7059713" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+				<!-- Скрываем -->
+				<node id="GameObjects">
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CanJoinCombat" type="bool" value="False" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="a1269cd6-bd5a-4571-bd3d-5a3a4d42994d" />
+					<attribute id="Name" type="LSString" value="S_GOB_Raiders_Whetstone" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="TemplateName" type="FixedString" value="985bb624-6726-4243-bc6a-9274a95bf5fd" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209025" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c814d794-90d3-0614-84ce-be809f232673" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="6faf2a2e-6db4-5fda-5d5d-ab3cecd3bf35" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="063e1148-07ba-37da-47cd-7bb45540a316" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="272.4762 40.85387 16.79568" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.7082404 0 0.7059713" />
+							<attribute id="Scale" type="float" value="0.01" />
+						</node>
+					</children>
+				</node>
+
+			</children>
+		</node>
+	</region>
+</save>

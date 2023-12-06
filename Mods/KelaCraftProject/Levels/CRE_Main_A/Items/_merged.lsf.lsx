@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- Делаем юзабельным CRE_YouthTraining_Whetstone -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CRE_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="9a1bd23b-b6a2-4a80-ae2e-be22d56829c6" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_004" />
+					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209031" />
+					
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CRE_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0cdf52f2-9453-df63-13c3-cfad8fbdbd2a" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="3937977e-b5d9-5124-508e-c3654c9d9e03" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="6b7894d1-95f4-8221-636e-6754155d590c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="1347.386 -0.001036167 -768.3669" />
+							<attribute id="RotationQuat" type="fvec4" value="0 1 0 -4.371139E-08" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Скрываем -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CRE_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="fba4d2b2-1d35-4125-8d4b-d1869c96e072" />
+					<attribute id="Name" type="LSString" value="CRE_YouthTraining_Whetstone" />
+					<attribute id="TemplateName" type="FixedString" value="985bb624-6726-4243-bc6a-9274a95bf5fd" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209031" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CRE_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0cdf52f2-9453-df63-13c3-cfad8fbdbd2a" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="3937977e-b5d9-5124-508e-c3654c9d9e03" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="6b7894d1-95f4-8221-636e-6754155d590c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="1347.386 -0.001036167 -768.3669" />
+							<attribute id="RotationQuat" type="fvec4" value="0 1 0 -4.371139E-08" />
+							<attribute id="Scale" type="float" value="0.01" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

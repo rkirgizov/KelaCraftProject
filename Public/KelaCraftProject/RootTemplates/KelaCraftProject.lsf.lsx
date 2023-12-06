@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="900" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- Делаем точильное TOOL_Smith_Whetstone_Wheel_A колесо юзабельным -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="45ecb2cc-3bcb-4a85-8d59-0a813d37997e" />
+					<attribute id="Name" type="LSString" value="TOOL_Smith_Whetstone_Wheel_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="115d2399-a009-4a63-82d0-f6c9ef6afdb0" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="VisualTemplate" type="FixedString" value="bd6baa93-5f3d-ee19-3564-48392abd41a0" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="f90b36db-d1bc-1957-bee5-c5252d24d05f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="1" />
+					<attribute id="Icon" type="FixedString" value="Portrait_TOOL_Smith_Anvil_A" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1" />
+					<attribute id="UseSound" type="FixedString" value="" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
+									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
+									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2511046 0 -0.09438917" />
+									<attribute id="Max" type="fvec3" value="0.2410717 0.9958298 0.2330964" />
+									<attribute id="Radius" type="float" value="0.2057135" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+							</children>
+						</node>
+						<!-- Точим -->
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false)))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="GameMaster">
+							<attribute id="GameMasterSpawnSection" type="int32" value="12" />
+							<attribute id="GameMasterSpawnSubSection" type="TranslatedString" handle="hae3b7d80gf59dg4a03g9461g581a4e5e3827" version="1" />
+						</node>
+					</children>
+				</node>
+				<!-- Делаем точильное колесо TOOL_Smith_Whetstone_Wheel_B юзабельным -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="27162cbf-ab57-401b-a578-cd9f34209926" />
+					<attribute id="Name" type="LSString" value="TOOL_Smith_Whetstone_Wheel_B" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="115d2399-a009-4a63-82d0-f6c9ef6afdb0" />
+					<attribute id="VisualTemplate" type="FixedString" value="280830fe-e9f4-1939-d3b4-a1adfb2a781d" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="f90b36db-d1bc-1957-bee5-c5252d24d05f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc3980eceg2297g4132g9a64g3c1b1f40b90c" version="1" />
+					<attribute id="CoverAmount" type="uint8" value="0" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="Wadable" type="bool" value="False" />
+					<attribute id="LoopSound" type="FixedString" value="" />
+					<attribute id="SoundInitEvent" type="FixedString" value="" />
+					<attribute id="SoundAttenuation" type="int16" value="-1" />
+					<attribute id="IsPointerBlocker" type="bool" value="False" />
+					<attribute id="Icon" type="FixedString" value="Portrait_TOOL_Smith_Anvil_A" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1" />
+					<attribute id="UseSound" type="FixedString" value="" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.6026511 0 -0.2886414" />
+									<attribute id="Max" type="fvec3" value="0.5785721 1.194996 0.1719164" />
+									<attribute id="Radius" type="float" value="0.2057135" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.6026511 0 -0.2886414" />
+									<attribute id="Max" type="fvec3" value="0.5785721 1.194996 0.1719164" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.6026511 0 -0.2886414" />
+									<attribute id="Max" type="fvec3" value="0.5785721 1.194996 0.1719164" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+							</children>
+						</node>
+						<!-- Точим -->
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false)))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="GameMaster">
+							<attribute id="GameMasterSpawnSection" type="int32" value="12" />
+							<attribute id="GameMasterSpawnSubSection" type="TranslatedString" handle="h11b8fc31gbba4g4606ga1b2g199c0e276569" version="1" />
+						</node>
+						<node id="Equipment">
+							<attribute id="EquipmentSlots" type="uint32" value="0" />
+							<children>
+								<node id="ShortHair" />
+								<node id="LongHair" />
+								<node id="Visuals" />
+								<node id="ParentRace" />
+							</children>
+						</node>
+					</children>
+				</node>
+
+
+				<!-- Записки кузнеца об улучшении обычного, не уникального, оружия  -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="d78adaa0-511a-46a1-aedc-4ca279bbcd22" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Common_Smithing_Notes" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="47f778cc-b4ff-45c4-83af-e879e1ff14c3" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="VisualTemplate" type="FixedString" value="47a96ccb-e38c-c757-6a4f-7e457e1cbe32" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="9ebb8c1a-0217-660f-b784-8a4a59ef8f7e" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h37c868fbg6ac3g4570g9d2aga2cefe77fd3c" version="1" />
+					<attribute id="CoverAmount" type="uint8" value="0" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="Wadable" type="bool" value="False" />
+					<attribute id="LoopSound" type="FixedString" value="" />
+					<attribute id="SoundInitEvent" type="FixedString" value="" />
+					<attribute id="SoundAttenuation" type="int16" value="-1" />
+					<attribute id="IsPointerBlocker" type="bool" value="False" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Book_E" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Common_Smithing_Notes" />
+					<attribute id="Description" type="TranslatedString" handle="h0b4e5183g622fg4993ga87dg83f6b56e4f39" version="1" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.1019184 -0.01312011 -0.1083739" />
+									<attribute id="Max" type="fvec3" value="0.1018156 0.1387698 0.1083739" />
+									<attribute id="Radius" type="float" value="0.1077465" />
+									<attribute id="Height" type="float" value="0.191031" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2038368 -0.01312011 -0.2167478" />
+									<attribute id="Max" type="fvec3" value="0.2036313 0.1387698 0.2167478" />
+									<attribute id="Radius" type="float" value="0.215493" />
+									<attribute id="Height" type="float" value="0.191031" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2038368 -0.01312011 -0.2167478" />
+									<attribute id="Max" type="fvec3" value="0.2036313 0.1387698 0.2167478" />
+									<attribute id="Radius" type="float" value="0.215493" />
+									<attribute id="Height" type="float" value="0.191031" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="BookId" type="FixedString" value="Kela_Common_Smithing_Notes" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Новая Юзабельная наковальня -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Anvil" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="864105c1-2bc6-43c6-ebc0-11a7efb2cc20" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="3518dec3-03ef-a888-e661-02c69ae50145" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_TOOL_Smith_Anvil_B" />
+					<attribute id="Stats" type="FixedString" value="KELA_Useful_Anvil" />
+					<attribute id="Description" type="TranslatedString" handle="hcd87c806g2b79g4088ga2fegfb70a9dfd982" version="1" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="hd32c8648gc96eg4ea0g987eg15213bc01bf2" version="1" />
+					<attribute id="UseSound" type="FixedString" value="b6480614-cf5c-0b3b-af62-49fa03003d3c" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2849293 0 -0.6" />
+									<attribute id="Max" type="fvec3" value="0.2849293 0.6022668 0.6" />
+									<attribute id="Radius" type="float" value="0.508077" />
+									<attribute id="Height" type="float" value="1.1683" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2849293 0 -0.6" />
+									<attribute id="Max" type="fvec3" value="0.2849293 0.6022668 0.6848263" />
+									<attribute id="Radius" type="float" value="0.508077" />
+									<attribute id="Height" type="float" value="1.1683" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2849293 0 -0.6" />
+									<attribute id="Max" type="fvec3" value="0.2849293 0.6022668 0.6848263" />
+									<attribute id="Radius" type="float" value="0.508077" />
+									<attribute id="Height" type="float" value="1.1683" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="CombineSlots" type="int8" value="2" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Новое Юзабельное точильное колесо -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<!-- <attribute id="VisualTemplate" type="FixedString" value="bd6baa93-5f3d-ee19-3564-48392abd41a0" /> -->
+					<attribute id="VisualTemplate" type="FixedString" value="bce17d7e-6ab2-8fa4-a4bb-d1ab2d48ee4c" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="f90b36db-d1bc-1957-bee5-c5252d24d05f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_TOOL_Smith_Whetstone_Wheel_A" />
+					<attribute id="Stats" type="FixedString" value="KELA_Useful_Whetstone_Wheel" />
+					<attribute id="Description" type="TranslatedString" handle="hbfefff07gb289g4128gae31gbd1f6d906b80" version="1" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1" />
+					<attribute id="UseSound" type="FixedString" value="" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
+									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
+									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2511046 0 -0.09438917" />
+									<attribute id="Max" type="fvec3" value="0.2410717 0.9958298 0.2330964" />
+									<attribute id="Radius" type="float" value="0.2057135" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false)))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+			</children>
+		</node>
+	</region>
+</save>

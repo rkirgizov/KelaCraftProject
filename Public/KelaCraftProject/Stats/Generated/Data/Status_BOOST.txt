@@ -1,0 +1,48 @@
+new entry "KELA_WHETSTONE_SLASHING"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hcaaf20edg147eg4ff5g804ega27ac88bdf7e;1"
+data "Description" "hacd9e5c1g7238g46c8gae66gabaf8658d06b;1"
+data "DescriptionParams" "DealDamage(1,Slashing)"
+data "Icon" "Item_TOOL_Smith_Whetstone_Wheel_A"
+data "StackId" "KELA_WHETSTONE_SLASHING"
+data "StatusPropertyFlags" "DisableOverhead"
+data "Boosts" "WeaponDamage(1,Slashing)"
+data "ApplyEffect" "abb6d445-5db6-4b1d-be49-31336506e1de"
+data "StatusEffect" "640a261b-d2cc-4a66-bbf6-c964bcb18648"
+
+new entry "KELA_WHETSTONE_PIERCING"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hcaaf20edg147eg4ff5g804ega27ac88bdf7e;1"
+data "Description" "hacd9e5c1g7238g46c8gae66gabaf8658d06b;1"
+data "DescriptionParams" "DealDamage(1,Piercing)"
+data "Icon" "Item_TOOL_Smith_Whetstone_Wheel_A"
+data "StackId" "KELA_WHETSTONE_PIERCING"
+data "StatusPropertyFlags" "DisableOverhead"
+data "Boosts" "WeaponDamage(1,Piercing)"
+data "ApplyEffect" "abb6d445-5db6-4b1d-be49-31336506e1de"
+data "StatusEffect" "640a261b-d2cc-4a66-bbf6-c964bcb18648"
+
+new entry "KELA_WHETSTONE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hcaaf20edg147eg4ff5g804ega27ac88bdf7e;1"
+data "Description" "hacd9e5c1g7238g46c8gae66gabaf8658d06b;1"
+data "StackId" "KELA_WHETSTONE"
+data "StatusPropertyFlags" "DisablePortraitIndicator"
+// data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 10)"
+data "OnApplySuccess" "IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_PIERCING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_PIERCING, 100, 300)"
+data "OnApplyFail" "DealDamage(1d4, Slashing)"
+
+// data "OnApplyFunctors" "IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_PIERCING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_PIERCING, 100, 300)"
+// data "ApplyEffect" "6da6351a-c27c-4905-b3e0-a7f5ca004469"
+
+
+// data "OnApplyFunctors" "IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_PIERCING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_PIERCING, 100, 300)"
+
+// Работает
+// data "Boosts" "IF(not IsProficientWithEquippedWeapon(context.Target, false, false)):WeaponDamage(1,Slashing);IF(IsProficientWithEquippedWeapon(context.Target, false, false)):WeaponDamage(2,Slashing)"
+
+// "IF(HasProficiency('MusicalInstrument',context.Source)):ApplyStatus(PERFORM_POSITIVE_STARGAZING,100,-1);IF(HasProficiency('MusicalInstrument',context.Source)):ApplyStatus(PERFORM_POSITIVE,100,-1);IF(not HasProficiency('MusicalInstrument',context.Source)):ApplyStatus(PERFORM_NEGATIVE,100,-1)"

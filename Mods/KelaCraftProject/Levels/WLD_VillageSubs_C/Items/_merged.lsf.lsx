@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<!-- Заброшенная деревня, подвал кузницы -->
+		<node id="Templates">
+			<children>
+
+				<!-- Старый блокнот кузнеца -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
+					<attribute id="MapKey" type="FixedString" value="c94c891f-30cc-46fc-b079-7eb5be3a3bd5" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Common_Smithing_Notes_001" />
+					<attribute id="TemplateName" type="FixedString" value="d78adaa0-511a-46a1-aedc-4ca279bbcd22" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_VillageSubs_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="88.59418 12.45343 72.6862" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.3442353 0 0.8389326"/>
+							<attribute id="Scale" type="float" value="0.9" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Новая юзабельная наковальня -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
+					<attribute id="MapKey" type="FixedString" value="b32c6c6d-ffd1-49fe-b63a-75a449094e63" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Anvil_001" />
+					<attribute id="TemplateName" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
+
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_VillageSubs_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="84.17635 11.55409 75.5454" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.3442353 0 0.8389326" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+				<!-- Скрываем старую наковальню -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
+					<attribute id="MapKey" type="FixedString" value="81c7d95d-87b3-45cb-84f0-b2d6d67aba31" />
+					<attribute id="Name" type="LSString" value="TOOL_Smith_Anvil_B_001" />
+					<attribute id="TemplateName" type="FixedString" value="84dc46a0-eb7e-43fb-b3cd-9200bd017a15" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_VillageSubs_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="84.57635 11.55409 74.3454" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.5442353 0 0.8389326" />
+							<attribute id="Scale" type="float" value="0.01" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Новое Точильное колесо -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
+					<attribute id="MapKey" type="FixedString" value="89972799-c8a8-495c-b9f0-2a0ee8754fce" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_001" />
+					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_VillageSubs_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="85.57635 11.55409 74.4454" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.6442353 0 0.8389326" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+			</children>
+		</node>
+	</region>
+</save>

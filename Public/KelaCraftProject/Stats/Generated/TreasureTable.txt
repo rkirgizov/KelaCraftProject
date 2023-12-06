@@ -1,0 +1,61 @@
+// new treasuretable "DEN_Weaponsmith_Trade"
+// CanMerge 1
+// new subtable "1,1"
+// object category "I_BOOK_LOW_Kela_Common_Smithing_Notes",1,0,0,0,0,0,0,0
+// CanMerge 1
+// new subtable "1,1"
+// object category "I_GLO_SoulCoin",1,0,0,0,0,0,0,0
+// CanMerge 1
+// new subtable "1,1"
+// object category "I_BOOK_LOW_SorcerousSundries_NotableWizards2",1,0,0,0,0,0,0,0
+
+new treasuretable "MetalBars_Rare_Supply"
+new subtable "2,1;3,1;4,1"
+object category "I_OBJ_Metalbar_Rare",1,0,0,0,0,0,0,0
+new treasuretable "MetalBars_VeryRare_Supply"
+new subtable "2,1;3,1;4,1"
+object category "I_OBJ_Metalbar_VeryRare",1,0,0,0,0,0,0,0
+new treasuretable "MetalBars_Legendary_Supply"
+new subtable "2,1;3,1;4,1"
+object category "I_OBJ_Metalbar_Legendary",1,0,0,0,0,0,0,0
+new treasuretable "Valuables_MetalBars_For_Upgrade"
+new subtable "1,1;2,1"
+EndLevel "4"
+object category "I_OBJ_Metalbar_VeryRare",1,0,0,0,0,0,0,0
+new subtable "1,1;2,1"
+StartLevel "5"
+EndLevel "6"
+object category "I_OBJ_Metalbar_VeryRare",3,0,0,0,0,0,0,0
+object category "I_OBJ_Metalbar_Legendary",1,0,0,0,0,0,0,0
+new subtable "2,1;3,1;4,1"
+StartLevel "7"
+EndLevel "8"
+object category "I_OBJ_Metalbar_VeryRare",1,0,0,0,0,0,0,0
+new subtable "2,1;3,1"
+StartLevel "9"
+EndLevel "10"
+object category "I_OBJ_Metalbar_VeryRare",1,0,0,0,0,0,0,0
+object category "I_OBJ_Metalbar_Legendary",2,0,0,0,0,0,0,0
+new subtable "2,1;3,1"
+StartLevel "11"
+object category "I_OBJ_Metalbar_Legendary",1,0,0,0,0,0,0,0
+
+new treasuretable "Valuables_Generic"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",3,0,0,0,0,0,0,0
+
+new treasuretable "WYR_BlacksmithCellar_MetalBars"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",3,0,0,0,0,0,0,0
+
+new treasuretable "WYR_OrinsImpersonation_Smith"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",3,0,0,0,0,0,0,0
+
+new treasuretable "DEN_Weaponsmith_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_OBJ_Metalbar_Rare",1,0,0,0,0,0,0,0

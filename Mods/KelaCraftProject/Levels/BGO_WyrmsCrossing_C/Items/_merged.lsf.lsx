@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+
+				<!-- Делаем юзабельными INTERACT_TOOL_Smith_Whetstone_Wheel_B_001, INTERACT_TOOL_Smith_Whetstone_Wheel_B_000 -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="BGO_WyrmsCrossing_C" />
+					<attribute id="MapKey" type="FixedString" value="c0594396-f23e-4380-b0e4-b367e03a9924" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_006" />
+					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241808" />
+					
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGO_WyrmsCrossing_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="00abee45-43f0-1441-c51f-0a82a9943d51" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="feca33df-1c6f-bf0e-4282-e61f3e136959" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bd48b9d9-25ea-e636-33cd-6360d092b28d" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="107.867 50.52535 -12.4843" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.2523879 0 0.9676262" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="BGO_WyrmsCrossing_C" />
+					<attribute id="MapKey" type="FixedString" value="a7bc5666-836d-4d1d-8e77-a2a402f13125" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_007" />
+					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241608" />
+					
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGO_WyrmsCrossing_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="00abee45-43f0-1441-c51f-0a82a9943d51" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="feca33df-1c6f-bf0e-4282-e61f3e136959" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="639012d4-c152-cab6-47cb-52c6f8503aa2" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="0.2823661 49.03057 -41.73319" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.1149864 0 0.9933671" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Скрываем -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="BGO_WyrmsCrossing_C" />
+					<attribute id="MapKey" type="FixedString" value="ba7b1055-1f7c-4e0d-980d-507f4ca8227a" />
+					<attribute id="Name" type="LSString" value="INTERACT_TOOL_Smith_Whetstone_Wheel_B_001" />
+					<attribute id="TemplateName" type="FixedString" value="985bb624-6726-4243-bc6a-9274a95bf5fd" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241808" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGO_WyrmsCrossing_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="00abee45-43f0-1441-c51f-0a82a9943d51" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="feca33df-1c6f-bf0e-4282-e61f3e136959" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bd48b9d9-25ea-e636-33cd-6360d092b28d" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="107.867 50.52535 -12.4843" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.2523879 0 0.9676262" />
+							<attribute id="Scale" type="float" value="0.01" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="BGO_WyrmsCrossing_C" />
+					<attribute id="MapKey" type="FixedString" value="f4413121-694d-486d-ac0d-6498c4488a48" />
+					<attribute id="Name" type="LSString" value="INTERACT_TOOL_Smith_Whetstone_Wheel_B_000" />
+					<attribute id="TemplateName" type="FixedString" value="985bb624-6726-4243-bc6a-9274a95bf5fd" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241608" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGO_WyrmsCrossing_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="00abee45-43f0-1441-c51f-0a82a9943d51" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="feca33df-1c6f-bf0e-4282-e61f3e136959" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="639012d4-c152-cab6-47cb-52c6f8503aa2" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="0.2823661 49.03057 -41.73319" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.1149864 0 0.9933671" />
+							<attribute id="Scale" type="float" value="0.01" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
