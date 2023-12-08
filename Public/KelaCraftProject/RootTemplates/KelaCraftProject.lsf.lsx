@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="0" revision="9" build="900" />
+	<version major="4" minor="0" revision="9" build="900" lslib_meta="v1,bswap_guids" />
 	<region id="Templates">
 		<node id="Templates">
 			<children>
-
-				<!-- Делаем точильное TOOL_Smith_Whetstone_Wheel_A колесо юзабельным -->
 				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="45ecb2cc-3bcb-4a85-8d59-0a813d37997e" />
 					<attribute id="Name" type="LSString" value="TOOL_Smith_Whetstone_Wheel_A" />
@@ -50,7 +48,6 @@
 								</node>
 							</children>
 						</node>
-						<!-- Точим -->
 						<node id="OnUsePeaceActions">
 							<children>
 								<node id="Action">
@@ -74,7 +71,6 @@
 						</node>
 					</children>
 				</node>
-				<!-- Делаем точильное колесо TOOL_Smith_Whetstone_Wheel_B юзабельным -->
 				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="27162cbf-ab57-401b-a578-cd9f34209926" />
 					<attribute id="Name" type="LSString" value="TOOL_Smith_Whetstone_Wheel_B" />
@@ -128,7 +124,6 @@
 								</node>
 							</children>
 						</node>
-						<!-- Точим -->
 						<node id="OnUsePeaceActions">
 							<children>
 								<node id="Action">
@@ -161,9 +156,6 @@
 						</node>
 					</children>
 				</node>
-
-
-				<!-- Записки кузнеца об улучшении обычного, не уникального, оружия  -->
 				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="d78adaa0-511a-46a1-aedc-4ca279bbcd22" />
 					<attribute id="Name" type="LSString" value="BOOK_Kela_Common_Smithing_Notes" />
@@ -234,8 +226,6 @@
 						</node>
 					</children>
 				</node>
-
-				<!-- Новая Юзабельная наковальня -->
 				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" />
 					<attribute id="Name" type="LSString" value="KELA_Useful_Anvil" />
@@ -295,14 +285,11 @@
 						</node>
 					</children>
 				</node>
-
-				<!-- Новое Юзабельное точильное колесо -->
 				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
 					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="Type" type="FixedString" value="item" />
-					<!-- <attribute id="VisualTemplate" type="FixedString" value="bd6baa93-5f3d-ee19-3564-48392abd41a0" /> -->
 					<attribute id="VisualTemplate" type="FixedString" value="bce17d7e-6ab2-8fa4-a4bb-d1ab2d48ee4c" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="f90b36db-d1bc-1957-bee5-c5252d24d05f" />
 					<attribute id="DisplayName" type="TranslatedString" handle="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="1" />
@@ -360,7 +347,6 @@
 						</node>
 					</children>
 				</node>
-
 			</children>
 		</node>
 	</region>
