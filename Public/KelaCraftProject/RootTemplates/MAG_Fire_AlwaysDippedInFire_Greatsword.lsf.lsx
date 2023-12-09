@@ -8,7 +8,7 @@
 					<attribute id="Description" type="TranslatedString" handle="he5e86aa5ga35eg4579g8073gdad88b3b5499" version="1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h2a6b956cg82e9g4333g845ag5ac1f276e03d" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
-					<attribute id="MapKey" type="FixedString" value="d4d52983-de6d-4d02-9348-252127e436ed" />
+					<attribute id="MapKey" type="FixedString" value="bf888046-7442-4a88-b00e-79aecb5e47c7" />
 					<attribute id="Name" type="LSString" value="MAG_Fire_AlwaysDippedInFire_Greatsword_2" />
 					<attribute id="ParentTemplateId" type="FixedString" value="81a83529-5bb6-4c72-b1af-6fc8f45c5706" />
 					<attribute id="Stats" type="FixedString" value="MAG_Fire_AlwaysDippedInFire_Greatsword_2" />
@@ -53,7 +53,7 @@
 					<attribute id="Description" type="TranslatedString" handle="he5e86aa5ga35eg4579g8073gdad88b3b5499" version="1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h2a6b956cg82e9g4333g845ag5ac1f276e03d" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
-					<attribute id="MapKey" type="FixedString" value="450600d7-3076-4c61-9aff-be5b03a80d3a" />
+					<attribute id="MapKey" type="FixedString" value="482a41c8-4946-47b0-941e-65622c194532" />
 					<attribute id="Name" type="LSString" value="MAG_Fire_AlwaysDippedInFire_Greatsword_3" />
 					<attribute id="ParentTemplateId" type="FixedString" value="81a83529-5bb6-4c72-b1af-6fc8f45c5706" />
 					<attribute id="Stats" type="FixedString" value="MAG_Fire_AlwaysDippedInFire_Greatsword_3" />
@@ -98,7 +98,7 @@
 					<attribute id="Description" type="TranslatedString" handle="he5e86aa5ga35eg4579g8073gdad88b3b5499" version="1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h2a6b956cg82e9g4333g845ag5ac1f276e03d" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
-					<attribute id="MapKey" type="FixedString" value="29bea479-9b00-44ec-b552-fc2fc6f7d219" />
+					<attribute id="MapKey" type="FixedString" value="52d12dfb-96ed-4b76-8881-5951e75c0a8c" />
 					<attribute id="Name" type="LSString" value="MAG_Fire_AlwaysDippedInFire_Greatsword_4" />
 					<attribute id="ParentTemplateId" type="FixedString" value="81a83529-5bb6-4c72-b1af-6fc8f45c5706" />
 					<attribute id="Stats" type="FixedString" value="MAG_Fire_AlwaysDippedInFire_Greatsword_4" />

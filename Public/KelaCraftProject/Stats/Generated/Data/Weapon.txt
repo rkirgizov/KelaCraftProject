@@ -1,7 +1,7 @@
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
-//  Отсутствующее редкое оружие
+//  Отсутствующее обычное редкое оружие
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
@@ -43,7 +43,7 @@ data "Weapon Properties" "Light;Melee;Dippable;Magical"
 new entry "MAG_Fire_AlwaysDippedInFire_Greatsword_2"
 type "Weapon"
 using "WPN_Greatsword_1"
-data "RootTemplate" "2abeecb2-b8ca-4413-8b75-a9ebffeeaf60"
+data "RootTemplate" "bf888046-7442-4a88-b00e-79aecb5e47c7"
 data "ItemGroup" ""
 data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
 data "Rarity" "Rare"
@@ -54,7 +54,7 @@ data "Weapon Properties" "Twohanded;Heavy;Melee"
 new entry "MAG_Fire_AlwaysDippedInFire_Greatsword_3"
 type "Weapon"
 using "WPN_Greatsword_2"
-data "RootTemplate" "7e0433cf-5041-43bb-a607-724bb569eb30"
+data "RootTemplate" "482a41c8-4946-47b0-941e-65622c194532"
 data "ItemGroup" ""
 data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
 data "Rarity" "VeryRare"
@@ -65,7 +65,7 @@ data "Weapon Properties" "Twohanded;Heavy;Melee"
 new entry "MAG_Fire_AlwaysDippedInFire_Greatsword_4"
 type "Weapon"
 using "WPN_Greatsword_2"
-data "RootTemplate" "8ce8fd77-8b25-4861-ab35-202d78cd0b2a"
+data "RootTemplate" "52d12dfb-96ed-4b76-8881-5951e75c0a8c"
 data "ItemGroup" ""
 data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
 data "Rarity" "Legendary"

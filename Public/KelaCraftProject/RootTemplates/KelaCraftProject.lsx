@@ -416,7 +416,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_GRINDING_OIL_USED', context.Source) and ((IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE', context.Target) and ((IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />
 											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />

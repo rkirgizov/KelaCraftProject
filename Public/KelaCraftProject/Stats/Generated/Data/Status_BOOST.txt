@@ -36,15 +36,40 @@ data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 10)"
 data "OnApplySuccess" "IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_PIERCING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_PIERCING, 100, 300)"
 data "OnApplyFail" "DealDamage(1d4, Slashing)"
 
+// new entry "KELA_GRINDING_OIL_USED"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// data "DisplayName" "h2664a487g180dg4bf1ga5d2g627917854dd1;1"
+// data "Description" "ha1f83547g7f50g4620gb5ebg779b2ac35670;1"
+// data "DescriptionParams" "10"
+// data "Icon" "Item_CONS_Potion_Immortality_A"
+// data "StackId" "KELA_GRINDING_OIL_USED"
+// data "StatusPropertyFlags" "DisableOverhead"
+
+
+
+
 new entry "KELA_GRINDING_OIL_USED"
 type "StatusData"
 data "StatusType" "BOOST"
-data "DisplayName" "h2664a487g180dg4bf1ga5d2g627917854dd1;1"
-data "Description" "ha1f83547g7f50g4620gb5ebg779b2ac35670;1"
-data "DescriptionParams" "10"
-data "Icon" "Item_CONS_Potion_Immortality_A"
+data "DisplayName" "hc586b85fg5f63g4450g91e4gaeb0254556f2;2"
+data "Description" "hdb056ecdg8f65g409bgb07cgfe48f7ccfe35;2"
+data "DescriptionParams" "DexterityModifier"
+data "Icon" "Action_AspectOfTheWolf"
 data "StackId" "KELA_GRINDING_OIL_USED"
-data "StatusPropertyFlags" "DisableOverhead"
+data "AuraRadius" "5"
+data "AuraStatuses" "IF(Item() and Tagged('KELAWHETSTONE')):ApplyStatus(KELA_GRINDING_OIL_USED_ON_WHETSTONE)"
+
+new entry "KELA_GRINDING_OIL_USED_ON_WHETSTONE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hea9b6e71g8a3fg4947g879bg842237cf683e;2"
+data "Description" "h4e8119a6g8211g422dg8288g3a1698216737;2"
+data "DescriptionParams" "Cause.DexterityModifier"
+data "Icon" "Action_AspectOfTheWolf"
+data "StackId" "KELA_GRINDING_OIL_USED_ON_WHETSTONE"
+
+
 
 
 

@@ -11,6 +11,7 @@ using "OBJ_GenericLootItem"
 data "RootTemplate" "9c961b81-496f-48fe-9265-125b084bcde5"
 data "Weight" "100.0"
 data "UseCosts" "ActionPoint:1"
+data "DefaultBoosts" "Tag(KELAWHETSTONE)"
 
 new entry "KELA_Grinding_Oil"
 type "Object"
