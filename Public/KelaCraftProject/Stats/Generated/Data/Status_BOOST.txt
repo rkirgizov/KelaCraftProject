@@ -46,28 +46,25 @@ data "OnApplyFail" "DealDamage(1d4, Slashing)"
 // data "StackId" "KELA_GRINDING_OIL_USED"
 // data "StatusPropertyFlags" "DisableOverhead"
 
-
-
-
 new entry "KELA_GRINDING_OIL_USED"
 type "StatusData"
 data "StatusType" "BOOST"
-data "DisplayName" "hc586b85fg5f63g4450g91e4gaeb0254556f2;2"
-data "Description" "hdb056ecdg8f65g409bgb07cgfe48f7ccfe35;2"
-data "DescriptionParams" "DexterityModifier"
-data "Icon" "Action_AspectOfTheWolf"
+data "DisplayName" "h2664a487g180dg4bf1ga5d2g627917854dd1;1"
+data "Description" "ha1f83547g7f50g4620gb5ebg779b2ac35670;1"
+data "DescriptionParams" "10"
+data "Icon" "Item_CONS_Potion_Immortality_A"
 data "StackId" "KELA_GRINDING_OIL_USED"
 data "AuraRadius" "5"
-data "AuraStatuses" "IF(Item() and Tagged('KELAWHETSTONE')):ApplyStatus(KELA_GRINDING_OIL_USED_ON_WHETSTONE)"
+data "AuraStatuses" "IF(Item() and Tagged('KELAWHETSTONE')):ApplyStatus(KELA_GRINDING_OIL_USED_ON_WHETSTONE,100,10)"
 
 new entry "KELA_GRINDING_OIL_USED_ON_WHETSTONE"
 type "StatusData"
 data "StatusType" "BOOST"
-data "DisplayName" "hea9b6e71g8a3fg4947g879bg842237cf683e;2"
-data "Description" "h4e8119a6g8211g422dg8288g3a1698216737;2"
-data "DescriptionParams" "Cause.DexterityModifier"
-data "Icon" "Action_AspectOfTheWolf"
+data "DisplayName" "h9261c713ga2e5g49bcgb3f1gf8a056f64f4e;1"
+data "Description" "h9c9bffceg44c5g42c0g8363g27632a44e104;1"
+data "Icon" "Item_TOOL_Smith_Whetstone_Wheel_A"
 data "StackId" "KELA_GRINDING_OIL_USED_ON_WHETSTONE"
+data "StatusEffect" "640a261b-d2cc-4a66-bbf6-c964bcb18648"
 
 
 

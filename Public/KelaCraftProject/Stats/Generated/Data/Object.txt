@@ -13,6 +13,12 @@ data "Weight" "100.0"
 data "UseCosts" "ActionPoint:1"
 data "DefaultBoosts" "Tag(KELAWHETSTONE)"
 
+new entry "BOOK_Kela_Common_Smithing_Notes"
+type "Object"
+using "OBJ_GenericLootItem"
+data "RootTemplate" "d78adaa0-511a-46a1-aedc-4ca279bbcd22"
+data "Weight" "0.3"
+
 new entry "KELA_Grinding_Oil"
 type "Object"
 using "_Potion"

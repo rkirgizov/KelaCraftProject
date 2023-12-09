@@ -433,3 +433,10 @@
 		</node>
 	</region>
 </save>
+
+
+<!-- 
+	ОТКРЫТЬ ЯЩИК 	<attribute id="ActionType" type="int32" value="1" />  
+	НЕИЗВЕСТНО 		<attribute id="ActionType" type="int32" value="2" />
+
+-->
