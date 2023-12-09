@@ -6,10 +6,14 @@
 	<content contentuid="hcd87c806g2b79g4088ga2fegfb70a9dfd982" version="1">Может использоваться для улучшения &lt;br&gt;или ковки оружия, при наличии &lt;br&gt;необходимых ингредиентов.</content>	
 
 	<content contentuid="h36d2a7acg79cfg4382gbb52g4263548fb0b9" version="1">Кузнечная заготовка</content>
-	<content contentuid="hbdcecd53g93ebg41cdgaf0eg2f119a1fa5c4" version="1">Кузнечная заготовка для улучшения уникального оружия до её уровня.</content>
+	<content contentuid="hbdcecd53g93ebg41cdgaf0eg2f119a1fa5c4" version="1">Кузнечная заготовка для улучшения уникального оружия до соответствующего уровня.</content>
 
 	<content contentuid="hbfefff07gb289g4128gae31gbd1f6d906b80" version="1">Оружие, заточенное на точильном камне, получает бонус к урону.</content>
 	<content contentuid="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1">Заточить оружие</content>
+	<content contentuid="h13a5791cg5ed8g40cfga717g39d7283f398f" version="1">Масло для заточки</content>
+	<content contentuid="h9ce93eefgd3d7g4d70g8050g40dd88e04c85" version="1">Требуется для заточки оружия на точильном камне.&lt;br&gt;После использования масла можно в течение [1] ходов работать с точильным камнем</content>
+	<content contentuid="h2664a487g180dg4bf1ga5d2g627917854dd1" version="1">Масло для заточки приготовлено</content>
+	<content contentuid="ha1f83547g7f50g4620gb5ebg779b2ac35670" version="1">В течение [1] ходов можно работать с точильным камнем</content>
 
 	<content contentuid="hcaaf20edg147eg4ff5g804ega27ac88bdf7e" version="1">Заточенное оружие</content>
 	<content contentuid="hacd9e5c1g7238g46c8gae66gabaf8658d06b" version="1">Это оружие заточено на точильном камне, что временно придаёт ему бонус +[1] к урону.</content>

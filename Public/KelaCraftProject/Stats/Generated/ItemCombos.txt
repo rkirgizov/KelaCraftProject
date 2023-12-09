@@ -10,9 +10,6 @@
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 
-
-
-
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
@@ -27,7 +24,26 @@
 //-------------------------------------------------------------------------
 //  TEST
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Dagger_to_UCr"
+
+new ItemCombination "WPN_Dagger_to_UCra"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "OBJ_Potion_Healing"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Potion_Healing"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Dagger_to_UCra_1"
+data "ResultAmount 1" "1"
+data "Result 1" "KELA_Grinding_Oil"
+data "PreviewStatsID" "KELA_Grinding_Oil"
+data "PreviewIcon" "KELA_Grinding_Oil"
+
+new ItemCombination "COMB_OBJ_Metalbar_Rare"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
@@ -39,11 +55,48 @@ data "Type 3" "Object"
 data "Object 3" "OBJ_Potion_Healing"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Dagger_to_UCr_1"
-data "ResultAmount 1" "1"
-data "Result 1" "WPN_Dagger_1"
-data "PreviewStatsID" "WPN_Dagger_1"
-data "PreviewIcon" "WPN_Dagger_1"
+new ItemCombinationResult "COMB_OBJ_Metalbar_Rare_1"
+data "ResultAmount 1" "10"
+data "Result 1" "OBJ_Metalbar_Rare"
+data "PreviewStatsID" "OBJ_Metalbar_Rare"
+data "PreviewIcon" "OBJ_Metalbar_Rare"
+
+new ItemCombination "COMB_OBJ_Metalbar_VeryRare"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "OBJ_Metalbar_Rare"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "COMB_OBJ_Metalbar_VeryRare_1"
+data "ResultAmount 1" "10"
+data "Result 1" "OBJ_Metalbar_VeryRare"
+data "PreviewStatsID" "OBJ_Metalbar_VeryRare"
+data "PreviewIcon" "OBJ_Metalbar_VeryRare"
+
+new ItemCombination "COMB_OBJ_Metalbar_Legendary"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "OBJ_Metalbar_VeryRare"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "COMB_OBJ_Metalbar_Legendary_1"
+data "ResultAmount 1" "10"
+data "Result 1" "OBJ_Metalbar_Legendary"
+data "PreviewStatsID" "OBJ_Metalbar_Legendary"
+data "PreviewIcon" "OBJ_Metalbar_Legendary"
+
 
 //-------------------------------------------------------------------------
 //  BATTLEAXE
@@ -1022,10 +1075,10 @@ data "Combine 1" "Base"
 data "Transform 1" "None"
 data "Type 2" "Object"
 data "Object 2" "MAG_Fire_AlwaysDippedInFire_Greatsword"
-data "Transform 2" "Consume"
+data "Transform 2" "None"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
-data "Transform 3" "Consume"
+data "Transform 3" "None"
 
 new ItemCombinationResult "MAG_Fire_AlwaysDippedInFire_Greatsword_to_RR_1"
 data "ResultAmount 1" "1"
@@ -1040,10 +1093,10 @@ data "Combine 1" "Base"
 data "Transform 1" "None"
 data "Type 2" "Object"
 data "Object 2" "MAG_Fire_AlwaysDippedInFire_Greatsword_2"
-data "Transform 2" "Consume"
+data "Transform 2" "None"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_VeryRare"
-data "Transform 3" "Consume"
+data "Transform 3" "None"
 
 new ItemCombinationResult "MAG_Fire_AlwaysDippedInFire_Greatsword_to_VR_1"
 data "ResultAmount 1" "1"
@@ -1058,10 +1111,10 @@ data "Combine 1" "Base"
 data "Transform 1" "None"
 data "Type 2" "Object"
 data "Object 2" "MAG_Fire_AlwaysDippedInFire_Greatsword_3"
-data "Transform 2" "Consume"
+data "Transform 2" "None"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Legendary"
-data "Transform 3" "Consume"
+data "Transform 3" "None"
 
 new ItemCombinationResult "MAG_Fire_AlwaysDippedInFire_Greatsword_to_LG_1"
 data "ResultAmount 1" "1"

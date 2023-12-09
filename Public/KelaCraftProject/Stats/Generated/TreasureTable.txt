@@ -12,32 +12,46 @@
 new treasuretable "MetalBars_Rare_Supply"
 new subtable "2,1;3,1;4,1"
 object category "I_OBJ_Metalbar_Rare",1,0,0,0,0,0,0,0
+object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
+
 new treasuretable "MetalBars_VeryRare_Supply"
 new subtable "2,1;3,1;4,1"
 object category "I_OBJ_Metalbar_VeryRare",1,0,0,0,0,0,0,0
+object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
+
 new treasuretable "MetalBars_Legendary_Supply"
 new subtable "2,1;3,1;4,1"
 object category "I_OBJ_Metalbar_Legendary",1,0,0,0,0,0,0,0
+object category "I_KELA_Grinding_Oil",2,0,0,0,0,0,0,0
+
 new treasuretable "Valuables_MetalBars_For_Upgrade"
 new subtable "1,1;2,1"
 EndLevel "4"
+object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
+object category "I_OBJ_Metalbar_Rare",1,0,0,0,0,0,0,0
 object category "I_OBJ_Metalbar_VeryRare",1,0,0,0,0,0,0,0
 new subtable "1,1;2,1"
 StartLevel "5"
 EndLevel "6"
-object category "I_OBJ_Metalbar_VeryRare",3,0,0,0,0,0,0,0
+object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
+object category "I_OBJ_Metalbar_Rare",1,0,0,0,0,0,0,0
+object category "I_OBJ_Metalbar_VeryRare",2,0,0,0,0,0,0,0
 object category "I_OBJ_Metalbar_Legendary",1,0,0,0,0,0,0,0
 new subtable "2,1;3,1;4,1"
 StartLevel "7"
 EndLevel "8"
+object category "I_KELA_Grinding_Oil",2,0,0,0,0,0,0,0
 object category "I_OBJ_Metalbar_VeryRare",1,0,0,0,0,0,0,0
 new subtable "2,1;3,1"
 StartLevel "9"
 EndLevel "10"
-object category "I_OBJ_Metalbar_VeryRare",1,0,0,0,0,0,0,0
-object category "I_OBJ_Metalbar_Legendary",2,0,0,0,0,0,0,0
+object category "I_KELA_Grinding_Oil",2,0,0,0,0,0,0,0
+object category "I_OBJ_Metalbar_VeryRare",2,0,0,0,0,0,0,0
+object category "I_OBJ_Metalbar_Legendary",1,0,0,0,0,0,0,0
 new subtable "2,1;3,1"
 StartLevel "11"
+object category "I_KELA_Grinding_Oil",2,0,0,0,0,0,0,0
+object category "I_OBJ_Metalbar_VeryRare",1,0,0,0,0,0,0,0
 object category "I_OBJ_Metalbar_Legendary",1,0,0,0,0,0,0,0
 
 new treasuretable "Valuables_Generic"
@@ -45,17 +59,100 @@ CanMerge 1
 new subtable "1,1"
 object category "T_Valuables_MetalBars_For_Upgrade",3,0,0,0,0,0,0,0
 
+// 1 Act Emerald Grove
+new treasuretable "DEN_Weaponsmith_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_OBJ_Metalbar_Rare",1,0,0,0,0,0,0,0
+object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
+
+// 1 Act Blighted Village
+new treasuretable "FOR_BlacksmithsCellar_Crate"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 1 Act Blighted Village
+new treasuretable "FOR_BlacksmithsCellar_Generic"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 1 Act Blighted Village
+new treasuretable "FOR_BlacksmithsCellar_Tools"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 1 Act Goblin Camp
+new treasuretable "GOB_Goblin_Generic"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 1 Act Goblin Camp
+new treasuretable "GOB_Goblin_Generic_Common"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 1 Act Goblin Camp
+new treasuretable "GOB_Goblin_Generic_Rare"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 1 Act Risen Roads
+new treasuretable "PLA_Confiscated_MetalBars"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 1 Act Underdark
+new treasuretable "UND_DuergarBlacksmith_Chest"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 1 Act Underdark
+new treasuretable "UND_ZhentPort_MetalBars"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 2 Act Last Light Inn
+new treasuretable "HAV_Weaponsmith_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 3 Act Lower City
+new treasuretable "LOW_Weaponsmith_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_Valuables_MetalBars_For_Upgrade",2,0,0,0,0,0,0,0
+
+// 3 Act Wyrm's Rock
+new treasuretable "WYR_BlacksmithCellar_Grease"
+CanMerge 1
+new subtable "1,1"
+object category "I_KELA_Grinding_Oil",2,0,0,0,0,0,0,0
+
+// 3 Act Wyrm's Rock
 new treasuretable "WYR_BlacksmithCellar_MetalBars"
 CanMerge 1
 new subtable "1,1"
 object category "T_Valuables_MetalBars_For_Upgrade",3,0,0,0,0,0,0,0
 
+// 3 Act Wyrm's Rock
 new treasuretable "WYR_OrinsImpersonation_Smith"
 CanMerge 1
 new subtable "1,1"
 object category "T_Valuables_MetalBars_For_Upgrade",3,0,0,0,0,0,0,0
 
-new treasuretable "DEN_Weaponsmith_Trade"
+// 3 Act Lower City
+new treasuretable "LOW_Foundry_Crate_MetalBars"
 CanMerge 1
-new subtable "1,1"
-object category "I_OBJ_Metalbar_Rare",1,0,0,0,0,0,0,0
+new subtable "1,1;2,1;3,1"
+object category "I_OBJ_Metalbar_Bronze",1,0,0,0,0,0,0,0
+object category "T_MetalBars_Rare_Supply",1,0,0,0,0,0,0,0
