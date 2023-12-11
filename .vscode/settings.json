@@ -23,8 +23,6 @@
     },
     "files.associations": {
         "*.sql": "sql",
-        "*.mod": "ck3",
-        "*.gui": "paradox",
-        "*.txt": "bg3txt"
+        "*.txt": "bg3"
     }
 }
