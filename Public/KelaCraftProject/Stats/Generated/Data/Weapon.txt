@@ -1574,14 +1574,900 @@ data "Rarity" "Legendary"
 data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
 data "Boosts" "Ability(Strength, 4, 23);Ability(Intelligence, -1);Ability(Wisdom, -1)"
 
+//-------------------------------------------------------------------------
+//  MAG_BG_Harold_HeavyCrossbow
+//-------------------------------------------------------------------------
 
+new entry "MAG_BG_Harold_HeavyCrossbow"
+type "Weapon"
+using "WPN_HeavyCrossbow_2"
+data "RootTemplate" "22bf3680-a37f-4a04-b036-2865805f3d60"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_BG_Harold_HeavyCrossbow_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_BG_Harold_HeavyCrossbows"
 
+new entry "MAG_BG_Harold_HeavyCrossbow_3"
+type "Weapon"
+using "MAG_BG_Harold_HeavyCrossbow"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_BG_Harold_HeavyCrossbow_Passive"
 
+new entry "MAG_BG_Harold_HeavyCrossbow_4"
+type "Weapon"
+using "MAG_BG_Harold_HeavyCrossbow"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
 
+//-------------------------------------------------------------------------
+//  MAG_WATCHER_Human_Crossbow
+//-------------------------------------------------------------------------
 
+new entry "MAG_WATCHER_Human_Crossbow"
+type "Weapon"
+using "WPN_HeavyCrossbow_2"
+data "RootTemplate" "f746397f-c489-4121-8499-40017981e290"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Projectile_MAG_LightningArrow_Shot)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Projectile_PiercingShot);UnlockSpell(Shout_SteadyRangedCrossbow);UnlockSpell(Target_MAG_RetrievingShot)"
+data "Unique" "1"
+data "ComboCategory" "MAG_WATCHER_Human_Crossbows"
 
+new entry "MAG_WATCHER_Human_Crossbow_4"
+type "Weapon"
+using "MAG_WATCHER_Human_Crossbow"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
 
+//-------------------------------------------------------------------------
+//  MAG_WATCHER_Human_Greataxe
+//-------------------------------------------------------------------------
 
+new entry "MAG_WATCHER_Human_Greataxe"
+type "Weapon"
+using "WPN_Greataxe_2"
+data "RootTemplate" "dd0e9fa2-e012-454d-9f2d-53c0a0776015"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Zone_Cleave);UnlockSpell(Target_Slash_New);UnlockSpell(Shout_FullSwing);UnlockSpell(Zone_MAG_Automaton_Human_Steelwatcher_HellfireCleave)"
+data "PassivesOnEquip" "MAG_Fire_HeatOnWeaponDamage_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_WATCHER_Human_Greataxes"
+
+new entry "MAG_WATCHER_Human_Greataxe_4"
+type "Weapon"
+using "MAG_WATCHER_Human_Greataxe"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_Orthon_Hellfire_HandCrossbow
+//-------------------------------------------------------------------------
+
+new entry "MAG_Orthon_Hellfire_HandCrossbow"
+type "Weapon"
+using "WPN_HandCrossbow_2"
+data "RootTemplate" "f5b3b579-3569-4f6d-835c-9c19245152d6"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Projectile_MAG_ScorchingRay_Shot)"
+data "PassivesOnEquip" "MAG_Orthon_Hellfire_Crossbow_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_Orthon_Hellfire_HandCrossbows"
+
+new entry "MAG_Orthon_Hellfire_HandCrossbow_4"
+type "Weapon"
+using "MAG_Orthon_Hellfire_HandCrossbow"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_WYR_Hellrider_Longbow
+//-------------------------------------------------------------------------
+
+new entry "MAG_WYR_Hellrider_Longbow"
+type "Weapon"
+using "WPN_Longbow_1"
+data "RootTemplate" "75c90d55-c262-446d-937c-8adbef1e3e93"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_PHB_Sentinel_Shield_Passive;MAG_WYR_Hellrider_Longbow_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_WYR_Hellrider_Longbows"
+
+new entry "MAG_WYR_Hellrider_Longbow_3"
+type "Weapon"
+using "MAG_WYR_Hellrider_Longbow"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_WYR_Hellrider_Longbow_4"
+type "Weapon"
+using "MAG_WYR_Hellrider_Longbow"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_HigherNecromancy_Staff
+//-------------------------------------------------------------------------
+
+new entry "MAG_HigherNecromancy_Staff"
+type "Weapon"
+using "WPN_Quarterstaff_1"
+data "RootTemplate" "bb1fef3b-ac2b-427e-9b6f-273a8c7e4ff8"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Shout_MAG_ArmsOfHadar_3)"
+data "PassivesOnEquip" "MAG_Heightened_Necromancy_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_HigherNecromancy_Staffs"
+
+new entry "MAG_HigherNecromancy_Staff_3"
+type "Weapon"
+using "MAG_HigherNecromancy_Staff"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Shout_MAG_ArmsOfHadar_3)"
+data "PassivesOnEquip" "MAG_Heightened_Necromancy_Passive"
+
+new entry "MAG_HigherNecromancy_Staff_4"
+type "Weapon"
+using "MAG_HigherNecromancy_Staff"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_Heightened_Necromancy_Passive;MAG_GreaterNecromancyStaff_LifeEssenceHarvest_Passive"
+
+//-------------------------------------------------------------------------
+//  MAG_TheHunters_Dagger
+//-------------------------------------------------------------------------
+
+new entry "MAG_TheHunters_Dagger"
+type "Weapon"
+using "WPN_Dagger_1"
+data "RootTemplate" "e101101e-e4ba-48b6-9f82-267ca1cd84dc"
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_OpeningAttack);UnlockSpell(Target_PiercingThrust);UnlockSpell(Target_Slash_New)"
+data "PassivesOnEquip" "MAG_TheHunters_Dagger_Passive"
+data "DefaultBoosts" "WeaponProperty(Magical)"
+data "ComboCategory" "MAG_TheHunters_Daggers"
+
+new entry "MAG_TheHunters_Dagger_2"
+type "Weapon"
+using "MAG_TheHunters_Dagger"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+
+new entry "MAG_TheHunters_Dagger_3"
+type "Weapon"
+using "MAG_TheHunters_Dagger"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_TheHunters_Dagger_4"
+type "Weapon"
+using "MAG_TheHunters_Dagger"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  UND_DuergarRaft_GruesomeHammer
+//-------------------------------------------------------------------------
+
+new entry "UND_DuergarRaft_GruesomeHammer"
+type "Weapon"
+using "WPN_Warhammer_1"
+data "RootTemplate" "4d1f9bce-1884-47d0-a420-69417f397139"
+data "ItemGroup" ""
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "Rarity" "Uncommon"
+data "DefaultBoosts" "WeaponProperty(Magical)"
+data "PassivesOnEquip" "UND_DuergarRaft_Hammer_Passive"
+data "Unique" "1"
+data "ComboCategory" "UND_DuergarRaft_GruesomeHammers"
+
+new entry "UND_DuergarRaft_GruesomeHammer_2"
+type "Weapon"
+using "UND_DuergarRaft_GruesomeHammer"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+
+new entry "UND_DuergarRaft_GruesomeHammer_3"
+type "Weapon"
+using "UND_DuergarRaft_GruesomeHammer"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "UND_DuergarRaft_GruesomeHammer_4"
+type "Weapon"
+using "UND_DuergarRaft_GruesomeHammer"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_Duergar_Sword_KingsKnife
+//-------------------------------------------------------------------------
+
+new entry "MAG_Duergar_Sword_KingsKnife"
+type "Weapon"
+using "WPN_Shortsword_2"
+data "RootTemplate" "025e162a-45ec-4f4c-89da-04d8e8dfe606"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_TheClover_Rearrangement_Passive;ShadowBlade_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_Duergar_Sword_KingsKnifes"
+
+new entry "MAG_Duergar_Sword_KingsKnife_4"
+type "Weapon"
+using "MAG_Duergar_Sword_KingsKnife"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_Finesse_Longsword
+//-------------------------------------------------------------------------
+
+new entry "MAG_Finesse_Longsword"
+type "Weapon"
+using "WPN_Longsword_1"
+data "RootTemplate" "56a7539c-7c5c-4c44-b8e0-5ff2e5beb4e9"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_PommelStrike);UnlockSpell(Target_Slash_New);UnlockSpell(Rush_SpringAttack);UnlockSpell(Zone_Mag_WeaponAction_RazorGale)"
+data "Unique" "1"
+data "Weapon Properties" "Versatile;Melee;Dippable;Finesse"
+data "ComboCategory" "MAG_Finesse_Longswords"
+
+new entry "MAG_Finesse_Longsword_3"
+type "Weapon"
+using "MAG_Finesse_Longsword"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_Finesse_Longsword_4"
+type "Weapon"
+using "MAG_Finesse_Longsword"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_Shadow_Blinding_Bow
+//-------------------------------------------------------------------------
+
+new entry "MAG_Shadow_Blinding_Bow"
+type "Weapon"
+using "WPN_Shortbow_2"
+data "RootTemplate" "2199a407-0ae8-4ada-b3cd-b19df5adeadd"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Projectile_HamstringShot);UnlockSpell(Projectile_MAG_WeaponAction_BlindingShot)"
+data "PassivesOnEquip" "MAG_Shadow_Blinding_Bow_Passive"
+data "StatusOnEquip" "MAG_SHADOW_OBSCURITY_ATTACK_BONUS_OWNER_TECHNICAL"
+data "Unique" "1"
+data "ComboCategory" "MAG_Shadow_Blinding_Bows"
+
+new entry "MAG_Shadow_Blinding_Bow_3"
+type "Weapon"
+using "MAG_Shadow_Blinding_Bow"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_Shadow_Blinding_Bow_4"
+type "Weapon"
+using "MAG_Shadow_Blinding_Bow"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  GOB_PainPriest_Scourge
+//-------------------------------------------------------------------------
+
+new entry "GOB_PainPriest_Scourge"
+type "Weapon"
+using "WPN_Mace_1"
+data "RootTemplate" "b1dc33ba-c595-4036-9683-26635f297e44"
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "ValueOverride" "370"
+data "Rarity" "Uncommon"
+data "DefaultBoosts" "WeaponProperty(Magical)"
+data "Boosts" "Resistance(Necrotic,Resistant)"
+data "PassivesOnEquip" "GOB_PainPriest_Scourge_Passive"
+data "Unique" "1"
+data "ComboCategory" "GOB_PainPriest_Scourges"
+
+new entry "GOB_PainPriest_Scourge_2"
+type "Weapon"
+using "GOB_PainPriest_Scourge"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+
+new entry "GOB_PainPriest_Scourge_3"
+type "Weapon"
+using "GOB_PainPriest_Scourge"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "GOB_PainPriest_Scourge_4"
+type "Weapon"
+using "GOB_PainPriest_Scourge"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_BasicEnchanted_Quarterstaff
+//-------------------------------------------------------------------------
+
+new entry "MAG_BasicEnchanted_Quarterstaff"
+type "Weapon"
+using "WPN_Quarterstaff_1"
+data "RootTemplate" "1e8e2d4d-904d-4367-ad28-30012915f458"
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "Boosts" "UnlockSpell(Projectile_MAG_MelfsMagicArrow)"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Lesser_Passive"
+data "Unique" "1"
+data "DefaultBoosts" "WeaponProperty(Magical)"
+data "ComboCategory" "MAG_BasicEnchanted_Quarterstaffs"
+
+new entry "MAG_BasicEnchanted_Quarterstaff_2"
+type "Weapon"
+using "MAG_BasicEnchanted_Quarterstaff"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Lesser_Passive"
+data "Unique" "1"
+
+new entry "MAG_BasicEnchanted_Quarterstaff_3"
+type "Weapon"
+using "MAG_BasicEnchanted_Quarterstaff"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Passive"
+data "Unique" "1"
+
+new entry "MAG_BasicEnchanted_Quarterstaff_4"
+type "Weapon"
+using "MAG_BasicEnchanted_Quarterstaff"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_Legendary_ArcaneEnchantment_Passive"
+data "Unique" "1"
+
+//-------------------------------------------------------------------------
+//  MAG_MonsterSlayer_Glaive
+//-------------------------------------------------------------------------
+
+new entry "MAG_MonsterSlayer_Glaive"
+type "Weapon"
+using "WPN_Glaive_1"
+data "RootTemplate" "0c3fcc8d-bf4b-4f65-95ec-a5d1030afe66"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_MonsterSlayer_Passive;MAG_JumpBoost_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_MonsterSlayer_Glaives"
+
+new entry "MAG_MonsterSlayer_Glaive_3"
+type "Weapon"
+using "MAG_MonsterSlayer_Glaive"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_MonsterSlayer_Glaive_4"
+type "Weapon"
+using "MAG_MonsterSlayer_Glaive"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_MonsterSlayer_Glaive
+//-------------------------------------------------------------------------
+
+new entry "MAG_Moonlight_Glaive"
+type "Weapon"
+using "WPN_Glaive_1"
+data "RootTemplate" "24f276e7-f08f-44f1-ab97-3df34fd52add"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);WeaponDamage(1d4, Radiant)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Rush_SpringAttack);UnlockSpell(Target_Slash_New);UnlockSpell(Shout_Steady);UnlockSpell(Target_MAG_WeaponAction_MoonlightButterfly)"
+data "PassivesOnEquip" "MAG_Light_MoonlightGlaive_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_Moonlight_Glaives"
+
+new entry "MAG_Moonlight_Glaive_3"
+type "Weapon"
+using "MAG_Moonlight_Glaive"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical);WeaponDamage(1d6, Radiant)"
+
+new entry "MAG_Moonlight_Glaive_4"
+type "Weapon"
+using "MAG_Moonlight_Glaive"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);WeaponDamage(2d4, Radiant)"
+
+//-------------------------------------------------------------------------
+//  MAG_Cold_IncreaseColdDamageOnCast_Staff
+//-------------------------------------------------------------------------
+
+new entry "MAG_Cold_IncreaseColdDamageOnCast_Staff"
+type "Weapon"
+using "WPN_Quarterstaff_1"
+data "RootTemplate" "cab10a42-8c85-459a-9d68-b4836388c022"
+data "ItemGroup" ""
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Projectile_MAG_RayOfFrost_Staff)"
+data "PassivesOnEquip" "MAG_Cold_IncreaseColdDamageOnCast_Passive;MAG_Cold_ChilledOnSpellDamage_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_Cold_IncreaseColdDamageOnCast_Staffs"
+
+new entry "MAG_Cold_IncreaseColdDamageOnCast_Staff_4"
+type "Weapon"
+using "MAG_Cold_IncreaseColdDamageOnCast_Staff"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_MagicMissile_HandCrossbow
+//-------------------------------------------------------------------------
+
+new entry "MAG_MagicMissile_HandCrossbow"
+type "Weapon"
+using "WPN_HandCrossbow_1"
+data "RootTemplate" "c9dcf78e-a46c-4959-aade-707d9dd2c51a"
+data "Damage Type" "Force"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Projectile_MAG_MagicMissile_Shot)"
+data "Unique" "1"
+data "ComboCategory" "MAG_MagicMissile_HandCrossbows"
+
+new entry "MAG_MagicMissile_HandCrossbow_3"
+type "Weapon"
+using "MAG_MagicMissile_HandCrossbow"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_MagicMissile_HandCrossbow_4"
+type "Weapon"
+using "MAG_MagicMissile_HandCrossbow"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_LC_RadiantLight_Rapier
+//-------------------------------------------------------------------------
+
+new entry "MAG_LC_RadiantLight_Rapier"
+type "Weapon"
+using "WPN_Rapier_1"
+data "RootTemplate" "467b9a2e-b7e8-4c01-b744-fae8e3b960fd"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_LC_RadiantLight_Rapier_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_LC_RadiantLight_Rapiers"
+
+new entry "MAG_LC_RadiantLight_Rapier_4"
+type "Weapon"
+using "MAG_LC_RadiantLight_Rapier"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_LC_OfTheFist_MorningStar
+//-------------------------------------------------------------------------
+
+new entry "MAG_LC_OfTheFist_MorningStar"
+type "Weapon"
+using "WPN_Morningstar_2"
+data "RootTemplate" "83715b12-8d39-48b7-a981-fe50a4ec2d4e"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Target_MAG_CommanderStrike)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_HeartStopper);UnlockSpell(Target_ConcussiveSmash)"
+data "Unique" "1"
+data "ComboCategory" "MAG_LC_OfTheFist_MorningStars"
+
+new entry "MAG_LC_OfTheFist_MorningStar_3"
+type "Weapon"
+using "MAG_LC_OfTheFist_MorningStar"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_LC_OfTheFist_MorningStar_4"
+type "Weapon"
+using "MAG_LC_OfTheFist_MorningStar"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_Blindside_Shortsword
+//-------------------------------------------------------------------------
+
+new entry "MAG_Blindside_Shortsword"
+type "Weapon"
+using "WPN_Shortsword_1"
+data "RootTemplate" "f06c0554-bba8-4036-ac92-1b225a578f57"
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "PassivesOnEquip" "MAG_Blindside_Shortsword_Passive"
+data "Unique" "1"
+data "DefaultBoosts" "WeaponProperty(Magical)"
+data "ComboCategory" "MAG_Blindside_Shortswords"
+
+new entry "MAG_Blindside_Shortsword_2"
+type "Weapon"
+using "MAG_Blindside_Shortsword"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+
+new entry "MAG_Blindside_Shortsword_3"
+type "Weapon"
+using "MAG_Blindside_Shortsword"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical);WeaponDamage(1d4, Psychic)"
+
+new entry "MAG_Blindside_Shortsword_4"
+type "Weapon"
+using "MAG_Blindside_Shortsword"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);WeaponDamage(1d6, Psychic)"
+
+//-------------------------------------------------------------------------
+//  MAG_Throwable_Pike
+//-------------------------------------------------------------------------
+
+new entry "MAG_Throwable_Pike"
+type "Weapon"
+using "WPN_Pike_1"
+data "RootTemplate" "1047ac9f-7860-44fd-9154-0f06fe64936c"
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "PassivesOnEquip" "MAG_HomingWeapon_Passive"
+data "Unique" "1"
+data "DefaultBoosts" "WeaponProperty(Magical)"
+data "Weapon Properties" "Reach;Melee;Twohanded;Heavy;Dippable;Thrown"
+data "ComboCategory" "MAG_Throwable_Pikes"
+
+new entry "MAG_Throwable_Pike_2"
+type "Weapon"
+using "MAG_Throwable_Pike"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+
+new entry "MAG_Throwable_Pike_3"
+type "Weapon"
+using "MAG_Throwable_Pike"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_Throwable_Pike_4"
+type "Weapon"
+using "MAG_Throwable_Pike"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_SpiritualStand_Greataxe
+//-------------------------------------------------------------------------
+
+new entry "MAG_SpiritualStand_Greataxe"
+type "Weapon"
+using "WPN_Greataxe_2"
+data "RootTemplate" "7bbc2408-14de-4129-bab0-db29927b7f43"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Zone_Cleave);UnlockSpell(Target_Slash_New);UnlockSpell(Shout_FullSwing);UnlockSpell(Target_MAG_SpiritualStand_Greataxe);UnlockSpell(Target_MAG_SpiritualStand_Reduce)"
+data "Unique" "1"
+data "ComboCategory" "MAG_SpiritualStand_Greataxes"
+
+new entry "MAG_SpiritualStand_Greataxe_4"
+type "Weapon"
+using "MAG_SpiritualStand_Greataxe"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_Slicing_Shortsword
+//-------------------------------------------------------------------------
+
+new entry "MAG_Slicing_Shortsword"
+type "Weapon"
+using "WPN_Shortsword_1"
+data "RootTemplate" "de0e16f6-6dbb-4edd-8ba5-106486b05552"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_Slicing_Shortsword_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_Slicing_Shortswords"
+
+new entry "MAG_Slicing_Shortsword_3"
+type "Weapon"
+using "MAG_Slicing_Shortsword"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_Slicing_Shortsword_4"
+type "Weapon"
+using "MAG_Slicing_Shortsword"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  DEN_HalsinBlade
+//-------------------------------------------------------------------------
+
+new entry "DEN_HalsinBlade"
+type "Weapon"
+using "WPN_Glaive_1"
+data "RootTemplate" "0de9e072-7048-4d07-8bbe-79e0591674c2"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Target_MAG_ThornWhip_Sorrow)"
+data "Unique" "1"
+data "ComboCategory" "DEN_HalsinBlades"
+
+new entry "DEN_HalsinBlade_3"
+type "Weapon"
+using "DEN_HalsinBlade"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "DEN_HalsinBlade_4"
+type "Weapon"
+using "DEN_HalsinBlade"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_Mobility_MomentumOnAttack_Scimitar
+//-------------------------------------------------------------------------
+
+new entry "MAG_Mobility_MomentumOnAttack_Scimitar"
+type "Weapon"
+using "WPN_Scimitar_1"
+data "RootTemplate" "4456e2ec-ba1f-4f53-aab8-847249cabc09"
+data "ItemGroup" ""
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "Rarity" "Uncommon"
+data "DefaultBoosts" "WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_Mobility_MomentumOnDamage_Passive"
+data "Unique" "1"
+data "ComboCategory" "MAG_Mobility_MomentumOnAttack_Scimitars"
+
+new entry "MAG_Mobility_MomentumOnAttack_Scimitar_2"
+type "Weapon"
+using "MAG_Mobility_MomentumOnAttack_Scimitar"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+
+new entry "MAG_Mobility_MomentumOnAttack_Scimitar_3"
+type "Weapon"
+using "MAG_Mobility_MomentumOnAttack_Scimitar"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "MAG_Mobility_MomentumOnAttack_Scimitar_4"
+type "Weapon"
+using "MAG_Mobility_MomentumOnAttack_Scimitar"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  UNI_Bow_SpellslotRecharge
+//-------------------------------------------------------------------------
+
+new entry "UNI_Bow_SpellslotRecharge"
+type "Weapon"
+using "WPN_Longbow_1"
+data "RootTemplate" "db4a3e0f-6315-4337-abce-aad5f38513aa"
+data "ItemGroup" ""
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "Rarity" "Uncommon"
+data "DefaultBoosts" "WeaponProperty(Magical)"
+data "PassivesOnEquip" "UNI_Bow_SpellslotRecharge_Passive"
+data "Unique" "1"
+data "ComboCategory" "UNI_Bow_SpellslotRecharges"
+
+new entry "UNI_Bow_SpellslotRecharge_2"
+type "Weapon"
+using "UNI_Bow_SpellslotRecharge"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+
+new entry "UNI_Bow_SpellslotRecharge_3"
+type "Weapon"
+using "UNI_Bow_SpellslotRecharge"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+
+new entry "UNI_Bow_SpellslotRecharge_4"
+type "Weapon"
+using "UNI_Bow_SpellslotRecharge"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  MAG_OfSpellPower_Quarterstaff
+//-------------------------------------------------------------------------
+
+new entry "MAG_OfSpellPower_Quarterstaff"
+type "Weapon"
+using "WPN_Quarterstaff_2"
+data "RootTemplate" "d09685e8-0122-4ecb-8e9d-2f6f1850427e"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Lesser_Passive;MAG_MagicItemPoweredCast_Passive"
+data "StatusOnEquip" "MAG_SPELL_POWER_STAFF_TECHNICAL"
+data "Unique" "1"
+data "ComboCategory" "MAG_OfSpellPower_Quarterstaffs"
+
+new entry "MAG_OfSpellPower_Quarterstaff_4"
+type "Weapon"
+using "MAG_OfSpellPower_Quarterstaff"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Passive;MAG_MagicItemPoweredCast_Passive"
+
+//-------------------------------------------------------------------------
+//  END_Emperor_Staff
+//-------------------------------------------------------------------------
+
+new entry "END_Emperor_Staff"
+type "Weapon"
+using "WPN_Quarterstaff_2"
+data "RootTemplate" "ff63ca4a-a990-43dc-a28b-c6bed7bfa617"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Lesser_Passive;MAG_END_PsychicRetaliation_Passive"
+data "Unique" "1"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "ComboCategory" "END_Emperor_Staffs"
+
+new entry "END_Emperor_Staff_3"
+type "Weapon"
+using "END_Emperor_Staff"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Passive;MAG_END_PsychicRetaliation_Passive"
+
+new entry "END_Emperor_Staff_4"
+type "Weapon"
+using "END_Emperor_Staff"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "PassivesOnEquip" "MAG_Legendary_ArcaneEnchantment_Passive;MAG_END_PsychicRetaliation_Passive"
+
+//-------------------------------------------------------------------------
+//  MAG_Bhaalist_Paralyzing_Dagger
+//-------------------------------------------------------------------------
+
+new entry "MAG_Bhaalist_Paralyzing_Dagger"
+type "Weapon"
+using "WPN_Dagger_2"
+data "RootTemplate" "0cfbd2ef-6eb3-4283-b0c9-8e23a4f9bf8c"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Target_MAG_Bhaalist_Hold_Person)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_PommelStrike);UnlockSpell(Target_PiercingThrust);UnlockSpell(Target_Slash_New)"
+data "Unique" "1"
+data "ComboCategory" "MAG_Bhaalist_Paralyzing_Daggers"
+
+new entry "MAG_Bhaalist_Paralyzing_Dagger_4"
+type "Weapon"
+using "MAG_Bhaalist_Paralyzing_Dagger"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+
+//-------------------------------------------------------------------------
+//  FOR_IncompleteMasterwork_SussurDagger
+//-------------------------------------------------------------------------
+
+new entry "FOR_IncompleteMasterwork_SussurDagger"
+type "Weapon"
+using "WPN_Dagger_1"
+data "RootTemplate" "8733edb7-f04e-4b6d-ad48-7d49fb782bef"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "ValueOverride" "80"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 12)):ApplyStatus(SILENCED,100, 2)"
+data "Unique" "1"
+data "ComboCategory" "FOR_IncompleteMasterwork_SussurDaggers"
+
+new entry "FOR_IncompleteMasterwork_SussurDagger_3"
+type "Weapon"
+using "FOR_IncompleteMasterwork_SussurDagger"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(SILENCED,100, 3)"
+
+new entry "FOR_IncompleteMasterwork_SussurDagger_4"
+type "Weapon"
+using "FOR_IncompleteMasterwork_SussurDagger"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):ApplyStatus(SILENCED,100, 4)"
+
+//-------------------------------------------------------------------------
+//  FOR_IncompleteMasterwork_SussurGreatsword
+//-------------------------------------------------------------------------
+
+new entry "FOR_IncompleteMasterwork_SussurGreatsword"
+type "Weapon"
+using "WPN_Greatsword_1"
+data "RootTemplate" "44dedec0-df82-4ed3-b9ca-147bd830e312"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "ValueOverride" "150"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 12)):ApplyStatus(SILENCED,100, 2)"
+data "Unique" "1"
+data "ComboCategory" "FOR_IncompleteMasterwork_SussurGreatswords"
+
+new entry "FOR_IncompleteMasterwork_SussurGreatsword_3"
+type "Weapon"
+using "FOR_IncompleteMasterwork_SussurGreatsword"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(SILENCED,100, 3)"
+
+new entry "FOR_IncompleteMasterwork_SussurGreatsword_4"
+type "Weapon"
+using "FOR_IncompleteMasterwork_SussurGreatsword"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):ApplyStatus(SILENCED,100, 4)"
+
+//-------------------------------------------------------------------------
+//  FOR_IncompleteMasterwork_SussurSickle
+//-------------------------------------------------------------------------
+
+new entry "FOR_IncompleteMasterwork_SussurSickle"
+type "Weapon"
+using "WPN_Sickle_1"
+data "RootTemplate" "6b95bb45-41c3-4954-ac2f-ef1aa169b0b6"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "ValueOverride" "120"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
+data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 12)):ApplyStatus(SILENCED,100, 2)"
+data "Unique" "1"
+data "ComboCategory" "FOR_IncompleteMasterwork_SussurSickles"
+
+new entry "FOR_IncompleteMasterwork_SussurSickle_3"
+type "Weapon"
+using "FOR_IncompleteMasterwork_SussurSickle"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(SILENCED,100, 3)"
+
+new entry "FOR_IncompleteMasterwork_SussurSickle_4"
+type "Weapon"
+using "FOR_IncompleteMasterwork_SussurSickle"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):ApplyStatus(SILENCED,100, 4)"
 
 
 
