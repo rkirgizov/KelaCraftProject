@@ -1034,6 +1034,7 @@ data "PreviewIcon" "WPN_Warhammer_2"
 //-------------------------------------------------------------------------
 //  MAG_Fire_AlwaysDippedInFire_Greatsword
 //-------------------------------------------------------------------------
+
 new ItemCombination "MAG_Fire_AlwaysDippedInFire_Greatsword_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
@@ -1087,6 +1088,1785 @@ data "ResultAmount 1" "1"
 data "Result 1" "MAG_Fire_AlwaysDippedInFire_Greatsword_4"
 data "PreviewStatsID" "MAG_Fire_AlwaysDippedInFire_Greatsword_4"
 data "PreviewIcon" "MAG_Fire_AlwaysDippedInFire_Greatsword_4"
+
+//-------------------------------------------------------------------------
+//  UND_SwordInStone
+//-------------------------------------------------------------------------
+
+new ItemCombination "UND_SwordInStone_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "UND_SwordInStones"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "UND_SwordInStone_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "UND_SwordInStone_3"
+data "PreviewStatsID" "UND_SwordInStone_3"
+data "PreviewIcon" "UND_SwordInStone_3"
+
+new ItemCombination "UND_SwordInStone_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "UND_SwordInStones"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "UND_SwordInStone_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "UND_SwordInStone_4"
+data "PreviewStatsID" "UND_SwordInStone_4"
+data "PreviewIcon" "UND_SwordInStone_4"
+
+//-------------------------------------------------------------------------
+//  MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_3"
+data "PreviewStatsID" "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_3"
+data "PreviewIcon" "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_3"
+
+new ItemCombination "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_4"
+data "PreviewStatsID" "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_4"
+data "PreviewIcon" "MAG_MeleeDebuff_AttackDebuff12versatile_OnDamage_Longsword_4"
+
+//-------------------------------------------------------------------------
+//  MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Maces"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_3"
+data "PreviewStatsID" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_3"
+data "PreviewIcon" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_3"
+
+new ItemCombination "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Maces"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_4"
+data "PreviewStatsID" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_4"
+data "PreviewIcon" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Mace_4"
+
+//-------------------------------------------------------------------------
+//  MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitars"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_3"
+data "PreviewStatsID" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_3"
+data "PreviewIcon" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_3"
+
+new ItemCombination "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitars"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_4"
+data "PreviewStatsID" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_4"
+data "PreviewIcon" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Ambusher_Shortsword
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Ambusher_Shortsword_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Ambusher_Shortswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Ambusher_Shortsword_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Ambusher_Shortsword_3"
+data "PreviewStatsID" "MAG_Ambusher_Shortsword_3"
+data "PreviewIcon" "MAG_Ambusher_Shortsword_3"
+
+new ItemCombination "MAG_Ambusher_Shortsword_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Ambusher_Shortswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Ambusher_Shortsword_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Ambusher_Shortsword_4"
+data "PreviewStatsID" "MAG_Ambusher_Shortsword_4"
+data "PreviewIcon" "MAG_Ambusher_Shortsword_4"
+
+//-------------------------------------------------------------------------
+//  DEN_CapturedGoblin_MurderDagger
+//-------------------------------------------------------------------------
+
+new ItemCombination "DEN_CapturedGoblin_MurderDagger_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "DEN_CapturedGoblin_MurderDaggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "DEN_CapturedGoblin_MurderDagger_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "DEN_CapturedGoblin_MurderDagger_2"
+data "PreviewStatsID" "DEN_CapturedGoblin_MurderDagger_2"
+data "PreviewIcon" "DEN_CapturedGoblin_MurderDagger_2"
+
+new ItemCombination "DEN_CapturedGoblin_MurderDagger_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "DEN_CapturedGoblin_MurderDaggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "DEN_CapturedGoblin_MurderDagger_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "DEN_CapturedGoblin_MurderDagger_3"
+data "PreviewStatsID" "DEN_CapturedGoblin_MurderDagger_3"
+data "PreviewIcon" "DEN_CapturedGoblin_MurderDagger_3"
+
+new ItemCombination "DEN_CapturedGoblin_MurderDagger_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "DEN_CapturedGoblin_MurderDaggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "DEN_CapturedGoblin_MurderDagger_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "DEN_CapturedGoblin_MurderDagger_4"
+data "PreviewStatsID" "DEN_CapturedGoblin_MurderDagger_4"
+data "PreviewIcon" "DEN_CapturedGoblin_MurderDagger_4"
+
+//-------------------------------------------------------------------------
+//  MAG_PHB_OfSpeed_Scimitar
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_PHB_OfSpeed_Scimitar_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_PHB_OfSpeed_Scimitars"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_PHB_OfSpeed_Scimitar_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_PHB_OfSpeed_Scimitar_4"
+data "PreviewStatsID" "MAG_PHB_OfSpeed_Scimitar_4"
+data "PreviewIcon" "MAG_PHB_OfSpeed_Scimitar_4"
+
+//-------------------------------------------------------------------------
+//  MAG_OB_Paladin_DeathKnight_Longsword
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_OB_Paladin_DeathKnight_Longsword_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_OB_Paladin_DeathKnight_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_OB_Paladin_DeathKnight_Longsword_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_OB_Paladin_DeathKnight_Longsword_3"
+data "PreviewStatsID" "MAG_OB_Paladin_DeathKnight_Longsword_3"
+data "PreviewIcon" "MAG_OB_Paladin_DeathKnight_Longsword_3"
+
+new ItemCombination "MAG_OB_Paladin_DeathKnight_Longsword_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_OB_Paladin_DeathKnight_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_OB_Paladin_DeathKnight_Longsword_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_OB_Paladin_DeathKnight_Longsword_4"
+data "PreviewStatsID" "MAG_OB_Paladin_DeathKnight_Longsword_4"
+data "PreviewIcon" "MAG_OB_Paladin_DeathKnight_Longsword_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Illithid_MindOverload_Weapon_Longsword
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Illithid_MindOverload_Weapon_Longsword_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Illithid_MindOverload_Weapon_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Illithid_MindOverload_Weapon_Longsword_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Illithid_MindOverload_Weapon_Longsword_3"
+data "PreviewStatsID" "MAG_Illithid_MindOverload_Weapon_Longsword_3"
+data "PreviewIcon" "MAG_Illithid_MindOverload_Weapon_Longsword_3"
+
+new ItemCombination "MAG_Illithid_MindOverload_Weapon_Longsword_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Illithid_MindOverload_Weapon_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Illithid_MindOverload_Weapon_Longsword_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Illithid_MindOverload_Weapon_Longsword_4"
+data "PreviewStatsID" "MAG_Illithid_MindOverload_Weapon_Longsword_4"
+data "PreviewIcon" "MAG_Illithid_MindOverload_Weapon_Longsword_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Bonded_Lethal_Longsword
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Bonded_Lethal_Longsword_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Bonded_Lethal_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Bonded_Lethal_Longsword_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Bonded_Lethal_Longsword_3"
+data "PreviewStatsID" "MAG_Bonded_Lethal_Longsword_3"
+data "PreviewIcon" "MAG_Bonded_Lethal_Longsword_3"
+
+new ItemCombination "MAG_Bonded_Lethal_Longsword_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Bonded_Lethal_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Bonded_Lethal_Longsword_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Bonded_Lethal_Longsword_4"
+data "PreviewStatsID" "MAG_Bonded_Lethal_Longsword_4"
+data "PreviewIcon" "MAG_Bonded_Lethal_Longsword_4"
+
+//-------------------------------------------------------------------------
+//  MAG_LowHP_IncreaseDamage_Greataxe
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_LowHP_IncreaseDamage_Greataxe_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_LowHP_IncreaseDamage_Greataxes"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_LowHP_IncreaseDamage_Greataxe_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_LowHP_IncreaseDamage_Greataxe_3"
+data "PreviewStatsID" "MAG_LowHP_IncreaseDamage_Greataxe_3"
+data "PreviewIcon" "MAG_LowHP_IncreaseDamage_Greataxe_3"
+
+new ItemCombination "MAG_LowHP_IncreaseDamage_Greataxe_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_LowHP_IncreaseDamage_Greataxes"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_LowHP_IncreaseDamage_Greataxe_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_LowHP_IncreaseDamage_Greataxe_4"
+data "PreviewStatsID" "MAG_LowHP_IncreaseDamage_Greataxe_4"
+data "PreviewIcon" "MAG_LowHP_IncreaseDamage_Greataxe_4"
+
+
+//-------------------------------------------------------------------------
+//  MAG_Bonded_Shocking_Warhammer
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Bonded_Shocking_Warhammer_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Bonded_Shocking_Warhammers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Bonded_Shocking_Warhammer_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Bonded_Shocking_Warhammer_3"
+data "PreviewStatsID" "MAG_Bonded_Shocking_Warhammer_3"
+data "PreviewIcon" "MAG_Bonded_Shocking_Warhammer_3"
+
+new ItemCombination "MAG_Bonded_Shocking_Warhammer_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Bonded_Shocking_Warhammers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Bonded_Shocking_Warhammer_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Bonded_Shocking_Warhammer_4"
+data "PreviewStatsID" "MAG_Bonded_Shocking_Warhammer_4"
+data "PreviewIcon" "MAG_Bonded_Shocking_Warhammer_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Frost_Offhand_Dagger
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Frost_Offhand_Dagger_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Frost_Offhand_Daggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Frost_Offhand_Dagger_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Frost_Offhand_Dagger_3"
+data "PreviewStatsID" "MAG_Frost_Offhand_Dagger_3"
+data "PreviewIcon" "MAG_Frost_Offhand_Dagger_3"
+
+new ItemCombination "MAG_Frost_Offhand_Dagger_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Frost_Offhand_Daggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Frost_Offhand_Dagger_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Frost_Offhand_Dagger_4"
+data "PreviewStatsID" "MAG_Frost_Offhand_Dagger_4"
+data "PreviewIcon" "MAG_Frost_Offhand_Dagger_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Corrosive_Flail
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Corrosive_Flail_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Corrosive_Flails"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Corrosive_Flail_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Corrosive_Flail_3"
+data "PreviewStatsID" "MAG_Corrosive_Flail_3"
+data "PreviewIcon" "MAG_Corrosive_Flail_3"
+
+new ItemCombination "MAG_Corrosive_Flail_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Corrosive_Flails"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Corrosive_Flail_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Corrosive_Flail_4"
+data "PreviewStatsID" "MAG_Corrosive_Flail_4"
+data "PreviewIcon" "MAG_Corrosive_Flail_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Drowelf_SpiderSnare_Longsword
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Drowelf_SpiderSnare_Longsword_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Drowelf_SpiderSnare_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Drowelf_SpiderSnare_Longsword_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Drowelf_SpiderSnare_Longsword_3"
+data "PreviewStatsID" "MAG_Drowelf_SpiderSnare_Longsword_3"
+data "PreviewIcon" "MAG_Drowelf_SpiderSnare_Longsword_3"
+
+new ItemCombination "MAG_Drowelf_SpiderSnare_Longsword_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Drowelf_SpiderSnare_Longswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Drowelf_SpiderSnare_Longsword_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Drowelf_SpiderSnare_Longsword_4"
+data "PreviewStatsID" "MAG_Drowelf_SpiderSnare_Longsword_4"
+data "PreviewIcon" "MAG_Drowelf_SpiderSnare_Longsword_4"
+
+//-------------------------------------------------------------------------
+//  UND_KC_Elder_Warpick
+//-------------------------------------------------------------------------
+
+new ItemCombination "UND_KC_Elder_Warpick_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "UND_KC_Elder_Warpicks"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "UND_KC_Elder_Warpick_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "UND_KC_Elder_Warpick_2"
+data "PreviewStatsID" "UND_KC_Elder_Warpick_2"
+data "PreviewIcon" "UND_KC_Elder_Warpick_2"
+
+new ItemCombination "UND_KC_Elder_Warpick_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "UND_KC_Elder_Warpicks"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "UND_KC_Elder_Warpick_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "UND_KC_Elder_Warpick_3"
+data "PreviewStatsID" "UND_KC_Elder_Warpick_3"
+data "PreviewIcon" "UND_KC_Elder_Warpick_3"
+
+new ItemCombination "UND_KC_Elder_Warpick_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "UND_KC_Elder_Warpicks"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "UND_KC_Elder_Warpick_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "UND_KC_Elder_Warpick_4"
+data "PreviewStatsID" "UND_KC_Elder_Warpick_4"
+data "PreviewIcon" "UND_KC_Elder_Warpick_4"
+
+//-------------------------------------------------------------------------
+//  MAG_BG_OfEasthaven_Defender_Flail
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_BG_OfEasthaven_Defender_Flail_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_OfEasthaven_Defender_Flails"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_OfEasthaven_Defender_Flail_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_OfEasthaven_Defender_Flail_3"
+data "PreviewStatsID" "MAG_BG_OfEasthaven_Defender_Flail_3"
+data "PreviewIcon" "MAG_BG_OfEasthaven_Defender_Flail_3"
+
+new ItemCombination "MAG_BG_OfEasthaven_Defender_Flail_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_OfEasthaven_Defender_Flails"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_OfEasthaven_Defender_Flail_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_OfEasthaven_Defender_Flail_4"
+data "PreviewStatsID" "MAG_BG_OfEasthaven_Defender_Flail_4"
+data "PreviewIcon" "MAG_BG_OfEasthaven_Defender_Flail_4"
+
+//-------------------------------------------------------------------------
+//  UNI_DoomHammer
+//-------------------------------------------------------------------------
+
+new ItemCombination "UNI_DoomHammer_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "UNI_DoomHammers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "UNI_DoomHammer_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "UNI_DoomHammer_2"
+data "PreviewStatsID" "UNI_DoomHammer_2"
+data "PreviewIcon" "UNI_DoomHammer_2"
+
+new ItemCombination "UNI_DoomHammer_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "UNI_DoomHammers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "UNI_DoomHammer_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "UNI_DoomHammer_3"
+data "PreviewStatsID" "UNI_DoomHammer_3"
+data "PreviewIcon" "UNI_DoomHammer_3"
+
+new ItemCombination "UNI_DoomHammer_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "UNI_DoomHammers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "UNI_DoomHammer_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "UNI_DoomHammer_4"
+data "PreviewStatsID" "UNI_DoomHammer_4"
+data "PreviewIcon" "UNI_DoomHammer_4"
+
+
+//-------------------------------------------------------------------------
+//  MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxes"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_2"
+data "PreviewStatsID" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_2"
+data "PreviewIcon" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_2"
+
+new ItemCombination "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxes"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_3"
+data "PreviewStatsID" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_3"
+data "PreviewIcon" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_3"
+
+new ItemCombination "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxes"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_4"
+data "PreviewStatsID" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_4"
+data "PreviewIcon" "MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe_4"
+
+//-------------------------------------------------------------------------
+//  MAG_BG_DragonsBreath_Glaive
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_BG_DragonsBreath_Glaive_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_DragonsBreath_Glaives"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_DragonsBreath_Glaive_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_DragonsBreath_Glaive_3"
+data "PreviewStatsID" "MAG_BG_DragonsBreath_Glaive_3"
+data "PreviewIcon" "MAG_BG_DragonsBreath_Glaive_3"
+
+new ItemCombination "MAG_BG_DragonsBreath_Glaive_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_DragonsBreath_Glaives"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_DragonsBreath_Glaive_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_DragonsBreath_Glaive_4"
+data "PreviewStatsID" "MAG_BG_DragonsBreath_Glaive_4"
+data "PreviewIcon" "MAG_BG_DragonsBreath_Glaive_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Zhentarim_SleeperDagger
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Zhentarim_SleeperDagger_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Zhentarim_SleeperDaggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Zhentarim_SleeperDagger_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Zhentarim_SleeperDagger_3"
+data "PreviewStatsID" "MAG_Zhentarim_SleeperDagger_3"
+data "PreviewIcon" "MAG_Zhentarim_SleeperDagger_3"
+
+new ItemCombination "MAG_Zhentarim_SleeperDagger_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Zhentarim_SleeperDaggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Zhentarim_SleeperDagger_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Zhentarim_SleeperDagger_4"
+data "PreviewStatsID" "MAG_Zhentarim_SleeperDagger_4"
+data "PreviewIcon" "MAG_Zhentarim_SleeperDagger_4"
+
+
+//-------------------------------------------------------------------------
+//  MAG_PHB_DwarvenThrower_Warhammer
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_PHB_DwarvenThrower_Warhammer_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_PHB_DwarvenThrower_Warhammers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_PHB_DwarvenThrower_Warhammer_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_PHB_DwarvenThrower_Warhammer_4"
+data "PreviewStatsID" "MAG_PHB_DwarvenThrower_Warhammer_4"
+data "PreviewIcon" "MAG_PHB_DwarvenThrower_Warhammer_4"
+
+//-------------------------------------------------------------------------
+//  GOB_GoblinKing_Warhammer
+//-------------------------------------------------------------------------
+
+new ItemCombination "GOB_GoblinKing_Warhammer_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "GOB_GoblinKing_Warhammers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "GOB_GoblinKing_Warhammer_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "GOB_GoblinKing_Warhammer_2"
+data "PreviewStatsID" "GOB_GoblinKing_Warhammer_2"
+data "PreviewIcon" "GOB_GoblinKing_Warhammer_2"
+
+new ItemCombination "GOB_GoblinKing_Warhammer_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "GOB_GoblinKing_Warhammers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "GOB_GoblinKing_Warhammer_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "GOB_GoblinKing_Warhammer_3"
+data "PreviewStatsID" "GOB_GoblinKing_Warhammer_3"
+data "PreviewIcon" "GOB_GoblinKing_Warhammer_3"
+
+new ItemCombination "GOB_GoblinKing_Warhammer_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "GOB_GoblinKing_Warhammers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "GOB_GoblinKing_Warhammer_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "GOB_GoblinKing_Warhammer_4"
+data "PreviewStatsID" "GOB_GoblinKing_Warhammer_4"
+data "PreviewIcon" "GOB_GoblinKing_Warhammer_4"
+
+//-------------------------------------------------------------------------
+//  MAG_BG_OfAges_Flail
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_BG_OfAges_Flail_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_OfAges_Flails"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_OfAges_Flail_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_OfAges_Flail_3"
+data "PreviewStatsID" "MAG_BG_OfAges_Flail_3"
+data "PreviewIcon" "MAG_BG_OfAges_Flail_3"
+
+new ItemCombination "MAG_BG_OfAges_Flail_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_OfAges_Flails"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_OfAges_Flail_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_OfAges_Flail_4"
+data "PreviewStatsID" "MAG_BG_OfAges_Flail_4"
+data "PreviewIcon" "MAG_BG_OfAges_Flail_4"
+
+//-------------------------------------------------------------------------
+//  MAG_LC_Fleshrend_Shortsword
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_LC_Fleshrend_Shortsword_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_LC_Fleshrend_Shortswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_LC_Fleshrend_Shortsword_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_LC_Fleshrend_Shortsword_3"
+data "PreviewStatsID" "MAG_LC_Fleshrend_Shortsword_3"
+data "PreviewIcon" "MAG_LC_Fleshrend_Shortsword_3"
+
+new ItemCombination "MAG_LC_Fleshrend_Shortsword_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_LC_Fleshrend_Shortswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_LC_Fleshrend_Shortsword_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_LC_Fleshrend_Shortsword_4"
+data "PreviewStatsID" "MAG_LC_Fleshrend_Shortsword_4"
+data "PreviewIcon" "MAG_LC_Fleshrend_Shortsword_4"
+
+//-------------------------------------------------------------------------
+//  MAG_TheDestroyer_Maul
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_TheDestroyer_Maul_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_TheDestroyer_Mauls"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_TheDestroyer_Maul_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_TheDestroyer_Maul_4"
+data "PreviewStatsID" "MAG_TheDestroyer_Maul_4"
+data "PreviewIcon" "MAG_TheDestroyer_Maul_4"
+
+//-------------------------------------------------------------------------
+//  MAG_WYRM_Farlin_Dagger
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_WYRM_Farlin_Dagger_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_WYRM_Farlin_Daggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_WYRM_Farlin_Dagger_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_WYRM_Farlin_Dagger_3"
+data "PreviewStatsID" "MAG_WYRM_Farlin_Dagger_3"
+data "PreviewIcon" "MAG_WYRM_Farlin_Dagger_3"
+
+new ItemCombination "MAG_WYRM_Farlin_Dagger_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_WYRM_Farlin_Daggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_WYRM_Farlin_Dagger_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_WYRM_Farlin_Dagger_4"
+data "PreviewStatsID" "MAG_WYRM_Farlin_Dagger_4"
+data "PreviewIcon" "MAG_WYRM_Farlin_Dagger_4"
+
+//-------------------------------------------------------------------------
+//  MAG_PoR_OfVigilance_Halberd
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_PoR_OfVigilance_Halberd_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_PoR_OfVigilance_Halberds"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_PoR_OfVigilance_Halberd_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_PoR_OfVigilance_Halberd_4"
+data "PreviewStatsID" "MAG_PoR_OfVigilance_Halberd_4"
+data "PreviewIcon" "MAG_PoR_OfVigilance_Halberd_4"
+
+
+//-------------------------------------------------------------------------
+//  MAG_Viconia_Mace
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Viconia_Mace_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Viconia_Maces"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Viconia_Mace_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Viconia_Mace_4"
+data "PreviewStatsID" "MAG_Viconia_Mace_4"
+data "PreviewIcon" "MAG_Viconia_Mace_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Harpers_Harmonizing_Rapier
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Harpers_Harmonizing_Rapier_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Harpers_Harmonizing_Rapiers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Harpers_Harmonizing_Rapier_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Harpers_Harmonizing_Rapier_3"
+data "PreviewStatsID" "MAG_Harpers_Harmonizing_Rapier_3"
+data "PreviewIcon" "MAG_Harpers_Harmonizing_Rapier_3"
+
+new ItemCombination "MAG_Harpers_Harmonizing_Rapier_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Harpers_Harmonizing_Rapiers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Harpers_Harmonizing_Rapier_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Harpers_Harmonizing_Rapier_4"
+data "PreviewStatsID" "MAG_Harpers_Harmonizing_Rapier_4"
+data "PreviewIcon" "MAG_Harpers_Harmonizing_Rapier_4"
+
+//-------------------------------------------------------------------------
+//  MAG_BG_Harmonium_Halberd
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_BG_Harmonium_Halberd_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_Harmonium_Halberds"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_Harmonium_Halberd_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_Harmonium_Halberd_3"
+data "PreviewStatsID" "MAG_BG_Harmonium_Halberd_3"
+data "PreviewIcon" "MAG_BG_Harmonium_Halberd_3"
+
+new ItemCombination "MAG_BG_Harmonium_Halberd_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_Harmonium_Halberds"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_Harmonium_Halberd_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_Harmonium_Halberd_4"
+data "PreviewStatsID" "MAG_BG_Harmonium_Halberd_4"
+data "PreviewIcon" "MAG_BG_Harmonium_Halberd_4"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//----------------------------------TEMPO---------------------------------------
+//  РЕЦЕПТЫ ДЛЯ __ ГДЕ ЛУКИ УЛУЧШАТЬ? - УЛУЧШЕНИЕ УНИКАЛЬНОГО ОРУЖИЯ
+//  KELA_Useful_Anvil
+//  OBJ_Metalbar_Rare
+//  OBJ_Metalbar_VeryRare
+//  OBJ_Metalbar_Legendary
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+//  MAG_BG_BlightBringer_Shortbow
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_BG_BlightBringer_Shortbow_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_BlightBringer_Shortbows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_BlightBringer_Shortbow_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_BlightBringer_Shortbow_4"
+data "PreviewStatsID" "MAG_BG_BlightBringer_Shortbow_4"
+data "PreviewIcon" "MAG_BG_BlightBringer_Shortbow_4"
+
+//-------------------------------------------------------------------------
+//  MAG_OfAwareness_Bow
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_OfAwareness_Bow_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_OfAwareness_Bows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_OfAwareness_Bow_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_OfAwareness_Bow_2"
+data "PreviewStatsID" "MAG_OfAwareness_Bow_2"
+data "PreviewIcon" "MAG_OfAwareness_Bow_2"
+
+new ItemCombination "MAG_OfAwareness_Bow_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_OfAwareness_Bows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_OfAwareness_Bow_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_OfAwareness_Bow_3"
+data "PreviewStatsID" "MAG_OfAwareness_Bow_3"
+data "PreviewIcon" "MAG_OfAwareness_Bow_3"
+
+new ItemCombination "MAG_OfAwareness_Bow_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_OfAwareness_Bows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_OfAwareness_Bow_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_OfAwareness_Bow_4"
+data "PreviewStatsID" "MAG_OfAwareness_Bow_4"
+data "PreviewIcon" "MAG_OfAwareness_Bow_4"
+
+//-------------------------------------------------------------------------
+//  MAG_BG_OfTheBanshee_Bow
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_BG_OfTheBanshee_Bow_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_OfTheBanshee_Bows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_OfTheBanshee_Bow_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_OfTheBanshee_Bow_3"
+data "PreviewStatsID" "MAG_BG_OfTheBanshee_Bow_3"
+data "PreviewIcon" "MAG_BG_OfTheBanshee_Bow_3"
+
+new ItemCombination "MAG_BG_OfTheBanshee_Bow_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_OfTheBanshee_Bows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_OfTheBanshee_Bow_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_OfTheBanshee_Bow_4"
+data "PreviewStatsID" "MAG_BG_OfTheBanshee_Bow_4"
+data "PreviewIcon" "MAG_BG_OfTheBanshee_Bow_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Githborn_TelekineticBolt_HeavyCrossbow
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Githborn_TelekineticBolt_HeavyCrossbow_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Githborn_TelekineticBolt_HeavyCrossbows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Githborn_TelekineticBolt_HeavyCrossbow_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Githborn_TelekineticBolt_HeavyCrossbow_2"
+data "PreviewStatsID" "MAG_Githborn_TelekineticBolt_HeavyCrossbow_2"
+data "PreviewIcon" "MAG_Githborn_TelekineticBolt_HeavyCrossbow_2"
+
+new ItemCombination "MAG_Githborn_TelekineticBolt_HeavyCrossbow_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Githborn_TelekineticBolt_HeavyCrossbows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Githborn_TelekineticBolt_HeavyCrossbow_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Githborn_TelekineticBolt_HeavyCrossbow_3"
+data "PreviewStatsID" "MAG_Githborn_TelekineticBolt_HeavyCrossbow_3"
+data "PreviewIcon" "MAG_Githborn_TelekineticBolt_HeavyCrossbow_3"
+
+new ItemCombination "MAG_Githborn_TelekineticBolt_HeavyCrossbow_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Githborn_TelekineticBolt_HeavyCrossbows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Githborn_TelekineticBolt_HeavyCrossbow_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Githborn_TelekineticBolt_HeavyCrossbow_4"
+data "PreviewStatsID" "MAG_Githborn_TelekineticBolt_HeavyCrossbow_4"
+data "PreviewIcon" "MAG_Githborn_TelekineticBolt_HeavyCrossbow_4"
+
+//-------------------------------------------------------------------------
+//  MAG_BG_Darkfire_Shortbow
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_BG_Darkfire_Shortbow_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_Darkfire_Shortbows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_Darkfire_Shortbow_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_Darkfire_Shortbow_3"
+data "PreviewStatsID" "MAG_BG_Darkfire_Shortbow_3"
+data "PreviewIcon" "MAG_BG_Darkfire_Shortbow_3"
+
+new ItemCombination "MAG_BG_Darkfire_Shortbow_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_BG_Darkfire_Shortbows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_BG_Darkfire_Shortbow_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_BG_Darkfire_Shortbow_4"
+data "PreviewStatsID" "MAG_BG_Darkfire_Shortbow_4"
+data "PreviewIcon" "MAG_BG_Darkfire_Shortbow_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_2"
+data "PreviewStatsID" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_2"
+data "PreviewIcon" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_2"
+
+new ItemCombination "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_3"
+data "PreviewStatsID" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_3"
+data "PreviewIcon" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_3"
+
+new ItemCombination "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbows"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_4"
+data "PreviewStatsID" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_4"
+data "PreviewIcon" "MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow_4"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//----------------------------------TEMPO---------------------------------------
+//  РЕЦЕПТЫ ДЛЯ __ ГДЕ ПАЛКИ УЛУЧШАТЬ? - УЛУЧШЕНИЕ УНИКАЛЬНОГО ОРУЖИЯ
+//  KELA_Useful_Anvil
+//  OBJ_Metalbar_Rare
+//  OBJ_Metalbar_VeryRare
+//  OBJ_Metalbar_Legendary
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+//  MAG_Combat_Quarterstaff
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Combat_Quarterstaff_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Combat_Quarterstaffs"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Combat_Quarterstaff_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Combat_Quarterstaff_3"
+data "PreviewStatsID" "MAG_Combat_Quarterstaff_3"
+data "PreviewIcon" "MAG_Combat_Quarterstaff_3"
+
+new ItemCombination "MAG_Combat_Quarterstaff_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Combat_Quarterstaffs"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Combat_Quarterstaff_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Combat_Quarterstaff_4"
+data "PreviewStatsID" "MAG_Combat_Quarterstaff_4"
+data "PreviewIcon" "MAG_Combat_Quarterstaff_4"
+
+//-------------------------------------------------------------------------
+//  MAG_Thunder_ThunderClap_Quarterstaff
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_Thunder_ThunderClap_Quarterstaff_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Thunder_ThunderClap_Quarterstaffs"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Thunder_ThunderClap_Quarterstaff_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Thunder_ThunderClap_Quarterstaff_3"
+data "PreviewStatsID" "MAG_Thunder_ThunderClap_Quarterstaff_3"
+data "PreviewIcon" "MAG_Thunder_ThunderClap_Quarterstaff_3"
+
+new ItemCombination "MAG_Thunder_ThunderClap_Quarterstaff_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_Thunder_ThunderClap_Quarterstaffs"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_Thunder_ThunderClap_Quarterstaff_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_Thunder_ThunderClap_Quarterstaff_4"
+data "PreviewStatsID" "MAG_Thunder_ThunderClap_Quarterstaff_4"
+data "PreviewIcon" "MAG_Thunder_ThunderClap_Quarterstaff_4"
+
+//-------------------------------------------------------------------------
+//  MAG_PHB_PactKeeper_Quarterstaff
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_PHB_PactKeeper_Quarterstaff_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_PHB_PactKeeper_Quarterstaffs"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_PHB_PactKeeper_Quarterstaff_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_PHB_PactKeeper_Quarterstaff_3"
+data "PreviewStatsID" "MAG_PHB_PactKeeper_Quarterstaff_3"
+data "PreviewIcon" "MAG_PHB_PactKeeper_Quarterstaff_3"
+
+new ItemCombination "MAG_PHB_PactKeeper_Quarterstaff_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_PHB_PactKeeper_Quarterstaffs"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_PHB_PactKeeper_Quarterstaff_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_PHB_PactKeeper_Quarterstaff_4"
+data "PreviewStatsID" "MAG_PHB_PactKeeper_Quarterstaff_4"
+data "PreviewIcon" "MAG_PHB_PactKeeper_Quarterstaff_4"
+
+//-------------------------------------------------------------------------
+//  MAG_LC_Lorroakan_Quarterstaff
+//-------------------------------------------------------------------------
+
+new ItemCombination "MAG_LC_Lorroakan_Quarterstaff_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_LC_Lorroakan_Quarterstaffs"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_LC_Lorroakan_Quarterstaff_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_LC_Lorroakan_Quarterstaff_3"
+data "PreviewStatsID" "MAG_LC_Lorroakan_Quarterstaff_3"
+data "PreviewIcon" "MAG_LC_Lorroakan_Quarterstaff_3"
+
+new ItemCombination "MAG_LC_Lorroakan_Quarterstaff_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "MAG_LC_Lorroakan_Quarterstaffs"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "MAG_LC_Lorroakan_Quarterstaff_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "MAG_LC_Lorroakan_Quarterstaff_4"
+data "PreviewStatsID" "MAG_LC_Lorroakan_Quarterstaff_4"
+data "PreviewIcon" "MAG_LC_Lorroakan_Quarterstaff_4"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
