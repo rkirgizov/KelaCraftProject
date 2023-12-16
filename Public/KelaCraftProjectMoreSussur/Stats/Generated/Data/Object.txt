@@ -1,0 +1,6 @@
+new entry "KELA_Sussur_Oil"
+type "Object"
+using "_Potion"
+data "RootTemplate" "51fc8b38-3c66-437d-956f-c8bb040a5dd8"
+data "ValueOverride" "150"
+data "Rarity" "VeryRare"

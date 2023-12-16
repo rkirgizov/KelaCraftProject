@@ -1,0 +1,229 @@
+
+
+//-------------------------------------------------------------------------
+//  TEST
+//-------------------------------------------------------------------------
+
+new ItemCombination "KELA_Sussur_Oil_r"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "OBJ_Potion_Healing"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Potion_Healing"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "KELA_Sussur_Oil_r_1"
+data "ResultAmount 1" "10"
+data "Result 1" "KELA_Sussur_Oil"
+data "PreviewStatsID" "KELA_Sussur_Oil"
+data "PreviewIcon" "KELA_Sussur_Oil"
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------------------------
+//  FOR_IncompleteMasterwork_SussurDagger
+//-------------------------------------------------------------------------
+
+new ItemCombination "QUEST_FOR_SussurDagger_UC"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Dagger_1"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurDagger_UC_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurDagger"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurDagger"
+
+new ItemCombination "QUEST_FOR_SussurDagger_RR"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Dagger_2"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurDagger_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurDagger"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurDagger"
+
+new ItemCombination "FOR_IncompleteMasterwork_SussurDagger_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "FOR_IncompleteMasterwork_SussurDaggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "FOR_IncompleteMasterwork_SussurDagger_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurDagger_3"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurDagger_3"
+data "PreviewIcon" "FOR_IncompleteMasterwork_SussurDagger_3"
+
+new ItemCombination "FOR_IncompleteMasterwork_SussurDagger_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "FOR_IncompleteMasterwork_SussurDaggers"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "FOR_IncompleteMasterwork_SussurDagger_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurDagger_4"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurDagger_4"
+data "PreviewIcon" "FOR_IncompleteMasterwork_SussurDagger_4"
+
+//-------------------------------------------------------------------------
+//  FOR_IncompleteMasterwork_SussurGreatsword
+//-------------------------------------------------------------------------
+
+new ItemCombination "QUEST_FOR_SussurGreatsword_UC"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greatsword_1"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurGreatsword_UC_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurGreatsword"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurGreatsword"
+
+new ItemCombination "QUEST_FOR_SussurGreatsword_RR"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greatsword_2"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurGreatsword_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurGreatsword"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurGreatsword"
+
+new ItemCombination "FOR_IncompleteMasterwork_SussurGreatsword_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "FOR_IncompleteMasterwork_SussurGreatswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "FOR_IncompleteMasterwork_SussurGreatsword_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurGreatsword_3"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurGreatsword_3"
+data "PreviewIcon" "FOR_IncompleteMasterwork_SussurGreatsword_3"
+
+new ItemCombination "FOR_IncompleteMasterwork_SussurGreatsword_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "FOR_IncompleteMasterwork_SussurGreatswords"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "FOR_IncompleteMasterwork_SussurGreatsword_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurGreatsword_4"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurGreatsword_4"
+data "PreviewIcon" "FOR_IncompleteMasterwork_SussurGreatsword_4"
+
+//-------------------------------------------------------------------------
+//  FOR_IncompleteMasterwork_SussurSickle
+//-------------------------------------------------------------------------
+
+new ItemCombination "QUEST_FOR_SussurSickle_UC"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Sickle_1"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurSickle_UC_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurSickle"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurSickle"
+
+new ItemCombination "QUEST_FOR_SussurSickle_RR"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Sickle_2"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurSickle_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurSickle"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurSickle"
+
+new ItemCombination "FOR_IncompleteMasterwork_SussurSickle_to_VR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "FOR_IncompleteMasterwork_SussurSickles"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_VeryRare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "FOR_IncompleteMasterwork_SussurSickle_to_VR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurSickle_3"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurSickle_3"
+data "PreviewIcon" "FOR_IncompleteMasterwork_SussurSickle_3"
+
+new ItemCombination "FOR_IncompleteMasterwork_SussurSickle_to_LG"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Category"
+data "Object 2" "FOR_IncompleteMasterwork_SussurSickles"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Legendary"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "FOR_IncompleteMasterwork_SussurSickle_to_LG_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurSickle_4"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurSickle_4"
+data "PreviewIcon" "FOR_IncompleteMasterwork_SussurSickle_4"

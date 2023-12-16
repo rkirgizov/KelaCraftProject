@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "chromosome16.bg3-text-support",
-        "fallenstar.bg3guidinfos"
+        "fallenstar.bg3guidinfos",
+        "slevesque.vscode-multiclip"
     ]
 }

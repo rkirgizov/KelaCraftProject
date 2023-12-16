@@ -6,8 +6,7 @@
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //  Обычное оружие
-//  Обычный уровень - для добавления категории для комбинаций
-//  Выше уровни - недостающие
+//  Недостающие
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
@@ -82,7 +81,7 @@ data "BoostsOnEquipMainHand" "UnlockSpell(Target_PommelStrike);UnlockSpell(Targe
 data "Weapon Group" "MartialMeleeWeapon"
 data "Weapon Properties" "Twohanded;Heavy;Melee;Dippable"
 data "Proficiency Group" "Greatswords;MartialWeapons"
-data "ComboCategory" "WPN_Greatswordes"
+data "ComboCategory" "WPN_Greatswords"
 
 new entry "WPN_Halberd"
 type "Weapon"
@@ -361,6 +360,17 @@ data "ComboCategory" "WPN_Warhammers"
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //  Уровни для уникального оружия
 //  _  - обычный
 //  _1 - необычный
@@ -369,6 +379,17 @@ data "ComboCategory" "WPN_Warhammers"
 //  _4 - легендарный
 //
 //  Первый уровень - для добавления категории для комбинаций
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
@@ -2382,96 +2403,6 @@ type "Weapon"
 using "MAG_Bhaalist_Paralyzing_Dagger"
 data "Rarity" "Legendary"
 data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
-
-//-------------------------------------------------------------------------
-//  FOR_IncompleteMasterwork_SussurDagger
-//-------------------------------------------------------------------------
-
-new entry "FOR_IncompleteMasterwork_SussurDagger"
-type "Weapon"
-using "WPN_Dagger_1"
-data "RootTemplate" "8733edb7-f04e-4b6d-ad48-7d49fb782bef"
-data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
-data "ValueOverride" "80"
-data "Rarity" "Rare"
-data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
-data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 12)):ApplyStatus(SILENCED,100, 2)"
-data "Unique" "1"
-data "ComboCategory" "FOR_IncompleteMasterwork_SussurDaggers"
-
-new entry "FOR_IncompleteMasterwork_SussurDagger_3"
-type "Weapon"
-using "FOR_IncompleteMasterwork_SussurDagger"
-data "Rarity" "VeryRare"
-data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
-data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(SILENCED,100, 3)"
-
-new entry "FOR_IncompleteMasterwork_SussurDagger_4"
-type "Weapon"
-using "FOR_IncompleteMasterwork_SussurDagger"
-data "Rarity" "Legendary"
-data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
-data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):ApplyStatus(SILENCED,100, 4)"
-
-//-------------------------------------------------------------------------
-//  FOR_IncompleteMasterwork_SussurGreatsword
-//-------------------------------------------------------------------------
-
-new entry "FOR_IncompleteMasterwork_SussurGreatsword"
-type "Weapon"
-using "WPN_Greatsword_1"
-data "RootTemplate" "44dedec0-df82-4ed3-b9ca-147bd830e312"
-data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
-data "ValueOverride" "150"
-data "Rarity" "Rare"
-data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
-data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 12)):ApplyStatus(SILENCED,100, 2)"
-data "Unique" "1"
-data "ComboCategory" "FOR_IncompleteMasterwork_SussurGreatswords"
-
-new entry "FOR_IncompleteMasterwork_SussurGreatsword_3"
-type "Weapon"
-using "FOR_IncompleteMasterwork_SussurGreatsword"
-data "Rarity" "VeryRare"
-data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
-data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(SILENCED,100, 3)"
-
-new entry "FOR_IncompleteMasterwork_SussurGreatsword_4"
-type "Weapon"
-using "FOR_IncompleteMasterwork_SussurGreatsword"
-data "Rarity" "Legendary"
-data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
-data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):ApplyStatus(SILENCED,100, 4)"
-
-//-------------------------------------------------------------------------
-//  FOR_IncompleteMasterwork_SussurSickle
-//-------------------------------------------------------------------------
-
-new entry "FOR_IncompleteMasterwork_SussurSickle"
-type "Weapon"
-using "WPN_Sickle_1"
-data "RootTemplate" "6b95bb45-41c3-4954-ac2f-ef1aa169b0b6"
-data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
-data "ValueOverride" "120"
-data "Rarity" "Rare"
-data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
-data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 12)):ApplyStatus(SILENCED,100, 2)"
-data "Unique" "1"
-data "ComboCategory" "FOR_IncompleteMasterwork_SussurSickles"
-
-new entry "FOR_IncompleteMasterwork_SussurSickle_3"
-type "Weapon"
-using "FOR_IncompleteMasterwork_SussurSickle"
-data "Rarity" "VeryRare"
-data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
-data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(SILENCED,100, 3)"
-
-new entry "FOR_IncompleteMasterwork_SussurSickle_4"
-type "Weapon"
-using "FOR_IncompleteMasterwork_SussurSickle"
-data "Rarity" "Legendary"
-data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
-data "WeaponFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):ApplyStatus(SILENCED,100, 4)"
 
 //-------------------------------------------------------------------------
 //  MAG_Shadow_Shortsword

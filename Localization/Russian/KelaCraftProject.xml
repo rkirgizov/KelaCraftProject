@@ -20,6 +20,12 @@
 	<content contentuid="hcaaf20edg147eg4ff5g804ega27ac88bdf7e" version="1">Заточенное оружие</content>
 	<content contentuid="hacd9e5c1g7238g46c8gae66gabaf8658d06b" version="1">Это оружие заточено на точильном камне, что временно придаёт ему бонус +[1] к урону.</content>
 
+	<content contentuid="h978bffa6g12f7g4051ga9a4g081b6c881fcb" version="1">Масло дерева суссур</content>
+	<content contentuid="h76d39435gfe13g4a54ga0c0g9c3c6f2169ce" version="1">Позволяет придать оружию свойства этого легендарного дерева</content>
+	<content contentuid="h92fee29bg7c71g4687g97bcgefdf700992b3" version="1">Магия дерева суссур</content>
+	<content contentuid="h92fee29bg7c71g4687g97bcgefdf700992b3" version="1">Магия дерева суссур</content>
+	
 
 
-</contentList>
+
+	</contentList>
