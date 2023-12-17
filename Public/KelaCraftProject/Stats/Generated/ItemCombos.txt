@@ -44,9 +44,11 @@ data "Transform 3" "Consume"
 
 new ItemCombinationResult "WPN_Dagger_to_UCra_1"
 data "ResultAmount 1" "10"
-data "Result 1" "KELA_Grinding_Oil"
-data "PreviewStatsID" "KELA_Grinding_Oil"
-data "PreviewIcon" "KELA_Grinding_Oil"
+data "Result 1" "OBJ_Metalbar_Bronze"
+data "PreviewStatsID" "OBJ_Metalbar_Bronze"
+data "PreviewIcon" "OBJ_Metalbar_Bronze"
+
+
 
 new ItemCombination "TEST_COMB_OBJ_Metalbar_Rare"
 data "Type 1" "Object"
@@ -122,903 +124,1327 @@ data "PreviewIcon" "OBJ_Metalbar_Legendary"
 
 
 //-------------------------------------------------------------------------
-//  BATTLEAXE
+//  Battleaxe
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Battleaxe_to_UC"
+new ItemCombination "WPN_Battleaxe_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Battleaxes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Battleaxe"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Battleaxe_to_UC_1"
+new ItemCombinationResult "WPN_Battleaxe_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Battleaxe_1"
 data "PreviewStatsID" "WPN_Battleaxe_1"
 data "PreviewIcon" "WPN_Battleaxe_1"
 
-new ItemCombination "WPN_Battleaxe_to_RR"
+new ItemCombination "WPN_Battleaxe_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Battleaxes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Battleaxe"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Battleaxe_to_RR_1"
+new ItemCombinationResult "WPN_Battleaxe_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Battleaxe_2"
+data "PreviewStatsID" "WPN_Battleaxe_2"
+data "PreviewIcon" "WPN_Battleaxe_2"
+
+new ItemCombination "WPN_Battleaxe_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Battleaxe_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Battleaxe_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Battleaxe_2"
 data "PreviewStatsID" "WPN_Battleaxe_2"
 data "PreviewIcon" "WPN_Battleaxe_2"
 
 //-------------------------------------------------------------------------
-//  DAGGER
+//  Dagger
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Dagger_to_UC"
+new ItemCombination "WPN_Dagger_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Daggers"
+data "Type 2" "Object"
+data "Object 2" "WPN_Dagger"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Dagger_to_UC_1"
+new ItemCombinationResult "WPN_Dagger_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Dagger_1"
 data "PreviewStatsID" "WPN_Dagger_1"
 data "PreviewIcon" "WPN_Dagger_1"
 
-new ItemCombination "WPN_Dagger_to_RR"
+new ItemCombination "WPN_Dagger_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Daggers"
+data "Type 2" "Object"
+data "Object 2" "WPN_Dagger"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Dagger_to_RR_1"
+new ItemCombinationResult "WPN_Dagger_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Dagger_2"
+data "PreviewStatsID" "WPN_Dagger_2"
+data "PreviewIcon" "WPN_Dagger_2"
+
+new ItemCombination "WPN_Dagger_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Dagger_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Dagger_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Dagger_2"
 data "PreviewStatsID" "WPN_Dagger_2"
 data "PreviewIcon" "WPN_Dagger_2"
 
 //-------------------------------------------------------------------------
-//  GLAIVE
+//  Glaive
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Glaive_to_UC"
+new ItemCombination "WPN_Glaive_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Glaives"
+data "Type 2" "Object"
+data "Object 2" "WPN_Glaive"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Glaive_to_UC_1"
+new ItemCombinationResult "WPN_Glaive_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Glaive_1"
 data "PreviewStatsID" "WPN_Glaive_1"
 data "PreviewIcon" "WPN_Glaive_1"
 
-new ItemCombination "WPN_Glaive_to_RR"
+new ItemCombination "WPN_Glaive_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Glaives"
+data "Type 2" "Object"
+data "Object 2" "WPN_Glaive"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Glaive_to_RR_1"
+new ItemCombinationResult "WPN_Glaive_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Glaive_2"
+data "PreviewStatsID" "WPN_Glaive_2"
+data "PreviewIcon" "WPN_Glaive_2"
+
+new ItemCombination "WPN_Glaive_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Glaive_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Glaive_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Glaive_2"
 data "PreviewStatsID" "WPN_Glaive_2"
 data "PreviewIcon" "WPN_Glaive_2"
 
 //-------------------------------------------------------------------------
-//  GREATAXE
+//  Greataxe
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Greataxe_to_UC"
+new ItemCombination "WPN_Greataxe_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Greataxes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greataxe"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Greataxe_to_UC_1"
+new ItemCombinationResult "WPN_Greataxe_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Greataxe_1"
 data "PreviewStatsID" "WPN_Greataxe_1"
 data "PreviewIcon" "WPN_Greataxe_1"
 
-new ItemCombination "WPN_Greataxe_to_RR"
+new ItemCombination "WPN_Greataxe_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Greataxes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greataxe"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Greataxe_to_RR_1"
+new ItemCombinationResult "WPN_Greataxe_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Greataxe_2"
+data "PreviewStatsID" "WPN_Greataxe_2"
+data "PreviewIcon" "WPN_Greataxe_2"
+
+new ItemCombination "WPN_Greataxe_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greataxe_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Greataxe_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Greataxe_2"
 data "PreviewStatsID" "WPN_Greataxe_2"
 data "PreviewIcon" "WPN_Greataxe_2"
 
 //-------------------------------------------------------------------------
-//  GREATSWORD
+//  Greatsword
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Greatsword_to_UC"
+new ItemCombination "WPN_Greatsword_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Greatswordes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greatsword"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Greatsword_to_UC_1"
+new ItemCombinationResult "WPN_Greatsword_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Greatsword_1"
 data "PreviewStatsID" "WPN_Greatsword_1"
 data "PreviewIcon" "WPN_Greatsword_1"
 
-new ItemCombination "WPN_Greatsword_to_RR"
+new ItemCombination "WPN_Greatsword_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Greatswordes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greatsword"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Greatsword_to_RR_1"
+new ItemCombinationResult "WPN_Greatsword_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Greatsword_2"
+data "PreviewStatsID" "WPN_Greatsword_2"
+data "PreviewIcon" "WPN_Greatsword_2"
+
+new ItemCombination "WPN_Greatsword_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greatsword_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Greatsword_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Greatsword_2"
 data "PreviewStatsID" "WPN_Greatsword_2"
 data "PreviewIcon" "WPN_Greatsword_2"
 
 //-------------------------------------------------------------------------
-//  HALBERD
+//  Halberd
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Halberd_to_UC"
+new ItemCombination "WPN_Halberd_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Halberds"
+data "Type 2" "Object"
+data "Object 2" "WPN_Halberd"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Halberd_to_UC_1"
+new ItemCombinationResult "WPN_Halberd_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Halberd_1"
 data "PreviewStatsID" "WPN_Halberd_1"
 data "PreviewIcon" "WPN_Halberd_1"
 
-new ItemCombination "WPN_Halberd_to_RR"
+new ItemCombination "WPN_Halberd_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Halberds"
+data "Type 2" "Object"
+data "Object 2" "WPN_Halberd"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Halberd_to_RR_1"
+new ItemCombinationResult "WPN_Halberd_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Halberd_2"
+data "PreviewStatsID" "WPN_Halberd_2"
+data "PreviewIcon" "WPN_Halberd_2"
+
+new ItemCombination "WPN_Halberd_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Halberd_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Halberd_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Halberd_2"
 data "PreviewStatsID" "WPN_Halberd_2"
 data "PreviewIcon" "WPN_Halberd_2"
 
 //-------------------------------------------------------------------------
-//  HANDAXE
+//  Handaxe
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Handaxe_to_UC"
+new ItemCombination "WPN_Handaxe_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Handaxes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Handaxe"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Handaxe_to_UC_1"
+new ItemCombinationResult "WPN_Handaxe_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Handaxe_1"
 data "PreviewStatsID" "WPN_Handaxe_1"
 data "PreviewIcon" "WPN_Handaxe_1"
 
-new ItemCombination "WPN_Handaxe_to_RR"
+new ItemCombination "WPN_Handaxe_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Handaxes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Handaxe"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Handaxe_to_RR_1"
+new ItemCombinationResult "WPN_Handaxe_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Handaxe_2"
+data "PreviewStatsID" "WPN_Handaxe_2"
+data "PreviewIcon" "WPN_Handaxe_2"
+
+new ItemCombination "WPN_Handaxe_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Handaxe_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Handaxe_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Handaxe_2"
 data "PreviewStatsID" "WPN_Handaxe_2"
 data "PreviewIcon" "WPN_Handaxe_2"
 
 //-------------------------------------------------------------------------
-//  JAVELIN
+//  Javelin
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Javelin_to_UC"
+new ItemCombination "WPN_Javelin_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Javelins"
+data "Type 2" "Object"
+data "Object 2" "WPN_Javelin"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Javelin_to_UC_1"
+new ItemCombinationResult "WPN_Javelin_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Javelin_1"
 data "PreviewStatsID" "WPN_Javelin_1"
 data "PreviewIcon" "WPN_Javelin_1"
 
-new ItemCombination "WPN_Javelin_to_RR"
+new ItemCombination "WPN_Javelin_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Javelins"
+data "Type 2" "Object"
+data "Object 2" "WPN_Javelin"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Javelin_to_RR_1"
+new ItemCombinationResult "WPN_Javelin_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Javelin_2"
+data "PreviewStatsID" "WPN_Javelin_2"
+data "PreviewIcon" "WPN_Javelin_2"
+
+new ItemCombination "WPN_Javelin_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Javelin_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Javelin_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Javelin_2"
 data "PreviewStatsID" "WPN_Javelin_2"
 data "PreviewIcon" "WPN_Javelin_2"
 
 //-------------------------------------------------------------------------
-//  LONGSWORD
+//  Longsword
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Longsword_to_UC"
+new ItemCombination "WPN_Longsword_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Longswords"
+data "Type 2" "Object"
+data "Object 2" "WPN_Longsword"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Longsword_to_UC_1"
+new ItemCombinationResult "WPN_Longsword_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Longsword_1"
 data "PreviewStatsID" "WPN_Longsword_1"
 data "PreviewIcon" "WPN_Longsword_1"
 
-new ItemCombination "WPN_Longsword_to_RR"
+new ItemCombination "WPN_Longsword_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Longswords"
+data "Type 2" "Object"
+data "Object 2" "WPN_Longsword"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Longsword_to_RR_1"
+new ItemCombinationResult "WPN_Longsword_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Longsword_2"
+data "PreviewStatsID" "WPN_Longsword_2"
+data "PreviewIcon" "WPN_Longsword_2"
+
+new ItemCombination "WPN_Longsword_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Longsword_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Longsword_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Longsword_2"
 data "PreviewStatsID" "WPN_Longsword_2"
 data "PreviewIcon" "WPN_Longsword_2"
 
 //-------------------------------------------------------------------------
-//  PIKE
+//  Pike
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Pike_to_UC"
+new ItemCombination "WPN_Pike_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Pikes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Pike"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Pike_to_UC_1"
+new ItemCombinationResult "WPN_Pike_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Pike_1"
 data "PreviewStatsID" "WPN_Pike_1"
 data "PreviewIcon" "WPN_Pike_1"
 
-new ItemCombination "WPN_Pike_to_RR"
+new ItemCombination "WPN_Pike_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Pikes"
+data "Type 2" "Object"
+data "Object 2" "WPN_Pike"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Pike_to_RR_1"
+new ItemCombinationResult "WPN_Pike_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Pike_2"
+data "PreviewStatsID" "WPN_Pike_2"
+data "PreviewIcon" "WPN_Pike_2"
+
+new ItemCombination "WPN_Pike_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Pike_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Pike_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Pike_2"
 data "PreviewStatsID" "WPN_Pike_2"
 data "PreviewIcon" "WPN_Pike_2"
 
 //-------------------------------------------------------------------------
-//  RAPIER
+//  Rapier
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Rapier_to_UC"
+new ItemCombination "WPN_Rapier_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Rapiers"
+data "Type 2" "Object"
+data "Object 2" "WPN_Rapier"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Rapier_to_UC_1"
+new ItemCombinationResult "WPN_Rapier_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Rapier_1"
 data "PreviewStatsID" "WPN_Rapier_1"
 data "PreviewIcon" "WPN_Rapier_1"
 
-new ItemCombination "WPN_Rapier_to_RR"
+new ItemCombination "WPN_Rapier_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Rapiers"
+data "Type 2" "Object"
+data "Object 2" "WPN_Rapier"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Rapier_to_RR_1"
+new ItemCombinationResult "WPN_Rapier_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Rapier_2"
+data "PreviewStatsID" "WPN_Rapier_2"
+data "PreviewIcon" "WPN_Rapier_2"
+
+new ItemCombination "WPN_Rapier_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Rapier_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Rapier_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Rapier_2"
 data "PreviewStatsID" "WPN_Rapier_2"
 data "PreviewIcon" "WPN_Rapier_2"
 
 //-------------------------------------------------------------------------
-//  SCIMITAR
+//  Scimitar
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Scimitar_to_UC"
+new ItemCombination "WPN_Scimitar_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Scimitars"
+data "Type 2" "Object"
+data "Object 2" "WPN_Scimitar"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Scimitar_to_UC_1"
+new ItemCombinationResult "WPN_Scimitar_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Scimitar_1"
 data "PreviewStatsID" "WPN_Scimitar_1"
 data "PreviewIcon" "WPN_Scimitar_1"
 
-new ItemCombination "WPN_Scimitar_to_RR"
+new ItemCombination "WPN_Scimitar_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Scimitars"
+data "Type 2" "Object"
+data "Object 2" "WPN_Scimitar"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Scimitar_to_RR_1"
+new ItemCombinationResult "WPN_Scimitar_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Scimitar_2"
+data "PreviewStatsID" "WPN_Scimitar_2"
+data "PreviewIcon" "WPN_Scimitar_2"
+
+new ItemCombination "WPN_Scimitar_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Scimitar_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Scimitar_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Scimitar_2"
 data "PreviewStatsID" "WPN_Scimitar_2"
 data "PreviewIcon" "WPN_Scimitar_2"
 
 //-------------------------------------------------------------------------
-//  SHORTSWORD
+//  Shortsword
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Shortsword_to_UC"
+new ItemCombination "WPN_Shortsword_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Shortswords"
+data "Type 2" "Object"
+data "Object 2" "WPN_Shortsword"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Shortsword_to_UC_1"
+new ItemCombinationResult "WPN_Shortsword_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Shortsword_1"
 data "PreviewStatsID" "WPN_Shortsword_1"
 data "PreviewIcon" "WPN_Shortsword_1"
 
-new ItemCombination "WPN_Shortsword_to_RR"
+new ItemCombination "WPN_Shortsword_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Shortswords"
+data "Type 2" "Object"
+data "Object 2" "WPN_Shortsword"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Shortsword_to_RR_1"
+new ItemCombinationResult "WPN_Shortsword_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Shortsword_2"
+data "PreviewStatsID" "WPN_Shortsword_2"
+data "PreviewIcon" "WPN_Shortsword_2"
+
+new ItemCombination "WPN_Shortsword_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Shortsword_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Shortsword_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Shortsword_2"
 data "PreviewStatsID" "WPN_Shortsword_2"
 data "PreviewIcon" "WPN_Shortsword_2"
 
 //-------------------------------------------------------------------------
-//  SICKLE
+//  Sickle
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Sickle_to_UC"
+new ItemCombination "WPN_Sickle_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Sickles"
+data "Type 2" "Object"
+data "Object 2" "WPN_Sickle"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Sickle_to_UC_1"
+new ItemCombinationResult "WPN_Sickle_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Sickle_1"
 data "PreviewStatsID" "WPN_Sickle_1"
 data "PreviewIcon" "WPN_Sickle_1"
 
-new ItemCombination "WPN_Sickle_to_RR"
+new ItemCombination "WPN_Sickle_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Sickles"
+data "Type 2" "Object"
+data "Object 2" "WPN_Sickle"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Sickle_to_RR_1"
+new ItemCombinationResult "WPN_Sickle_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Sickle_2"
+data "PreviewStatsID" "WPN_Sickle_2"
+data "PreviewIcon" "WPN_Sickle_2"
+
+new ItemCombination "WPN_Sickle_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Sickle_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Sickle_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Sickle_2"
 data "PreviewStatsID" "WPN_Sickle_2"
 data "PreviewIcon" "WPN_Sickle_2"
 
 //-------------------------------------------------------------------------
-//  SPEAR
+//  Spear
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Spear_to_UC"
+new ItemCombination "WPN_Spear_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Spears"
+data "Type 2" "Object"
+data "Object 2" "WPN_Spear"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Spear_to_UC_1"
+new ItemCombinationResult "WPN_Spear_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Spear_1"
 data "PreviewStatsID" "WPN_Spear_1"
 data "PreviewIcon" "WPN_Spear_1"
 
-new ItemCombination "WPN_Spear_to_RR"
+new ItemCombination "WPN_Spear_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Spears"
+data "Type 2" "Object"
+data "Object 2" "WPN_Spear"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Spear_to_RR_1"
+new ItemCombinationResult "WPN_Spear_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Spear_2"
+data "PreviewStatsID" "WPN_Spear_2"
+data "PreviewIcon" "WPN_Spear_2"
+
+new ItemCombination "WPN_Spear_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Spear_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Spear_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Spear_2"
 data "PreviewStatsID" "WPN_Spear_2"
 data "PreviewIcon" "WPN_Spear_2"
 
 //-------------------------------------------------------------------------
-//  TRIDENT
+//  Trident
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Trident_to_UC"
+new ItemCombination "WPN_Trident_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Tridents"
+data "Type 2" "Object"
+data "Object 2" "WPN_Trident"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Trident_to_UC_1"
+new ItemCombinationResult "WPN_Trident_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Trident_1"
 data "PreviewStatsID" "WPN_Trident_1"
 data "PreviewIcon" "WPN_Trident_1"
 
-new ItemCombination "WPN_Trident_to_RR"
+new ItemCombination "WPN_Trident_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Tridents"
+data "Type 2" "Object"
+data "Object 2" "WPN_Trident"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Trident_to_RR_1"
+new ItemCombinationResult "WPN_Trident_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Trident_2"
+data "PreviewStatsID" "WPN_Trident_2"
+data "PreviewIcon" "WPN_Trident_2"
+
+new ItemCombination "WPN_Trident_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Trident_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Trident_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Trident_2"
 data "PreviewStatsID" "WPN_Trident_2"
 data "PreviewIcon" "WPN_Trident_2"
 
 //-------------------------------------------------------------------------
-//  WAR PICK
+//  WarPick
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_WarPick_to_UC"
+new ItemCombination "WPN_WarPick_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_WarPicks"
+data "Type 2" "Object"
+data "Object 2" "WPN_WarPick"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_WarPick_to_UC_1"
+new ItemCombinationResult "WPN_WarPick_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_WarPick_1"
 data "PreviewStatsID" "WPN_WarPick_1"
 data "PreviewIcon" "WPN_WarPick_1"
 
-new ItemCombination "WPN_WarPick_to_RR"
+new ItemCombination "WPN_WarPick_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_WarPicks"
+data "Type 2" "Object"
+data "Object 2" "WPN_WarPick"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_WarPick_to_RR_1"
+new ItemCombinationResult "WPN_WarPick_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_WarPick_2"
+data "PreviewStatsID" "WPN_WarPick_2"
+data "PreviewIcon" "WPN_WarPick_2"
+
+new ItemCombination "WPN_WarPick_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_WarPick_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_WarPick_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_WarPick_2"
 data "PreviewStatsID" "WPN_WarPick_2"
 data "PreviewIcon" "WPN_WarPick_2"
 
 //-------------------------------------------------------------------------
-//  FLAIL
+//  Flail
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Flail_to_UC"
+new ItemCombination "WPN_Flail_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Flails"
+data "Type 2" "Object"
+data "Object 2" "WPN_Flail"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Flail_to_UC_1"
+new ItemCombinationResult "WPN_Flail_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Flail_1"
 data "PreviewStatsID" "WPN_Flail_1"
 data "PreviewIcon" "WPN_Flail_1"
 
-new ItemCombination "WPN_Flail_to_RR"
+new ItemCombination "WPN_Flail_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Flails"
+data "Type 2" "Object"
+data "Object 2" "WPN_Flail"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Flail_to_RR_1"
+new ItemCombinationResult "WPN_Flail_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Flail_2"
+data "PreviewStatsID" "WPN_Flail_2"
+data "PreviewIcon" "WPN_Flail_2"
+
+new ItemCombination "WPN_Flail_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Flail_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Flail_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Flail_2"
 data "PreviewStatsID" "WPN_Flail_2"
 data "PreviewIcon" "WPN_Flail_2"
 
 //-------------------------------------------------------------------------
-//  LIGHT HAMMER
+//  LightHammer
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_LightHammer_to_UC"
+new ItemCombination "WPN_LightHammer_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_LightHammers"
+data "Type 2" "Object"
+data "Object 2" "WPN_LightHammer"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_LightHammer_to_UC_1"
+new ItemCombinationResult "WPN_LightHammer_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_LightHammer_1"
 data "PreviewStatsID" "WPN_LightHammer_1"
 data "PreviewIcon" "WPN_LightHammer_1"
 
-new ItemCombination "WPN_LightHammer_to_RR"
+new ItemCombination "WPN_LightHammer_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_LightHammers"
+data "Type 2" "Object"
+data "Object 2" "WPN_LightHammer"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_LightHammer_to_RR_1"
+new ItemCombinationResult "WPN_LightHammer_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_LightHammer_2"
+data "PreviewStatsID" "WPN_LightHammer_2"
+data "PreviewIcon" "WPN_LightHammer_2"
+
+new ItemCombination "WPN_LightHammer_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_LightHammer_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_LightHammer_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_LightHammer_2"
 data "PreviewStatsID" "WPN_LightHammer_2"
 data "PreviewIcon" "WPN_LightHammer_2"
 
 //-------------------------------------------------------------------------
-//  MACE
+//  Mace
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Mace_to_UC"
+new ItemCombination "WPN_Mace_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Maces"
+data "Type 2" "Object"
+data "Object 2" "WPN_Mace"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Mace_to_UC_1"
+new ItemCombinationResult "WPN_Mace_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Mace_1"
 data "PreviewStatsID" "WPN_Mace_1"
 data "PreviewIcon" "WPN_Mace_1"
 
-new ItemCombination "WPN_Mace_to_RR"
+new ItemCombination "WPN_Mace_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Maces"
+data "Type 2" "Object"
+data "Object 2" "WPN_Mace"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Mace_to_RR_1"
+new ItemCombinationResult "WPN_Mace_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Mace_2"
+data "PreviewStatsID" "WPN_Mace_2"
+data "PreviewIcon" "WPN_Mace_2"
+
+new ItemCombination "WPN_Mace_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Mace_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Mace_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Mace_2"
 data "PreviewStatsID" "WPN_Mace_2"
 data "PreviewIcon" "WPN_Mace_2"
 
 //-------------------------------------------------------------------------
-//  MAUL
+//  Maul
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Maul_to_UC"
+new ItemCombination "WPN_Maul_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Mauls"
+data "Type 2" "Object"
+data "Object 2" "WPN_Maul"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Maul_to_UC_1"
+new ItemCombinationResult "WPN_Maul_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Maul_1"
 data "PreviewStatsID" "WPN_Maul_1"
 data "PreviewIcon" "WPN_Maul_1"
 
-new ItemCombination "WPN_Maul_to_RR"
+new ItemCombination "WPN_Maul_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Mauls"
+data "Type 2" "Object"
+data "Object 2" "WPN_Maul"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Maul_to_RR_1"
+new ItemCombinationResult "WPN_Maul_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Maul_2"
+data "PreviewStatsID" "WPN_Maul_2"
+data "PreviewIcon" "WPN_Maul_2"
+
+new ItemCombination "WPN_Maul_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Maul_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Maul_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Maul_2"
 data "PreviewStatsID" "WPN_Maul_2"
 data "PreviewIcon" "WPN_Maul_2"
 
 //-------------------------------------------------------------------------
-//  MORNINGSTAR
+//  Morningstar
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Morningstar_to_UC"
+new ItemCombination "WPN_Morningstar_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Morningstars"
+data "Type 2" "Object"
+data "Object 2" "WPN_Morningstar"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Morningstar_to_UC_1"
+new ItemCombinationResult "WPN_Morningstar_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Morningstar_1"
 data "PreviewStatsID" "WPN_Morningstar_1"
 data "PreviewIcon" "WPN_Morningstar_1"
 
-new ItemCombination "WPN_Morningstar_to_RR"
+new ItemCombination "WPN_Morningstar_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Morningstars"
+data "Type 2" "Object"
+data "Object 2" "WPN_Morningstar"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Morningstar_to_RR_1"
+new ItemCombinationResult "WPN_Morningstar_CC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Morningstar_2"
+data "PreviewStatsID" "WPN_Morningstar_2"
+data "PreviewIcon" "WPN_Morningstar_2"
+
+new ItemCombination "WPN_Morningstar_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Morningstar_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "WPN_Morningstar_UC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Morningstar_2"
 data "PreviewStatsID" "WPN_Morningstar_2"
 data "PreviewIcon" "WPN_Morningstar_2"
 
 //-------------------------------------------------------------------------
-//  WARHAMMER
+//  Warhammer
 //-------------------------------------------------------------------------
-new ItemCombination "WPN_Warhammer_to_UC"
+new ItemCombination "WPN_Warhammer_CC_to_UC"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Warhammers"
+data "Type 2" "Object"
+data "Object 2" "WPN_Warhammer"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Bronze"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Warhammer_to_UC_1"
+new ItemCombinationResult "WPN_Warhammer_CC_to_UC_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Warhammer_1"
 data "PreviewStatsID" "WPN_Warhammer_1"
 data "PreviewIcon" "WPN_Warhammer_1"
 
-new ItemCombination "WPN_Warhammer_to_RR"
+new ItemCombination "WPN_Warhammer_CC_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
 data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "WPN_Warhammers"
+data "Type 2" "Object"
+data "Object 2" "WPN_Warhammer"
 data "Transform 2" "Consume"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
-new ItemCombinationResult "WPN_Warhammer_to_RR_1"
+new ItemCombinationResult "WPN_Warhammer_CC_to_RR_1"
 data "ResultAmount 1" "1"
 data "Result 1" "WPN_Warhammer_2"
 data "PreviewStatsID" "WPN_Warhammer_2"
 data "PreviewIcon" "WPN_Warhammer_2"
 
+new ItemCombination "WPN_Warhammer_UC_to_RR"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Warhammer_1"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Rare"
+data "Transform 3" "Consume"
 
+new ItemCombinationResult "WPN_Warhammer_UC_to_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_Warhammer_2"
+data "PreviewStatsID" "WPN_Warhammer_2"
+data "PreviewIcon" "WPN_Warhammer_2"
+
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
@@ -1027,6 +1453,17 @@ data "PreviewIcon" "WPN_Warhammer_2"
 //  OBJ_Metalbar_Rare
 //  OBJ_Metalbar_VeryRare
 //  OBJ_Metalbar_Legendary
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
@@ -1084,7 +1521,7 @@ data "Object 3" "OBJ_Metalbar_Legendary"
 data "Transform 3" "Consume"
 
 new ItemCombinationResult "MAG_Fire_AlwaysDippedInFire_Greatsword_to_LG_1"
-data "ResultAmount 1" "1"
+data "ResultAmount 1" "1"   
 data "Result 1" "MAG_Fire_AlwaysDippedInFire_Greatsword_4"
 data "PreviewStatsID" "MAG_Fire_AlwaysDippedInFire_Greatsword_4"
 data "PreviewIcon" "MAG_Fire_AlwaysDippedInFire_Greatsword_4"
@@ -4691,29 +5128,18 @@ data "PreviewIcon" "MAG_SWA_Roaring_Maul_4"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //----------------------------------TEMPO---------------------------------------
@@ -4722,6 +5148,17 @@ data "PreviewIcon" "MAG_SWA_Roaring_Maul_4"
 //  OBJ_Metalbar_Rare
 //  OBJ_Metalbar_VeryRare
 //  OBJ_Metalbar_Legendary
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
@@ -5407,41 +5844,18 @@ data "PreviewStatsID" "MAG_Vicious_Shortbow_4"
 data "PreviewIcon" "MAG_Vicious_Shortbow_4"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //----------------------------------TEMPO---------------------------------------
@@ -5450,6 +5864,17 @@ data "PreviewIcon" "MAG_Vicious_Shortbow_4"
 //  OBJ_Metalbar_Rare
 //  OBJ_Metalbar_VeryRare
 //  OBJ_Metalbar_Legendary
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
@@ -5881,11 +6306,33 @@ data "PreviewIcon" "MAG_Fire_FireDamage_Quarterstaff_4"
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//--------------------------------------------------------------------------
 //  РЕЦЕПТЫ ДЛЯ НАКОВАЛЬНИ - КОВКА
 //  KELA_Useful_Anvil
 //  OBJ_Metalbar_Bronze
 //  OBJ_Metalbar_Silver
 //  OBJ_Metalbar_Gold
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------

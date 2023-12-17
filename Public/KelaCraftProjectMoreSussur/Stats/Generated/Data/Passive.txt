@@ -1,0 +1,7 @@
+new entry "KELA_Sussur_Oil_Passive"
+type "PassiveData"
+data "DisplayName" "h92fee29bg7c71g4687g97bcgefdf700992b3;1"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsMeleeWeaponAttack() or IsRangedWeaponAttack()"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 12)):ApplyStatus(SILENCED, 100, 3)"
