@@ -57,7 +57,19 @@ data "StackId" "KELA_GRINDING_OIL_USED_ON_WHETSTONE"
 data "StatusEffect" "640a261b-d2cc-4a66-bbf6-c964bcb18648"
 
 
-
+new entry "KELA_SUSSUR_OIL_FOR_WEAPON"
+type "StatusData"
+data "StatusType" "BOOST"
+using "WEAPON_COATED_WITH_POISON"
+data "DisplayName" "h2664a487g180dg4bf1ga5d2g627917854dd1;1"
+data "Description" "ha1f83547g7f50g4620gb5ebg779b2ac35670;1"
+data "DescriptionParams" ""
+data "Icon" "GenericIcon_DamageType_Poison"
+data "StackId" "KELA_SUSSUR_OIL_FOR_WEAPON"
+data "Boosts" ""
+data "Passives" "KELA_Sussur_Oil_Passive"
+data "StatusPropertyFlags" ""
+data "OnApplyFunctors" ""
 
 
 // data "OnApplyFunctors" "IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_PIERCING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_PIERCING, 100, 300)"

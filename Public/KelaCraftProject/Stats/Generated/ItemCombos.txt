@@ -3468,9 +3468,36 @@ data "Result 1" "MAG_Bhaalist_Paralyzing_Dagger_4"
 data "PreviewStatsID" "MAG_Bhaalist_Paralyzing_Dagger_4"
 data "PreviewIcon" "MAG_Bhaalist_Paralyzing_Dagger_4"
 
+
 //-------------------------------------------------------------------------
 //  FOR_IncompleteMasterwork_SussurDagger
 //-------------------------------------------------------------------------
+
+new ItemCombination "QUEST_FOR_SussurDagger_UC"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Dagger_1"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurDagger_UC_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurDagger"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurDagger"
+
+new ItemCombination "QUEST_FOR_SussurDagger_RR"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Dagger_2"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurDagger_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurDagger"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurDagger"
 
 new ItemCombination "FOR_IncompleteMasterwork_SussurDagger_to_VR"
 data "Type 1" "Object"
@@ -3512,6 +3539,32 @@ data "PreviewIcon" "FOR_IncompleteMasterwork_SussurDagger_4"
 //  FOR_IncompleteMasterwork_SussurGreatsword
 //-------------------------------------------------------------------------
 
+new ItemCombination "QUEST_FOR_SussurGreatsword_UC"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greatsword_1"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurGreatsword_UC_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurGreatsword"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurGreatsword"
+
+new ItemCombination "QUEST_FOR_SussurGreatsword_RR"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Greatsword_2"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurGreatsword_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurGreatsword"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurGreatsword"
+
 new ItemCombination "FOR_IncompleteMasterwork_SussurGreatsword_to_VR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
@@ -3551,6 +3604,32 @@ data "PreviewIcon" "FOR_IncompleteMasterwork_SussurGreatsword_4"
 //-------------------------------------------------------------------------
 //  FOR_IncompleteMasterwork_SussurSickle
 //-------------------------------------------------------------------------
+
+new ItemCombination "QUEST_FOR_SussurSickle_UC"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Sickle_1"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurSickle_UC_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurSickle"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurSickle"
+
+new ItemCombination "QUEST_FOR_SussurSickle_RR"
+data "Type 1" "Object"
+data "Object 1" "FOR_ForgeWithSussurBark"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "WPN_Sickle_2"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "QUEST_FOR_SussurSickle_RR_1"
+data "ResultAmount 1" "1"
+data "Result 1" "FOR_IncompleteMasterwork_SussurSickle"
+data "PreviewStatsID" "FOR_IncompleteMasterwork_SussurSickle"
 
 new ItemCombination "FOR_IncompleteMasterwork_SussurSickle_to_VR"
 data "Type 1" "Object"

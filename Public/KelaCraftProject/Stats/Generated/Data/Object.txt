@@ -26,6 +26,13 @@ data "RootTemplate" "4d59b648-9e0a-498f-b032-8871411a7411"
 data "ValueOverride" "50"
 data "Rarity" "Uncommon"
 
+new entry "KELA_Sussur_Oil"
+type "Object"
+using "_Potion"
+data "RootTemplate" "51fc8b38-3c66-437d-956f-c8bb040a5dd8"
+data "ValueOverride" "150"
+data "Rarity" "VeryRare"
+
 new entry "OBJ_Metalbar_Rare"
 type "Object"
 using "OBJ_GenericLootItem"
