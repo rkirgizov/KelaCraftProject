@@ -176,7 +176,7 @@
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9ce93eefgd3d7g4d70g8050g40dd88e04c85" version="1" />
 					<attribute id="TechnicalDescriptionParams" type="LSString" value="10" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
-					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Immortality_A" />
+					<attribute id="Icon" type="FixedString" value="Item_Potion_Grinding_Oil_A" />
 					<attribute id="Stats" type="FixedString" value="KELA_Grinding_Oil" />
 					<attribute id="Tooltip" type="uint8" value="2" />
 					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />

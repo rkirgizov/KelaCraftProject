@@ -30,6 +30,24 @@
                     <attribute id="V2" type="float" value="0.03125"/> Bottom
                 </node>					
             </children>
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Item_Potion_Grinding_Oil_A"/> 2
+                    <attribute id="U1" type="float" value="0.03125"/> Left
+                    <attribute id="U2" type="float" value="0.06250"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.03125"/> Bottom
+                </node>					
+            </children>
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Item_Potion_Sussur_Oil_A"/> 3
+                    <attribute id="U1" type="float" value="0.06250"/> Left
+                    <attribute id="U2" type="float" value="0.09375"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.03125"/> Bottom
+                </node>					
+            </children>
         </node>
     </region>
 </save>

@@ -5,7 +5,7 @@
 		<node id="Templates">
 			<children>
 
-				<!-- Масло суссура -->
+				<!-- Масло дерева суссур -->
 				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="51fc8b38-3c66-437d-956f-c8bb040a5dd8" />
 					<attribute id="Name" type="LSString" value="KELA_SUSSUR_OIL" />
@@ -15,10 +15,10 @@
 					<attribute id="VisualTemplate" type="FixedString" value="da47bd9a-0e12-690e-69f6-8bf6f7ea6587" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="20ce31dc-de54-1286-440d-2d6c3ec42562" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h978bffa6g12f7g4051ga9a4g081b6c881fcb" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="" version="0" />
-					<attribute id="TechnicalDescription" type="TranslatedString" handle="h76d39435gfe13g4a54ga0c0g9c3c6f2169ce" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hde9d6f92g4d12g42d6g80b7ga151cbda4d9e" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h87cab18age3a8g4df2ga923gf0371e9e7a5d" version="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
-					<attribute id="Icon" type="FixedString" value="Item_CONS_Drink_Potion_A" />
+					<attribute id="Icon" type="FixedString" value="Item_Potion_Sussur_Oil_A" />
 					<attribute id="Stats" type="FixedString" value="KELA_Sussur_Oil" />
 					<attribute id="Tooltip" type="uint8" value="2" />
 					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
@@ -62,8 +62,9 @@
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />s
 											<attribute id="Conditions" type="LSString" value="" />
-											<attribute id="StatsId" type="FixedString" value="KELA_SUSSUR_OIL_FOR_WEAPON" />
-											<attribute id="StatusDuration" type="int32" value="50" />
+											<attribute id="StatsId" type="FixedString" value="KELA_SUSSUR_OIL" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
 											<attribute id="Consume" type="bool" value="True" />
 										</node>
 									</children>

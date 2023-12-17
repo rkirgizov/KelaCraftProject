@@ -21,10 +21,9 @@
 	<content contentuid="hacd9e5c1g7238g46c8gae66gabaf8658d06b" version="1">Это оружие заточено на точильном камне, что временно придаёт ему бонус +[1] к урону.</content>
 
 	<content contentuid="h978bffa6g12f7g4051ga9a4g081b6c881fcb" version="1">Масло дерева суссур</content>
-	<content contentuid="h76d39435gfe13g4a54ga0c0g9c3c6f2169ce" version="1">Позволяет придать оружию свойства этого легендарного дерева</content>
-	<content contentuid="h92fee29bg7c71g4687g97bcgefdf700992b3" version="1">Магия дерева суссур</content>
-	
-
-
+	<content contentuid="h87cab18age3a8g4df2ga923gf0371e9e7a5d" version="1">Наносится на используемое оружие. При ударе по противнику, если он не пройдёт &lt;LSTag Tooltip="SavingThrow"&gt;испытание&lt;/LSTag&gt; выносливости &lt;LSTag Tooltip="DifficultyClass"&gt;КС&lt;/LSTag&gt; 10, масло попадает в кровь и создаёт локальное поле антимагии, вводя его в состояние немоты.</content>
+	<content contentuid="hde9d6f92g4d12g42d6g80b7ga151cbda4d9e" version="1">Тёмная жидкость поблескивает синими искорками, пробуждая воспоминания о Подземье.</content>
+	<content contentuid="h76d39435gfe13g4a54ga0c0g9c3c6f2169ce" version="1">Масло суссура покрывает оружие тёмными разводами с изредка пробивающейся синевой. Его удар может ввести противника в состояние немоты на [1] ход(а), если он не пройдёт &lt;LSTag Tooltip="SavingThrow"&gt;испытание&lt;/LSTag&gt; выносливости &lt;LSTag Tooltip="DifficultyClass"&gt;КС&lt;/LSTag&gt; 10.</content>
+	<content contentuid="h403731c9gf72cg49a5gb163g3632ed581675" version="1">При попадании в кровь противника создаёт локальное поле антимагии и вводит его в состояние немоты на [1] ход(а).</content>
 
 	</contentList>
