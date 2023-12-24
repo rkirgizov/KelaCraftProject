@@ -13,7 +13,7 @@ data "Description" "hacd9e5c1g7238g46c8gae66gabaf8658d06b;1"
 data "DescriptionParams" "DealDamage(1,Slashing)"
 data "Icon" "Item_TOOL_Smith_Whetstone_Wheel_A"
 data "StackId" "KELA_WHETSTONE_SLASHING"
-data "StatusPropertyFlags" "DisableOverhead"
+data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
 data "Boosts" "WeaponDamage(1,Slashing)"
 data "ApplyEffect" "abb6d445-5db6-4b1d-be49-31336506e1de"
 data "StatusEffect" "640a261b-d2cc-4a66-bbf6-c964bcb18648"
@@ -26,7 +26,7 @@ data "Description" "hacd9e5c1g7238g46c8gae66gabaf8658d06b;1"
 data "DescriptionParams" "DealDamage(1,Piercing)"
 data "Icon" "Item_TOOL_Smith_Whetstone_Wheel_A"
 data "StackId" "KELA_WHETSTONE_PIERCING"
-data "StatusPropertyFlags" "DisableOverhead"
+data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
 data "Boosts" "WeaponDamage(1,Piercing)"
 data "ApplyEffect" "abb6d445-5db6-4b1d-be49-31336506e1de"
 data "StatusEffect" "640a261b-d2cc-4a66-bbf6-c964bcb18648"
@@ -40,7 +40,7 @@ data "StackId" "KELA_WHETSTONE"
 data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
 // data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 10)"
-data "OnApplySuccess" "IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_SLASHING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_PIERCING, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_PIERCING, 100, 300)"
+data "OnApplySuccess" "IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_SLASHING, 100, -1);IF(IsWeaponOfProficiencyGroup('Scimitars|Greatswords|Longswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Sickles', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_SLASHING, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WHETSTONE_PIERCING, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Shortswords|Pikes|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand, KELA_WHETSTONE_PIERCING, 100, -1)"
 data "OnApplyFail" "DealDamage(1d4, Slashing)"
 
 // ------------------------------------------------------------------------
@@ -60,7 +60,7 @@ data "DescriptionParams" "10"
 data "Icon" "Item_Potion_Grinding_Oil_A"
 data "StackId" "KELA_GRINDING_OIL_USED"
 data "AuraRadius" "5"
-data "AuraStatuses" "IF(Item() and Tagged('KELAWHETSTONE')):ApplyStatus(KELA_GRINDING_OIL_USED_ON_WHETSTONE,100,10)"
+data "AuraStatuses" "IF(Item() and Tagged('KELAWHETSTONE')):ApplyStatus(KELA_GRINDING_OIL_USED_ON_WHETSTONE,100,10);"
 
 new entry "KELA_GRINDING_OIL_USED_ON_WHETSTONE"
 type "StatusData"
@@ -105,4 +105,33 @@ data "Passives" "KELA_Sussur_Oil_Passive"
 data "StackId" "KELA_SUSSUR_OIL_DIPPED"
 data "StatusGroups" "SG_WeaponCoating"
 data "ApplyEffect" "abb6d445-5db6-4b1d-be49-31336506e1de"
+data "StatusEffect" "640a261b-d2cc-4a66-bbf6-c964bcb18648"
+
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Готовность наковальни (плавильня горит)
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+new entry "KELA_SMELTINGFORGE_STATUS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "KELA_SMELTINGFORGE_STATUS"
+data "DisplayName" "h6c3aefd2g3755g43c6gb316g62d263501dc9;1"
+data "Description" "h2fc48659g0959g4b97g845agea24e7781a09;1"
+data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
+data "Icon" "Item_TOOL_Smith_Anvil_B"
+data "AuraRadius" "20"
+data "AuraStatuses" "IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_STATUS_BURNING,100,-1)"
+
+new entry "KELA_SMELTINGFORGE_STATUS_BURNING"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "KELA_SMELTINGFORGE_STATUS_BURNING"
+data "DisplayName" "h59fbae8cg77fcg4470g90ebgbccc3281b962;1"
+data "Description" "h36ac6733gf5c6g49f0g951egb382451cd049;1"
+data "Icon" "Item_TOOL_Smith_Anvil_B"
 data "StatusEffect" "640a261b-d2cc-4a66-bbf6-c964bcb18648"

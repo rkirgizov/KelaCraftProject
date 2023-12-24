@@ -5,9 +5,69 @@
 		<node id="Templates">
 			<children>
 
+
+
+				<!-- Плавильная печь в заброшенной деревне -->
+				<node id="GameObjects">
+					<attribute id="AnubisConfigName" type="FixedString" value="FOR_MeltingFurnace" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="8515bf4e-40eb-460b-a48e-9d48cec16379" />
+					<attribute id="Name" type="LSString" value="S_FOR_MasterworkForge" />
+					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
+					<attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="33fe87b9-33de-4260-81ec-50b0c15332d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="CombineSlots" type="int8" value="3" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-452.073 11.37843 -377.8627" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.7071068 0 0.7071067" />
+							<attribute id="Scale" type="float" value="1.45" />
+						</node>
+					</children>
+				</node> 
+
+
+		
+		
 				<!-- Новая юзабельная наковальня Даммона-->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsInteractionDisabled" type="bool" value="False" />
 					<attribute id="IsPublicDomain" type="bool" value="True" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="8807f53b-8dab-4511-8824-480d9aa59c20" />
@@ -112,6 +172,8 @@
 				<!-- Юзабельный Точильный камень Даммона -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsInteractionDisabled" type="bool" value="False" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="c58d18e0-7b3c-4e98-b018-2b0348818076" />
 					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_002" />
@@ -160,7 +222,7 @@
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="178.8391 19.39592 563.9032" />
 							<attribute id="RotationQuat" type="fvec4" value="0 -0.4090919 0 0.9124931" />
-							<attribute id="Scale" type="float" value="1.1" />
+							<attribute id="Scale" type="float" value="1.0" />
 						</node>
 					</children>
 				</node>
@@ -235,6 +297,8 @@
 					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+
+					<attribute id="IsPublicDomain" type="bool" value="True" />
 
 					<attribute id="CanBeMoved" type="bool" value="False" />
 					<attribute id="CanBePickedUp" type="bool" value="False" />
@@ -343,6 +407,289 @@
 						</node>
 					</children>
 				</node>
+
+
+
+
+
+
+
+
+
+
+
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- MORE SUSSUR BARK  -->
+				<!-- Thanks for MaskedRPGFan https://www.nexusmods.com/baldursgate3/mods/902  -->
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="e16f0e94-bc54-40b9-99e5-c05624341878" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
+					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="2" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-36.93967 36.31125 -158.3285" />
+							<attribute id="RotationQuat" type="fvec4" value="1.0 0.0 0.0 0.0" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="53f003d8-6cc6-4160-8684-7df324d17a13" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
+					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="2" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-13.66556 37.91898 -138.0025" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.3806096 -0.03944651 0.3652711 0.8486209" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="ec48462b-e7bf-4bf6-8f59-16d6cacf8c96" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
+					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="2" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-14.19517 35.44447 -116.7451" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.1806096 -0.13944651 -0.3652711 -0.8486209" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="ad55df25-06f7-4a8e-aada-52a83bea3be3" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
+					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="2" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-24.78968 26.28859 -132.1202" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.3806096 -0.03944651 0.3652711 0.8486209" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="06c1d7fa-4517-4d49-917c-fe58554d6b45" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
+					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="2" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-17.41564 36.73778 -141.6207" />
+							<attribute id="RotationQuat" type="fvec4" value="1.0 0.0 0.0 0.0" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="69e7331c-c6c2-450b-8181-f246ca9b79e7" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
+					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="2" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-22.3 27.0 -143.7" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.1806096 -0.13944651 -0.3652711 -0.8486209" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="01890fe5-d09a-4472-9f03-76108973c1d6" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
+					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="2" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-18.5 28.0 -141.5" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.1806096 -0.13944651 -0.3652711 -0.8486209" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+
+
+
 
 			</children>
 		</node>

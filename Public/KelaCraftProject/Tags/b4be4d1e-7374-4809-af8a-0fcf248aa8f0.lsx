@@ -3,7 +3,7 @@
 	<version major="4" minor="0" revision="4" build="201" lslib_meta="v1,bswap_guids" />
 	<region id="Tags">
 		<node id="Tags">
-			<attribute id="Description" type="LSString" value="A tag for a KELA WHETSTONE to define it in aura" />
+			<attribute id="Description" type="LSString" value="A tag for a KELA WHETSTONE to define it in aura of GRINDING OIL" />
 			<attribute id="DisplayDescription" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0" />
 			<attribute id="DisplayName" type="TranslatedString" handle="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="1" />
 			<attribute id="Icon" type="FixedString" value="" />

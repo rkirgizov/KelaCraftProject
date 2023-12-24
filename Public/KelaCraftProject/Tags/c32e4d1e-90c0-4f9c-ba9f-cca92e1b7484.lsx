@@ -3,12 +3,12 @@
 	<version major="4" minor="0" revision="4" build="201" lslib_meta="v1,bswap_guids" />
 	<region id="Tags">
 		<node id="Tags">
-			<attribute id="Description" type="LSString" value="A tag for a KELA WHETSTONE to define it in aura of GRINDING OIL" />
-			<attribute id="DisplayDescription" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0" />
-			<attribute id="DisplayName" type="TranslatedString" handle="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="1" />
+			<attribute id="Description" type="LSString" value="A tag for a apprentice blacksmith" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hc5c9ccd6g032fg49baga170g4b56d63c4cb1" version="0" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h0d6337fegd871g45dfg844agf78ae9422acf" version="1" />
 			<attribute id="Icon" type="FixedString" value="" />
-			<attribute id="Name" type="FixedString" value="KELAWHETSTONE" />
-			<attribute id="UUID" type="guid" value="b4be4d1e-7374-4809-af8a-0fcf248aa8f0" />
+			<attribute id="Name" type="FixedString" value="KELABLACKSMITHAPPRENTICE" />
+			<attribute id="UUID" type="guid" value="c32e4d1e-90c0-4f9c-ba9f-cca92e1b7484" />
 			<children>
 				<node id="Categories">
 					<children>
