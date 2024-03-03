@@ -6,7 +6,35 @@
 			<children>
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="h170918f8g2bf5g40a7gba00ga49660f6d7fc" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Common_Smithing_Notes" />
+					<attribute id="UUID" type="FixedString" value="BOOK_Kela_Blacksmith_Handbook" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h0b5c4cd7g0864g4245g9367g35497bf61e9b" version="1" />
+					<attribute id="UUID" type="FixedString" value="BOOK_Kela_Blacksmith_Apprentice" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h19ea9ccdg442eg499fg82d3ga01a38b2802b" version="1" />
+					<attribute id="UUID" type="FixedString" value="BOOK_Kela_Blacksmith_Expert" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hc647883agd952g4c3egb6f2g9d390a473131" version="1" />
+					<attribute id="UUID" type="FixedString" value="BOOK_Kela_Blacksmith_Master" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="ha4b8c9c796de416884759505b32fb97a5b89" version="1" />
+					<attribute id="UUID" type="FixedString" value="BOOK_Kela_Recipe_Sharpening" />
 					<attribute id="Speaker" type="FixedString" value="" />
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />

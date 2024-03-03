@@ -48,6 +48,51 @@
                     <attribute id="V2" type="float" value="0.03125"/> Bottom
                 </node>					
             </children>
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Sharpened"/> 3
+                    <attribute id="U1" type="float" value="0.09375"/> Left
+                    <attribute id="U2" type="float" value="0.12500"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.03125"/> Bottom
+                </node>					
+            </children>
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Sharpened_Profi"/> 3
+                    <attribute id="U1" type="float" value="0.12500"/> Left
+                    <attribute id="U2" type="float" value="0.15625"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.03125"/> Bottom
+                </node>					
+            </children>
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Sharpened_Bad"/> 3
+                    <attribute id="U1" type="float" value="0.15625"/> Left
+                    <attribute id="U2" type="float" value="0.18750"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.03125"/> Bottom
+                </node>					
+            </children>
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Whetstone_Sharpenning"/> 3
+                    <attribute id="U1" type="float" value="0.18750"/> Left
+                    <attribute id="U2" type="float" value="0.21875"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.03125"/> Bottom
+                </node>					
+            </children>
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Item_TOOL_Laboratory_Object_A"/> 3
+                    <attribute id="U1" type="float" value="0.21875"/> Left
+                    <attribute id="U2" type="float" value="0.25000"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.03125"/> Bottom
+                </node>					
+            </children>
         </node>
     </region>
 </save>

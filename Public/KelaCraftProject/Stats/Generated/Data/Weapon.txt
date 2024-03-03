@@ -415,20 +415,20 @@ data "ComboCategory" "MAG_Fire_AlwaysDippedInFire_Greatswords"
 new entry "MAG_Fire_AlwaysDippedInFire_Greatsword_2"
 type "Weapon"
 using "MAG_Fire_AlwaysDippedInFire_Greatsword"
-data "Rarity" "Rare"
-data "DefaultBoosts" "HiddenDuringCinematic();WeaponEnchantment(1);WeaponProperty(Magical)"
+// data "Rarity" "Rare"
+data "DefaultBoosts" "HiddenDuringCinematic();WeaponAttackRollBonus(1);WeaponProperty(Magical)"
 
 new entry "MAG_Fire_AlwaysDippedInFire_Greatsword_3"
 type "Weapon"
 using "MAG_Fire_AlwaysDippedInFire_Greatsword"
-data "Rarity" "VeryRare"
-data "DefaultBoosts" "HiddenDuringCinematic();WeaponEnchantment(2);WeaponProperty(Magical)"
+// data "Rarity" "VeryRare"
+data "DefaultBoosts" "HiddenDuringCinematic();WeaponAttackRollBonus(2);WeaponProperty(Magical)"
 
 new entry "MAG_Fire_AlwaysDippedInFire_Greatsword_4"
 type "Weapon"
 using "MAG_Fire_AlwaysDippedInFire_Greatsword"
-data "Rarity" "Legendary"
-data "DefaultBoosts" "HiddenDuringCinematic();WeaponEnchantment(3);WeaponProperty(Magical)"
+// data "Rarity" "Legendary"
+data "DefaultBoosts" "HiddenDuringCinematic();WeaponAttackRollBonus(3);WeaponProperty(Magical)"
 
 //-------------------------------------------------------------------------
 //  UND_SwordInStone

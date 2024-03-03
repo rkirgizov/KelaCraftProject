@@ -1,6 +1,10 @@
+////////////////////////////////////////////////////////
+// Инструменты
+////////////////////////////////////////////////////////
+
 new entry "KELA_Useful_Anvil"
 type "Object"
-using "OBJ_GenericLootItem"
+using "OBJ_GenericCraftingStation"
 data "RootTemplate" "df43b6fa-374d-4d92-8daf-1c4975b95de0"
 data "Weight" "100.0"
 data "UseCosts" "ActionPoint:1"
@@ -8,7 +12,7 @@ data "DefaultBoosts" "Tag(KELAANVIL)"
 
 new entry "KELA_Useful_Whetstone_Wheel"
 type "Object"
-using "OBJ_GenericLootItem"
+using "OBJ_GenericCraftingStation"
 data "RootTemplate" "9c961b81-496f-48fe-9265-125b084bcde5"
 data "Weight" "100.0"
 data "UseCosts" "ActionPoint:1"
@@ -17,14 +21,66 @@ data "DefaultBoosts" "Tag(KELAWHETSTONE)"
 new entry "OBJ_SmeltingForge"
 type "Object"
 using "OBJ_Campfire_Indestructible"
-data "Weight" "100"
+data "Weight" "100.0"
 data "DefaultBoosts" "Tag(KELASMELTINGFORGE)"
+data "UseCosts" "ActionPoint:1"
 
-new entry "BOOK_Kela_Common_Smithing_Notes"
+new entry "KELA_Laboratory_Object"
 type "Object"
 using "OBJ_GenericLootItem"
-data "RootTemplate" "d78adaa0-511a-46a1-aedc-4ca279bbcd22"
+data "RootTemplate" "5df31fe8-1ebe-4def-8ebb-fca0acd74aed"
+data "Weight" "5.0"
+data "UseCosts" "ActionPoint:1"
+
+////////////////////////////////////////////////////////
+// Книги, рецепты
+////////////////////////////////////////////////////////
+
+new entry "BOOK_Kela_Template"
+type "Object"
+using "OBJ_Book"
+data "ObjectCategory" "BookCommon"
+data "MinAmount" "1"
+data "MaxAmount" "1"
+data "Priority" "1"
+
+new entry "BOOK_Kela_Blacksmith_Handbook"
+type "Object"
+using "BOOK_Kela_Template"
+data "ValueOverride" "30"
+data "Rarity" "Uncommon"
+
+new entry "BOOK_Kela_Blacksmith_Apprentice"
+type "Object"
+using "BOOK_Kela_Blacksmith_Handbook"
 data "Weight" "0.3"
+data "ValueOverride" "150"
+data "Rarity" "Rare"
+
+new entry "BOOK_Kela_Blacksmith_Expert"
+type "Object"
+using "BOOK_Kela_Blacksmith_Handbook"
+data "Weight" "0.3"
+data "ValueOverride" "750"
+data "Rarity" "VeryRare"
+
+new entry "BOOK_Kela_Blacksmith_Master"
+type "Object"
+using "BOOK_Kela_Blacksmith_Handbook"
+data "Weight" "0.3"
+data "ValueOverride" "1750"
+data "Rarity" "Legendary"
+
+new entry "BOOK_Kela_Recipe_Sharpening"
+type "Object"
+using "BOOK_Kela_Template"
+data "Weight" "0.1"
+data "ValueOverride" "50"
+data "Rarity" "Uncommon"
+
+////////////////////////////////////////////////////////
+// Зелья, Масла
+////////////////////////////////////////////////////////
 
 new entry "KELA_Grinding_Oil"
 type "Object"
@@ -39,6 +95,10 @@ using "_Potion"
 data "RootTemplate" "51fc8b38-3c66-437d-956f-c8bb040a5dd8"
 data "ValueOverride" "150"
 data "Rarity" "VeryRare"
+
+////////////////////////////////////////////////////////
+// Слитки
+////////////////////////////////////////////////////////
 
 new entry "OBJ_Metalbar_Rare"
 type "Object"

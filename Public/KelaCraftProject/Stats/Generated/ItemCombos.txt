@@ -1,6 +1,126 @@
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
+//  АЛХИМИЯ
+//  KELA_Laboratory_Object
+//  OBJ_Potion_Healing
+//  OBJ_Potion_Healing_Greater
+//  OBJ_Potion_Healing_Superior
+//  OBJ_Potion_Healing_Supreme
+//  UND_SussurTree_Flower
+//  Drink (Category)
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+
+new ItemCombination "COMB_Potion_Healing_Greater"
+data "Type 1" "Object"
+data "Object 1" "KELA_Laboratory_Object"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "OBJ_Potion_Healing"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Potion_Healing"
+data "Transform 3" "Consume"
+data "Type 4" "Category"
+data "Object 4" "Drink" // Алкоголь
+data "Transform 4" "Consume"
+
+new ItemCombinationResult "COMB_Potion_Healing_Greater_1"
+data "ResultAmount 1" "1"
+data "Result 1" "OBJ_Potion_Healing_Greater"
+data "PreviewStatsID" "OBJ_Potion_Healing_Greater"
+data "PreviewIcon" "OBJ_Potion_Healing_Greater"
+
+new ItemCombination "COMB_Potion_Healing_Superior"
+data "Type 1" "Object"
+data "Object 1" "KELA_Laboratory_Object"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "OBJ_Potion_Healing_Greater"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Potion_Healing_Greater"
+data "Transform 3" "Consume"
+data "Type 4" "Category"
+data "Object 4" "Drink"
+data "Transform 4" "Consume"
+
+new ItemCombinationResult "COMB_Potion_Healing_Superior_1"
+data "ResultAmount 1" "1"
+data "Result 1" "OBJ_Potion_Healing_Superior"
+data "PreviewStatsID" "OBJ_Potion_Healing_Superior"
+data "PreviewIcon" "OBJ_Potion_Healing_Superior"
+
+new ItemCombination "COMB_Potion_Healing_Supreme"
+data "Type 1" "Object"
+data "Object 1" "KELA_Laboratory_Object"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "OBJ_Potion_Healing_Superior"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Potion_Healing_Superior"
+data "Transform 3" "Consume"
+data "Type 4" "Category"
+data "Object 4" "Drink"
+data "Transform 4" "Consume"
+
+new ItemCombinationResult "COMB_Potion_Healing_Supreme_1"
+data "ResultAmount 1" "1"
+data "Result 1" "OBJ_Potion_Healing_Supreme"
+data "PreviewStatsID" "OBJ_Potion_Healing_Supreme"
+data "PreviewIcon" "OBJ_Potion_Healing_Supreme"
+
+new ItemCombination "COMB_Grinding_Oil"
+data "Type 1" "Object"
+data "Object 1" "KELA_Laboratory_Object"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "BOOK_Kela_Recipe_Sharpening" // Рецепт масла для заточки
+data "Transform 2" "None"
+data "Type 3" "Object"
+data "Object 3" "ALCH_Solution_Oil_DamageAttackBuff" // Разбавленное масло остроты
+data "Transform 3" "Consume"
+data "Type 4" "Object"
+data "Object 4" "OBJ_GreaseBottle" // Бутылка с жиром
+data "Transform 4" "Consume"
+
+new ItemCombinationResult "COMB_Grinding_Oil_1"
+data "ResultAmount 1" "1"
+data "Result 1" "KELA_Grinding_Oil"
+data "PreviewStatsID" "KELA_Grinding_Oil"
+data "PreviewIcon" "KELA_Grinding_Oil"
+
+new ItemCombination "COMB_Sussur_Oil"
+data "Type 1" "Object"
+data "Object 1" "KELA_Laboratory_Object"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "BOOK_Kela_Recipe_Sharpening"
+data "Transform 2" "None"
+data "Type 3" "Object"
+data "Object 3" "UND_SussurTree_Flower"
+data "Transform 3" "Consume"
+data "Type 4" "Category"
+data "Object 4" "ALCH_Solution_Oil_Wizardsbane"
+data "Transform 4" "Consume"
+
+new ItemCombinationResult "COMB_Sussur_Oil_1"
+data "ResultAmount 1" "1"
+data "Result 1" "KELA_Sussur_Oil"
+data "PreviewStatsID" "KELA_Sussur_Oil"
+data "PreviewIcon" "KELA_Sussur_Oil"
+
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 //  РЕЦЕПТЫ ДЛЯ ПЛАВИЛЬНИ
 //  KELA_Useful_Anvil
 //  OBJ_Metalbar_Bronze
@@ -13,18 +133,6 @@
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
-//  РЕЦЕПТЫ ДЛЯ НАКОВАЛЬНИ - УЛУЧШЕНИЕ
-//  KELA_Useful_Anvil
-//  OBJ_Metalbar_Bronze
-//  OBJ_Metalbar_Rare
-//  OBJ_Metalbar_VeryRare
-//  OBJ_Metalbar_Legendary  
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
 
 //-------------------------------------------------------------------------
 //  TEST
@@ -68,23 +176,7 @@ data "Result 1" "OBJ_Metalbar_Rare"
 data "PreviewStatsID" "OBJ_Metalbar_Rare"
 data "PreviewIcon" "OBJ_Metalbar_Rare"
 
-new ItemCombination "COMB_OBJ_Grinding_Oil"
-data "Type 1" "Object"
-data "Object 1" "KELA_Useful_Anvil"
-data "Combine 1" "Base"
-data "Transform 1" "None"
-data "Type 2" "Object"
-data "Object 2" "OBJ_Skull"
-data "Transform 2" "Consume"
-data "Type 3" "Object"
-data "Object 3" "OBJ_GreaseBottle"
-data "Transform 3" "Consume"
 
-new ItemCombinationResult "COMB_OBJ_Grinding_Oil_1"
-data "ResultAmount 1" "1"
-data "Result 1" "KELA_Grinding_Oil"
-data "PreviewStatsID" "KELA_Grinding_Oil"
-data "PreviewIcon" "KELA_Grinding_Oil"
 
 
 new ItemCombination "QUEST_FOR_ForgeWithBark_KELA"
@@ -106,23 +198,7 @@ data "Result 1" "FOR_ForgeWithSussurBark"
 data "PreviewStatsID" "FOR_ForgeWithSussurBark"
 
 
-new ItemCombination "COMB_OBJ_Sussur_Oil"
-data "Type 1" "Object"
-data "Object 1" "KELA_Useful_Anvil"
-data "Combine 1" "Base"
-data "Transform 1" "None"
-data "Type 2" "Object"
-data "Object 2" "UND_SussurTree_Flower"
-data "Transform 2" "Consume"
-data "Type 3" "Object"
-data "Object 3" "OBJ_GreaseBottle"
-data "Transform 3" "Consume"
 
-new ItemCombinationResult "COMB_OBJ_Sussur_Oil_1"
-data "ResultAmount 1" "1"
-data "Result 1" "KELA_Sussur_Oil"
-data "PreviewStatsID" "KELA_Sussur_Oil"
-data "PreviewIcon" "KELA_Sussur_Oil"
 
 new ItemCombination "COMB_OBJ_Metalbar_Rare"
 data "Type 1" "Object"
@@ -187,6 +263,19 @@ data "Result 1" "OBJ_Metalbar_Legendary"
 data "PreviewStatsID" "OBJ_Metalbar_Legendary"
 data "PreviewIcon" "OBJ_Metalbar_Legendary"
 
+
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//  РЕЦЕПТЫ ДЛЯ НАКОВАЛЬНИ - УЛУЧШЕНИЕ
+//  KELA_Useful_Anvil
+//  OBJ_Metalbar_Bronze
+//  OBJ_Metalbar_Rare
+//  OBJ_Metalbar_VeryRare
+//  OBJ_Metalbar_Legendary  
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 
 //-------------------------------------------------------------------------
 //  Battleaxe
@@ -1541,19 +1630,21 @@ new ItemCombination "MAG_Fire_AlwaysDippedInFire_Greatsword_to_RR"
 data "Type 1" "Object"
 data "Object 1" "KELA_Useful_Anvil"
 data "Combine 1" "Base"
-data "Transform 1" "None"
-data "Type 2" "Category"
-data "Object 2" "MAG_Fire_AlwaysDippedInFire_Greatswords"
-data "Transform 2" "Consume"
+data "Transform 1" "Transform"
+data "Type 2" "Object"
+data "Object 2" "MAG_Fire_AlwaysDippedInFire_Greatsword"
+data "Transform 2" "None"
 data "Type 3" "Object"
 data "Object 3" "OBJ_Metalbar_Rare"
 data "Transform 3" "Consume"
 
 new ItemCombinationResult "MAG_Fire_AlwaysDippedInFire_Greatsword_to_RR_1"
 data "ResultAmount 1" "1"
-data "Result 1" "MAG_Fire_AlwaysDippedInFire_Greatsword_2"
+data "Result 1" "OBJ_Metalbar_Legendary"
+data "ResultAmount 2" "1"
+data "Result 2" "MAG_Fire_AlwaysDippedInFire_Greatsword_2"
 data "PreviewStatsID" "MAG_Fire_AlwaysDippedInFire_Greatsword_2"
-data "PreviewIcon" "MAG_Fire_AlwaysDippedInFire_Greatsword_2"
+data "PreviewIcon" "MAG_Fire_AlwaysDippedInFire_Greatsword"
 
 new ItemCombination "MAG_Fire_AlwaysDippedInFire_Greatsword_to_VR"
 data "Type 1" "Object"

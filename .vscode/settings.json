@@ -24,5 +24,6 @@
     "files.associations": {
         "*.sql": "sql",
         "*.txt": "bg3"
-    }
+    },
+    "bg3ModHelper.rootModPath": "c:\\BG3 Modding\\KelaCraftProject"
 }
