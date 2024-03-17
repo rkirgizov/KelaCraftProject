@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="900" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<!-- /////////////////////////////////////////////////// -->
+				<!-- РЕЦЕПТЫ -->
+				<!-- /////////////////////////////////////////////////// -->
+
+				<!-- Рецепт зелий здоровья -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="caa0ee78-2dff-46ec-a5d8-6686f5786e5f" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Potion_Healing" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h7f43d9d730404d9a9b1b5e05038b832d2581" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h3398e83a466e45e7891ffd5842881a80dec9" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h56fe4b95dd4d413cbb856c3a1919ee6f4696" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h040b1f64g325eg4b46gb957gc2347cf3fb0d" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Paper_Sheet_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c0e41765-dda2-49c3-9e72-bd3b8fa45698" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="c6b0ba4a-534e-2ad4-9220-89a580d4148b" />
+					<attribute id="VisualTemplate" type="FixedString" value="a888a867-3fed-eac2-a75a-18c5f9425f25" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Recipe_Potion_Healing" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_LABORATORY_AURA_ACTIVE', context.Source)" />	
+											<attribute id="CombineSlots" type="int8" value="3" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not AbilityGreaterThan('Intelligence',12,context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Not_Enough_Intelligence" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="AbilityGreaterThan('Intelligence',12,context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Potion_Healing" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Рецепт масла обычной заточки -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="96b4942d-0f00-4ae0-96ce-d9d3283be936" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Sharpening_Simple" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hf07bc4873603428c9e436b050059bf1e4f5b" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h198cc17d0d22449a99a4a7b7f0d0dfe8ccd7" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="ha4b8c9c796de416884759505b32fb97a5b89" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h040b1f64g325eg4b46gb957gc2347cf3fb0d" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Paper_Sheet_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c0e41765-dda2-49c3-9e72-bd3b8fa45698" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="c6b0ba4a-534e-2ad4-9220-89a580d4148b" />
+					<attribute id="VisualTemplate" type="FixedString" value="a888a867-3fed-eac2-a75a-18c5f9425f25" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Recipe_Sharpening_Simple" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_LABORATORY_AURA_ACTIVE', context.Source)" />	
+											<attribute id="CombineSlots" type="int8" value="2" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not AbilityGreaterThan('Intelligence',12,context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Not_Enough_Intelligence" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="AbilityGreaterThan('Intelligence',12,context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Sharpening_Simple" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				
+				<!-- Рецепт масла для суссурной заточки -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="2780f86c-1226-47b0-b9df-0d0ae6399414" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Sharpening_Sussur" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hda03d387696841ceb1f4dc12030d58ca3c31" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h3398e83a466e45e7891ffd5842881a80dec9" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h3dce7d4b97684c5f99945311e9f2f2395gc3" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="300" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h040b1f64g325eg4b46gb957gc2347cf3fb0d" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Paper_Sheet_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c0e41765-dda2-49c3-9e72-bd3b8fa45698" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="c6b0ba4a-534e-2ad4-9220-89a580d4148b" />
+					<attribute id="VisualTemplate" type="FixedString" value="a888a867-3fed-eac2-a75a-18c5f9425f25" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Recipe_Sharpening_Sussur" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_LABORATORY_AURA_ACTIVE', context.Source)" />	
+											<attribute id="CombineSlots" type="int8" value="3" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not AbilityGreaterThan('Intelligence',12,context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Not_Enough_Intelligence" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="AbilityGreaterThan('Intelligence',12,context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Sharpening_Sussur" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				
+				<!-- TODO добавить его мужику возле суссурного дерева -->
+				<!-- Рецепт суссурного масла -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="1ac3b91b-ef9f-46b7-ad00-9147fd91f3bd" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Oil_Sussur" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h6e223c83c63b47bf95303fcf1cdb21f6894b" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h8c27c403d93843cd9040df92c90c34e5052g" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h374ff852ec0d4ed59c370cc20e24460052fg" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="10" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h040b1f64g325eg4b46gb957gc2347cf3fb0d" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Paper_Sheet_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c0e41765-dda2-49c3-9e72-bd3b8fa45698" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="c6b0ba4a-534e-2ad4-9220-89a580d4148b" />
+					<attribute id="VisualTemplate" type="FixedString" value="a888a867-3fed-eac2-a75a-18c5f9425f25" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Recipe_Oil_Sussur" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_LABORATORY_AURA_ACTIVE', context.Source)" />	
+											<attribute id="CombineSlots" type="int8" value="2" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not AbilityGreaterThan('Intelligence',12,context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Not_Enough_Intelligence" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="AbilityGreaterThan('Intelligence',12,context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Oil_Sussur" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				
+				<!-- Рецепт обычного слитка улучшения оружия -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="7b34da5a-6f44-4323-b807-929616c1ba03" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Upgrade_Metalbar_Simple" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h5b3726f488d4495caa1e4670cfe5a9ad1fc9" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h08cc6cccf7424bc3bb21528a82cd22750071" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="he2344a2a0f3e4fcb899051eb3ce4d9e6beb0" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h040b1f64g325eg4b46gb957gc2347cf3fb0d" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Paper_Sheet_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c0e41765-dda2-49c3-9e72-bd3b8fa45698" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="c6b0ba4a-534e-2ad4-9220-89a580d4148b" />
+					<attribute id="VisualTemplate" type="FixedString" value="a888a867-3fed-eac2-a75a-18c5f9425f25" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Recipe_Upgrade_Metalbar_Simple" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>								
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_CAN_POUR_METALBARS', context.Source)" />	
+											<attribute id="CombineSlots" type="int8" value="2" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not HasPassive('PassiveFeature_KelaBlacksmith', context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Not_Blacksmith" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Upgrade_Metalbar_Simple" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Рецепт суссурного слитка улучшения оружия -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="66351369-0127-499f-846f-1c6722543050" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Upgrade_Metalbar_Sussur" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h00a1b2d1008d4bbd9188928bbf6374e25a58" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h08cc6cccf7424bc3bb21528a82cd22750071" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hcfd89d088af84697b5c78fa1b63f8cfdbdgb" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h040b1f64g325eg4b46gb957gc2347cf3fb0d" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Paper_Sheet_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c0e41765-dda2-49c3-9e72-bd3b8fa45698" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="c6b0ba4a-534e-2ad4-9220-89a580d4148b" />
+					<attribute id="VisualTemplate" type="FixedString" value="a888a867-3fed-eac2-a75a-18c5f9425f25" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Recipe_Upgrade_Metalbar_Sussur" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>								
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_CAN_POUR_METALBARS', context.Source)" />	
+											<attribute id="CombineSlots" type="int8" value="3" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not HasPassive('PassiveFeature_KelaBlacksmith', context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Not_Blacksmith" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source)" />
+											<attribute id="BookId" type="FixedString" value="Kela_Recipe_Upgrade_Metalbar_Sussur" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>				
+
+				<!-- /////////////////////////////////////////////////// -->
+				<!-- КНИГИ -->
+				<!-- /////////////////////////////////////////////////// -->
+
+				<!-- Настольная книга кузнеца -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="a910880a-93e9-4ec5-8e4f-9e0b015dfa3f" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Blacksmith_Handbook" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h37c868fbg6ac3g4570g9d2aga2cefe77fd3c" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h0b4e5183g622fg4993ga87dg83f6b56e4f39" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Book_E" />
+					<attribute id="ParentTemplateId" type="FixedString" value="23f65dff-a1ca-42fb-91ee-4cbb69450336" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="9ebb8c1a-0217-660f-b784-8a4a59ef8f7e" />
+					<attribute id="VisualTemplate" type="FixedString" value="47a96ccb-e38c-c757-6a4f-7e457e1cbe32" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Blacksmith_Handbook" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="0" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="BookId" type="FixedString" value="KELA_Blacksmith_Handbook" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Наставления кузнеца-подмастерья -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="3c2144dd-b1f5-4988-bda4-8a21af5ab95a" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Blacksmith_Apprentice" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd1ff8a46g5ac6g4109ga0d9g2c1d6d9942af" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h0b5c4cd7g0864g4245g9367g35497bf61e9b" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Book_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="23f65dff-a1ca-42fb-91ee-4cbb69450336" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="2206c75f-e037-55f7-b04f-d880ca8e9c14" />
+					<attribute id="VisualTemplate" type="FixedString" value="fa43d262-3567-a1e6-abf1-b14964727214" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Blacksmith_Apprentice" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="0" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not HasStatus('BOOK_KELA_BLACKSMITH_APPRENTICE_USED', context.Source) and not HasStatus('BOOK_KELA_BLACKSMITH_EXPERT_USED', context.Source) and not HasStatus('BOOK_KELA_BLACKSMITH_MASTER_USED', context.Source)" />	
+											<attribute id="StatsId" type="FixedString" value="BOOK_KELA_BLACKSMITH_APPRENTICE_USED" />
+											<attribute id="StatusDuration" type="int32" value="-1" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not HasPassive('PassiveFeature_KelaBlacksmith', context.Source)" />
+											<attribute id="BookId" type="FixedString" value="KELA_Blacksmith_Does_Not_Have_Main_Passive" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="BookId" type="FixedString" value="KELA_Blacksmith_Apprentice" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Наставления кузнеца-эксперта -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="c62540a3-b7a0-487b-835e-6d55bb777f3a" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Blacksmith_Expert" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h67947824g2eecg4f72g9e60g3a12f0a5c4a5" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h19ea9ccdg442eg499fg82d3ga01a38b2802b" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Book_Rich_B" />
+					<attribute id="ParentTemplateId" type="FixedString" value="23f65dff-a1ca-42fb-91ee-4cbb69450336" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="b609038c-2746-b083-ec90-710f80a2a712" />
+					<attribute id="VisualTemplate" type="FixedString" value="49a88ee9-36d3-7286-57f0-33ac48cd6f74" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Blacksmith_Expert" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="0" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not HasStatus('BOOK_KELA_BLACKSMITH_EXPERT_USED', context.Source) and not HasStatus('BOOK_KELA_BLACKSMITH_MASTER_USED', context.Source)" />	
+											<attribute id="StatsId" type="FixedString" value="BOOK_KELA_BLACKSMITH_EXPERT_USED" />
+											<attribute id="StatusDuration" type="int32" value="-1" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not HasPassive('PassiveFeature_KelaBlacksmith', context.Source)" />
+											<attribute id="BookId" type="FixedString" value="KELA_Blacksmith_Does_Not_Have_Main_Passive" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="BookId" type="FixedString" value="KELA_Blacksmith_Expert" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				
+				<!-- Наставления кузнеца-мастера -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="97c203b6-f30a-4c65-a91e-cca96891e3e0" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Blacksmith_Master" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h14659ad5gccb6g4d96gab62gfd5ad53b3bb2" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hc647883agd952g4c3egb6f2g9d390a473131" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Book_Rich_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="23f65dff-a1ca-42fb-91ee-4cbb69450336" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="5f9e4178-2c61-8a4e-312c-f7e1f2c7a904" />
+					<attribute id="VisualTemplate" type="FixedString" value="54b4e339-e36e-b1ab-11c8-de192ba915dc" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Blacksmith_Master" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="0" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not HasStatus('BOOK_KELA_BLACKSMITH_MASTER_USED', context.Source)" />	
+											<attribute id="StatsId" type="FixedString" value="BOOK_KELA_BLACKSMITH_MASTER_USED" />
+											<attribute id="StatusDuration" type="int32" value="-1" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not HasPassive('PassiveFeature_KelaBlacksmith', context.Source)" />
+											<attribute id="BookId" type="FixedString" value="KELA_Blacksmith_Does_Not_Have_Main_Passive" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="BookId" type="FixedString" value="KELA_Blacksmith_Master" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>				
+
+
+			</children>
+		</node>
+	</region>
+</save>
+

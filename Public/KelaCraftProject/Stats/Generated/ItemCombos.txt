@@ -8,14 +8,16 @@
 //  OBJ_Potion_Healing_Superior
 //  OBJ_Potion_Healing_Supreme
 //  UND_SussurTree_Flower
+//  OBJ_GreaseBottle
 //  Drink (Category)
+//  ALCH_Solution_Oil_DamageAttackBuff
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 
 new ItemCombination "COMB_Potion_Healing_Greater"
 data "Type 1" "Object"
-data "Object 1" "KELA_Laboratory_Object"
+data "Object 1" "BOOK_Kela_Recipe_Potion_Healing"
 data "Combine 1" "Base"
 data "Transform 1" "None"
 data "Type 2" "Object"
@@ -25,7 +27,7 @@ data "Type 3" "Object"
 data "Object 3" "OBJ_Potion_Healing"
 data "Transform 3" "Consume"
 data "Type 4" "Category"
-data "Object 4" "Drink" // Алкоголь
+data "Object 4" "Drink"
 data "Transform 4" "Consume"
 
 new ItemCombinationResult "COMB_Potion_Healing_Greater_1"
@@ -36,7 +38,7 @@ data "PreviewIcon" "OBJ_Potion_Healing_Greater"
 
 new ItemCombination "COMB_Potion_Healing_Superior"
 data "Type 1" "Object"
-data "Object 1" "KELA_Laboratory_Object"
+data "Object 1" "BOOK_Kela_Recipe_Potion_Healing"
 data "Combine 1" "Base"
 data "Transform 1" "None"
 data "Type 2" "Object"
@@ -57,7 +59,7 @@ data "PreviewIcon" "OBJ_Potion_Healing_Superior"
 
 new ItemCombination "COMB_Potion_Healing_Supreme"
 data "Type 1" "Object"
-data "Object 1" "KELA_Laboratory_Object"
+data "Object 1" "BOOK_Kela_Recipe_Potion_Healing"
 data "Combine 1" "Base"
 data "Transform 1" "None"
 data "Type 2" "Object"
@@ -78,18 +80,15 @@ data "PreviewIcon" "OBJ_Potion_Healing_Supreme"
 
 new ItemCombination "COMB_Grinding_Oil"
 data "Type 1" "Object"
-data "Object 1" "KELA_Laboratory_Object"
+data "Object 1" "BOOK_Kela_Recipe_Sharpening_Simple"
 data "Combine 1" "Base"
 data "Transform 1" "None"
 data "Type 2" "Object"
-data "Object 2" "BOOK_Kela_Recipe_Sharpening" // Рецепт масла для заточки
-data "Transform 2" "None"
+data "Object 2" "ALCH_Solution_Oil_DamageAttackBuff"
+data "Transform 2" "Consume"
 data "Type 3" "Object"
-data "Object 3" "ALCH_Solution_Oil_DamageAttackBuff" // Разбавленное масло остроты
+data "Object 3" "OBJ_GreaseBottle"
 data "Transform 3" "Consume"
-data "Type 4" "Object"
-data "Object 4" "OBJ_GreaseBottle" // Бутылка с жиром
-data "Transform 4" "Consume"
 
 new ItemCombinationResult "COMB_Grinding_Oil_1"
 data "ResultAmount 1" "1"
@@ -97,20 +96,38 @@ data "Result 1" "KELA_Grinding_Oil"
 data "PreviewStatsID" "KELA_Grinding_Oil"
 data "PreviewIcon" "KELA_Grinding_Oil"
 
-new ItemCombination "COMB_Sussur_Oil"
+new ItemCombination "COMB_Grinding_Sussur_Oil"
 data "Type 1" "Object"
-data "Object 1" "KELA_Laboratory_Object"
+data "Object 1" "BOOK_Kela_Recipe_Sharpening_Sussur"
 data "Combine 1" "Base"
 data "Transform 1" "None"
 data "Type 2" "Object"
-data "Object 2" "BOOK_Kela_Recipe_Sharpening"
-data "Transform 2" "None"
+data "Object 2" "KELA_Grinding_Oil"
+data "Transform 2" "Consume"
 data "Type 3" "Object"
-data "Object 3" "UND_SussurTree_Flower"
+data "Object 3" "KELA_Sussur_Oil"
 data "Transform 3" "Consume"
-data "Type 4" "Category"
-data "Object 4" "ALCH_Solution_Oil_Wizardsbane"
+data "Type 4" "Object"
+data "Object 4" "OBJ_GreaseBottle"
 data "Transform 4" "Consume"
+
+new ItemCombinationResult "COMB_Grinding_Sussur_Oil_1"
+data "ResultAmount 1" "1"
+data "Result 1" "KELA_Grinding_Oil_Sussur"
+data "PreviewStatsID" "KELA_Grinding_Oil_Sussur"
+data "PreviewIcon" "KELA_Grinding_Oil_Sussur"
+
+new ItemCombination "COMB_Sussur_Oil"
+data "Type 1" "Object"
+data "Object 1" "BOOK_Kela_Recipe_Oil_Sussur"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "UND_SussurTree_Flower"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_GreaseBottle"
+data "Transform 3" "Consume"
 
 new ItemCombinationResult "COMB_Sussur_Oil_1"
 data "ResultAmount 1" "1"
@@ -129,9 +146,54 @@ data "PreviewIcon" "KELA_Sussur_Oil"
 //  OBJ_Metalbar_Rare
 //  OBJ_Metalbar_VeryRare
 //  OBJ_Metalbar_Legendary  
+//  ALCH_Solution_Oil_AttackBuff
+//  Quest_FOR_SussurBark
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
+
+new ItemCombination "COMB_Upgrade_Metalbar_Simple"
+data "Type 1" "Object"
+data "Object 1" "BOOK_Kela_Recipe_Upgrade_Metalbar_Simple"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "ALCH_Solution_Oil_AttackBuff"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Metalbar_Bronze"
+data "Transform 3" "Consume"
+
+new ItemCombinationResult "COMB_Upgrade_Metalbar_Simple_1"
+data "ResultAmount 1" "1"
+data "Result 1" "KELA_Upgrading_Metalbar_Simple"
+data "PreviewStatsID" "KELA_Upgrading_Metalbar_Simple"
+data "PreviewIcon" "KELA_Upgrading_Metalbar_Simple"
+
+new ItemCombination "COMB_Upgrade_Metalbar_Sussur"
+data "Type 1" "Object"
+data "Object 1" "BOOK_Kela_Recipe_Upgrade_Metalbar_Sussur"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "ALCH_Solution_Oil_AttackBuff"
+data "Transform 2" "Consume"
+data "Type 3" "Object"
+data "Object 3" "KELA_Upgrading_Metalbar_Simple"
+data "Transform 3" "Consume"
+data "Type 4" "Object"
+data "Object 4" "Quest_FOR_SussurBark"
+data "Transform 4" "Consume"
+
+new ItemCombinationResult "COMB_Upgrade_Metalbar_Sussur_1"
+data "ResultAmount 1" "1"
+data "Result 1" "KELA_Upgrading_Metalbar_Sussur"
+data "PreviewStatsID" "KELA_Upgrading_Metalbar_Sussur"
+data "PreviewIcon" "KELA_Upgrading_Metalbar_Sussur"
+
+
+
+
 
 
 //-------------------------------------------------------------------------

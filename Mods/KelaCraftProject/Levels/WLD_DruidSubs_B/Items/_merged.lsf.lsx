@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<!-- Лаборатория Нетти -->
+				<!-- Рецепт зелий лечения кладём в сундук около кровати -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_DruidSubs_B" />
+					<attribute id="MapKey" type="FixedString" value="78e8ef8a-d587-4979-bd83-a88905c6ba32" /> origin
+					<!-- <attribute id="MapKey" type="FixedString" value="593c1f4e-2b9f-4868-85c5-e7cf20226215" /> -->
+					<attribute id="Name" type="LSString" value="CONT_GEN_Chest_Common_A_small_A_000" />
+					<attribute id="TemplateName" type="FixedString" value="8c5f95d0-64d7-48ce-a871-48cd43c1e019" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274112" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="DEN_Sanctum_Supplies_Potions" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_BOOK_Kela_Recipe_Potion_Healing" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_DruidSubs_B" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="25b584ad-4294-3efd-5867-31e6d4adcddb" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="259.8341 1.234591 81.68656" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.07112315 0 0.9974675" />
+							<attribute id="Scale" type="float" value="0.7" />
+						</node>
+					</children>
+				</node>
+
+
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="WLD_DruidSubs_B" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="5e777b64-09fe-43d2-87b0-4c223d3f6b65" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_DRUIDSUBS_B" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_DruidSubs_B" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="25b584ad-4294-3efd-5867-31e6d4adcddb" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="255.0245 2.125453 78.84888" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9322047 0 -0.3619317" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+
+
+			</children>
+		</node>
+	</region>
+</save>

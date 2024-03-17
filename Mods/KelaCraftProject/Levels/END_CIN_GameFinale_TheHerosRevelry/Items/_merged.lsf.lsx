@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+			
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="END_CIN_GameFinale_TheHerosRevelry" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="f0a5eca7-57dc-4244-831d-2772836dbce8" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_GAMEFINALE_THEHEROSREVELRY_1" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="END_CIN_GameFinale_TheHerosRevelry" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="832bbff8-84ed-ded2-fcc1-481e92a3bfb9" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-1.286228 24.54433 -111.7936" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.7850416 0 0.619443" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="END_CIN_GameFinale_TheHerosRevelry" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="aec82286-9cbd-49a6-ba06-ca2bbf383b65" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_GAMEFINALE_THEHEROSREVELRY_2" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="END_CIN_GameFinale_TheHerosRevelry" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="832bbff8-84ed-ded2-fcc1-481e92a3bfb9" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-40.33724 26.76483 -25.57483" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.06858923 0 0.9976451" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="END_CIN_GameFinale_TheHerosRevelry" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="245d1ed4-3a15-4007-be2f-a8c53a63d2fb" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_GAMEFINALE_THEHEROSREVELRY_3" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="END_CIN_GameFinale_TheHerosRevelry" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="832bbff8-84ed-ded2-fcc1-481e92a3bfb9" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="5.194877 27.44325 -75.22113" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.442598 0 0.8967201" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+
+				
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="BGO_SteelWatchLabControlCenter_B" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="bc313922-1bd5-47d2-8091-18b0adefd918" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_STEELWATCHLABCONTROLCENTER_B" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGO_SteelWatchLabControlCenter_B" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="154ca24c-3ffa-14c3-7ea8-6c694b3492db" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c888ad2b-0daa-9a6b-bf32-9c32eb4dc673" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="67255277-db8f-7796-6728-8d477559361e" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="61.63163 0.6067077 -7.171477" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.6522195 0 0.7580302" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+
+
+
+				
+			</children>
+		</node>
+	</region>
+</save>

@@ -64,6 +64,88 @@
 // Если он достиг 13-го уровня или выше, он получит 1 причудливое перо, при условии, что Loot_Feather_A_Fancy не ограничен в выпадении на его уровне.
 // Если у них 13-й уровень или выше, они получат 1 эссенцию воздуха 2-го уровня (т.е. эссенцию воздуха более высокого уровня), при условии, что Loot_Essence_Air_Step2_A не ограничен в выпадении на их уровне.
 
+
+new treasuretable "TRE_BOOK_Kela_Blacksmith_Handbook"
+new subtable "1,1"
+object category "I_BOOK_Kela_Blacksmith_Handbook",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Blacksmith_Apprentice"
+new subtable "1,1"
+object category "I_BOOK_Kela_Blacksmith_Apprentice",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Blacksmith_Expert"
+new subtable "1,1"
+object category "I_BOOK_Kela_Blacksmith_Expert",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Blacksmith_Master"
+new subtable "1,1"
+object category "I_BOOK_Kela_Blacksmith_Master",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Recipe_Potion_Healing"
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Recipe_Oil_Sussur"
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Oil_Sussur",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Recipe_Sharpening_Simple"
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Recipe_Sharpening_Sussur"
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Sussur",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_KELA_Sussur_Oil"
+new subtable "1,1"
+object category "I_KELA_Sussur_Oil",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_KELA_Grinding_Oil_Sussur"
+new subtable "1,1"
+object category "I_KELA_Grinding_Oil_Sussur",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_KELA_Grinding_Oil"
+new subtable "1,1"
+object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
+
+
+new treasuretable "KELA_DEBUG_Supply"
+new subtable "1,1"
+object category "I_BOOK_Kela_Blacksmith_Handbook",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BOOK_Kela_Blacksmith_Apprentice",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BOOK_Kela_Blacksmith_Expert",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BOOK_Kela_Blacksmith_Master",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Upgrade_Metalbar_Simple",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Upgrade_Metalbar_Sussur",1,0,0,0,0,0,0,0
+new subtable "10,1"
+object category "I_KELA_Upgrading_Metalbar_Simple",1,0,0,0,0,0,0,0
+new subtable "10,1"
+object category "I_KELA_Upgrading_Metalbar_Sussur",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Oil_Sussur",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Sussur",1,0,0,0,0,0,0,0
+new subtable "10,1"
+object category "I_KELA_Sussur_Oil",1,0,0,0,0,0,0,0
+new subtable "10,1"
+object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
+new subtable "10,1"
+object category "I_KELA_Grinding_Oil_Sussur",1,0,0,0,0,0,0,0
+
+
+
+
+
 new treasuretable "Grinding_Oil_Supply"
 new subtable "0,4;1,3;2,1"
 object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
@@ -71,6 +153,10 @@ object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
 new treasuretable "MetalBars_Bronze_Supply_Kela"
 new subtable "0,2;1,1"
 object category "I_OBJ_Metalbar_Bronze",1,0,0,0,0,0,0,0
+
+new treasuretable "MetalBars_Upgrading_Simple_Supply_Kela"
+new subtable "0,2;1,1"
+object category "I_KELA_Upgrading_Metalbar_Simple",1,0,0,0,0,0,0,0
 
 new treasuretable "MetalBars_Rare_Supply"
 new subtable "0,4;1,1"
@@ -114,6 +200,7 @@ object category "I_OBJ_Metalbar_Legendary",1,0,0,0,0,0,0,0
 new treasuretable "Valuables_MetalBars_For_Upgrade"
 new subtable "0,4;1,3;2,1"
 object category "T_MetalBars_Bronze_Supply_Kela",8,0,0,0,0,0,0,0
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",6,0,0,0,0,0,0,0
 object category "T_MetalBars_Rare_Supply",4,0,0,0,0,0,0,0
 object category "T_MetalBars_VeryRare_Supply",2,0,0,0,0,0,0,0
 object category "T_MetalBars_Legendary_Supply",1,0,0,0,0,0,0,0
@@ -127,21 +214,48 @@ object category "T_MetalBars_Bronze_Supply_Kela",1,0,0,0,0,0,0,0
 new subtable "0,10;1,1"
 object category "T_MetalBars_Rare_Supply",1,0,0,0,0,0,0,0
 
+// GENERAL
+new treasuretable "AlchemistTrader"
+CanMerge 1
+new subtable "0,2;1,1"
+object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
+new subtable "0,8;1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
 
+new treasuretable "ST_AlchemistTrader_GuaranteedThreeStacks"
+CanMerge 1
+new subtable "0,2;1,1"
+object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
+
+new treasuretable "EquipmentTrader_Melee"
+CanMerge 1
+new subtable "0,4;1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
 
 // 1 Act Emerald Grove
 new treasuretable "DEN_Weaponsmith_Trade"
 CanMerge 1
 new subtable "0,1;1,1"
 object category "I_OBJ_Metalbar_Bronze",1,0,0,0,0,0,0,0
-object category "I_KELA_Laboratory_Object",1,0,0,0,0,0,0,0
+new subtable "0,1;1,1"
 object category "T_Grinding_Oil_Supply",1,0,0,0,0,0,0,0
+new subtable "0,4;1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
+
+new treasuretable "DEN_Ethel"
+CanMerge 1
+new subtable "0,2;1,1"
+object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
+new subtable "0,10;1,1"
+object category "I_BOOK_Kela_Recipe_Oil_Sussur",1,0,0,0,0,0,0,0
+
 
 // 1 Act Blighted Village
 new treasuretable "FOR_BlacksmithsCellar_Crate"
 CanMerge 1
 new subtable "0,1;1,2"
 object category "T_MetalBars_Bronze_Supply_Kela",9,0,0,0,0,0,0,0
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",6,0,0,0,0,0,0,0
 object category "T_MetalBars_Rare_Supply",3,0,0,0,0,0,0,0
 object category "T_MetalBars_VeryRare_Supply",1,0,0,0,0,0,0,0
 new subtable "0,2;1,1"
@@ -183,7 +297,11 @@ object category "T_Valuables_MetalBars_For_Upgrade",1,0,0,0,0,0,0,0
 new subtable "0,1;1,1"
 object category "T_Grinding_Oil_Supply",1,0,0,0,0,0,0,0
 
-// 1 Act Goblin Camp
+new treasuretable "GOB_Quartermaster_Potions"
+CanMerge 1
+new subtable "0,2;1,1"
+object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
+
 new treasuretable "GOB_ZhentQuarters"
 CanMerge 1
 new subtable "0,3;1,1"
@@ -191,7 +309,6 @@ object category "T_Valuables_MetalBars_For_Upgrade",1,0,0,0,0,0,0,0
 new subtable "0,4;1,1"
 object category "T_Grinding_Oil_Supply",3,0,0,0,0,0,0,0
 
-// 1 Act Goblin Camp
 new treasuretable "GOB_ZhentQuarters_Chest_Gold"
 CanMerge 1
 new subtable "0,3;1,1"
@@ -199,13 +316,14 @@ object category "T_Valuables_MetalBars_For_Upgrade",1,0,0,0,0,0,0,0
 new subtable "0,2;1,1"
 object category "T_Grinding_Oil_Supply",1,0,0,0,0,0,0,0
 
-// 1 Act Goblin Camp
 new treasuretable "GOB_King_Treasures"
 CanMerge 1
-new subtable "0,2;1,1"
+new subtable "0,2;2,1"
 object category "T_MetalBars_Rare_Supply",5,0,0,0,0,0,0,0
 object category "T_MetalBars_VeryRare_Supply",2,0,0,0,0,0,0,0
 object category "T_MetalBars_Legendary_Supply",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",1,0,0,0,0,0,0,0
 
 // 1 Act Risen Roads
 new treasuretable "PLA_Confiscated_MetalBars"
@@ -216,6 +334,13 @@ new subtable "0,6;1,1"
 object category "T_MetalBars_VeryRare_Supply",1,0,0,0,0,0,0,0
 new subtable "0,9;1,1"
 object category "T_MetalBars_Legendary_Supply",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",1,0,0,0,0,0,0,0
+
+new treasuretable "PLA_Tollhouse_SuppliesTrader"
+CanMerge 1
+new subtable "0,2;1,1"
+object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
 
 // 1 Act Underdark
 new treasuretable "UND_DuergarBlacksmith_Chest"
@@ -226,6 +351,8 @@ new subtable "0,2;1,1"
 object category "T_Grinding_Oil_Supply",1,0,0,0,0,0,0,0
 new subtable "0,6;1,1"
 object category "T_MetalBars_VeryRare_Supply",1,0,0,0,0,0,0,0
+new subtable "0,2;1,1"
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",1,0,0,0,0,0,0,0
 
 // 1 Act Underdark
 new treasuretable "UND_ZhentPort_MetalBars"
@@ -235,17 +362,36 @@ object category "T_Valuables_MetalBars_For_Upgrade",1,0,0,0,0,0,0,0
 new subtable "0,6;1,1"
 object category "T_MetalBars_VeryRare_Supply",1,0,0,0,0,0,0,0
 
+// 2 Act Rosymorn Monastery
+new treasuretable "CRE_GithQuartermistress_Trade"
+CanMerge 1
+new subtable "0,4;1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
+
 // 2 Act Last Light Inn
+// DAMMON
 new treasuretable "HAV_Weaponsmith_Trade"
 CanMerge 1
 new subtable "1,1"
 object category "T_Valuables_MetalBars_For_Upgrade",1,0,0,0,0,0,0,0
 new subtable "0,2;1,1"
 object category "T_Grinding_Oil_Supply",1,0,0,0,0,0,0,0
+new subtable "0,2;1,1"
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",1,0,0,0,0,0,0,0
 new subtable "0,6;1,1"
 object category "T_MetalBars_VeryRare_Supply",1,0,0,0,0,0,0,0
 new subtable "0,9;1,1"
 object category "T_MetalBars_Legendary_Supply",1,0,0,0,0,0,0,0
+new subtable "0,3;1,1"
+object category "I_BOOK_Kela_Blacksmith_Apprentice",1,0,0,0,0,0,0,0
+new subtable "0,4;1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
+
+// TALLI
+new treasuretable "HAV_HarperQuarterMaster"
+CanMerge 1
+new subtable "0,2;1,1"
+object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
 
 // 3 Act Lower City
 new treasuretable "LOW_Weaponsmith_Trade"
@@ -254,33 +400,54 @@ new subtable "1,1"
 object category "T_Valuables_MetalBars_For_Upgrade",1,0,0,0,0,0,0,0
 new subtable "0,2;1,1"
 object category "T_Grinding_Oil_Supply",1,0,0,0,0,0,0,0
+new subtable "0,2;1,1"
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",1,0,0,0,0,0,0,0
 new subtable "0,6;1,1"
 object category "T_MetalBars_VeryRare_Supply",1,0,0,0,0,0,0,0
 new subtable "0,9;1,1"
 object category "T_MetalBars_Legendary_Supply",1,0,0,0,0,0,0,0
+new subtable "0,4;1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
 
 // 3 Act Wyrm's Rock
+new treasuretable "WYR_AlchemyTrader"
+CanMerge 1
+new subtable "0,2;1,1"
+object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
+new subtable "0,8;1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
+
 new treasuretable "WYR_BlacksmithCellar_Grease"
 CanMerge 1
 new subtable "1,4;2,1"
 object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
+new subtable "0,2;1,1"
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",1,0,0,0,0,0,0,0
 
-// 3 Act Wyrm's Rock
 new treasuretable "WYR_BlacksmithCellar_MetalBars"
 CanMerge 1
 new subtable "1,1"
 object category "T_Valuables_MetalBars_For_Upgrade",1,0,0,0,0,0,0,0
+new subtable "0,2;1,1"
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",1,0,0,0,0,0,0,0
 
-// 3 Act Wyrm's Rock
 new treasuretable "WYR_OrinsImpersonation_Smith"
 CanMerge 1
 new subtable "0,1;1,4"
 object category "T_Valuables_MetalBars_For_Upgrade",1,0,0,0,0,0,0,0
 new subtable "0,2;1,1"
 object category "T_Grinding_Oil_Supply",1,0,0,0,0,0,0,0
+new subtable "0,2;1,1"
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",1,0,0,0,0,0,0,0
+new subtable "0,3;1,1"
+object category "I_BOOK_Kela_Blacksmith_Expert",1,0,0,0,0,0,0,0
+new subtable "0,4;1,1"
+object category "I_BOOK_Kela_Recipe_Sharpening_Simple",1,0,0,0,0,0,0,0
 
 // 3 Act Lower City
 new treasuretable "LOW_Foundry_Crate_MetalBars"
 CanMerge 1
 new subtable "0,1;1,4"
 object category "T_Valuables_MetalBars_For_Upgrade",1,0,0,0,0,0,0,0
+new subtable "0,2;1,1"
+object category "T_MetalBars_Upgrading_Simple_Supply_Kela",1,0,0,0,0,0,0,0

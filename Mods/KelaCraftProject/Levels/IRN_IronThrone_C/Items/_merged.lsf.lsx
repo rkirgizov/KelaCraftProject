@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+			
+			
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="IRN_IronThrone_C" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="b2024fcb-747f-4a75-9e9d-2fdf0bf9e4be" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_IRONTHRONE_C_1" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="IRN_IronThrone_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b0af8365-a1bb-d0eb-a28d-06ae11aca90e" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="118812d7-7c77-8768-54ad-27c4347ed57a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-24.59869 28.90707 -38.11181" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.318413 0 0.9479521" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="IRN_IronThrone_C" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="00ec2f37-d51f-436b-aa76-a180f74570a4" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_IRONTHRONE_C_2" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="IRN_IronThrone_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b0af8365-a1bb-d0eb-a28d-06ae11aca90e" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="118812d7-7c77-8768-54ad-27c4347ed57a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-16.82308 28.90707 -41.51037" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.6569412 0 0.7539418" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+				
+
+			</children>
+		</node>
+	</region>
+</save>

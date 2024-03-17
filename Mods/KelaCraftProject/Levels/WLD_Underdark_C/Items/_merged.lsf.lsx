@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+
+				<!-- Башня волшебника в Подземье ////////////////////////////////////////////////////////////////////////// -->
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="WLD_Underdark_C" />
+					<attribute id="MapKey" type="FixedString" value="fde05518-d5df-477e-bbec-fb6697db1f28" />
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_UNDERDARK_1" />
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Underdark_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="13cf13e4-8ab7-1ac8-2699-a103272335ff" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="102.9784 2.612741 -225.2606" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.8301279 0 0.557573" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>		
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="WLD_Underdark_C" />
+					<attribute id="MapKey" type="FixedString" value="9f9af5f6-ff17-457a-913d-0b1ea1b11b03" />
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_UNDERDARK_2" />
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Underdark_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="13cf13e4-8ab7-1ac8-2699-a103272335ff" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="124.213 6.50713 -235.0997" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.05668657 0 0.998392" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>		
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="WLD_Underdark_C" />
+					<attribute id="MapKey" type="FixedString" value="31091bbc-3d1f-4f23-a793-d2b1a1db06dc" />
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_UNDERDARK_3" />
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Underdark_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="13cf13e4-8ab7-1ac8-2699-a103272335ff" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="118.1458 4.183029 -217.121" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9991554 0 -0.04109089" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>		
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="WLD_Underdark_C" />
+					<attribute id="MapKey" type="FixedString" value="9e44b05b-567d-4412-b8fe-4489dab94f5c" />
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_UNDERDARK_4" />
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Underdark_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="13cf13e4-8ab7-1ac8-2699-a103272335ff" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-66.91573 3.404041 -96.15522" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.4690228 0 0.883186" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>		
+
+				<!-- Кладём рецепт на полку -->
+				<node id="GameObjects">
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="GroupID" type="uint32" value="30912" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Underdark_C" />
+					<!-- <attribute id="MapKey" type="FixedString" value="c8550a5c-6629-4c01-b8e1-804ebc9915b2" /> kela -->
+					<attribute id="MapKey" type="FixedString" value="f27cf948-4487-40fb-9dca-f9b67f65a491" /> origin
+					<attribute id="Name" type="LSString" value="BOOK_GEN_Books_Row_Multiple_A_006" />
+					<attribute id="TemplateName" type="FixedString" value="96a9ec72-9fd1-4312-bf4a-892627570550" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274112" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="UND_Tower_Library" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_KELA_Grinding_Oil_Sussur" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_BOOK_Kela_Recipe_Sharpening_Sussur" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Underdark_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="13cf13e4-8ab7-1ac8-2699-a103272335ff" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="116.2556 5.616467 -234.9064" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.993148 0 -0.116863" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+					</children>
+				</node>
+
+				<!-- END Башня волшебника в Подземье ////////////////////////////////////////////////////////////////////////// -->
+
+
+				<!-- Селунитский пост ////////////////////////////////////////////////////////////////////////// -->
+				<!-- Новое Точильное колесо -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Underdark_C" />
+					<attribute id="MapKey" type="FixedString" value="c3a13a28-0459-4af1-b4f4-ccc78e4cb445" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_UND_001" />
+					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+
+					<attribute id="CanBeMoved" type="bool" value="True" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Underdark_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="134.3205 58.7929 -33.37118" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9115689 0 -0.4111474" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<!-- <attribute id="GroupID" type="uint32" value="31118" /> -->
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="98942bfc-204c-4d16-997b-1fcdad552c3f" />
+					<attribute id="Name" type="LSString" value="KELA_GEN_Grinding_Oil_UND_01" />
+					<attribute id="TemplateName" type="FixedString" value="4d59b648-9e0a-498f-b032-8871411a7411" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="eae0a27d-0418-aff3-18b5-065bcb2d01d0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="135.3205 58.7929 -33.37118" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.7999533 0 0.6000623" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Сундук с ловушкой на 2 этаже, масла суссура -->
+				<node id="GameObjects">
+					<attribute id="DisarmDifficultyClassID" type="guid" value="831e1fbe-428d-4f4d-bd17-4206d6efea35" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsTrap" type="bool" value="True" />
+					<attribute id="Key" type="FixedString" value="NO_KEY" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Underdark_C" />
+					<attribute id="LockDifficultyClassID" type="guid" value="831e1fbe-428d-4f4d-bd17-4206d6efea35" />
+					<!-- <attribute id="MapKey" type="FixedString" value="123b92b3-b86c-49ec-9719-11551c450cfb" /> kela -->
+					<attribute id="MapKey" type="FixedString" value="0775d7c3-e650-4588-8485-e08b23b18f2f" /> origin
+					<attribute id="Name" type="LSString" value="CONT_GEN_Chest_Common_A_001" />
+					<attribute id="TemplateName" type="FixedString" value="0e600db2-aa76-4c98-b4d5-a55c0853e7f1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="UND_SeluneOutpost_Treasure" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_KELA_Sussur_Oil" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Underdark_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="13cf13e4-8ab7-1ac8-2699-a103272335ff" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="FixedString" value="2c5f9a87-60d0-c006-2b9e-946c2e36742b" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="DC" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="10" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="HardcoreOnly" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="IsInvestigation" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="IsOneShot" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="1" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="MinDistance" />
+													<attribute id="Type" type="int32" value="2" />
+													<attribute id="Value" type="LSString" value="5" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="RevealOnlyInTrigger" />
+													<attribute id="Type" type="int32" value="7" />
+													<attribute id="Value" type="LSString" value="0xbaadf00d" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="TrapProjectile" />
+													<attribute id="Type" type="int32" value="9" />
+													<attribute id="Value" type="LSString" value="Projectile_UND_ZhentChest_Trap" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="134.858 63.88838 -50.17182" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.6695809 0 0.7427392" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<!-- END Селунитский пост ////////////////////////////////////////////////////////////////////////// -->
+
+			</children>
+		</node>
+	</region>
+</save>

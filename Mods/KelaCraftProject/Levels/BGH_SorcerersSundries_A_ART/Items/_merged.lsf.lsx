@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="BGO_Heapside_A_ART" />
+					<attribute id="MapKey" type="FixedString" value="74b96d6c-0c7f-498d-ac74-07a3649ed0d3" />
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_SORCERERSSUNDRIES_A_ART" />
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGO_Heapside_A_ART" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGH_SorcerersSundries_A_ART" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0b7f4489-a64e-3e0c-9052-1b9a9d38ac21" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="028a73b5-b0e5-577e-1583-20487c888179" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="1.771889 1.228263 10.36056" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.7520671 0 0.6590865" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+
+			
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="d43a7b3e-4765-4de1-be19-2f4ae1b442ec" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_LOWERCITY_A" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="1b0b4ef6-eb04-506a-979f-3dcdc6d3e994" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-1.286228 24.54433 -111.7936" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.7850416 0 0.619443" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+
+
+				
+			</children>
+		</node>
+	</region>
+</save>

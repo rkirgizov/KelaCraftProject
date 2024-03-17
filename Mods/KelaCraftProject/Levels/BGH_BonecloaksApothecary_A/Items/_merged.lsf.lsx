@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="BGH_BonecloaksApothecary_A" />
+					<attribute id="MapKey" type="FixedString" value="80260dc2-e1b4-4c59-908b-fe25549e8c13" />
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_BONECLOAKSAPOTHECARY_A" />
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGH_BonecloaksApothecary_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="a357dbc2-9f3f-14af-9657-e40553f8bb83" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-20.51521 -1.159713 8.713993" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.06858914 0 0.9976451" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+			</children>
+		</node>
+	</region>
+</save>

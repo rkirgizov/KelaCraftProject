@@ -2,21 +2,104 @@
 <save>
 	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
 	<region id="Templates">
-		<!-- Заброшенная деревня, подвал кузницы -->
 		<node id="Templates">
 			<children>
+
+
+				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+				<!-- Заброшенная деревня, подвал кузницы -->
+				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+				<!-- Дебажный сундук для спавна -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
+					<attribute id="MapKey" type="FixedString" value="63506683-7100-4b72-8bb0-9f1487a0106a" />
+					<attribute id="Name" type="LSString" value="KELA_DEBUG_Chest" />
+					<attribute id="TemplateName" type="FixedString" value="0e600db2-aa76-4c98-b4d5-a55c0853e7f1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="KELA_DEBUG_Supply" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_VillageSubs_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="84.17635 11.55409 75.5454" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.3442353 0 0.8389326" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Полка над столом	 -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
+					<attribute id="MapKey" type="FixedString" value="02670e0c-e893-4869-a97f-1bd1add3107c" /> origin
+					<attribute id="Name" type="LSString" value="LAB_GEN_Bottle_Rack_A_004" />
+					<attribute id="TemplateName" type="FixedString" value="6bc9838f-9b0f-4bad-8717-a6f29ccb517e" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_KELA_Grinding_Oil" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_VillageSubs_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="87.78133 13.1294 71.16503" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9999875 0 -0.005018881" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
 
 				<!-- Настольная книга кузнеца -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="c94c891f-30cc-46fc-b079-7eb5be3a3bd5" />
-					<attribute id="Name" type="LSString" value="BOOK_Kela_Blacksmith_Handbook" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h37c868fbg6ac3g4570g9d2aga2cefe77fd3c" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="h0b4e5183g622fg4993ga87dg83f6b56e4f39" version="1" />
-					<attribute id="TemplateName" type="FixedString" value="53406a45-f579-4047-b5b4-51ee0db9834d" />
-					<!-- <attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Book_B" /> -->
-					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Blacksmith_Handbook" />
+					<attribute id="MapKey" type="FixedString" value="3e094b38-c6cd-413c-8814-25d04b5616fc" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Blacksmith_Handbook_001" />
+					<attribute id="TemplateName" type="FixedString" value="a910880a-93e9-4ec5-8e4f-9e0b015dfa3f" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
 					<children>
@@ -39,37 +122,20 @@
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="88.59418 12.45343 72.6862" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0.3442353 0 0.8389326"/>
-							<attribute id="Scale" type="float" value="0.9" />
-						</node>
-						<node id="OnUsePeaceActions">
-							<children>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="11" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="" />
-											<attribute id="BookId" type="FixedString" value="BOOK_Kela_Blacksmith_Handbook" />
-										</node>
-									</children>
-								</node>
-							</children>
+							<attribute id="Scale" type="float" value="0.8" />
 						</node>
 					</children>
 				</node>
 
+				<!-- Молот настройки -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="196eb8cd-12fc-4757-9dcb-d76ac562a755" />
-					<attribute id="Name" type="LSString" value="BOOK_Kela_Blacksmith_Apprentice" />
-					<attribute id="DisplayName" type="TranslatedString" handle="hd1ff8a46g5ac6g4109ga0d9g2c1d6d9942af" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="h0b5c4cd7g0864g4245g9367g35497bf61e9b" version="1" />
-					<attribute id="TemplateName" type="FixedString" value="909f58ec-cd4e-4f68-bff2-b567c648f43d" />
-					<!-- <attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Book_C" /> -->
-					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Blacksmith_Apprentice" />
+					<attribute id="MapKey" type="FixedString" value="0c6032a6-3e31-4629-ab00-45e3bc89c7ca" />
+					<attribute id="Name" type="LSString" value="KELA_Smithing_Hammer_001" />
+					<attribute id="TemplateName" type="FixedString" value="00b21f31-0b4e-4994-8506-d9c57667ae36" />
 					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
 					<children>
 						<node id="LayerList">
 							<children>
@@ -88,218 +154,14 @@
 							</children>
 						</node>
 						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="88.59418 12.45343 72.6862" />
-							<attribute id="RotationQuat" type="fvec4" value="0 0.3442353 0 0.8389326"/>
-							<attribute id="Scale" type="float" value="0.9" />
-						</node>
-						<node id="OnUsePeaceActions">
-							<children>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="11" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('BOOK_KELA_BLACKSMITH_APPRENTICE_USED', context.Source)" />
-											<attribute id="BookId" type="FixedString" value="BOOK_Kela_Blacksmith_Apprentice" />
-										</node>
-									</children>
-								</node>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="not HasStatus('BOOK_KELA_BLACKSMITH_APPRENTICE_USED', context.Source)" />
-											<attribute id="Consume" type="bool" value="False" />
-											<attribute id="StatsId" type="FixedString" value="BOOK_KELA_BLACKSMITH_APPRENTICE_USED" />
-											<attribute id="StatusDuration" type="int32" value="-1" />
-										</node>
-									</children>
-								</node>
-							</children>
+							<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+							<attribute id="Position" type="fvec3" value="83.37035 12.47909 78.0454" />
+							<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.5842353 0 0.7389326" />
+							<attribute id="Scale" type="float" value="1.2" />
 						</node>
 					</children>
 				</node>
-				
-				<node id="GameObjects">
-					<attribute id="Flag" type="int32" value="1" />
-					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="f56b03b1-0798-447f-8193-f7a6117d882b" />
-					<attribute id="Name" type="LSString" value="BOOK_Kela_Blacksmith_Expert" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h67947824g2eecg4f72g9e60g3a12f0a5c4a5" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="h19ea9ccdg442eg499fg82d3ga01a38b2802b" version="1" />
-					<attribute id="TemplateName" type="FixedString" value="37ac1bfc-ab9d-4c0c-9c96-307624ca7b45" />
-					<!-- <attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Book_Rich_B" /> -->
-					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Blacksmith_Expert" />
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
-					<children>
-						<node id="LayerList">
-							<children>
-								<node id="Layers">
-									<children>
-										<node id="Object">
-											<attribute id="MapKey" type="FixedString" value="WLD_VillageSubs_C" />
-											<children>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="88.59418 12.45343 72.6862" />
-							<attribute id="RotationQuat" type="fvec4" value="0 0.3442353 0 0.8389326"/>
-							<attribute id="Scale" type="float" value="0.9" />
-						</node>
-						<node id="OnUsePeaceActions">
-							<children>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="11" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('BOOK_KELA_BLACKSMITH_EXPERT_USED', context.Source)" />
-											<attribute id="BookId" type="FixedString" value="BOOK_Kela_Blacksmith_Expert" />
-										</node>
-									</children>
-								</node>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="not HasStatus('BOOK_KELA_BLACKSMITH_EXPERT_USED', context.Source)" />
-											<attribute id="Consume" type="bool" value="False" />
-											<attribute id="StatsId" type="FixedString" value="BOOK_KELA_BLACKSMITH_EXPERT_USED" />
-											<attribute id="StatusDuration" type="int32" value="-1" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-					</children>
-				</node>
-				
-				<node id="GameObjects">
-					<attribute id="Flag" type="int32" value="1" />
-					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="17ce5310-79e7-4c1e-9c68-0600eb42b5c2" />
-					<attribute id="Name" type="LSString" value="BOOK_Kela_Blacksmith_Master" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h14659ad5gccb6g4d96gab62gfd5ad53b3bb2" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="hc647883agd952g4c3egb6f2g9d390a473131" version="1" />
-					<attribute id="TemplateName" type="FixedString" value="08cc971a-8690-4355-8835-09e52d0c722e" />
-					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Blacksmith_Master" />
-					<!-- <attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Book_Rich_C" /> -->
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
-					<children>
-						<node id="LayerList">
-							<children>
-								<node id="Layers">
-									<children>
-										<node id="Object">
-											<attribute id="MapKey" type="FixedString" value="WLD_VillageSubs_C" />
-											<children>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="88.59418 12.45343 72.6862" />
-							<attribute id="RotationQuat" type="fvec4" value="0 0.3442353 0 0.8389326"/>
-							<attribute id="Scale" type="float" value="0.9" />
-						</node>
-						<node id="OnUsePeaceActions">
-							<children>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="11" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('BOOK_KELA_BLACKSMITH_MASTER_USED', context.Source)" />
-											<attribute id="BookId" type="FixedString" value="BOOK_Kela_Blacksmith_Master" />
-										</node>
-									</children>
-								</node>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="not HasStatus('BOOK_KELA_BLACKSMITH_MASTER_USED', context.Source)" />
-											<attribute id="Consume" type="bool" value="False" />
-											<attribute id="StatsId" type="FixedString" value="BOOK_KELA_BLACKSMITH_MASTER_USED" />
-											<attribute id="StatusDuration" type="int32" value="-1" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-					</children>
-				</node>
-
-				<node id="GameObjects">
-					<attribute id="Flag" type="int32" value="1" />
-					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="cf757656-033f-4d91-aca2-9dd41bab517c" />
-					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Sharpening" />
-					<attribute id="DisplayName" type="TranslatedString" handle="hf07bc4873603428c9e436b050059bf1e4f5b" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="ha4b8c9c796de416884759505b32fb97a5b89" version="1" />
-					<attribute id="TemplateName" type="FixedString" value="e64d7396-29fa-46f3-8072-39d8c1235e16" />
-					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Recipe_Sharpening" />
-					<!-- <attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Paper_Sheet_A" /> -->
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
-					<children>
-						<node id="LayerList">
-							<children>
-								<node id="Layers">
-									<children>
-										<node id="Object">
-											<attribute id="MapKey" type="FixedString" value="WLD_VillageSubs_C" />
-											<children>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="88.59418 12.45343 72.6862" />
-							<attribute id="RotationQuat" type="fvec4" value="0 0.3442353 0 0.8389326"/>
-							<attribute id="Scale" type="float" value="0.9" />
-						</node>
-						<node id="OnUsePeaceActions">
-							<children>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="11" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="BookId" type="FixedString" value="BOOK_Kela_Recipe_Sharpening" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-					</children>
-				</node>
-
-
-
-
 
 				<!-- Новая юзабельная наковальня -->
 				<node id="GameObjects">
@@ -420,19 +282,34 @@
 					</children>
 				</node>
 
-				<!-- Лабораторные объекты -->
-				<node id="GameObjects">
-					<attribute id="Flag" type="int32" value="1" />
-					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="8f7c2a47-25d3-48b7-a7cc-9066008aa9c7" />
-					<attribute id="Name" type="LSString" value="DEC_Laboratory_Flask_Glass_Installation_A_Empty_A_001" />
-					<attribute id="TemplateName" type="FixedString" value="5df31fe8-1ebe-4def-8ebb-fca0acd74aed" />
-					<attribute id="Type" type="FixedString" value="item" />
-					
-					<attribute id="Tooltip" type="uint8" value="2" />
+				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+				<!-- КОНЕЦ Заброшенная деревня, подвал кузницы -->
+				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+				<!-- Лаборатория в заброшенной деревне -->
+				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+				<!-- Куча книг -->
+				<node id="GameObjects">
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="GroupID" type="uint32" value="29469" />
+					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
+					<attribute id="MapKey" type="FixedString" value="8f671db0-f001-d3b0-1427-d75c5dac8f5f" /> origin
+					<!-- <attribute id="MapKey" type="FixedString" value="4adca4d0-8acd-4595-aab0-9fd18fad6e10" /> kela -->
+					<attribute id="Name" type="LSString" value="BOOK_GEN_Books_Pile_A_001" />
+					<attribute id="TemplateName" type="FixedString" value="fae7628a-d7bd-cc85-d5e5-dc959d226130" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209026" />
 					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_BOOK_Kela_Recipe_Sharpening_Simple" />
+								</node>
+							</children>
+						</node>
 						<node id="LayerList">
 							<children>
 								<node id="Layers">
@@ -444,7 +321,7 @@
 													<attribute id="Object" type="guid" value="b2873934-d483-a33d-1aac-0def9a02a341" />
 												</node>
 												<node id="Layer">
-													<attribute id="Object" type="guid" value="75ae391f-8282-c464-6f5c-67196cded546" />
+													<attribute id="Object" type="guid" value="6ae55f62-34b5-ea21-b399-832b23462cea" />
 												</node>
 											</children>
 										</node>
@@ -453,20 +330,19 @@
 							</children>
 						</node>
 						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="-134.2045 -0.6594164 101.5807" />
-							<attribute id="RotationQuat" type="fvec4" value="0 0.7539413 0 0.6569419" />
-							<attribute id="Scale" type="float" value="0.9" />
+							<attribute id="Position" type="fvec3" value="-161.1343 0.02843475 100.7735" />
+							<attribute id="RotationQuat" type="fvec4" value="0.02506891 0.9389637 -0.009157028 -0.3429795" />
+							<attribute id="Scale" type="float" value="1" />
 						</node>
 					</children>
 				</node>
-				<!-- Скрываем старую -->
+			
+				<!-- Маркер лаборатории -->
 				<node id="GameObjects">
-					<attribute id="Flag" type="int32" value="1" />
-					<attribute id="GroupID" type="uint32" value="29579" />
-					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="d78c7556-53cf-43ac-97c5-5be21f627329" />
-					<attribute id="Name" type="LSString" value="DEC_Laboratory_Flask_Glass_Installation_A_Empty_A_001" />
-					<attribute id="TemplateName" type="FixedString" value="7c5d74dc-9bc2-4ea4-9691-dce888154941" />
+					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="75a7ad63-06e3-4f41-8a58-50a87064eaf1" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_VILLAGESUBS" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
 					<children>
@@ -492,12 +368,20 @@
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="-134.2045 -0.6594164 101.5807" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0.7539413 0 0.6569419" />
-							<attribute id="Scale" type="float" value="0.01" />
+							<attribute id="Scale" type="float" value="0.001" /> 
 						</node>
 					</children>
 				</node>
+
+				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+				<!-- КОНЕЦ Лаборатория в заброшенной деревне -->
+				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+
 
 				
+
 			</children>
 		</node>
 	</region>

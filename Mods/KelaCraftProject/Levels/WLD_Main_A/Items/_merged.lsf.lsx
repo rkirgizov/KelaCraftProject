@@ -5,15 +5,68 @@
 		<node id="Templates">
 			<children>
 
-
-
-				<!-- Плавильная печь в заброшенной деревне -->
 				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="05928afd-60ae-40d1-b8f0-dbb9e2fe5297" /> origin
+					<!-- <attribute id="MapKey" type="FixedString" value="1004cdae-c683-48e0-91fe-d45abc4b6ca9" /> -->
+					<attribute id="Name" type="LSString" value="CONT_GEN_Chest_Wicker_A_Small_A_001" />
+					<attribute id="TemplateName" type="FixedString" value="27876bb2-4de2-4f56-9090-f1cf319e79a4" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855921" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="HAG_Chest_Potions" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_KELA_Sussur_Oil" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="d092dace-9f6c-2013-dac7-91de3fe17459" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="16590347-e995-bd40-5245-2d41a4c0e238" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-410.5927 -11.20058 598.3879" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.1142893 -0.4271688 -0.07254352 0.8939811" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+
+
+
+				<!-- Заброшенная деревня ////////////////////////////////////////////////////////////////////////// -->
+
+
+				<!-- Плавильная печь в заброшенной деревне ДО окончания квеста выковки оружия -->
+				<!-- <node id="GameObjects">
 					<attribute id="AnubisConfigName" type="FixedString" value="FOR_MeltingFurnace" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="8515bf4e-40eb-460b-a48e-9d48cec16379" />
 					<attribute id="Name" type="LSString" value="S_FOR_MasterworkForge" />
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
 					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
 					<attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" />
 					<attribute id="Type" type="FixedString" value="item" />
@@ -45,7 +98,19 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_CAN_POUR_METALBARS', context.Source)" />
 											<attribute id="CombineSlots" type="int8" value="3" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not HasStatus('KELA_CAN_POUR_METALBARS', context.Source)" />
+											<attribute id="InsertSlots" type="int8" value="1" />
 											<attribute id="IsBase" type="bool" value="True" />
 										</node>
 									</children>
@@ -59,9 +124,139 @@
 							<attribute id="Scale" type="float" value="1.45" />
 						</node>
 					</children>
-				</node> 
+				</node>  -->
 
+				<!-- Плавильная печь в заброшенной деревне ПОСЛЕ окончания квеста выковки оружия -->
+				<!-- <node id="GameObjects">
+					<attribute id="CanClickThrough" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CoverAmount" type="uint8" value="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPointerBlocker" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="LoopSound" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="b8841077-d2c0-4312-ab07-cd14be7f5f38" />
+					<attribute id="Name" type="LSString" value="S_FOR_MasterworkForge_AfterForgingWeapon" />
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
+					<attribute id="SoundAttenuation" type="int16" value="-1" />
+					<attribute id="SoundInitEvent" type="FixedString" value="" />
+					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
+					<attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="Wadable" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="33fe87b9-33de-4260-81ec-50b0c15332d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_CAN_POUR_METALBARS', context.Source)" />
+											<attribute id="CombineSlots" type="int8" value="3" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not HasStatus('KELA_CAN_POUR_METALBARS', context.Source)" />
+											<attribute id="InsertSlots" type="int8" value="1" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-452.073 11.378 -377.863" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.7071068 0 0.7071068" />
+							<attribute id="Scale" type="float" value="1.45" />
+						</node>
+					</children>
+				</node> -->
 
+				<!-- Кузнечные меха -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="e014b6d1-f0f4-415f-9a9c-a22922f512f6" />
+					<attribute id="Name" type="LSString" value="S_FOR_MasterworkBellow" />
+					<attribute id="Description" type="TranslatedString" handle="h76b156c156164869b6d1404c8b8a28e25g3g" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h14269a39de00441cbac7af7fe1c1eaf3b9a4" version="1" />
+					<attribute id="TemplateName" type="FixedString" value="9d2a0431-7c4f-49c3-ae69-9179697ea1f9" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209012" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="33fe87b9-33de-4260-81ec-50b0c15332d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-448.5983 11.55075 -375.3769" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.2241795 0 0.974548" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+				<!-- Заброшенная деревня ////////////////////////////////////////////////////////////////////////// -->
+
+				<!-- Лагерь друидов ////////////////////////////////////////////////////////////////////////// -->
 		
 		
 				<!-- Новая юзабельная наковальня Даммона-->
@@ -287,6 +482,9 @@
 						</node>
 					</children>
 				</node>
+
+				<!-- Лагерь друидов ////////////////////////////////////////////////////////////////////////// -->
+
 
 				<!-- Юзабельный S_GOB_Raiders_Whetstone -->
 				<node id="GameObjects">

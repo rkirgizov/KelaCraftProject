@@ -52,8 +52,11 @@ game.states.FOR_MeltingFurnace = State{
             helpers.SetBurningFX(firstStageBurningFX)
             SwitchGameplayLight(me, true, firstStageLightRadius, true)
 
-            if HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS") then
-                RemoveStatus(me, "KELA_SMELTINGFORGE_STATUS")
+            if HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_2") then
+                RemoveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_2")
+            end
+            if not HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1") then
+                ApplyStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1", true, -1.0)
             end
         end
 
@@ -69,9 +72,13 @@ game.states.FOR_MeltingFurnace = State{
             helpers.SetBurningFX(secondStageBurningFX)
             SwitchGameplayLight(me, true, secondStageLightRadius, true)
             
-            if not HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS") then
-                ApplyStatus(me, "KELA_SMELTINGFORGE_STATUS", true, -1.0)
+            if HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1") then
+                RemoveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1")
             end
+            if not HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_2") then
+                ApplyStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_2", true, -1.0)
+            end
+
         end
 
         helpers.RemoveBurningStatus = function()
@@ -81,9 +88,14 @@ game.states.FOR_MeltingFurnace = State{
             ClearFlag(secondStageFlag, me)
             helpers.ClearBurningFX()
 
-            if HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS") then
-                RemoveStatus(me, "KELA_SMELTINGFORGE_STATUS")
+            if HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1") then
+                RemoveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1")
             end
+            if HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_2") then
+                RemoveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_2")
+            end
+
+
         end
 
         helpers.ForceSecondStage = function()
@@ -93,8 +105,12 @@ game.states.FOR_MeltingFurnace = State{
             if not HasActiveStatus(me, "BURNING") then
                 ApplyStatus(me, "BURNING", true, -1.0)
             end
-            if not HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS") then
-                ApplyStatus(me, "KELA_SMELTINGFORGE_STATUS", true, -1.0)
+
+            if HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1") then
+                RemoveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1")
+            end
+            if not HasActiveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_2") then
+                ApplyStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_2", true, -1.0)
             end
 
             helpers.StartSecondBurningStage()
@@ -157,10 +173,10 @@ game.states.FOR_MeltingFurnace = State{
             if e.Event == "FOR_StartFurnace" then
                 if not HasActiveStatus(me, "BURNING") then
                     ApplyStatus(me, "BURNING", true, -1.0)
-                    --ApplyStatus(me, "KELA_SMELTINGFORGE_STATUS", true, -1.0)
+                    ApplyStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1", true, -1.0)
                 else
                     RemoveStatus(me, "BURNING")
-                    --RemoveStatus(me, "KELA_SMELTINGFORGE_STATUS")
+                    RemoveStatus(me, "KELA_SMELTINGFORGE_STATUS_STAGE_1")
                 end
             -- Kindle the furnace (second stage)
             elseif e.Event == "FOR_KindleFurnace" and HasActiveStatus(me, "BURNING") then

@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="900" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- Молот настройки режима -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h000252cafbb24964a87f98797d46ac2d1f7f" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h7f7fb33d8ca84c3d8e63efb4ff5b0693aca8" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h0de592a04bfd4f209e072395404eacd31f81" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
+					<attribute id="Stats" type="FixedString" value="KELA_Hammer" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Icon" type="FixedString" value="Item_TOOL_Masonry_Hammer_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="00b21f31-0b4e-4994-8506-d9c57667ae36" />
+					<attribute id="Name" type="LSString" value="KELA_Hammer" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c9e45e5a-f089-480b-ab3a-7f5f76dccc3b" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="71b38dcd-c9a8-cda0-183e-67c9a15a32d7" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="efd3f9f5-7b27-6df2-8aa0-3f3acbb13242" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725059" />
+					<attribute id="CanBeImprovisedWeapon" type="bool" value="False" />
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0370471" />
+									<attribute id="Max" type="fvec3" value="0.04827106 0.03573517 0.1135988" />
+									<attribute id="Min" type="fvec3" value="-0.04858889 -0.001311935 -0.1162791" />
+									<attribute id="Radius" type="float" value="0.114939" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0370471" />
+									<attribute id="Max" type="fvec3" value="0.04827106 0.03573517 0.1135988" />
+									<attribute id="Min" type="fvec3" value="-0.04858889 -0.001311935 -0.1162791" />
+									<attribute id="Radius" type="float" value="0.114939" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0370471" />
+									<attribute id="Max" type="fvec3" value="0.04827106 0.03573517 0.1135988" />
+									<attribute id="Min" type="fvec3" value="-0.04858889 -0.001311935 -0.1162791" />
+									<attribute id="Radius" type="float" value="0.114939" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and (HasStatus('KELA_HAMMER_LEVEL_1', context.Source) and (Tagged('KELABLACKSMITHINGEXPERT', context.Source) or Tagged('KELABLACKSMITHINGMASTER', context.Source)))" />	
+											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_2" />
+											<attribute id="StatusDuration" type="int32" value="-1" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and HasStatus('KELA_HAMMER_LEVEL_2', context.Source) and Tagged('KELABLACKSMITHINGMASTER', context.Source)" />	
+											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_3" />
+											<attribute id="StatusDuration" type="int32" value="-1" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and HasStatus('KELA_HAMMER_LEVEL_2', context.Source)" />	
+											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_1" />
+											<attribute id="StatusDuration" type="int32" value="-1" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and HasStatus('KELA_HAMMER_LEVEL_3', context.Source)" />	
+											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_1" />
+											<attribute id="StatusDuration" type="int32" value="-1" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and not HasStatus('KELA_HAMMER_LEVEL_1', context.Source) and (Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) or Tagged('KELABLACKSMITHINGEXPERT', context.Source) or Tagged('KELABLACKSMITHINGMASTER', context.Source))" />	
+											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_1" />
+											<attribute id="StatusDuration" type="int32" value="-1" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="652875a1-c4ca-43c9-8a9d-832dcb5de08a" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>				
+
+				<!-- Новая Юзабельная наковальня -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Anvil" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="864105c1-2bc6-43c6-ebc0-11a7efb2cc20" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="3518dec3-03ef-a888-e661-02c69ae50145" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_TOOL_Smith_Anvil_B" />
+					<attribute id="Stats" type="FixedString" value="KELA_Useful_Anvil" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hcd87c806g2b79g4088ga2fegfb70a9dfd982" version="1" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="hd32c8648gc96eg4ea0g987eg15213bc01bf2" version="1" />
+					<attribute id="UseSound" type="FixedString" value="b6480614-cf5c-0b3b-af62-49fa03003d3c" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2849293 0 -0.6" />
+									<attribute id="Max" type="fvec3" value="0.2849293 0.6022668 0.6" />
+									<attribute id="Radius" type="float" value="0.508077" />
+									<attribute id="Height" type="float" value="1.1683" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2849293 0 -0.6" />
+									<attribute id="Max" type="fvec3" value="0.2849293 0.6022668 0.6848263" />
+									<attribute id="Radius" type="float" value="0.508077" />
+									<attribute id="Height" type="float" value="1.1683" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2849293 0 -0.6" />
+									<attribute id="Max" type="fvec3" value="0.2849293 0.6022668 0.6848263" />
+									<attribute id="Radius" type="float" value="0.508077" />
+									<attribute id="Height" type="float" value="1.1683" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<!-- Улучшение -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and HasStatus('KELA_UPGRADING_METALBAR_SIMPLE_USED', context.Source) and ((IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|Warhammers', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|Warhammers', GetActiveWeapon(context.Source, false))))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_ANVIL_UPGRADE_WEAPON" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and HasStatus('KELA_UPGRADING_METALBAR_SUSSUR_USED', context.Source) and ((IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|Warhammers', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|Warhammers', GetActiveWeapon(context.Source, false))))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_ANVIL_UPGRADE_WEAPON_SUSSUR" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Ковка -->
+								<!-- APPRENTICE -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_ANVIL_LEVEL_1', context.Target) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2', context.Target)" />
+											<attribute id="CombineSlots" type="int8" value="2" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- EXPERT -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_ANVIL_LEVEL_2', context.Target) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2', context.Target)" />
+											<attribute id="CombineSlots" type="int8" value="3" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- MASTER -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_ANVIL_LEVEL_3', context.Target) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2', context.Target)" />
+											<attribute id="CombineSlots" type="int8" value="4" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Описание -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="BookId" type="FixedString" value="KELA_Anvil_Description" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="5f1cbd4e-355a-41b2-9422-b7b416170a22" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+
+				<!-- Новое Юзабельное точильное колесо -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<!-- <attribute id="VisualTemplate" type="FixedString" value="bd6baa93-5f3d-ee19-3564-48392abd41a0" /> -->
+					<attribute id="VisualTemplate" type="FixedString" value="bce17d7e-6ab2-8fa4-a4bb-d1ab2d48ee4c" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="f90b36db-d1bc-1957-bee5-c5252d24d05f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_TOOL_Smith_Whetstone_Wheel_A" />
+					<attribute id="Stats" type="FixedString" value="KELA_Useful_Whetstone_Wheel" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hbfefff07gb289g4128gae31gbd1f6d906b80" version="1" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1" />
+					<attribute id="UseSound" type="FixedString" value="" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
+									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
+									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2511046 0 -0.09438917" />
+									<attribute id="Max" type="fvec3" value="0.2410717 0.9958298 0.2330964" />
+									<attribute id="Radius" type="float" value="0.2057135" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<!-- Снятие заточки -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE', context.Target) and ((HasStatus('KELA_WHETSTONE_UPGRADED', GetActiveWeapon(context.Source, true)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (HasStatus('KELA_WHETSTONE_UPGRADED', GetActiveWeapon(context.Source, false)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />	
+											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Обычная заточка -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE', context.Target) and HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE_SIMPLE', context.Target) and ((IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE_GRINDING_OIL" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Заточка с суссурным маслом -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE', context.Target) and HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE_SUSSUR', context.Target) and ((IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE_GRINDING_SUSSUR_OIL" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Заточка без масла -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="not HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE', context.Target) and not HasStatus('KELA_WHETSTONE_UPGRADED', GetActiveWeapon(context.Source, true)) and ((IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE_WITHOUT_OIL_18" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Описание -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="BookId" type="FixedString" value="KELA_Whetstone_Description" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b4be4d1e-7374-4809-af8a-0fcf248aa8f0" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+
+				<!-- Делаем точильное TOOL_Smith_Whetstone_Wheel_A колесо юзабельным -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="45ecb2cc-3bcb-4a85-8d59-0a813d37997e" />
+					<attribute id="Name" type="LSString" value="TOOL_Smith_Whetstone_Wheel_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<!-- <attribute id="ParentTemplateId" type="FixedString" value="115d2399-a009-4a63-82d0-f6c9ef6afdb0" /> -->
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="VisualTemplate" type="FixedString" value="bd6baa93-5f3d-ee19-3564-48392abd41a0" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="f90b36db-d1bc-1957-bee5-c5252d24d05f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="1" />
+					<attribute id="Icon" type="FixedString" value="Portrait_TOOL_Smith_Anvil_A" />
+					<attribute id="Stats" type="FixedString" value="KELA_Useful_Whetstone_Wheel" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<!-- <attribute id="OnUseDescription" type="TranslatedString" handle="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1" /> -->
+					<attribute id="UseSound" type="FixedString" value="" />
+					<children>
+						<!-- <node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
+									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
+									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2511046 0 -0.09438917" />
+									<attribute id="Max" type="fvec3" value="0.2410717 0.9958298 0.2330964" />
+									<attribute id="Radius" type="float" value="0.2057135" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+							</children>
+						</node> -->
+						<node id="GameMaster">
+							<attribute id="GameMasterSpawnSection" type="int32" value="12" />
+							<attribute id="GameMasterSpawnSubSection" type="TranslatedString" handle="hae3b7d80gf59dg4a03g9461g581a4e5e3827" version="1" />
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b4be4d1e-7374-4809-af8a-0fcf248aa8f0" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Делаем точильное колесо TOOL_Smith_Whetstone_Wheel_B юзабельным -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="27162cbf-ab57-401b-a578-cd9f34209926" />
+					<attribute id="Name" type="LSString" value="TOOL_Smith_Whetstone_Wheel_B" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<!-- <attribute id="ParentTemplateId" type="FixedString" value="115d2399-a009-4a63-82d0-f6c9ef6afdb0" /> -->
+					<attribute id="ParentTemplateId" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="VisualTemplate" type="FixedString" value="280830fe-e9f4-1939-d3b4-a1adfb2a781d" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="f90b36db-d1bc-1957-bee5-c5252d24d05f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc3980eceg2297g4132g9a64g3c1b1f40b90c" version="1" />
+					<attribute id="CoverAmount" type="uint8" value="0" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="Wadable" type="bool" value="False" />
+					<attribute id="LoopSound" type="FixedString" value="" />
+					<attribute id="SoundInitEvent" type="FixedString" value="" />
+					<attribute id="SoundAttenuation" type="int16" value="-1" />
+					<attribute id="IsPointerBlocker" type="bool" value="False" />
+					<attribute id="Icon" type="FixedString" value="Portrait_TOOL_Smith_Anvil_A" />
+					<attribute id="Stats" type="FixedString" value="KELA_Useful_Whetstone_Wheel" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<!-- <attribute id="OnUseDescription" type="TranslatedString" handle="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1" /> -->
+					<attribute id="UseSound" type="FixedString" value="" />
+					<children>
+						<!-- <node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.6026511 0 -0.2886414" />
+									<attribute id="Max" type="fvec3" value="0.5785721 1.194996 0.1719164" />
+									<attribute id="Radius" type="float" value="0.2057135" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.6026511 0 -0.2886414" />
+									<attribute id="Max" type="fvec3" value="0.5785721 1.194996 0.1719164" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.6026511 0 -0.2886414" />
+									<attribute id="Max" type="fvec3" value="0.5785721 1.194996 0.1719164" />
+									<attribute id="Radius" type="float" value="0.411427" />
+									<attribute id="Height" type="float" value="0.602267" />
+								</node>
+							</children>
+						</node> -->
+						<node id="GameMaster">
+							<attribute id="GameMasterSpawnSection" type="int32" value="12" />
+							<attribute id="GameMasterSpawnSubSection" type="TranslatedString" handle="h11b8fc31gbba4g4606ga1b2g199c0e276569" version="1" />
+						</node>
+						<node id="Equipment">
+							<attribute id="EquipmentSlots" type="uint32" value="0" />
+							<children>
+								<node id="ShortHair" />
+								<node id="LongHair" />
+								<node id="Visuals" />
+								<node id="ParentRace" />
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b4be4d1e-7374-4809-af8a-0fcf248aa8f0" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+
+				<!-- Шаблон для маркера лаборатории -->
+				<node id="GameObjects">					
+					<attribute id="CanClickThrough" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="CoverAmount" type="uint8" value="0" />
+					<attribute id="IsPointerBlocker" type="bool" value="False" />
+					<attribute id="LoopSound" type="FixedString" value="" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="SoundAttenuation" type="int16" value="-1" />
+					<attribute id="SoundInitEvent" type="FixedString" value="" />
+					<attribute id="Wadable" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="maxStackAmount" type="int32" value="99" />
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="Icon" type="FixedString" value="Item_Unknown" />
+					<attribute id="IsInspector" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA" />
+					<attribute id="ParentTemplateId" type="FixedString" value="fc1a8257-5a1a-4dc5-9fe7-cbb46d242e76" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="62a83981-5a5e-45c6-a3ed-02adaf864121" />
+					<attribute id="Stats" type="FixedString" value="OBJ_GenericImmutableObject" />
+					<attribute id="TreasureOnDestroy" type="bool" value="False" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="a92ada31-bdae-40ea-95fb-5b47191f1cf4" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209010" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1" />
+									<attribute id="Max" type="fvec3" value="0.5 1 0.5" />
+									<attribute id="Min" type="fvec3" value="-0.5 0 -0.5" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1" />
+									<attribute id="Max" type="fvec3" value="0.5 1 0.5" />
+									<attribute id="Min" type="fvec3" value="-0.5 0 -0.5" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1" />
+									<attribute id="Max" type="fvec3" value="0.25 1 0.25" />
+									<attribute id="Min" type="fvec3" value="-0.25 0 -0.25" />
+									<attribute id="Radius" type="float" value="0.2165065" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="Empty" />
+								</node>
+							</children>
+						</node>
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="26" />
+									<children>
+										<node id="Attributes">
+											<attribute id="ActivateSoundEvent" type="FixedString" value="3ea82655-5140-4287-9ab8-794559f182d3" />
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="PlayOnHUD" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="KELA_LABORATORY_AURA" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+			</children>
+		</node>
+	</region>
+</save>

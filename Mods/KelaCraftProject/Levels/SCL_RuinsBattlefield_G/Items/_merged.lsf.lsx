@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="SCL_RuinsBattlefield_G" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="0c7297b6-ac8a-4d2a-bc94-ef2acdf8b215" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_RUINSBATTLEFIELD_G_1" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_RuinsBattlefield_G" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="83ea6cac-3c8d-91e7-9ab4-7fee45d0f5c9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="07c55154-3345-00b6-9eb2-c15705c1f34d" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="8de518e8-1265-461c-4db3-353a3ef4e297" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-56.6805 28.34253 130.0096" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.4713949 0 0.8819222" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="SCL_RuinsBattlefield_G" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="c7664681-6a67-4206-acfc-b3c5155055c0" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_RUINSBATTLEFIELD_G_2" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_RuinsBattlefield_G" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="83ea6cac-3c8d-91e7-9ab4-7fee45d0f5c9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="229cda40-8652-5bf2-8678-4603bd111d28" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="f197748c-dd55-f17b-cc3f-f319e61e90ab" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-193.694 27.36158 52.82218" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.001" /> 
+						</node>
+					</children>
+				</node>
+
+
+				
+
+
+			</children>
+		</node>
+	</region>
+</save>

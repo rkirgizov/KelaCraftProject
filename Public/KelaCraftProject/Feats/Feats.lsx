@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="322"/>
+    <region id="Feats">
+        <node id="root">
+            <children>
+                <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="PassiveFeature_KelaBlacksmith_Main"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PassiveFeature_KelaBlacksmith;PassiveFeature_KelaBlacksmith_LightHammer"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(b490acd5-8ec5-4160-a81e-824a0bf6e2f0,1,1)"/>
+                    <attribute id="UUID" type="guid" value="db4b2c65-d929-4905-82f6-ff88b993ff1d"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
