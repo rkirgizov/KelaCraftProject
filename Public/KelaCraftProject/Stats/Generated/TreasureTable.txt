@@ -112,6 +112,9 @@ object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
 
 new treasuretable "KELA_DEBUG_Supply"
 new subtable "1,1"
+new subtable "1,1"
+object category "I_WPN_KELA_Favorite_LightHammer",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_BOOK_Kela_Blacksmith_Handbook",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_BOOK_Kela_Blacksmith_Apprentice",1,0,0,0,0,0,0,0
@@ -141,6 +144,8 @@ new subtable "10,1"
 object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
 new subtable "10,1"
 object category "I_KELA_Grinding_Oil_Sussur",1,0,0,0,0,0,0,0
+new subtable "10,1"
+object category "I_QUEST_FOR_SussurBark",1,0,0,0,0,0,0,0
 
 
 

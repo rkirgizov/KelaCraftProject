@@ -1,3 +1,20 @@
+new entry "WPN_KELA_Favorite_LightHammer"
+type "Weapon"
+using "WPN_LightHammer"
+data "RootTemplate" "a5c5616d-d7ed-4e64-aadb-2c6eaac0eed2"
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "Rarity" "Uncommon"
+data "Damage" "2d4"
+data "Weight" "0.5"
+data "Weapon Properties" "Finesse;Thrown;Light;Melee;Dippable"
+data "DefaultBoosts" "tag(KELAHADNMADEWEAPON)"
+data "PassivesOnEquip" "MAG_IgnoreBludgeoningResistance_Passive"
+data "Unique" "1"
+// data "PassivesOnEquip" "MAG_IgnoreBludgeoningResistance_Passive;KELA_Handmade_Weapon_Passive"
+
+
+
+
 // TODO: Добавить пометку "Upgradable" для всего оружия, которое можно 
 // 1. Заточить
 // 2. Улучшить
@@ -529,7 +546,7 @@ data "ItemGroup" ""
 data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
 data "Rarity" "Rare"
 data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
-data "PassivesOnEquip" "UNI_Adamantine_CriticalVsItems_Passive;MAG_IgnoreSlashingResistance_Passive"
+data "PassivesOnEquip" "UNI_Adamantine_CriticalVsItems_Passive;MAG_IgnoreSlashingResistance_Passive" 
 data "ComboCategory" "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitars"
 
 new entry "MAG_MeleeDebuff_AttackDebuff1_OnDamage_Scimitar_3"

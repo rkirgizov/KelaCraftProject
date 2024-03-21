@@ -5,57 +5,126 @@
 		<node id="Templates">
 			<children>
 
-				<!-- Молот настройки режима -->
+
+
 				<node id="GameObjects">
-					<attribute id="Description" type="TranslatedString" handle="h000252cafbb24964a87f98797d46ac2d1f7f" version="1" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h7f7fb33d8ca84c3d8e63efb4ff5b0693aca8" version="1" />
-					<attribute id="TechnicalDescription" type="TranslatedString" handle="h0de592a04bfd4f209e072395404eacd31f81" version="1" />
-					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
-					<attribute id="Stats" type="FixedString" value="KELA_Hammer" />
-					<attribute id="Tooltip" type="uint8" value="2" />
-					<attribute id="Icon" type="FixedString" value="Item_TOOL_Masonry_Hammer_A" />
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+					<attribute id="Description" type="TranslatedString" handle="hcf3a4611g78a6g4587gb8b7gc1529f4fe669" version="2" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h1d405865g9dacg4c42g960dgbc3a5829a534" version="1" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value="Item_DEC_HAR_Bucket_Empty_A" />
 					<attribute id="LevelName" type="FixedString" value="" />
-					<attribute id="MapKey" type="FixedString" value="00b21f31-0b4e-4994-8506-d9c57667ae36" />
-					<attribute id="Name" type="LSString" value="KELA_Hammer" />
-					<attribute id="ParentTemplateId" type="FixedString" value="c9e45e5a-f089-480b-ab3a-7f5f76dccc3b" />
-					<attribute id="PhysicsTemplate" type="FixedString" value="71b38dcd-c9a8-cda0-183e-67c9a15a32d7" />
+					<attribute id="MapKey" type="FixedString" value="158682d3-4b6a-4952-aa88-af74a256f880" />
+					<attribute id="Name" type="LSString" value="DEC_HAR_Bucket_Empty_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="98bdd16e-1bb6-4dc5-a472-d66591c25006" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="fdc7c092-4166-5bfb-284b-15d94b366106" />
+					<attribute id="ReadinessFlags" type="uint32" value="144" />
+					<attribute id="RecieveDecal" type="bool" value="False" />
+					<attribute id="Stats" type="FixedString" value="OBJ_Bucket" />
 					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="VisualTemplate" type="FixedString" value="efd3f9f5-7b27-6df2-8aa0-3f3acbb13242" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725059" />
-					<attribute id="CanBeImprovisedWeapon" type="bool" value="False" />
-					<attribute id="CanBeMoved" type="bool" value="False" />
-					<attribute id="CanBePickedUp" type="bool" value="False" />
-					<attribute id="CanClimbOn" type="bool" value="False" />
-					<attribute id="WalkOn" type="bool" value="False" />
-					<attribute id="WalkThrough" type="bool" value="False" />
-					<attribute id="CanShootThrough" type="bool" value="False" />
-					<attribute id="CanClickThrough" type="bool" value="False" />
+					<attribute id="VisualTemplate" type="FixedString" value="2ca01b68-915c-ab96-d778-80e2ecf362f5" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790466" />
 					<children>
 						<node id="Bounds">
 							<children>
 								<node id="Bound">
-									<attribute id="Height" type="float" value="0.0370471" />
-									<attribute id="Max" type="fvec3" value="0.04827106 0.03573517 0.1135988" />
-									<attribute id="Min" type="fvec3" value="-0.04858889 -0.001311935 -0.1162791" />
-									<attribute id="Radius" type="float" value="0.114939" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Type" type="uint8" value="0" />
-								</node>
-								<node id="Bound">
-									<attribute id="Height" type="float" value="0.0370471" />
-									<attribute id="Max" type="fvec3" value="0.04827106 0.03573517 0.1135988" />
-									<attribute id="Min" type="fvec3" value="-0.04858889 -0.001311935 -0.1162791" />
-									<attribute id="Radius" type="float" value="0.114939" />
+									<attribute id="Height" type="float" value="0.184393" />
+									<attribute id="IsIgnoringScale" type="bool" value="False" />
+									<attribute id="Max" type="fvec3" value="0.2254795 0.285858 0.2396508" />
+									<attribute id="Min" type="fvec3" value="-0.1688604 0 -0.1695502" />
+									<attribute id="Radius" type="float" value="0.0801185" />
 									<attribute id="Shape" type="uint8" value="1" />
 									<attribute id="Type" type="uint8" value="1" />
 								</node>
 								<node id="Bound">
-									<attribute id="Height" type="float" value="0.0370471" />
-									<attribute id="Max" type="fvec3" value="0.04827106 0.03573517 0.1135988" />
-									<attribute id="Min" type="fvec3" value="-0.04858889 -0.001311935 -0.1162791" />
-									<attribute id="Radius" type="float" value="0.114939" />
+									<attribute id="Height" type="float" value="0.184393" />
+									<attribute id="IsIgnoringScale" type="bool" value="False" />
+									<attribute id="Max" type="fvec3" value="0.2254795 0.285858 0.2396508" />
+									<attribute id="Min" type="fvec3" value="-0.1688604 0 -0.1695502" />
+									<attribute id="Radius" type="float" value="0.0801185" />
 									<attribute id="Shape" type="uint8" value="1" />
 									<attribute id="Type" type="uint8" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.184393" />
+									<attribute id="IsIgnoringScale" type="bool" value="False" />
+									<attribute id="Max" type="fvec3" value="0.1127397 0.285858 0.1198254" />
+									<attribute id="Min" type="fvec3" value="-0.0844302 0 -0.08477508" />
+									<attribute id="Radius" type="float" value="0.04005925" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="GameMaster" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<!-- Ковка -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<!-- <attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2', context.Target)" /> -->
+											<attribute id="CombineSlots" type="int8" value="1" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+
+
+				<node id="GameObjects">
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+					<attribute id="Description" type="TranslatedString" handle="h68d0dbb8g5d76g458ag9e5ag15b874010362" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h53790ff5498549e2aff2b132403a844380f5" version="1" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value="Item_DEC_HAR_Bucket_Water_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="cf943719-0c69-44c2-b6b0-dac3ca8292f6" />
+					<attribute id="Name" type="LSString" value="DEC_HAR_Bucket_Water_A" />
+					<attribute id="Opacity" type="float" value="0" />
+					<attribute id="ParentTemplateId" type="FixedString" value="98bdd16e-1bb6-4dc5-a472-d66591c25006" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="0fee8925-4cbc-84b3-901f-a4afa56ad6ca" />
+					<attribute id="ReadinessFlags" type="uint32" value="144" />
+					<attribute id="RecieveDecal" type="bool" value="False" />
+					<attribute id="Stats" type="FixedString" value="OBJ_Bucket" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="f0319d37-691f-33c9-6e8d-bcdc9ffd5c62" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274213" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.184393" />
+									<attribute id="IsIgnoringScale" type="bool" value="False" />
+									<attribute id="Max" type="fvec3" value="0.2254795 0.285858 0.2396508" />
+									<attribute id="Min" type="fvec3" value="-0.1688604 0 -0.1695502" />
+									<attribute id="Radius" type="float" value="0.0801185" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.184393" />
+									<attribute id="IsIgnoringScale" type="bool" value="False" />
+									<attribute id="Max" type="fvec3" value="0.2254795 0.285858 0.2396508" />
+									<attribute id="Min" type="fvec3" value="-0.1688604 0 -0.1695502" />
+									<attribute id="Radius" type="float" value="0.0801185" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.184393" />
+									<attribute id="IsIgnoringScale" type="bool" value="False" />
+									<attribute id="Max" type="fvec3" value="0.1127397 0.285858 0.1198254" />
+									<attribute id="Min" type="fvec3" value="-0.0844302 0 -0.08477508" />
+									<attribute id="Radius" type="float" value="0.04005925" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
 								</node>
 							</children>
 						</node>
@@ -66,77 +135,52 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and (HasStatus('KELA_HAMMER_LEVEL_1', context.Source) and (Tagged('KELABLACKSMITHINGEXPERT', context.Source) or Tagged('KELABLACKSMITHINGMASTER', context.Source)))" />	
-											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_2" />
-											<attribute id="StatusDuration" type="int32" value="-1" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('KELA_HANDMADE_WEAPON_READY_FOR_TEMPERING', GetActiveWeapon(context.Source, true))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_BLAKSMITH_BUCKETOIL_USED" />
+											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
 											<attribute id="IsHiddenStatus" type="bool" value="True" />
 										</node>
 									</children>
 								</node>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
+								<!-- Ковка -->
+								<!-- <node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and HasStatus('KELA_HAMMER_LEVEL_2', context.Source) and Tagged('KELABLACKSMITHINGMASTER', context.Source)" />	
-											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_3" />
-											<attribute id="StatusDuration" type="int32" value="-1" />
-											<attribute id="Consume" type="bool" value="False" />
-											<attribute id="IsHiddenStatus" type="bool" value="True" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2', context.Target)" />
+											<attribute id="CombineSlots" type="int8" value="1" />
+											<attribute id="IsBase" type="bool" value="True" />
 										</node>
 									</children>
-								</node>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and HasStatus('KELA_HAMMER_LEVEL_2', context.Source)" />	
-											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_1" />
-											<attribute id="StatusDuration" type="int32" value="-1" />
-											<attribute id="Consume" type="bool" value="False" />
-											<attribute id="IsHiddenStatus" type="bool" value="True" />
-										</node>
-									</children>
-								</node>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and HasStatus('KELA_HAMMER_LEVEL_3', context.Source)" />	
-											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_1" />
-											<attribute id="StatusDuration" type="int32" value="-1" />
-											<attribute id="Consume" type="bool" value="False" />
-											<attribute id="IsHiddenStatus" type="bool" value="True" />
-										</node>
-									</children>
-								</node>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2_HAMMER', context.Target) and not HasStatus('KELA_HAMMER_LEVEL_1', context.Source) and (Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) or Tagged('KELABLACKSMITHINGEXPERT', context.Source) or Tagged('KELABLACKSMITHINGMASTER', context.Source))" />	
-											<attribute id="StatsId" type="FixedString" value="KELA_HAMMER_LEVEL_1" />
-											<attribute id="StatusDuration" type="int32" value="-1" />
-											<attribute id="Consume" type="bool" value="False" />
-											<attribute id="IsHiddenStatus" type="bool" value="True" />
-										</node>
-									</children>
-								</node>
+								</node> -->
 							</children>
 						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="guid" value="652875a1-c4ca-43c9-8a9d-832dcb5de08a" />
+									<attribute id="Object" type="guid" value="350c2250-ce08-459a-85dc-f8cf57dc36ae" />
 								</node>
 							</children>
 						</node>
 					</children>
-				</node>				
+				</node>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 				<!-- Новая Юзабельная наковальня -->
 				<node id="GameObjects">
@@ -191,7 +235,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and HasStatus('KELA_UPGRADING_METALBAR_SIMPLE_USED', context.Source) and ((IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|Warhammers', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|Warhammers', GetActiveWeapon(context.Source, false))))" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and HasStatus('KELA_UPGRADING_METALBAR_SIMPLE_USED', context.Source) and ((IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, false))))" />
 											<attribute id="StatsId" type="FixedString" value="KELA_ANVIL_UPGRADE_WEAPON" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
@@ -204,7 +248,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and HasStatus('KELA_UPGRADING_METALBAR_SUSSUR_USED', context.Source) and ((IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|Warhammers', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|Warhammers', GetActiveWeapon(context.Source, false))))" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and HasStatus('KELA_UPGRADING_METALBAR_SUSSUR_USED', context.Source) and ((IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, false))))" />
 											<attribute id="StatsId" type="FixedString" value="KELA_ANVIL_UPGRADE_WEAPON_SUSSUR" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
@@ -213,38 +257,13 @@
 									</children>
 								</node>
 								<!-- Ковка -->
-								<!-- APPRENTICE -->
 								<node id="Action">
 									<attribute id="ActionType" type="int32" value="23" />
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_ANVIL_LEVEL_1', context.Target) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2', context.Target)" />
-											<attribute id="CombineSlots" type="int8" value="2" />
-											<attribute id="IsBase" type="bool" value="True" />
-										</node>
-									</children>
-								</node>
-								<!-- EXPERT -->
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="23" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_ANVIL_LEVEL_2', context.Target) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2', context.Target)" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2', context.Target)" />
 											<attribute id="CombineSlots" type="int8" value="3" />
-											<attribute id="IsBase" type="bool" value="True" />
-										</node>
-									</children>
-								</node>
-								<!-- MASTER -->
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="23" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_ANVIL_LEVEL_3', context.Target) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_2', context.Target)" />
-											<attribute id="CombineSlots" type="int8" value="4" />
 											<attribute id="IsBase" type="bool" value="True" />
 										</node>
 									</children>

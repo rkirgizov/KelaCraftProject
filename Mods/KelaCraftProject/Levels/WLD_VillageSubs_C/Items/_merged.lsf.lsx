@@ -14,7 +14,7 @@
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="63506683-7100-4b72-8bb0-9f1487a0106a" />
+					<attribute id="MapKey" type="FixedString" value="e3d9d9d0-132f-46bd-9b02-676f853184cf" />
 					<attribute id="Name" type="LSString" value="KELA_DEBUG_Chest" />
 					<attribute id="TemplateName" type="FixedString" value="0e600db2-aa76-4c98-b4d5-a55c0853e7f1" />
 					<attribute id="Type" type="FixedString" value="item" />
@@ -131,9 +131,9 @@
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="0c6032a6-3e31-4629-ab00-45e3bc89c7ca" />
-					<attribute id="Name" type="LSString" value="KELA_Smithing_Hammer_001" />
-					<attribute id="TemplateName" type="FixedString" value="00b21f31-0b4e-4994-8506-d9c57667ae36" />
+					<attribute id="MapKey" type="FixedString" value="29cc0ccd-ebaa-467f-8610-82e45c0bf942" />
+					<attribute id="Name" type="LSString" value="UNI_LOOT_Forge_Kela_LightHammer_VillageSubs_C" />
+					<attribute id="TemplateName" type="FixedString" value="b1c81ddb-7d35-4126-8d2a-a0a3e49ec9cc" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
 					<children>
@@ -158,7 +158,7 @@
 							<attribute id="Position" type="fvec3" value="83.37035 12.47909 78.0454" />
 							<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
 							<attribute id="RotationQuat" type="fvec4" value="0 -0.5842353 0 0.7389326" />
-							<attribute id="Scale" type="float" value="1.2" />
+							<attribute id="Scale" type="float" value="0.8" />
 						</node>
 					</children>
 				</node>

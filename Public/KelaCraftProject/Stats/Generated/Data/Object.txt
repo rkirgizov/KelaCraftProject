@@ -2,14 +2,6 @@
 // Инструменты
 ////////////////////////////////////////////////////////
 
-new entry "KELA_Hammer"
-type "Object"
-using "OBJ_GenericLootItem"
-data "RootTemplate" "00b21f31-0b4e-4994-8506-d9c57667ae36"
-data "Weight" "5.0"
-data "UseCosts" "ActionPoint:1"
-data "DefaultBoosts" "Tag(KELAHAMMER)"
-
 new entry "KELA_Useful_Anvil"
 type "Object"
 using "OBJ_GenericCraftingStation"
@@ -174,3 +166,30 @@ data "Rarity" "Legendary"
 data "RootTemplate" "d05837b8-526c-4d19-8ad9-354c352d32cc"
 data "ValueOverride" "1200"
 data "Weight" "1"
+
+////////////////////////////////////////////////////////
+// Кузнечные формы
+////////////////////////////////////////////////////////
+
+new entry "UNI_LOOT_Forge_Kela_Template"
+type "Object"
+using "OBJ_GenericLootItem"
+data "RootTemplate" "35e98a4f-d660-4704-9d07-ba28133bb2b7"
+data "Weight" "10"
+data "Rarity" "Common"
+data "ValueOverride" "100"
+
+new entry "UNI_LOOT_Forge_Kela_LightHammer"
+type "Object"
+using "UNI_LOOT_Forge_Kela_Template"
+data "Rarity" "Uncommon"
+data "ValueOverride" "200"
+
+new entry "OBJ_Bucket_Oil"
+type "Object"
+data "RootTemplate" "cf943719-0c69-44c2-b6b0-dac3ca8292f6"
+data "ObjectCategory" "JunkArtificial"
+data "MinAmount" "1"
+data "MaxAmount" "5"
+data "Priority" "1"
+data "MinLevel" "1"

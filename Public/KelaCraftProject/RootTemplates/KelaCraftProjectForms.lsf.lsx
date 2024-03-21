@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="900" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="9589e110-a82d-4299-a594-b890e19ed0cb" />
+					<attribute id="Name" type="LSString" value="UNI_LOOT_Forge_Kela_Template" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="deb1c368-16c8-4dc4-8bb0-aaa1bd80cda2" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="VisualTemplate" type="FixedString" value="7a82a17c-b69e-9ec8-eae8-d4c297650f16" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="b762bdb8-2072-03d8-ad4e-34e211c8be13" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hcecb0c2ad9df49f7a5df5454c6d158ec7fef" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h1a2400ad33d34904b81dd69ed52e15c2f7gd" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h4a0959e1ad514c76b70cfc9a764deda4deb3" version="1" />
+					<attribute id="CoverAmount" type="uint8" value="0" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="Wadable" type="bool" value="False" />
+					<attribute id="LoopSound" type="FixedString" value="" />
+					<attribute id="SoundInitEvent" type="FixedString" value="" />
+					<attribute id="SoundAttenuation" type="int16" value="-1" />
+					<attribute id="IsPointerBlocker" type="bool" value="False" />
+					<attribute id="Icon" type="FixedString" value="Item_UNI_LOOT_Forge_Kela_LightHammer_A" />
+					<attribute id="Stats" type="FixedString" value="UNI_LOOT_Forge_Kela_Template" />
+					<attribute id="maxStackAmount" type="int32" value="10" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="hf9c4ebeca2b540e6bfd12a8cb7b356e1f1gc" version="1" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.1493888 0.0007028431 -0.04279985" />
+									<attribute id="Max" type="fvec3" value="0.1492814 0.05373548 0.04303426" />
+									<attribute id="Radius" type="float" value="0.2165065" />
+									<attribute id="Height" type="float" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.1493888 0.0007028431 -0.04279985" />
+									<attribute id="Max" type="fvec3" value="0.1492814 0.05373548 0.04303426" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Height" type="float" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.1493888 0.0007028431 -0.04279985" />
+									<attribute id="Max" type="fvec3" value="0.1492814 0.05373548 0.04303426" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Height" type="float" value="1" />
+								</node>
+							</children>
+						</node>
+						<node id="GameMaster" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<!-- Подготовка -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="StatsId" type="FixedString" value="KELA_ANVIL_UPGRADE_WEAPON" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Кузнечный молот -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h53790ff5498549e2aff2b132403a844380f5" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h1e528c1634654683a5d3b1d769682df23ag2" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9c1abcb8a9944bce840963dee022debc33a1" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_UNI_LOOT_Forge_Kela_LightHammer_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="b1c81ddb-7d35-4126-8d2a-a0a3e49ec9cc" />
+					<attribute id="Name" type="LSString" value="UNI_LOOT_Forge_Kela_LightHammer" />
+					<attribute id="ParentTemplateId" type="FixedString" value="9589e110-a82d-4299-a594-b890e19ed0cb" />
+					<attribute id="Stats" type="FixedString" value="UNI_LOOT_Forge_Kela_LightHammer" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="7a82a17c-b69e-9ec8-eae8-d4c297650f16" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241408" />
+				</node>
+
+
+
+			</children>
+		</node>
+	</region>
+</save>

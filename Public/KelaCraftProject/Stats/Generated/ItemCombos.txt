@@ -195,10 +195,54 @@ data "PreviewIcon" "KELA_Upgrading_Metalbar_Sussur"
 
 
 
+new ItemCombination "WPN_KELA_Favorite_LightHammer"
+data "Type 1" "Object"
+data "Object 1" "KELA_Useful_Anvil"
+data "Combine 1" "Base"
+data "Transform 1" "None"
+data "Type 2" "Object"
+data "Object 2" "UNI_LOOT_Forge_Kela_LightHammer"
+data "Combine 2" "Base"
+data "Transform 2" "None"
+data "Type 3" "Object"
+data "Object 3" "OBJ_Potion_Healing"
+data "Transform 3" "Consume"
+data "Type 4" "Object"
+data "Object 4" "OBJ_Potion_Healing"
+data "Transform 4" "Consume"
+
+new ItemCombinationResult "WPN_KELA_Favorite_LightHammer_1"
+data "ResultAmount 1" "1"
+data "Result 1" "WPN_KELA_Favorite_LightHammer"
+data "PreviewStatsID" "WPN_KELA_Favorite_LightHammer"
+data "PreviewIcon" "Item_WPN_KELA_Favorite_LightHammer_A"
+
+
 
 //-------------------------------------------------------------------------
 //  TEST
 //-------------------------------------------------------------------------
+
+
+new ItemCombination "COMB_Bucket_Oil"
+data "Type 1" "Object"
+data "Object 1" "OBJ_Bucket"
+data "Combine 1" "Base"
+data "Transform 1" "Transform"
+data "Type 2" "Object"
+data "Object 2" "OBJ_GreaseBottle"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "COMB_Bucket_Oil_1"
+data "ResultAmount 1" "1"
+data "Result 1" "OBJ_Bucket_Oil"
+data "PreviewStatsID" "OBJ_Bucket_Oil"
+data "PreviewIcon" "OBJ_Bucket_Oil"
+
+
+
+
+
 
 new ItemCombination "WPN_Dagger_to_UCra"
 data "Type 1" "Object"

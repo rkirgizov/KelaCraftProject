@@ -3,12 +3,12 @@
 	<version major="4" minor="0" revision="4" build="201" lslib_meta="v1,bswap_guids" />
 	<region id="Tags">
 		<node id="Tags">
-			<attribute id="Description" type="LSString" value="A tag for a KELA ANVIL to define it in aura of Smeltforge" />
+			<attribute id="Description" type="LSString" value="A tag for a KELA HADNMADE WEAPON" />
 			<attribute id="DisplayDescription" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0" />
-			<attribute id="DisplayName" type="TranslatedString" handle="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="1" />
 			<attribute id="Icon" type="FixedString" value="" />
-			<attribute id="Name" type="FixedString" value="KELAANVIL" />
-			<attribute id="UUID" type="guid" value="5f1cbd4e-355a-41b2-9422-b7b416170a22" />
+			<attribute id="Name" type="FixedString" value="KELAHADNMADEWEAPON" />
+			<attribute id="UUID" type="guid" value="8de3c1f1-80e2-4376-8672-c7125a4df784" />
 			<children>
 				<node id="Categories">
 					<children>

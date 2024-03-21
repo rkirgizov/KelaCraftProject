@@ -45,3 +45,11 @@ data "Icon" "PassiveFeature_KelaBlacksmith_Master"
 data "DisplayName" "h15a6efc8ab6b496fb3c3f978f06f467f4d5f;1"
 data "Description" "ha78400cc8c89413d9bdb7ff5d8207f1096a7;1"
 data "Boosts" "Proficiency(LightHammers); Proficiency(Warhammers);Ability(Constitution,1);Ability(Strength,1)"
+
+new entry "KELA_Handmade_Weapon_Passive"
+type "PassiveData"
+data "DisplayName" "h1dc13af300444c209eeceb5622e47f7560c0;1"
+data "Description" "h90463a34d5f9463d8a63829d50fc60ad4dg1;1"
+data "Properties" "Highlighted"
+
+

@@ -18,6 +18,19 @@
            </children>
            <children>
                <node id="Resource">
+                   <attribute id="ID" type="FixedString" value="5248c189-02cc-4ecf-b194-c985deb0ddf7" />
+                   <attribute id="Localized" type="bool" value="False" />
+                   <attribute id="Name" type="LSString" value="Icons_Items_2" />
+                   <attribute id="SRGB" type="bool" value="True" />
+                   <attribute id="SourceFile" type="LSString" value="Public/KelaCraftProject/Assets/Textures/Icons/KelaCraftProject_Items_Icons_2.dds" />
+                   <attribute id="Streaming" type="bool" value="True" />
+                   <attribute id="Template" type="FixedString" value="Icons_Items" />
+                   <attribute id="Type" type="int32" value="0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855873" />
+               </node>
+           </children>
+           <children>
+               <node id="Resource">
                    <attribute id="ID" type="FixedString" value="e1a3faeb-a361-4de4-b4f8-0b5380135953" />
                    <attribute id="Localized" type="bool" value="False" />
                    <attribute id="Name" type="LSString" value="Icons_Tooltips" />
@@ -38,6 +51,19 @@
                    <attribute id="SourceFile" type="LSString" value="Public/KelaCraftProject/Assets/Textures/Icons/KelaCraftProject_Skills_Icons.dds" />
                    <attribute id="Streaming" type="bool" value="True" />
                    <attribute id="Template" type="FixedString" value="Icons_Skills" />
+                   <attribute id="Type" type="int32" value="0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855873" />
+               </node>
+           </children>
+           <children>
+               <node id="Resource">
+                   <attribute id="ID" type="FixedString" value="27cf2398-831b-4ad8-a924-5d1af5119c90" />
+                   <attribute id="Localized" type="bool" value="False" />
+                   <attribute id="Name" type="LSString" value="Icons_Weapons" />
+                   <attribute id="SRGB" type="bool" value="True" />
+                   <attribute id="SourceFile" type="LSString" value="Public/KelaCraftProject/Assets/Textures/Icons/KelaCraftProject_Weapons_Icons.dds" />
+                   <attribute id="Streaming" type="bool" value="True" />
+                   <attribute id="Template" type="FixedString" value="Icons_Items" />
                    <attribute id="Type" type="int32" value="0" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855873" />
                </node>

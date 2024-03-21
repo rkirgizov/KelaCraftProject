@@ -48,7 +48,7 @@
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
-				<!-- Наковальня -->
+				<!-- Точильное колесо -->
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="hbfefff07gb289g4128gae31gbd1f6d906b80" version="1" />
 					<attribute id="UUID" type="FixedString" value="KELA_Whetstone_Description" />
