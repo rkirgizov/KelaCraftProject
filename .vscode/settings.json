@@ -25,5 +25,5 @@
         "*.sql": "sql",
         "*.txt": "bg3"
     },
-    "bg3ModHelper.rootModPath": "c:\\BG3 Modding\\KelaCraftProject"
+    "bg3ModHelper.rootModPath": "d:\\kirgizov_github\\KelaCraftProject"
 }
