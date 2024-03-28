@@ -145,6 +145,8 @@ object category "I_KELA_Grinding_Oil",1,0,0,0,0,0,0,0
 new subtable "10,1"
 object category "I_KELA_Grinding_Oil_Sussur",1,0,0,0,0,0,0,0
 new subtable "10,1"
+object category "I_OBJ_GreaseBottle",1,0,0,0,0,0,0,0
+new subtable "10,1"
 object category "I_QUEST_FOR_SussurBark",1,0,0,0,0,0,0,0
 
 

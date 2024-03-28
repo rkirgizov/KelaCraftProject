@@ -667,36 +667,43 @@ data "Passives" "KELA_Handmade_Weapon_Passive"
 
 
 
-new entry "KELA_BLAKSMITH_BUCKETOIL_USED"
+new entry "KELA_BLACKSMITH_BUCKETOIL_USED"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StackId" "KELA_BLAKSMITH_BUCKETOIL_USED"
-// data "StatusPropertyFlags" "ExecuteFunctorsOnOwner;DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "StackId" "KELA_BLACKSMITH_BUCKETOIL_USED"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 // data "StatusPropertyFlags" "ExecuteFunctorsOnOwner"
-data "OnApplyFunctors" "ApplyEquipmentStatus(MeleeMainHand, KELA_HANDMADE_WEAPON_READY_FOR_UPGRADING, 100, 10)"
+data "OnApplyFunctors" "ApplyEquipmentStatus(MeleeMainHand, KELA_HANDMADE_WEAPON_READY_FOR_FINISHING, 100, 10)"
 
-new entry "KELA_BUCKET_OIL_USED_1"
+
+
+new entry "KELA_HANDMADE_WEAPON_READY_FOR_FINISHING"
 type "StatusData"
 data "StatusType" "BOOST"
-// using "DIPPED_FIRE"
-data "StackId" "KELA_BUCKET_OIL_USED_1"
-data "Icon" "Action_DippedFire_Melee"
-data "DisplayName" "ha7dcdd6fc1eb44eb97ca9daf3baaccb19815;1"
-data "Description" "hf8abf007e62b43d9a76003eaeafa53e2130a;1"
-
-new entry "KELA_BUCKET_OIL_USED_2"
-type "StatusData"
-data "StatusType" "BOOST"
-// using "DIPPED_FIRE"
-data "StackId" "KELA_BUCKET_OIL_USED_2"
-data "Icon" "Action_DippedFire_Melee"
-data "DisplayName" "hcecb0c2ad9df49f7a5df5454c6d158ec7fef;1"
-data "Description" "hf8abf007e62b43d9a76003eaeafa53e2130a;1"
-
-new entry "KELA_HANDMADE_WEAPON_READY_FOR_UPGRADING"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "KELA_HANDMADE_WEAPON_READY_FOR_UPGRADING"
+data "StackId" "KELA_HANDMADE_WEAPON_READY_FOR_FINISHING"
 data "DisplayName" "hf9c4ebeca2b540e6bfd12a8cb7b356e1f1gc;1"
 data "Description" "hf8abf007e62b43d9a76003eaeafa53e2130a;1"
 data "OnApplyFunctors" "RemoveStatus(DIPPED_FIRE)"
+
+
+
+new entry "KELA_BUCKET_OIL_NEW"
+type "StatusData"
+data "StatusType" "BOOST"
+// data "DisplayName" "hf9c4ebeca2b540e6bfd12a8cb7b356e1f1gc;1"
+// data "Description" "hf8abf007e62b43d9a76003eaeafa53e2130a;1"
+// data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+data "OnApplyFunctors" "ApplyStatus(KELA_BUCKET_OIL_READY, 100, 5)"
+data "StackId" "KELA_BUCKET_OIL_NEW"
+data "RemoveEvents" "OnStatusApplied"
+data "RemoveConditions" "HasStatus('KELA_BUCKET_OIL_READY')"
+
+new entry "KELA_BUCKET_OIL_READY"
+type "StatusData"
+data "StatusType" "BOOST"
+// using "DIPPED_FIRE"
+data "StackId" "KELA_BUCKET_OIL_READY"
+// data "Icon" "Action_DippedFire_Melee"
+// data "DisplayName" "ha7dcdd6fc1eb44eb97ca9daf3baaccb19815;1"
+// data "Description" "hf8abf007e62b43d9a76003eaeafa53e2130a;1"
+

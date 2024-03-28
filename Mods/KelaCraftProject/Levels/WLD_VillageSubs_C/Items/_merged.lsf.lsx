@@ -14,7 +14,7 @@
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="e3d9d9d0-132f-46bd-9b02-676f853184cf" />
+					<attribute id="MapKey" type="FixedString" value="a98f51bd-3e22-49d2-812d-73f4bceb09b1" />
 					<attribute id="Name" type="LSString" value="KELA_DEBUG_Chest" />
 					<attribute id="TemplateName" type="FixedString" value="0e600db2-aa76-4c98-b4d5-a55c0853e7f1" />
 					<attribute id="Type" type="FixedString" value="item" />
