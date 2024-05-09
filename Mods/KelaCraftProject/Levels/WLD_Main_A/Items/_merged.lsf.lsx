@@ -5,6 +5,8 @@
 		<node id="Templates">
 			<children>
 
+				<!-- Логово Этель ////////////////////////////////////////////////////////////////////////// -->
+				<!-- Сундук в логове тётушки Этель -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
@@ -51,6 +53,7 @@
 						</node>
 					</children>
 				</node>
+				<!-- КОНЕЦ Логово Этель ////////////////////////////////////////////////////////////////////////// -->
 
 
 
@@ -214,6 +217,8 @@
 						</node>
 					</children>
 				</node>
+
+
 				<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
 				<!-- END Заброшенная деревня -->
 				<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -442,6 +447,60 @@
 							<attribute id="Position" type="fvec3" value="178.8391 19.39592 563.9032" />
 							<attribute id="RotationQuat" type="fvec4" value="0 -0.4090919 0 0.9124931" />
 							<attribute id="Scale" type="float" value="0.01" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Шкафчик алхимика на складе -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="hcb619ed9g504bg4063g83d8g45da5baa42dd" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Key" type="FixedString" value="DEN_PoisonCabinet_Key" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="LockDifficultyClassID" type="guid" value="ea049218-36a8-4440-a3fc-f3019a57c86b" />
+					<attribute id="MapKey" type="FixedString" value="2b104dde-5d36-45cf-a868-b7ea7ae983eb" /> 
+					<attribute id="Name" type="LSString" value="S_DEN_PoisonCabinet" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="TemplateName" type="FixedString" value="14e41864-9b65-47c6-a1e4-8d14f37d86e2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758162" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="DEN_Poison_Supplies" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_BOOK_Kela_Recipe_Potion_Healing" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="46bf2460-7de1-6bba-140d-dd1238dbe671" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="cfbcf0de-a416-4650-9a15-4a847e822020" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="3dc54f34-9255-52dd-b76a-68759cce3cdf" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="210.4783 23.76411 573.7971" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9476444 0 -0.3193275" />
+							<attribute id="Scale" type="float" value="1" />
 						</node>
 					</children>
 				</node>

@@ -199,7 +199,7 @@ game.states.FOR_MeltingFurnace = State{
         ------------------------------------------------
         -- FOR PATCH 7
         -- We need to store the current active VFX in the VFXManager. Remove once we can do that
-
+        -- TODO Не работает восстановление
         events.LevelLoaded = function(e)
             if e.Level == "WLD_Main_A" then
                 if currentStage == "FirstStage" then

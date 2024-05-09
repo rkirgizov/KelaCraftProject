@@ -3,12 +3,12 @@
 	<version major="4" minor="0" revision="4" build="201" lslib_meta="v1,bswap_guids" />
 	<region id="Tags">
 		<node id="Tags">
-			<attribute id="Description" type="LSString" value="A tag for a BUCKET" />
+			<attribute id="Description" type="LSString" value="A tag for a WORKBENCH" />
 			<attribute id="DisplayDescription" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0" />
 			<attribute id="DisplayName" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="1" />
 			<attribute id="Icon" type="FixedString" value="" />
-			<attribute id="Name" type="FixedString" value="BUCKET" />
-			<attribute id="UUID" type="guid" value="350c2250-ce08-459a-85dc-f8cf57dc36ae" />
+			<attribute id="Name" type="FixedString" value="WORKBENCH" />
+			<attribute id="UUID" type="guid" value="5dc5450d-29bd-4e6b-942f-1243251db1af" />
 			<children>
 				<node id="Categories">
 					<children>

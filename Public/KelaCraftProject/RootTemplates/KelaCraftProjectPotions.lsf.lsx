@@ -58,6 +58,18 @@
 						<node id="OnUsePeaceActions">
 							<children>
 								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="ClassId" type="guid" value="a865965f-501b-46e9-9eaa-7748e8c04d09" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="Consume" type="bool" value="false" />
+											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Simple" />
+										</node>
+									</children>
+								</node>
+								<!-- <node id="Action">
 									<attribute id="ActionType" type="int32" value="7" />
 									<children>
 										<node id="Attributes">
@@ -68,7 +80,7 @@
 											<attribute id="Consume" type="bool" value="True" />
 										</node>
 									</children>
-								</node>
+								</node> -->
 							</children>
 						</node>
 					</children>
@@ -86,7 +98,7 @@
 					<attribute id="DisplayName" type="TranslatedString" handle="h978bffa6g12f7g4051ga9a4g081b6c881fcb" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="hde9d6f92g4d12g42d6g80b7ga151cbda4d9e" version="1" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="h87cab18age3a8g4df2ga923gf0371e9e7a5d" version="1" />
-					<attribute id="TechnicalDescriptionParams" type="LSString" value="1;300;13;2" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="13;2" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
 					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Sussur_Oil_A" />
 					<attribute id="Stats" type="FixedString" value="KELA_Grinding_Oil_Sussur" />
@@ -127,6 +139,18 @@
 						<node id="OnUsePeaceActions">
 							<children>
 								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="ClassId" type="guid" value="a865965f-501b-46e9-9eaa-7748e8c04d09" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="Consume" type="bool" value="false" />
+											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Sussur" />
+										</node>
+									</children>
+								</node>
+								<!-- <node id="Action">
 									<attribute id="ActionType" type="int32" value="7" />
 									<children>
 										<node id="Attributes">
@@ -137,7 +161,7 @@
 											<attribute id="Consume" type="bool" value="True" />
 										</node>
 									</children>
-								</node>
+								</node> -->
 							</children>
 						</node>
 					</children>
@@ -213,134 +237,6 @@
 					</children>
 				</node>
 
-
-				<!-- Суссурный слиток улучшения -->
-				<node id="GameObjects">
-					<attribute id="MapKey" type="FixedString" value="c14c4c75-5e3a-4270-a4a8-87a1a9b96384" />
-					<attribute id="Name" type="LSString" value="KELA_Upgrading_Metalbar_Sussur" />
-					<attribute id="LevelName" type="FixedString" value="" />
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="ParentTemplateId" type="FixedString" value="deb1c368-16c8-4dc4-8bb0-aaa1bd80cda2" />
-					<attribute id="VisualTemplate" type="FixedString" value="8a5abb72-40ae-a441-6151-e39cfd3f2720" />
-					<attribute id="PhysicsTemplate" type="FixedString" value="23c8075c-55bc-d52b-4d0e-9239f50cebb2" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h321036650fde4a079df09d19f850ee345bbb" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="hcf0187637d154b529b198545345d959b1077" version="0" />
-					<attribute id="TechnicalDescription" type="TranslatedString" handle="h5ec247ac76ec4dbea6ba8f22316c6d5dd670" version="1" />
-					<attribute id="TechnicalDescriptionParams" type="LSString" value="1;300;13;2" />
-					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
-					<attribute id="Icon" type="FixedString" value="Item_LOOT_GEN_Metalbar_Gold_A" />
-					<attribute id="Stats" type="FixedString" value="KELA_Upgrading_Metalbar_Sussur" />
-					<children>
-						<node id="Bounds">
-							<children>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="0" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.1493888 0.0007028431 -0.04279985" />
-									<attribute id="Max" type="fvec3" value="0.1492814 0.05373548 0.04303426" />
-									<attribute id="Radius" type="float" value="0.2165065" />
-									<attribute id="Height" type="float" value="1" />
-								</node>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="1" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.1493888 0.0007028431 -0.04279985" />
-									<attribute id="Max" type="fvec3" value="0.1492814 0.05373548 0.04303426" />
-									<attribute id="Radius" type="float" value="0.433013" />
-									<attribute id="Height" type="float" value="1" />
-								</node>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="2" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.1493888 0.0007028431 -0.04279985" />
-									<attribute id="Max" type="fvec3" value="0.1492814 0.05373548 0.04303426" />
-									<attribute id="Radius" type="float" value="0.433013" />
-									<attribute id="Height" type="float" value="1" />
-								</node>
-							</children>
-						</node>
-						<node id="OnUsePeaceActions">
-							<children>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="" />
-											<attribute id="StatsId" type="FixedString" value="KELA_UPGRADING_METALBAR_SUSSUR_USED" />
-											<attribute id="StatusDuration" type="int32" value="20" />
-											<attribute id="Consume" type="bool" value="True" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-					</children>
-				</node>
-
-				<!-- Обычный слиток улучшения -->
-				<node id="GameObjects">
-					<attribute id="MapKey" type="FixedString" value="03c803b6-cf66-4cc0-8448-2484a924d619" />
-					<attribute id="Name" type="LSString" value="KELA_Upgrading_Metalbar_Simple" />
-					<attribute id="LevelName" type="FixedString" value="" />
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="ParentTemplateId" type="FixedString" value="deb1c368-16c8-4dc4-8bb0-aaa1bd80cda2" />
-					<attribute id="VisualTemplate" type="FixedString" value="8a5abb72-40ae-a441-6151-e39cfd3f2720" />
-					<attribute id="PhysicsTemplate" type="FixedString" value="23c8075c-55bc-d52b-4d0e-9239f50cebb2" />
-					<attribute id="DisplayName" type="TranslatedString" handle="he8aa085e3b154b658a9ebcf9d0ec6be146a1" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="h528c8c9a96e94479b52500d71311a5aa597a" version="0" />
-					<attribute id="TechnicalDescription" type="TranslatedString" handle="h47a2bcfe9c574860aafd9c2a103cafd4dada" version="1" />
-					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
-					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
-					<attribute id="Icon" type="FixedString" value="Item_LOOT_GEN_Metalbar_Gold_A" />
-					<attribute id="Stats" type="FixedString" value="KELA_Upgrading_Metalbar_Simple" />
-					<children>
-						<node id="Bounds">
-							<children>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="0" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.1493888 0.0007028431 -0.04279985" />
-									<attribute id="Max" type="fvec3" value="0.1492814 0.05373548 0.04303426" />
-									<attribute id="Radius" type="float" value="0.2165065" />
-									<attribute id="Height" type="float" value="1" />
-								</node>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="1" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.1493888 0.0007028431 -0.04279985" />
-									<attribute id="Max" type="fvec3" value="0.1492814 0.05373548 0.04303426" />
-									<attribute id="Radius" type="float" value="0.433013" />
-									<attribute id="Height" type="float" value="1" />
-								</node>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="2" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.1493888 0.0007028431 -0.04279985" />
-									<attribute id="Max" type="fvec3" value="0.1492814 0.05373548 0.04303426" />
-									<attribute id="Radius" type="float" value="0.433013" />
-									<attribute id="Height" type="float" value="1" />
-								</node>
-							</children>
-						</node>
-						<node id="OnUsePeaceActions">
-							<children>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="" />
-											<attribute id="StatsId" type="FixedString" value="KELA_UPGRADING_METALBAR_SIMPLE_USED" />
-											<attribute id="StatusDuration" type="int32" value="20" />
-											<attribute id="Consume" type="bool" value="True" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-					</children>
-				</node>
 
 
 			</children>

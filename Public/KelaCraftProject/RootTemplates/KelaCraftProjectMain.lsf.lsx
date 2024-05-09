@@ -58,96 +58,28 @@
 						<node id="GameMaster" />
 						<node id="OnUsePeaceActions">
 							<children>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="23" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="CombineSlots" type="int8" value="1" />
-											<attribute id="IsBase" type="bool" value="True" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-					</children>
-				</node>
-
-				<!-- Ведро с маслом -->
-				<node id="GameObjects">
-					<attribute id="CanBePickedUp" type="bool" value="True" />
-					<attribute id="Description" type="TranslatedString" handle="h68d0dbb8g5d76g458ag9e5ag15b874010362" version="1" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h53790ff5498549e2aff2b132403a844380f5" version="1" />
-					<attribute id="Flag" type="int32" value="0" />
-					<attribute id="Icon" type="FixedString" value="Item_DEC_HAR_Bucket_Water_A" />
-					<attribute id="LevelName" type="FixedString" value="" />
-					<attribute id="MapKey" type="FixedString" value="cf943719-0c69-44c2-b6b0-dac3ca8292f6" />
-					<attribute id="Name" type="LSString" value="DEC_HAR_Bucket_Water_A" />
-					<attribute id="Opacity" type="float" value="0" />
-					<attribute id="ParentTemplateId" type="FixedString" value="98bdd16e-1bb6-4dc5-a472-d66591c25006" />
-					<attribute id="PhysicsTemplate" type="FixedString" value="0fee8925-4cbc-84b3-901f-a4afa56ad6ca" />
-					<attribute id="ReadinessFlags" type="uint32" value="144" />
-					<attribute id="RecieveDecal" type="bool" value="False" />
-					<attribute id="Stats" type="FixedString" value="OBJ_Bucket" />
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="VisualTemplate" type="FixedString" value="f0319d37-691f-33c9-6e8d-bcdc9ffd5c62" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274213" />
-					<children>
-						<node id="Bounds">
-							<children>
-								<node id="Bound">
-									<attribute id="Height" type="float" value="0.184393" />
-									<attribute id="IsIgnoringScale" type="bool" value="False" />
-									<attribute id="Max" type="fvec3" value="0.2254795 0.285858 0.2396508" />
-									<attribute id="Min" type="fvec3" value="-0.1688604 0 -0.1695502" />
-									<attribute id="Radius" type="float" value="0.0801185" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Type" type="uint8" value="1" />
-								</node>
-								<node id="Bound">
-									<attribute id="Height" type="float" value="0.184393" />
-									<attribute id="IsIgnoringScale" type="bool" value="False" />
-									<attribute id="Max" type="fvec3" value="0.2254795 0.285858 0.2396508" />
-									<attribute id="Min" type="fvec3" value="-0.1688604 0 -0.1695502" />
-									<attribute id="Radius" type="float" value="0.0801185" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Type" type="uint8" value="2" />
-								</node>
-								<node id="Bound">
-									<attribute id="Height" type="float" value="0.184393" />
-									<attribute id="IsIgnoringScale" type="bool" value="False" />
-									<attribute id="Max" type="fvec3" value="0.1127397 0.285858 0.1198254" />
-									<attribute id="Min" type="fvec3" value="-0.0844302 0 -0.08477508" />
-									<attribute id="Radius" type="float" value="0.04005925" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Type" type="uint8" value="0" />
-								</node>
-							</children>
-						</node>
-						<node id="OnUsePeaceActions">
-							<children>
+								<!-- Суссурная закалка -->
 								<node id="Action">
 									<attribute id="ActionType" type="int32" value="7" />
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_BUCKET_OIL_READY', context.Target) and (HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('KELA_HANDMADE_WEAPON_READY_FOR_TEMPERING', GetActiveWeapon(context.Source, true)))" />
-											<attribute id="StatsId" type="FixedString" value="KELA_BLACKSMITH_BUCKETOIL_USED" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_SUSSUR', context.Target) and HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_TEMPER_BY_LEVEL" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
 											<attribute id="IsHiddenStatus" type="bool" value="True" />
 										</node>
 									</children>
 								</node>
-								<!-- Ковка -->
+								<!-- Описание -->
 								<node id="Action">
-									<attribute id="ActionType" type="int32" value="23" />
+									<attribute id="ActionType" type="int32" value="11" />
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="not HasStatus('KELA_BUCKET_OIL_READY', context.Target) and not HasStatus('KELA_BUCKET_OIL_NEW', context.Target)" />
-											<attribute id="CombineSlots" type="int8" value="1" />
-											<attribute id="IsBase" type="bool" value="True" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="BookId" type="FixedString" value="KELA_Anvil_Description" />
 										</node>
 									</children>
 								</node>
@@ -160,29 +92,8 @@
 								</node>
 							</children>
 						</node>
-						<node id="StatusList">
-							<children>
-								<node id="Status">
-									<attribute id="Object" type="FixedString" value="KELA_BUCKET_OIL_NEW" />
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 				<!-- Новая Юзабельная наковальня -->
@@ -232,27 +143,28 @@
 						</node>
 						<node id="OnUsePeaceActions">
 							<children>
-								<!-- Улучшение -->
+								<!-- Снятие улучшения -->
 								<node id="Action">
 									<attribute id="ActionType" type="int32" value="7" />
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and HasStatus('KELA_UPGRADING_METALBAR_SIMPLE_USED', context.Source) and ((IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, false))))" />
-											<attribute id="StatsId" type="FixedString" value="KELA_ANVIL_UPGRADE_WEAPON" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and HasStatus('KELA_WEAPON_UPGRADED', GetActiveWeapon(context.Source, true)) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, true)) and HasStatus('KELA_WEAPON_OIL_USED_SIMPLE', context.Target) and HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true))" />	
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_UPGRADED_NEED_REMOVE" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
 											<attribute id="IsHiddenStatus" type="bool" value="True" />
 										</node>
 									</children>
 								</node>
+								<!-- Обычное улучшение -->
 								<node id="Action">
 									<attribute id="ActionType" type="int32" value="7" />
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and HasStatus('KELA_UPGRADING_METALBAR_SUSSUR_USED', context.Source) and ((IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, false))))" />
-											<attribute id="StatsId" type="FixedString" value="KELA_ANVIL_UPGRADE_WEAPON_SUSSUR" />
+											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and HasStatus('KELA_SMELTINGFORGE_STATUS_BURNING_1', context.Target) and (IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Source, true))) and HasStatus('KELA_WEAPON_OIL_USED_SIMPLE', context.Target) and HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_UPGRADE_BY_LEVEL" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
 											<attribute id="IsHiddenStatus" type="bool" value="True" />
@@ -294,6 +206,132 @@
 					</children>
 				</node>
 
+				<!-- Юзабельный столярный верстак A, от него вроде все наследуются верстаки столярный -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h02ada5begfce9g4138g9e64g8159047f035c" version="2" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h40f55ab4g1998g4dfagae4dgc0857f167d3f" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_FUR_Smith_Workbench_A_Table_D" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="e5624597-0da0-4fc2-8d7e-c8cb01739240" />
+					<attribute id="Name" type="LSString" value="FUR_Smith_Workbench_A_Table_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="fc1a8257-5a1a-4dc5-9fe7-cbb46d242e76" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="497e968b-166b-f74a-9f5e-9673afc0ba0f" />
+					<attribute id="Stats" type="FixedString" value="OBJ_Table" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="eae19a02-bd67-9331-54c9-e02811fe9c95" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403208905" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1.36824" />
+									<attribute id="Max" type="fvec3" value="0.618427 1.36824 0.468425" />
+									<attribute id="Min" type="fvec3" value="-0.618427 0 -0.468425" />
+									<attribute id="Radius" type="float" value="0.517178" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1.36824" />
+									<attribute id="Max" type="fvec3" value="0.618427 1.36824 0.468425" />
+									<attribute id="Min" type="fvec3" value="-0.618427 0 -0.468425" />
+									<attribute id="Radius" type="float" value="0.517178" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1.36824" />
+									<attribute id="Max" type="fvec3" value="0.3092135 1.36824 0.2342125" />
+									<attribute id="Min" type="fvec3" value="-0.3092135 0 -0.2342125" />
+									<attribute id="Radius" type="float" value="0.258589" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="26" />
+									<children>
+										<node id="Attributes">
+											<attribute id="ActivateSoundEvent" type="FixedString" value="3ea82655-5140-4287-9ab8-794559f182d3" />
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="PlayOnHUD" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="5" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="ExplodeFX" type="FixedString" value="15362651-9b96-579a-86f5-829e53325d8b" />
+											<attribute id="FadeOutDelay" type="float" value="0" />
+											<attribute id="FadeOutFX" type="FixedString" value="" />
+											<attribute id="TargetItemState" type="uint8" value="0" />
+											<attribute id="VisualWithDynamicPhysics" type="FixedString" value="7d44e0a4-6036-206b-9c0d-e7137a71b0a3" />
+											<attribute id="templateAfterDestruction" type="FixedString" value="e34ed9ea-ff6e-4df7-b5e5-59ffbda0a8fa" />
+											<attribute id="visualDestruction" type="FixedString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<!-- Снятие улучшения -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="(HasPassive('Background_GuildArtisan', context.Source) or HasPassive('PassiveFeature_KelaBlacksmith', context.Source) or Tagged('DROWELF', context.Source) or Tagged('ELF', context.Source)) and HasStatus('KELA_WEAPON_UPGRADED', GetActiveWeapon(context.Source, true)) and IsWeaponOfProficiencyGroup('HandCrossbows|HeavyCrossbows|Longbows|Shortbows', GetActiveWeapon(context.Source, true)) and HasStatus('KELA_WEAPON_OIL_USED_SIMPLE', context.Target)" />	
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_UPGRADED_NEED_REMOVE" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Обычное улучшение -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="(HasPassive('Background_GuildArtisan', context.Source) or HasPassive('PassiveFeature_KelaBlacksmith', context.Source) or Tagged('DROWELF', context.Source) or Tagged('ELF', context.Source)) and IsWeaponOfProficiencyGroup('HandCrossbows|HeavyCrossbows|Longbows|Shortbows', GetActiveWeapon(context.Source, true)) and HasStatus('KELA_WEAPON_OIL_USED_SIMPLE', context.Target)" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_UPGRADE_BY_LEVEL" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Описание -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="BookId" type="FixedString" value="KELA_Anvil_Description" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="5dc5450d-29bd-4e6b-942f-1243251db1af" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 
 				<!-- Новое Юзабельное точильное колесо -->
 				<node id="GameObjects">
@@ -348,8 +386,8 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE', context.Target) and ((HasStatus('KELA_WHETSTONE_UPGRADED', GetActiveWeapon(context.Source, true)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (HasStatus('KELA_WHETSTONE_UPGRADED', GetActiveWeapon(context.Source, false)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />	
-											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_UPGRADED', GetActiveWeapon(context.Source, true)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true)) and HasStatus('KELA_WEAPON_OIL_USED_SIMPLE', context.Target)" />	
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_UPGRADED_NEED_REMOVE" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
 											<attribute id="IsHiddenStatus" type="bool" value="True" />
@@ -362,22 +400,8 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE', context.Target) and HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE_SIMPLE', context.Target) and ((IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />
-											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE_GRINDING_OIL" />
-											<attribute id="StatusDuration" type="int32" value="0" />
-											<attribute id="Consume" type="bool" value="False" />
-											<attribute id="IsHiddenStatus" type="bool" value="True" />
-										</node>
-									</children>
-								</node>
-								<!-- Заточка с суссурным маслом -->
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="7" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE', context.Target) and HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE_SUSSUR', context.Target) and ((IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />
-											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE_GRINDING_SUSSUR_OIL" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_SIMPLE', context.Target) and (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true)))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_UPGRADE_BY_LEVEL" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
 											<attribute id="IsHiddenStatus" type="bool" value="True" />
@@ -390,8 +414,8 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="not HasStatus('KELA_GRINDING_OIL_USED_ON_WHETSTONE', context.Target) and not HasStatus('KELA_WHETSTONE_UPGRADED', GetActiveWeapon(context.Source, true)) and ((IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true))) or (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, false))))" />
-											<attribute id="StatsId" type="FixedString" value="KELA_WHETSTONE_WITHOUT_OIL_18" />
+											<attribute id="Conditions" type="LSString" value="not HasStatus('KELA_WEAPON_UPGRADED', GetActiveWeapon(context.Source, true)) and (IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Source, true)))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_UPGRADE_WITHOUT_OIL_18" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
 											<attribute id="IsHiddenStatus" type="bool" value="True" />
@@ -441,34 +465,6 @@
 					<!-- <attribute id="OnUseDescription" type="TranslatedString" handle="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1" /> -->
 					<attribute id="UseSound" type="FixedString" value="" />
 					<children>
-						<!-- <node id="Bounds">
-							<children>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="1" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
-									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
-									<attribute id="Radius" type="float" value="0.411427" />
-									<attribute id="Height" type="float" value="0.602267" />
-								</node>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="2" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.5022092 0 -0.1887783" />
-									<attribute id="Max" type="fvec3" value="0.4821434 0.9958298 0.4661928" />
-									<attribute id="Radius" type="float" value="0.411427" />
-									<attribute id="Height" type="float" value="0.602267" />
-								</node>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="0" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.2511046 0 -0.09438917" />
-									<attribute id="Max" type="fvec3" value="0.2410717 0.9958298 0.2330964" />
-									<attribute id="Radius" type="float" value="0.2057135" />
-									<attribute id="Height" type="float" value="0.602267" />
-								</node>
-							</children>
-						</node> -->
 						<node id="GameMaster">
 							<attribute id="GameMasterSpawnSection" type="int32" value="12" />
 							<attribute id="GameMasterSpawnSubSection" type="TranslatedString" handle="hae3b7d80gf59dg4a03g9461g581a4e5e3827" version="1" />
@@ -511,34 +507,6 @@
 					<!-- <attribute id="OnUseDescription" type="TranslatedString" handle="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1" /> -->
 					<attribute id="UseSound" type="FixedString" value="" />
 					<children>
-						<!-- <node id="Bounds">
-							<children>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="0" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.6026511 0 -0.2886414" />
-									<attribute id="Max" type="fvec3" value="0.5785721 1.194996 0.1719164" />
-									<attribute id="Radius" type="float" value="0.2057135" />
-									<attribute id="Height" type="float" value="0.602267" />
-								</node>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="1" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.6026511 0 -0.2886414" />
-									<attribute id="Max" type="fvec3" value="0.5785721 1.194996 0.1719164" />
-									<attribute id="Radius" type="float" value="0.411427" />
-									<attribute id="Height" type="float" value="0.602267" />
-								</node>
-								<node id="Bound">
-									<attribute id="Type" type="uint8" value="2" />
-									<attribute id="Shape" type="uint8" value="1" />
-									<attribute id="Min" type="fvec3" value="-0.6026511 0 -0.2886414" />
-									<attribute id="Max" type="fvec3" value="0.5785721 1.194996 0.1719164" />
-									<attribute id="Radius" type="float" value="0.411427" />
-									<attribute id="Height" type="float" value="0.602267" />
-								</node>
-							</children>
-						</node> -->
 						<node id="GameMaster">
 							<attribute id="GameMasterSpawnSection" type="int32" value="12" />
 							<attribute id="GameMasterSpawnSubSection" type="TranslatedString" handle="h11b8fc31gbba4g4606ga1b2g199c0e276569" version="1" />

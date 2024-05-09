@@ -1,12 +1,11 @@
 new entry "KELA_Sussur_Oil_Passive"
 type "PassiveData"
 data "DisplayName" "h31737c72fb2149d0b1d2d8c54d9ec586499d;1"
-// data "Description" "h403731c9gf72cg49a5gb163g3632ed581675;1"
 data "Description" "h76d39435gfe13g4a54ga0c0g9c3c6f2169ce;1"
 data "DescriptionParams" "2;13"
 data "TooltipSave" "Constitution"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "IsMeleeWeaponAttack() or IsRangedWeaponAttack()"
+data "Conditions" "IsMeleeWeaponAttack() or IsRangedWeaponAttack() or IsWeaponAttack()"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(SILENCED, 100, 2)"
 
 // Пассивки кузнеца

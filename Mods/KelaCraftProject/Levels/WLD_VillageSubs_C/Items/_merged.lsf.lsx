@@ -4,17 +4,23 @@
 	<region id="Templates">
 		<node id="Templates">
 			<children>
-
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
 
 				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 				<!-- Заброшенная деревня, подвал кузницы -->
 				<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
+
+
 				<!-- Дебажный сундук для спавна -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="a98f51bd-3e22-49d2-812d-73f4bceb09b1" />
+					<attribute id="MapKey" type="FixedString" value="12aa7d8b-775b-4378-bd9b-b63f9709bd98" />
 					<attribute id="Name" type="LSString" value="KELA_DEBUG_Chest" />
 					<attribute id="TemplateName" type="FixedString" value="0e600db2-aa76-4c98-b4d5-a55c0853e7f1" />
 					<attribute id="Type" type="FixedString" value="item" />
@@ -127,15 +133,17 @@
 					</children>
 				</node>
 
-				<!-- Молот настройки -->
+				<!-- Записка у скелета на выступе в кузнице в заброшенной деревне -->
 				<node id="GameObjects">
+					<attribute id="ConstellationConfigName" type="FixedString" value="PerceptionHelper" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="29cc0ccd-ebaa-467f-8610-82e45c0bf942" />
-					<attribute id="Name" type="LSString" value="UNI_LOOT_Forge_Kela_LightHammer_VillageSubs_C" />
-					<attribute id="TemplateName" type="FixedString" value="b1c81ddb-7d35-4126-8d2a-a0a3e49ec9cc" />
+					<attribute id="MapKey" type="FixedString" value="cc97d257-d86b-4482-b45b-7ea63a7d3fad" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Note_Smithing_Skeleton_001" />
+					<attribute id="TemplateName" type="FixedString" value="7219d494-3bf6-4ba0-baaf-29ad104f3ef3" />
+					<attribute id="Tooltip" type="uint8" value="2" />
 					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
 					<children>
 						<node id="LayerList">
 							<children>
@@ -153,12 +161,74 @@
 								</node>
 							</children>
 						</node>
+						<node id="ConstellationConfigGlobalParameters">
+							<children>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="MaxRadius" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="double">
+																	<attribute id="double" type="double" value="3" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="DC" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="HiddenPerception_Medium_cd1800ab-1b11-4c7a-9f50-fdeb8d35481f" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Type" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Invisible" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
 						<node id="Transform">
-							<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
-							<attribute id="Position" type="fvec3" value="83.37035 12.47909 78.0454" />
-							<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
-							<attribute id="RotationQuat" type="fvec4" value="0 -0.5842353 0 0.7389326" />
-							<attribute id="Scale" type="float" value="0.8" />
+							<attribute id="Position" type="fvec3" value="82.59418 16.10343 65.3862" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.3442353 0 0.8389326"/>
+							<attribute id="Scale" type="float" value="0.6" />
 						</node>
 					</children>
 				</node>
@@ -167,7 +237,7 @@
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="b32c6c6d-ffd1-49fe-b63a-75a449094e63" />
+					<attribute id="MapKey" type="FixedString" value="3dd68988-7818-42c8-a305-f293cc3e62b0" />
 					<attribute id="Name" type="LSString" value="KELA_Useful_Anvil_001" />
 					<attribute id="TemplateName" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" />
 					<attribute id="Type" type="FixedString" value="item" />
@@ -243,7 +313,7 @@
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="89972799-c8a8-495c-b9f0-2a0ee8754fce" />
+					<attribute id="MapKey" type="FixedString" value="78c2c73d-3790-485a-b18a-dac62a8a981a" />
 					<attribute id="Name" type="LSString" value="KELA_Useful_Whetstone_Wheel_001" />
 					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
 					<attribute id="Type" type="FixedString" value="item" />

@@ -23,339 +23,284 @@ data "Description" "hd3b46269c355406fa1efb3e043909a89gd2d;1"
 data "StackId" "KELA_LABORATORY_AURA_ACTIVE"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
 
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// УЛУЧШЕНИЕ ОРУЖИЯ
+// Режущее и колющее (точильный камень с обычным оружейным маслом):
+//   обычный уровень - любой персонаж
+//   выше - Кузнец, прочитавший наставления
+// Стрелковое (ремесленный стол с обычным оружейным маслом):
+//   обычный уровень - персонаж с предысторией Ремесленник, эльф, дроу или Кузнец
+//   выше - Кузнец с предысторий Ремесленник, прочитавший наставления
+// Ударное (наковальня с обычным оружейным маслом):
+//   обычный уровень - кузнец, не прочитавший наставления
+//   выше - кузнец, прочитавший наставления
+// Всё оружие:
+//  закалка/пропитка в ведре с оружейным маслом, имеющим дополнительные свойства
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
 
 // ------------------------------------------------------------------------
+// Подготовка точильного камня / наковальни / ремесленного стола
+// Через заклинание Target_Use_Weapon_Oil_Simple
 // ------------------------------------------------------------------------
-// ------------------------------------------------------------------------
-// Заточка оружия на точильном камне
-// ------------------------------------------------------------------------
-// ------------------------------------------------------------------------
-// ------------------------------------------------------------------------
-
-// ------------------------------------------------------------------------
-// Использование масла
-// ------------------------------------------------------------------------
-
-new entry "KELA_GRINDING_OIL_USED"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "ForceOverhead;DisableCombatlog"
-data "DisplayName" "h2664a487g180dg4bf1ga5d2g627917854dd1;1"
-data "Description" "ha1f83547g7f50g4620gb5ebg779b2ac35670;1"
-data "DescriptionParams" "20"
-data "Icon" "Item_CONS_Potion_Grinding_Oil_A"
-data "StackId" "KELA_GRINDING_OIL_USED"
-data "AuraRadius" "5"
-data "AuraStatuses" "IF(Item() and Tagged('KELAWHETSTONE')):ApplyStatus(KELA_GRINDING_OIL_USED_ON_WHETSTONE,100,20);IF(Item() and Tagged('KELAWHETSTONE')):ApplyStatus(KELA_GRINDING_OIL_USED_ON_WHETSTONE_SIMPLE,100,20);TARGET:IF(Character()):ApplyStatus(KELA_GRINDING_SUSSUR_OIL_USED_REMOVE)"
-data "OnApplyFunctors" "IF(HasStatus('KELA_GRINDING_SUSSUR_OIL_USED')):RemoveStatus(KELA_GRINDING_SUSSUR_OIL_USED)"
-
-new entry "KELA_GRINDING_SUSSUR_OIL_USED"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "ForceOverhead;DisableCombatlog"
-data "DisplayName" "h2664a487g180dg4bf1ga5d2g627917854dd1;1"
-data "Description" "ha1f83547g7f50g4620gb5ebg779b2ac35670;1"
-data "DescriptionParams" "20"
-data "Icon" "Item_CONS_Potion_Sussur_Oil_A"
-data "StackId" "KELA_GRINDING_SUSSUR_OIL_USED"
-data "AuraRadius" "5"
-data "AuraStatuses" "IF(Item() and Tagged('KELAWHETSTONE')):ApplyStatus(KELA_GRINDING_OIL_USED_ON_WHETSTONE,100,20);IF(Item() and Tagged('KELAWHETSTONE')):ApplyStatus(KELA_GRINDING_OIL_USED_ON_WHETSTONE_SUSSUR,100,20);TARGET:IF(Character()):ApplyStatus(KELA_GRINDING_OIL_USED_REMOVE)"
-data "OnApplyFunctors" "IF(HasStatus('KELA_GRINDING_OIL_USED')):RemoveStatus(KELA_GRINDING_OIL_USED)"
-
-new entry "KELA_GRINDING_OIL_USED_REMOVE"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
-data "StackId" "KELA_GRINDING_OIL_USED_REMOVE"
-data "OnApplyFunctors" "IF(HasStatus('KELA_GRINDING_OIL_USED')):RemoveStatus(KELA_GRINDING_OIL_USED)"
-
-new entry "KELA_GRINDING_SUSSUR_OIL_USED_REMOVE"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
-data "StackId" "KELA_GRINDING_SUSSUR_OIL_USED_REMOVE"
-data "OnApplyFunctors" "IF(HasStatus('KELA_GRINDING_SUSSUR_OIL_USED')):RemoveStatus(KELA_GRINDING_SUSSUR_OIL_USED)"
-
-// ------------------------------------------------------------------------
-// Подготовка точильного камня
-// ------------------------------------------------------------------------
-
-new entry "KELA_GRINDING_OIL_USED_ON_WHETSTONE"
+new entry "KELA_WEAPON_OIL_USED_SIMPLE"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "ForceOverhead"
-data "DisplayName" "h9261c713ga2e5g49bcgb3f1gf8a056f64f4e;1"
-data "Description" "h9c9bffceg44c5g42c0g8363g27632a44e104;1"
-data "Icon" "Item_TOOL_Smith_Whetstone_Wheel_A"
-data "StackId" "KELA_GRINDING_OIL_USED_ON_WHETSTONE"
-
-new entry "KELA_GRINDING_OIL_USED_ON_WHETSTONE_SIMPLE"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableOverhead"
 data "DisplayName" "h13a5791cg5ed8g40cfga717g39d7283f398f;1"
 data "Description" "h9ce93eefgd3d7g4d70g8050g40dd88e04c85;1"
 data "Icon" "Item_CONS_Potion_Grinding_Oil_A"
-data "StackId" "KELA_GRINDING_OIL_USED_ON_WHETSTONE_SIMPLE"
+data "StackId" "KELA_WEAPON_OIL_USED_SIMPLE"
 
-new entry "KELA_GRINDING_OIL_USED_ON_WHETSTONE_SUSSUR"
+// ------------------------------------------------------------------------
+// Подготовка ведра
+// Через заклинание Target_Use_Weapon_Oil_
+// ------------------------------------------------------------------------
+new entry "KELA_WEAPON_OIL_USED_SUSSUR"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableOverhead"
+data "StatusPropertyFlags" "ForceOverhead"
 data "DisplayName" "h978bffa6g12f7g4051ga9a4g081b6c881fcb;1"
 data "Description" "h87cab18age3a8g4df2ga923gf0371e9e7a5d;1"
+data "DescriptionParams" "13;2"
 data "Icon" "Item_CONS_Potion_Sussur_Oil_A"
-data "StackId" "KELA_GRINDING_OIL_USED_ON_WHETSTONE_SUSSUR"
+data "StackId" "KELA_WEAPON_OIL_USED_SUSSUR"
 
 // ------------------------------------------------------------------------
-// Оружие обработано (общий признак)
+// Уменьшение длительности действия оружейного масла
 // ------------------------------------------------------------------------
-
-new entry "KELA_WHETSTONE_UPGRADED"
+new entry "KELA_WEAPON_OIL_USED_REDUCE"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
-data "DisplayName" "ha7dcdd6fc1eb44eb97ca9daf3baaccb19815;1"
-data "Description" "hb2c59f5bg830ag452bg936cgf18fd2c48b19;1"
-data "Icon" "Tooltip_Weapon_Upgraded"
-data "StackId" "KELA_WHETSTONE_UPGRADED"
-
-// ------------------------------------------------------------------------
-// Снятие заточки
-// ------------------------------------------------------------------------
-
-new entry "KELA_WHETSTONE"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "KELA_WHETSTONE"
 data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
-data "AuraRadius" "7"
-data "AuraStatuses" "TARGET:IF(Character()):ApplyStatus(KELA_GRINDING_OIL_USED_REDUCE)"
-data "OnApplyFunctors" "IF(HasStatus('KELA_GRINDING_SUSSUR_OIL_USED')):SetStatusDuration(KELA_GRINDING_SUSSUR_OIL_USED,-3,Add);IF(HasStatus('KELA_GRINDING_OIL_USED')):SetStatusDuration(KELA_GRINDING_OIL_USED,-3,Add);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_UPGRADED_REMOVE, 100, 0);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_UPGRADED_REMOVE, 100, 0)"
+data "StackId" "KELA_WEAPON_OIL_USED_REDUCE"
+data "OnApplyFunctors" "IF(HasStatus('KELA_WEAPON_OIL_USED_SIMPLE')):SetStatusDuration(KELA_WEAPON_OIL_USED_SIMPLE,-3,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_SUSSUR')):SetStatusDuration(KELA_WEAPON_OIL_USED_SUSSUR,-3,Add)"
 
-new entry "KELA_WHETSTONE_UPGRADED_REMOVE"
+// ------------------------------------------------------------------------
+// Оружие обработано (общий технический признак)
+// ------------------------------------------------------------------------
+new entry "KELA_WEAPON_UPGRADED"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisablePortraitIndicator"
+data "StatusPropertyFlags" "DisablePortraitIndicator;DisableOverhead;DisableCombatlog;IgnoreResting"
+data "Icon" "Tooltip_Weapon_Upgraded"
+data "StackId" "KELA_WEAPON_UPGRADED" 
+
+// ------------------------------------------------------------------------
+// Снятие дополнительной обработки
+// ------------------------------------------------------------------------
+new entry "KELA_WEAPON_UPGRADED_NEED_REMOVE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "KELA_WEAPON_UPGRADED_NEED_REMOVE"
+data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
+data "AuraRadius" "3"
+data "AuraStatuses" "TARGET:IF(Item() and (Tagged('KELAWHETSTONE') or Tagged('KELAANVIL') or Tagged('WORKBENCH'))):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE,100,0)"
+data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_REMOVE, 100, 0)"
+
+new entry "KELA_WEAPON_UPGRADED_REMOVE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisablePortraitIndicator;ForceOverhead"
 data "DisplayName" "hbd9aac50f3aa408888dff0ebfd2ed6329625;1"
 data "Description" "h7496479c73ed4a449e6e9232fac3b1a57079;1"
-data "StackId" "KELA_WHETSTONE_UPGRADED_REMOVE"
-// data "StatusPropertyFlags" "DisableCombatlog"
-data "OnApplyFunctors" "RemoveStatus(KELA_WHETSTONE_UPGRADED);RemoveStatus(KELA_WHETSTONE_SHARPENED);RemoveStatus(KELA_WHETSTONE_SHARPENED_PROFI);RemoveStatus(KELA_WHETSTONE_SHARPENED_BAD);RemoveStatus(KELA_WHETSTONE_SHARPENED_SUSSUR_OIL)"
-
-new entry "KELA_GRINDING_OIL_USED_REDUCE"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
-data "StackId" "KELA_GRINDING_OIL_USED_REDUCE"
-data "OnApplyFunctors" "IF(HasStatus('KELA_GRINDING_OIL_USED')):SetStatusDuration(KELA_GRINDING_OIL_USED,-3,Add);IF(HasStatus('KELA_GRINDING_SUSSUR_OIL_USED')):SetStatusDuration(KELA_GRINDING_SUSSUR_OIL_USED,-3,Add)"
+data "StackId" "KELA_WEAPON_UPGRADED_REMOVE"
+data "OnApplyFunctors" "RemoveStatus(KELA_WEAPON_UPGRADED);RemoveStatus(KELA_WEAPON_UPGRADED_SIMPLE);RemoveStatus(KELA_WEAPON_UPGRADED_PROFI);RemoveStatus(KELA_WEAPON_UPGRADED_EXPERT);RemoveStatus(KELA_WEAPON_UPGRADED_MASTER);RemoveStatus(KELA_WEAPON_UPGRADED_BAD);RemoveStatus(KELA_GUILD_ARTISAN_BONUS)"
 
 // ------------------------------------------------------------------------
-// Заточка обычным маслом
+// Дополнительная обработка
 // ------------------------------------------------------------------------
 
-// Распределяем по уровню кузнеца
-new entry "KELA_WHETSTONE_GRINDING_OIL"
+// Распределяем по уровню
+new entry "KELA_WEAPON_UPGRADE_BY_LEVEL"
 type "StatusData"
 data "StatusType" "BOOST"
-// data "DisplayName" "hcaaf20edg147eg4ff5g804ega27ac88bdf7e;1"
-// data "Description" "hb2c59f5bg830ag452bg936cgf18fd2c48b19;1"
-data "DescriptionParams" ""
-data "StackId" "KELA_WHETSTONE_GRINDING_OIL"
+data "StackId" "KELA_WEAPON_UPGRADE_BY_LEVEL"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
-data "OnApplyFunctors" "ApplyStatus(KELA_GRINDING_OIL_USED_REDUCE);IF(not HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) and not Tagged('KELABLACKSMITHINGEXPERT', context.Source) and not Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyStatus(KELA_WHETSTONE_GRINDING_OIL_15,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) and not Tagged('KELABLACKSMITHINGEXPERT', context.Source) and not Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyStatus(KELA_WHETSTONE_GRINDING_OIL_12,100,0);IF(Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source)):ApplyStatus(KELA_WHETSTONE_GRINDING_OIL_10,100,0);IF(Tagged('KELABLACKSMITHINGEXPERT', context.Source)):ApplyStatus(KELA_WHETSTONE_GRINDING_OIL_8,100,0);IF(Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyStatus(KELA_WHETSTONE_GRINDING_OIL_6,100,0)"
+data "AuraRadius" "3"
+data "AuraStatuses" "TARGET:IF(Item() and (Tagged('KELAWHETSTONE') or Tagged('KELAANVIL') or Tagged('WORKBENCH'))):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE,100,0)"
+data "OnApplyFunctors" "IF(not HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) and not Tagged('KELABLACKSMITHINGEXPERT', context.Source) and not Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_15,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) and not Tagged('KELABLACKSMITHINGEXPERT', context.Source) and not Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_12,100,0);IF(Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_10,100,0);IF(Tagged('KELABLACKSMITHINGEXPERT', context.Source)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_8,100,0);IF(Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_6,100,0)"
 
 // Заточка без масла: только обычная заточка
-new entry "KELA_WHETSTONE_WITHOUT_OIL_18"
+new entry "KELA_WEAPON_UPGRADE_WITHOUT_OIL_18"
 type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "hbd846f350c62433cb60c39a7096b9bffc0cf;1"
 data "Description" "h2edb5a6d04ef49b7bc87b66c144e18136dc0;1"
 data "DescriptionParams" "18"
-data "StackId" "KELA_WHETSTONE_WITHOUT_OIL_18"
-// data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
+data "StackId" "KELA_WEAPON_UPGRADE_WITHOUT_OIL_18"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "TooltipSave" "Dexterity"
 data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 18)"
-data "OnApplySuccess" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED, 100, -1)"
-data "OnApplyFail" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1)"
+data "OnApplySuccess" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_SIMPLE, 100, -1)"
+data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
 // Нет черты Кузнец: только обычная заточка
-new entry "KELA_WHETSTONE_GRINDING_OIL_15"
+new entry "KELA_WEAPON_UPGRADE_OIL_15"
 type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "hcb8942598a104da7a820fef39ee582e9ef94;1"
 data "Description" "h2edb5a6d04ef49b7bc87b66c144e18136dc0;1"
 data "DescriptionParams" "15"
-data "StackId" "KELA_WHETSTONE_GRINDING_OIL_15"
+data "StackId" "KELA_WEAPON_UPGRADE_OIL_15"
 // data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "TooltipSave" "Dexterity"
 data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 15)"
-data "OnApplySuccess" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED, 100, -1)"
-data "OnApplyFail" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1)"
+data "OnApplySuccess" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_SIMPLE, 100, -1)"
+data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
 // Есть черта Кузнец, но не читал книги: только обычная заточка
-new entry "KELA_WHETSTONE_GRINDING_OIL_12"
+new entry "KELA_WEAPON_UPGRADE_OIL_12"
 type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "hdb9238c947b14cf485bbda4cfbea8c8850ag;1"
 data "Description" "h2edb5a6d04ef49b7bc87b66c144e18136dc0;1"
 data "DescriptionParams" "12"
-data "StackId" "KELA_WHETSTONE_GRINDING_OIL_12"
+data "StackId" "KELA_WEAPON_UPGRADE_OIL_12"
 // data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "TooltipSave" "Dexterity"
 data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 12)"
-data "OnApplySuccess" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED, 100, -1)"
-data "OnApplyFail" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1)"
+data "OnApplySuccess" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_SIMPLE, 100, -1)"
+data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
 // Кузнец-подмастерье: обычная и профи заточка 
-new entry "KELA_WHETSTONE_GRINDING_OIL_10"
+new entry "KELA_WEAPON_UPGRADE_OIL_10"
 type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "h69a45e5b996d4a2cab1f19636db79a45244f;1"
 data "Description" "h2edb5a6d04ef49b7bc87b66c144e18136dc0;1"
 data "DescriptionParams" "10"
-data "StackId" "KELA_WHETSTONE_GRINDING_OIL_10"
+data "StackId" "KELA_WEAPON_UPGRADE_OIL_10"
 // data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "TooltipSave" "Dexterity"
 data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 10)"
-data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_PROFI, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED, 100, -1);IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, false)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_PROFI, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, false)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED, 100, -1)"
-data "OnApplyFail" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1)"
+data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_PROFI, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_SIMPLE, 100, -1)"
+data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
 // Кузнец-эксперт: профи и экспертная заточка 
-new entry "KELA_WHETSTONE_GRINDING_OIL_8"
+new entry "KELA_WEAPON_UPGRADE_OIL_8"
 type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "h8f3f0277378841648635781bdfa021ae7943;1"
 data "Description" "h2edb5a6d04ef49b7bc87b66c144e18136dc0;1"
 data "DescriptionParams" "8"
-data "StackId" "KELA_WHETSTONE_GRINDING_OIL_8"
+data "StackId" "KELA_WEAPON_UPGRADE_OIL_8"
 // data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "TooltipSave" "Dexterity"
 data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 8)"
-data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_EXPERT, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_PROFI, 100, -1);IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, false)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_EXPERT, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, false)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_PROFI, 100, -1)"
-data "OnApplyFail" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1)"
+data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_EXPERT, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_PROFI, 100, -1)"
+data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
 //Кузнец-мастер: экспертная и мастерская заточка 
-new entry "KELA_WHETSTONE_GRINDING_OIL_6"
+new entry "KELA_WEAPON_UPGRADE_OIL_6"
 type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "hf73888f2daaf47fca1fbe4976dad96fcebb8;1"
 data "Description" "h2edb5a6d04ef49b7bc87b66c144e18136dc0;1"
 data "DescriptionParams" "6"
-data "StackId" "KELA_WHETSTONE_GRINDING_OIL_6"
+data "StackId" "KELA_WEAPON_UPGRADE_OIL_6"
 // data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "TooltipSave" "Dexterity"
 data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 6)"
-data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_MASTER, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_EXPERT, 100, -1);IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, false)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_MASTER, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, false)) and IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_EXPERT, 100, -1)"
-data "OnApplyFail" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1)"
+data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_MASTER, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_EXPERT, 100, -1)"
+data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
-new entry "KELA_WHETSTONE_SHARPENED"
+new entry "KELA_WEAPON_UPGRADED_SIMPLE"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StackId" "KELA_WHETSTONE_SHARPENED"
+data "StackId" "KELA_WEAPON_UPGRADED_SIMPLE"
 data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
 data "Icon" "Tooltip_Sharpenning_Good"
 data "DisplayName" "h6cf3c6dega908g4c6dgb909gea6fcba7bccf;1"
 data "Description" "hb72b0aa6e7a746108e5e2f0d83d511dbcde7;1"
 data "DescriptionParams" "1"
 data "TooltipDamage" "DealDamage(1, Piercing)"
-data "Boosts" "IF(IsDamageTypeSlashing()):WeaponDamage(1,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(1,Piercing)"
-data "OnApplyFunctors" "ApplyStatus(KELA_WHETSTONE_UPGRADED,100,-1)"
+data "Boosts" "IF(IsDamageTypeSlashing()):WeaponDamage(1,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(1,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(1,Bludgeoning)"
+data "OnApplyFunctors" "ApplyStatus(KELA_WEAPON_UPGRADED,100,-1);IF(HasPassive('PassiveFeature_KelaBlacksmith', GetOwner(context.Target))):ApplyStatus(KELA_GUILD_ARTISAN_BONUS, 100, -1)"
 
-new entry "KELA_WHETSTONE_SHARPENED_PROFI"
+new entry "KELA_WEAPON_UPGRADED_PROFI"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
-data "StackId" "KELA_WHETSTONE_SHARPENED_PROFI"
+data "StackId" "KELA_WEAPON_UPGRADED_PROFI"
 data "Icon" "Tooltip_Sharpenning_Good"
 data "DisplayName" "h2cb13dd1g7ac7g48c5gb9b7ga9f99cca1fdc;1"
 data "Description" "hb72b0aa6e7a746108e5e2f0d83d511dbcde7;1"
 data "DescriptionParams" "2"
 data "TooltipDamage" "DealDamage(2, Piercing)"
-data "Boosts" "IF(IsDamageTypeSlashing()):WeaponDamage(2,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(2,Piercing)"
-data "OnApplyFunctors" "ApplyStatus(KELA_WHETSTONE_UPGRADED,100,-1)"
+data "Boosts" "IF(IsDamageTypeSlashing()):WeaponDamage(2,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(2,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(2,Bludgeoning)"
+data "OnApplyFunctors" "ApplyStatus(KELA_WEAPON_UPGRADED,100,-1);IF(HasPassive('PassiveFeature_KelaBlacksmith', GetOwner(context.Target))):ApplyStatus(KELA_GUILD_ARTISAN_BONUS, 100, -1)"
 
-new entry "KELA_WHETSTONE_SHARPENED_EXPERT"
+new entry "KELA_WEAPON_UPGRADED_EXPERT"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
-data "StackId" "KELA_WHETSTONE_SHARPENED_EXPERT"
+data "StackId" "KELA_WEAPON_UPGRADED_EXPERT"
 data "Icon" "Tooltip_Sharpenning_Good"
 data "DisplayName" "h8a4f8163f36a401bbec606e775643dd13f85;1"
 data "Description" "hacd9e5c1g7238g46c8gae66gabaf8658d06b;1"
 data "DescriptionParams" "1;3"
 data "TooltipDamage" "DealDamage(3, Piercing)"
-data "Boosts" "WeaponAttackRollBonus(1);IF(IsDamageTypeSlashing()):WeaponDamage(3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(3,Piercing)"
-data "OnApplyFunctors" "ApplyStatus(KELA_WHETSTONE_UPGRADED,100,-1)"
+data "Boosts" "WeaponAttackRollBonus(1);IF(IsDamageTypeSlashing()):WeaponDamage(3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(3,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(3,Bludgeoning)"
+data "OnApplyFunctors" "ApplyStatus(KELA_WEAPON_UPGRADED,100,-1);IF(HasPassive('PassiveFeature_KelaBlacksmith', GetOwner(context.Target))):ApplyStatus(KELA_GUILD_ARTISAN_BONUS, 100, -1)"
 
-new entry "KELA_WHETSTONE_SHARPENED_MASTER"
+new entry "KELA_WEAPON_UPGRADED_MASTER"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
-data "StackId" "KELA_WHETSTONE_SHARPENED_MASTER"
+data "StackId" "KELA_WEAPON_UPGRADED_MASTER"
 data "Icon" "Tooltip_Sharpenning_Good"
 data "DisplayName" "h3d83d383e8c2408792da46543d2d3eee3062;1"
 data "Description" "hacd9e5c1g7238g46c8gae66gabaf8658d06b;1"
-data "DescriptionParams" "+2;+3"
+data "DescriptionParams" "2;3"
 data "TooltipDamage" "DealDamage(3, Piercing)"
-data "Boosts" "WeaponAttackRollBonus(2);IF(IsDamageTypeSlashing()):WeaponDamage(3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(3,Piercing)"
-data "OnApplyFunctors" "ApplyStatus(KELA_WHETSTONE_UPGRADED,100,-1)"
+data "Boosts" "WeaponAttackRollBonus(2);IF(IsDamageTypeSlashing()):WeaponDamage(3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(3,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(3,Bludgeoning)"
+data "OnApplyFunctors" "ApplyStatus(KELA_WEAPON_UPGRADED,100,-1);IF(HasPassive('PassiveFeature_KelaBlacksmith', GetOwner(context.Target))):ApplyStatus(KELA_GUILD_ARTISAN_BONUS, 100, -1)"
 
-new entry "KELA_WHETSTONE_SHARPENED_BAD"
+new entry "KELA_WEAPON_UPGRADED_BAD"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
-data "StackId" "KELA_WHETSTONE_SHARPENED_BAD"
+data "StackId" "KELA_WEAPON_UPGRADED_BAD"
 data "Icon" "Tooltip_Sharpenning_Bad"
 data "DisplayName" "hb2283b71ge6a9g4e5fgbf3bgc598893ccd13;1"
 data "Description" "h9f5e4109898742728840ab7cf7d07a25d477;1"
 data "DescriptionParams" "-2;-2"
 data "TooltipDamage" "DealDamage(-2, Piercing)"
-data "Boosts" "WeaponAttackRollBonus(-2);IF(IsDamageTypeSlashing()):WeaponDamage(-2,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(-2,Piercing)"
-data "OnApplyFunctors" "ApplyStatus(KELA_WHETSTONE_UPGRADED,100,-1)"
+data "Boosts" "WeaponAttackRollBonus(-2);IF(IsDamageTypeSlashing()):WeaponDamage(-2,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(-2,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(-2,Bludgeoning)"
+data "OnApplyFunctors" "ApplyStatus(KELA_WEAPON_UPGRADED,100,-1)"
 
-
-// ------------------------------------------------------------------------
-// Заточка маслом с суссуром
-// ------------------------------------------------------------------------
-
-// Распределяем по уровню кузнеца
-// У масла с допэффектом максимум проф заточка KELA_WHETSTONE_GRINDING_OIL_10
-new entry "KELA_WHETSTONE_GRINDING_SUSSUR_OIL"
+new entry "KELA_GUILD_ARTISAN_BONUS"
 type "StatusData"
 data "StatusType" "BOOST"
-// data "DisplayName" "hcaaf20edg147eg4ff5g804ega27ac88bdf7e;1"
-// data "Description" "hb2c59f5bg830ag452bg936cgf18fd2c48b19;1"
-data "DescriptionParams" ""
-data "StackId" "KELA_WHETSTONE_GRINDING_SUSSUR_OIL"
+data "DisplayName" "h870ca004dd7141b5ad33d8f889500a6a0ad0;1"
+data "Description" "h11f3882be1c6455187e2ea7cd83be7db7935;1"
+data "DescriptionParams" "1"
+data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
+data "Icon" "Item_CONS_Potion_Sussur_Oil_A"
+data "Boosts" "WeaponAttackRollBonus(1)"
+data "StackId" "KELA_GUILD_ARTISAN_BONUS"
+
+// ------------------------------------------------------------------------
+// Закалка/пропитка маслом с суссуром
+// ------------------------------------------------------------------------
+// Распределяем по уровню
+new entry "KELA_WEAPON_TEMPER_BY_LEVEL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "KELA_WEAPON_TEMPER_BY_LEVEL"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
-data "OnApplyFunctors" "ApplyStatus(KELA_GRINDING_OIL_USED_REDUCE);IF(not HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) and not Tagged('KELABLACKSMITHINGEXPERT', context.Source) and not Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyStatus(KELA_WHETSTONE_GRINDING_OIL_15,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) and not Tagged('KELABLACKSMITHINGEXPERT', context.Source) and not Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyStatus(KELA_WHETSTONE_GRINDING_OIL_12,100,0);IF(Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) or Tagged('KELABLACKSMITHINGEXPERT', context.Source) or Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyStatus(KELA_WHETSTONE_GRINDING_OIL_10,100,0);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_SUSSUR_OIL_DIPPED, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_SUSSUR_OIL_DIPPED, 100, 300)"
-
-
-
-
-
-// Распределяем по уровню кузнеца
-
-// new entry "KELA_WHETSTONE_GRINDING_SUSSUR_OIL"
-// type "StatusData"
-// data "StatusType" "BOOST"
-// // data "DisplayName" "hcaaf20edg147eg4ff5g804ega27ac88bdf7e;1"
-// // data "Description" "hb2c59f5bg830ag452bg936cgf18fd2c48b19;1"
-// // data "DescriptionParams" "13"
-// data "StackId" "KELA_WHETSTONE_GRINDING_SUSSUR_OIL"
-// // data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
-// // data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator;DisableCombatlog"
-// data "TooltipSave" "Dexterity"
-// data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 15) or (SavingThrow(Ability.Dexterity, 13) and Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source)) or (SavingThrow(Ability.Dexterity, 10) and Tagged('KELABLACKSMITHINGEXPERT', context.Source)) or (SavingThrow(Ability.Dexterity, 7) and Tagged('KELABLACKSMITHINGMASTER', context.Source)) or (SavingThrow(Ability.Dexterity, 13) and Tagged('GUILD_ARTISAN', context.Source)) or (SavingThrow(Ability.Dexterity, 10) and Tagged('GUILD_ARTISAN', context.Source) and Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source)) or (SavingThrow(Ability.Dexterity, 7) and Tagged('GUILD_ARTISAN', context.Source) and Tagged('KELABLACKSMITHINGEXPERT', context.Source)) or (SavingThrow(Ability.Dexterity, 4) and Tagged('GUILD_ARTISAN', context.Source) and Tagged('KELABLACKSMITHINGMASTER', context.Source))"
-// data "OnApplySuccess" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_SUSSUR_OIL_DIPPED, 100, 300);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_SUSSUR_OIL_DIPPED, 100, 300)"
-// data "OnApplyFail" "IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1);IF(IsWeaponOfProficiencyGroup('Daggers|Rapiers|Scimitars|Greatswords|Longswords|Shortswords|Battleaxes|Greataxes|Handaxes|Glaives|Halberds|Pikes|Sickles|Spears|Tridents|Warpicks|Javelins', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_WHETSTONE_SHARPENED_BAD, 100, -1)"
+data "AuraRadius" "3"
+data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE,100,0)"
+data "OnApplyFunctors" "IF(not HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) and not Tagged('KELABLACKSMITHINGEXPERT', context.Source) and not Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyEquipmentStatus(MainHand, KELA_SUSSUR_OIL_DIPPED, 100, 25);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source) and not Tagged('KELABLACKSMITHINGEXPERT', context.Source) and not Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyEquipmentStatus(MainHand, KELA_SUSSUR_OIL_DIPPED, 100, 50);IF(Tagged('KELABLACKSMITHINGAPPRENTICE', context.Source)):ApplyEquipmentStatus(MainHand, KELA_SUSSUR_OIL_DIPPED, 100, 150);IF(Tagged('KELABLACKSMITHINGEXPERT', context.Source)):ApplyEquipmentStatus(MainHand, KELA_SUSSUR_OIL_DIPPED, 100, 400);IF(Tagged('KELABLACKSMITHINGMASTER', context.Source)):ApplyEquipmentStatus(MainHand, KELA_SUSSUR_OIL_DIPPED, 100, 1000)"
 
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
@@ -374,13 +319,12 @@ data "Description" "hd501a488ffcd4eebbe6a0756c981c4bd3a15;1"
 data "DescriptionParams" "10;13;2"
 data "Icon" "Item_CONS_Potion_Sussur_Oil_A"
 data "StackId" "KELA_SUSSUR_OIL"
-// data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
-data "OnApplyFunctors" "IF(WieldingWeapon('Dippable') and not WieldingWeapon('Torch')):ApplyEquipmentStatus(MeleeMainHand,KELA_SUSSUR_OIL_DIPPED,100,10);IF(WieldingWeapon('Dippable',true) and not WieldingWeapon('Torch',true)):ApplyEquipmentStatus(MeleeOffHand,KELA_SUSSUR_OIL_DIPPED,100,10);AI_ONLY:ApplyStatus(SELF,AI_HELPER_DIPWEAPON,100,10)"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "OnApplyFunctors" "AI_IGNORE:IF(WieldingWeapon('Dippable') and not WieldingWeapon('Torch')):ApplyEquipmentStatus(MainHand,KELA_SUSSUR_OIL_DIPPED,100,10);AI_IGNORE:IF(WieldingWeapon('Dippable',true) and not WieldingWeapon('Torch',true)):ApplyEquipmentStatus(OffHand,KELA_SUSSUR_OIL_DIPPED,100,10);AI_ONLY:IF(not HasStatus('DIPPED_FIRE',GetActiveWeapon())):ApplyStatus(SELF,AI_HELPER_SUSSUR_OIL_DIPPED,100,0)"
 
 new entry "KELA_SUSSUR_OIL_DIPPED"
 type "StatusData"
 data "StatusType" "BOOST"
-// data "StatusGroups" "SG_WeaponCoating"
 using "DIPPED_POISON"
 data "DisplayName" "h31737c72fb2149d0b1d2d8c54d9ec586499d;1"
 data "Description" "h76d39435gfe13g4a54ga0c0g9c3c6f2169ce;1"
@@ -391,6 +335,11 @@ data "Boosts" ""
 data "Passives" "KELA_Sussur_Oil_Passive"
 data "StackId" "KELA_SUSSUR_OIL_DIPPED"
 
+new entry "AI_HELPER_SUSSUR_OIL_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "AI_HELPERS"
+data "OnApplyFunctors" "AI_ONLY:IF(not HasStatus('KELA_SUSSUR_OIL_DIPPED',GetActiveWeapon()) and not HasStatus('DIPPED_FIRE',GetActiveWeapon())):ApplyStatus(SELF,KELA_SUSSUR_OIL_DIPPED,100,10)"
 
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
@@ -439,8 +388,6 @@ data "DisplayName" "h56d84ca229284863995c30350eaf4edf806d;1"
 data "Description" "h36ac6733gf5c6g49f0g951egb382451cd049;1"
 data "StatusPropertyFlags" "ForceOverhead"
 data "Icon" "Item_TOOL_Smith_Anvil_B"
-// data "AuraRadius" "10"
-// data "AuraStatuses" "IF(Item() and Tagged('KELAFORGENEWWEAPON')):ApplyStatus(KELA_SUSSUR_OIL_DIPPED,100,-1)"
 
 new entry "KELA_CAN_POUR_METALBARS"
 type "StatusData"
@@ -464,165 +411,34 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "BOOK_KELA_BLACKSMITH_APPRENTICE_USED"
 data "DisplayName" "h5f2a1497b44f4a6a98bf06f75b45d230756g;1"
-data "Description" "h86787f2eac8e4d4cb8f312ddec606d2aa80g;1"
-data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+data "Description" "h5d3e7c5633604727810ba54dc1b7cb36aec8;1"
+data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator;IgnoreResting"
 data "Passives" "PassiveFeature_KelaBlacksmith_Apprentice"
 data "Boosts" "Tag(KELABLACKSMITHINGAPPRENTICE)"
 data "RemoveConditions" "HasStatus('BOOK_KELA_BLACKSMITH_EXPERT_USED') or HasStatus('BOOK_KELA_BLACKSMITH_MASTER_USED')"
 data "RemoveEvents" "OnStatusApplied"
-
 
 new entry "BOOK_KELA_BLACKSMITH_EXPERT_USED"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "BOOK_KELA_BLACKSMITH_EXPERT_USED"
 data "DisplayName" "h7663d9fabccb481e847c3128ddfb9fb97435;1"
-data "Description" "h86787f2eac8e4d4cb8f312ddec606d2aa80g;1"
-data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+data "Description" "h133df87dbf19474fafd684c1bca4c697gdb1;1"
+data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator;IgnoreResting"
 data "Passives" "PassiveFeature_KelaBlacksmith_Expert"
 data "Boosts" "Tag(KELABLACKSMITHINGEXPERT)"
 data "RemoveConditions" "HasStatus('BOOK_KELA_BLACKSMITH_MASTER_USED')"
 data "RemoveEvents" "OnStatusApplied"
-// data "OnApplyFunctors" "IF(HasStatus('BOOK_KELA_BLACKSMITH_APPRENTICE_USED')):RemoveStatus(BOOK_KELA_BLACKSMITH_APPRENTICE_USED)"
 
 new entry "BOOK_KELA_BLACKSMITH_MASTER_USED"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "BOOK_KELA_BLACKSMITH_MASTER_USED"
 data "DisplayName" "hc6d4a6e65c524d7bbe4161a0f1640c9b2d2c;1"
-data "Description" "h86787f2eac8e4d4cb8f312ddec606d2aa80g;1"
-data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+data "Description" "ha78400cc8c89413d9bdb7ff5d8207f1096a7;1"
+data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator;IgnoreResting"
 data "Passives" "PassiveFeature_KelaBlacksmith_Master"
 data "Boosts" "Tag(KELABLACKSMITHINGMASTER)"
-// data "OnApplyFunctors" "IF(HasStatus('BOOK_KELA_BLACKSMITH_APPRENTICE_USED')):RemoveStatus(BOOK_KELA_BLACKSMITH_APPRENTICE_USED);IF(HasStatus('BOOK_KELA_BLACKSMITH_EXPERT_USED')):RemoveStatus(BOOK_KELA_BLACKSMITH_EXPERT_USED)"
-
-// ------------------------------------------------------------------------
-// ------------------------------------------------------------------------
-// ------------------------------------------------------------------------
-// Улучшение оружия на наковальне
-// ------------------------------------------------------------------------
-// ------------------------------------------------------------------------
-// ------------------------------------------------------------------------
-
-// ------------------------------------------------------------------------
-// Использование слитка
-// ------------------------------------------------------------------------
-
-new entry "KELA_UPGRADING_METALBAR_SIMPLE_USED"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "ForceOverhead;DisableCombatlog"
-data "DisplayName" "h5cf9e037a1204ad89eabe0a12fa2ad4baa90;1"
-data "Description" "hde82ae5651d64ed68bf38ee080c15d974gf6;1"
-data "DescriptionParams" "20"
-data "Icon" "Item_LOOT_GEN_Metalbar_Gold_A"
-data "StackId" "KELA_UPGRADING_METALBAR_SIMPLE_USED"
-data "RemoveConditions" "HasStatus('KELA_UPGRADING_METALBAR_SUSSUR_USED')"
-data "RemoveEvents" "OnStatusApplied"
-
-new entry "KELA_UPGRADING_METALBAR_SUSSUR_USED"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "ForceOverhead;DisableCombatlog"
-data "DisplayName" "h5cf9e037a1204ad89eabe0a12fa2ad4baa90;1"
-data "Description" "hde82ae5651d64ed68bf38ee080c15d974gf6;1"
-data "DescriptionParams" "20"
-data "Icon" "Item_LOOT_GEN_Metalbar_Gold_A"
-data "StackId" "KELA_UPGRADING_METALBAR_SUSSUR_USED"
-data "RemoveConditions" "HasStatus('KELA_UPGRADING_METALBAR_SIMPLE_USED')"
-data "RemoveEvents" "OnStatusApplied"
-
-new entry "KELA_GRINDING_METALBAR_USED_REDUCE"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
-data "StackId" "KELA_GRINDING_METALBAR_USED_REDUCE"
-data "OnApplyFunctors" "IF(HasStatus('KELA_UPGRADING_METALBAR_SIMPLE_USED')):SetStatusDuration(KELA_UPGRADING_METALBAR_SIMPLE_USED,-3,Add);IF(HasStatus('KELA_UPGRADING_METALBAR_SUSSUR_USED')):SetStatusDuration(KELA_UPGRADING_METALBAR_SUSSUR_USED,-3,Add)"
-
-// Обычный слиток улучшения
-new entry "KELA_ANVIL_UPGRADE_WEAPON"
-type "StatusData"
-data "StatusType" "BOOST"
-// data "DisplayName" "hc369a4c47dd34209b9a99628d7ab8e6e41af;1"
-// data "Description" "h909a304a99e048628dfecbd840d7a1a145g0;1"
-// data "DescriptionParams" "13"
-data "StackId" "KELA_ANVIL_UPGRADE_WEAPON"
-// data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
-data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator;DisableCombatlog"
-data "OnApplyFunctors" "ApplyStatus(KELA_GRINDING_METALBAR_USED_REDUCE);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Target) and not Tagged('KELABLACKSMITHINGEXPERT', context.Target) and not Tagged('KELABLACKSMITHINGMASTER', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_ANVIL_UPGRADED_SIMPLE, 100, -1);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Target) and not Tagged('KELABLACKSMITHINGEXPERT', context.Target) and not Tagged('KELABLACKSMITHINGMASTER', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_ANVIL_UPGRADED_SIMPLE, 100, -1);IF(Tagged('KELABLACKSMITHINGAPPRENTICE', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_ANVIL_UPGRADED_1, 100, -1);IF(Tagged('KELABLACKSMITHINGAPPRENTICE', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_ANVIL_UPGRADED_1, 100, -1);IF(Tagged('KELABLACKSMITHINGEXPERT', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_ANVIL_UPGRADED_2, 100, -1);IF(Tagged('KELABLACKSMITHINGEXPERT', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_ANVIL_UPGRADED_2, 100, -1);IF(Tagged('KELABLACKSMITHINGMASTER', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_ANVIL_UPGRADED_3, 100, -1);IF(Tagged('KELABLACKSMITHINGMASTER', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_ANVIL_UPGRADED_3, 100, -1)"
-
-
-new entry "KELA_ANVIL_UPGRADED_SIMPLE"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "KELA_ANVIL_UPGRADED_SIMPLE"
-data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
-data "Icon" "Tooltip_Upgraded_Good"
-data "DisplayName" "h69c3a55a2a294b69b320f6d657c3ccfb334d;1"
-data "Description" "h8aa3ed775ecd48c4b94fcddcdd3eec7877aa;1"
-data "DescriptionParams" "1"
-data "Boosts" "WeaponAttackRollBonus(1)"
-data "OnApplyFunctors" "ApplyStatus(KELA_WHETSTONE_UPGRADED,100,-1)"
-data "RemoveConditions" "HasStatus('KELA_ANVIL_UPGRADED_1') or HasStatus('KELA_ANVIL_UPGRADED_2') or HasStatus('KELA_ANVIL_UPGRADED_3')"
-data "RemoveEvents" "OnStatusApplied"
-
-new entry "KELA_ANVIL_UPGRADED_1"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "KELA_ANVIL_UPGRADED_1"
-data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
-data "Icon" "Tooltip_Upgraded_Good"
-data "DisplayName" "h9a509ef9900a42969422b0b8c285ac1dac7e;1"
-data "Description" "hea3d6b9b0d484c7f949fd384c0d320fdedda;1"
-data "DescriptionParams" "1;1"
-data "TooltipDamage" "DealDamage(1, Bludgeoning)"
-data "Boosts" "WeaponAttackRollBonus(1);IF(IsDamageTypeBludgeoning()):WeaponDamage(1,Bludgeoning);IF(IsDamageTypePiercing()):WeaponDamage(1,Piercing)"
-data "OnApplyFunctors" "ApplyStatus(KELA_WHETSTONE_UPGRADED,100,-1)"
-data "RemoveConditions" "HasStatus('KELA_ANVIL_UPGRADED_SIMPLE') or HasStatus('KELA_ANVIL_UPGRADED_2') or HasStatus('KELA_ANVIL_UPGRADED_3')"
-data "RemoveEvents" "OnStatusApplied"
-
-new entry "KELA_ANVIL_UPGRADED_2"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "KELA_ANVIL_UPGRADED_2"
-data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
-data "Icon" "Tooltip_Upgraded_Good"
-data "DisplayName" "he35ef1dcc6ac404d9d0aadc76c397e48a5d3;1"
-data "Description" "hea3d6b9b0d484c7f949fd384c0d320fdedda;1"
-data "DescriptionParams" "2;1"
-data "TooltipDamage" "DealDamage(1, Bludgeoning)"
-data "Boosts" "WeaponAttackRollBonus(2);IF(IsDamageTypeBludgeoning()):WeaponDamage(1,Bludgeoning);IF(IsDamageTypePiercing()):WeaponDamage(1,Piercing)"
-data "OnApplyFunctors" "ApplyStatus(KELA_WHETSTONE_UPGRADED,100,-1)"
-data "RemoveConditions" "HasStatus('KELA_ANVIL_UPGRADED_SIMPLE') or HasStatus('KELA_ANVIL_UPGRADED_1') or HasStatus('KELA_ANVIL_UPGRADED_3')"
-data "RemoveEvents" "OnStatusApplied"
-
-new entry "KELA_ANVIL_UPGRADED_3"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "KELA_ANVIL_UPGRADED_3"
-data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
-data "Icon" "Tooltip_Upgraded_Good"
-data "DisplayName" "h132d59709d6d4533baddb3bcde7ac51bdea3;1"
-data "Description" "hea3d6b9b0d484c7f949fd384c0d320fdedda;1"
-data "DescriptionParams" "3;2"
-data "TooltipDamage" "DealDamage(2, Bludgeoning)"
-data "Boosts" "WeaponAttackRollBonus(3);IF(IsDamageTypeBludgeoning()):WeaponDamage(2,Bludgeoning);IF(IsDamageTypePiercing()):WeaponDamage(2,Piercing)"
-data "OnApplyFunctors" "ApplyStatus(KELA_WHETSTONE_UPGRADED,100,-1)"
-data "RemoveConditions" "HasStatus('KELA_ANVIL_UPGRADED_SIMPLE') or HasStatus('KELA_ANVIL_UPGRADED_1') or HasStatus('KELA_ANVIL_UPGRADED_2')"
-data "RemoveEvents" "OnStatusApplied"
-
-// Суссуровый слиток улучшения
-new entry "KELA_ANVIL_UPGRADE_WEAPON_SUSSUR"
-type "StatusData"
-data "StatusType" "BOOST"
-// data "DisplayName" "hc369a4c47dd34209b9a99628d7ab8e6e41af;1"
-// data "Description" "h909a304a99e048628dfecbd840d7a1a145g0;1"
-// data "DescriptionParams" "13"
-data "StackId" "KELA_ANVIL_UPGRADE_WEAPON_SUSSUR"
-// data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
-data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator;DisableCombatlog"
-data "OnApplyFunctors" "ApplyStatus(KELA_GRINDING_METALBAR_USED_REDUCE);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Target) and not Tagged('KELABLACKSMITHINGEXPERT', context.Target) and not Tagged('KELABLACKSMITHINGMASTER', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_ANVIL_UPGRADED_SIMPLE, 100, -1);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and not Tagged('KELABLACKSMITHINGAPPRENTICE', context.Target) and not Tagged('KELABLACKSMITHINGEXPERT', context.Target) and not Tagged('KELABLACKSMITHINGMASTER', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_ANVIL_UPGRADED_SIMPLE, 100, -1);IF((Tagged('KELABLACKSMITHINGAPPRENTICE', context.Target) or Tagged('KELABLACKSMITHINGEXPERT', context.Target) or Tagged('KELABLACKSMITHINGMASTER', context.Target)) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_ANVIL_UPGRADED_1, 100, -1);IF((Tagged('KELABLACKSMITHINGAPPRENTICE', context.Target) or Tagged('KELABLACKSMITHINGEXPERT', context.Target) or Tagged('KELABLACKSMITHINGMASTER', context.Target)) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_ANVIL_UPGRADED_1, 100, -1);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand, KELA_SUSSUR_OIL_DIPPED, 100, 300);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and IsWeaponOfProficiencyGroup('Flails|Maces|Mauls|Morningstars|LightHammers|Warhammers', GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(MeleeOffHand, KELA_SUSSUR_OIL_DIPPED, 100, 300)"
-
 
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
@@ -631,8 +447,6 @@ data "OnApplyFunctors" "ApplyStatus(KELA_GRINDING_METALBAR_USED_REDUCE);IF(HasPa
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
-
-
 
 new entry "KELA_HANDMADE_WEAPON"
 type "StatusData"
@@ -673,7 +487,7 @@ data "StatusType" "BOOST"
 data "StackId" "KELA_BLACKSMITH_BUCKETOIL_USED"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 // data "StatusPropertyFlags" "ExecuteFunctorsOnOwner"
-data "OnApplyFunctors" "ApplyEquipmentStatus(MeleeMainHand, KELA_HANDMADE_WEAPON_READY_FOR_FINISHING, 100, 10)"
+data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_HANDMADE_WEAPON_READY_FOR_FINISHING, 100, 10)"
 
 
 
@@ -687,23 +501,4 @@ data "OnApplyFunctors" "RemoveStatus(DIPPED_FIRE)"
 
 
 
-new entry "KELA_BUCKET_OIL_NEW"
-type "StatusData"
-data "StatusType" "BOOST"
-// data "DisplayName" "hf9c4ebeca2b540e6bfd12a8cb7b356e1f1gc;1"
-// data "Description" "hf8abf007e62b43d9a76003eaeafa53e2130a;1"
-// data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
-data "OnApplyFunctors" "ApplyStatus(KELA_BUCKET_OIL_READY, 100, 5)"
-data "StackId" "KELA_BUCKET_OIL_NEW"
-data "RemoveEvents" "OnStatusApplied"
-data "RemoveConditions" "HasStatus('KELA_BUCKET_OIL_READY')"
-
-new entry "KELA_BUCKET_OIL_READY"
-type "StatusData"
-data "StatusType" "BOOST"
-// using "DIPPED_FIRE"
-data "StackId" "KELA_BUCKET_OIL_READY"
-// data "Icon" "Action_DippedFire_Melee"
-// data "DisplayName" "ha7dcdd6fc1eb44eb97ca9daf3baaccb19815;1"
-// data "Description" "hf8abf007e62b43d9a76003eaeafa53e2130a;1"
 
