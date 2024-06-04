@@ -35,39 +35,25 @@ data "RootTemplate" "a910880a-93e9-4ec5-8e4f-9e0b015dfa3f"
 data "ValueOverride" "30"
 data "Rarity" "Uncommon"
 
-new entry "BOOK_Kela_Blacksmith_Apprentice"
-type "Object"
-data "RootTemplate" "3c2144dd-b1f5-4988-bda4-8a21af5ab95a"
-data "Weight" "0.3"
-data "ValueOverride" "150"
-data "Rarity" "Rare"
-
-new entry "BOOK_Kela_Blacksmith_Expert"
-type "Object"
-data "RootTemplate" "c62540a3-b7a0-487b-835e-6d55bb777f3a"
-data "Weight" "0.3"
-data "ValueOverride" "350"
-data "Rarity" "VeryRare"
-
-new entry "BOOK_Kela_Blacksmith_Master"
-type "Object"
-data "RootTemplate" "97c203b6-f30a-4c65-a91e-cca96891e3e0"
-data "Weight" "0.3"
-data "ValueOverride" "550"
-data "Rarity" "Legendary"
-
-new entry "BOOK_Kela_Recipe_Sharpening_Simple"
+new entry "BOOK_Kela_Recipe_Weapon_Oil"
 type "Object"
 data "RootTemplate" "96b4942d-0f00-4ae0-96ce-d9d3283be936"
 data "Weight" "0.1"
 data "ValueOverride" "100"
 data "Rarity" "Uncommon"
 
-new entry "BOOK_Kela_Recipe_Sharpening_Sussur"
+new entry "BOOK_Kela_Recipe_Oil_Sussur_Temper"
 type "Object"
 data "RootTemplate" "2780f86c-1226-47b0-b9df-0d0ae6399414"
 data "Weight" "0.1"
 data "ValueOverride" "200"
+data "Rarity" "VeryRare"
+
+new entry "BOOK_Kela_Recipe_Oil_Adamant_Temper"
+type "Object"
+data "RootTemplate" "51e0496d-3239-49f0-adc4-dfd24a357d1f"
+data "Weight" "0.1"
+data "ValueOverride" "300"
 data "Rarity" "VeryRare"
 
 new entry "BOOK_Kela_Recipe_Oil_Sussur"
@@ -84,28 +70,81 @@ data "Weight" "0.1"
 data "ValueOverride" "50"
 data "Rarity" "Uncommon"
 
+new entry "BOOK_Kela_Recipe_Metall_Transmutation"
+type "Object"
+data "RootTemplate" "bd076ac4-4232-4966-9719-69e7c432a348"
+data "Weight" "0.1"
+data "ValueOverride" "200"
+data "Rarity" "Rare"
+
+////////////////////////////////////////////////////////
+// Чертежи оружия
+////////////////////////////////////////////////////////
+
+new entry "BOOK_Kela_Draft_Irre_HeavyCrossbow_4_Slots"
+type "Object"
+data "RootTemplate" "981ff967-3151-4b9d-8978-ce2406d80282"
+data "Weight" "1.0"
+data "ValueOverride" "150"
+data "Rarity" "Rare"
+
+new entry "BOOK_Kela_Draft_MasterworkPlans_3_Slots"
+type "Object"
+data "RootTemplate" "080a27af-9d04-4d85-af4f-c48fbd5f448d"
+data "Weight" "1.0"
+data "ValueOverride" "150"
+data "Rarity" "Rare"
+
+new entry "BOOK_Kela_Draft_ChainShirt_Justiciar_Recovered_4_Slots"
+type "Object"
+data "RootTemplate" "bac28821-2115-4ddc-b0ef-9195a7a5588a"
+data "Weight" "1.0"
+data "ValueOverride" "200"
+data "Rarity" "Rare"
+
 ////////////////////////////////////////////////////////
 // Зелья, Масла
 ////////////////////////////////////////////////////////
 
-new entry "KELA_Grinding_Oil"
+new entry "KELA_Weapon_Oil"
 type "Object"
 using "_Potion"
-data "RootTemplate" "4d59b648-9e0a-498f-b032-8871411a7411"
+data "RootTemplate" "3eda323e-c55f-4ade-838d-0a73fac64841"
 data "ValueOverride" "50"
 data "Rarity" "Uncommon"
 
-new entry "KELA_Grinding_Oil_Sussur"
+new entry "KELA_Oil_Sussur_Temper"
 type "Object"
 using "_Potion"
-data "RootTemplate" "51fc8b38-3c66-437d-956f-c8bb040a5dd8"
+data "RootTemplate" "0dfa3c5b-11c1-4ca1-81c6-78bb229f37d2"
 data "ValueOverride" "50"
 data "Rarity" "VeryRare"
+
+new entry "KELA_Oil_Sussur_Temper_Ideal"
+type "Object"
+using "KELA_Oil_Sussur_Temper"
+data "RootTemplate" "1bf79430-e481-46ed-a514-d1a1ca37af73"
+data "ValueOverride" "250"
+data "Rarity" "Legendary"
+
+new entry "KELA_Oil_Adamant_Temper"
+type "Object"
+using "_Potion"
+data "RootTemplate" "f1d458b0-247d-4014-8a4d-03469fcbb59d"
+data "ValueOverride" "200"
+data "Rarity" "VeryRare"
+
+new entry "KELA_Oil_Adamant_Temper_Ideal"
+type "Object"
+using "KELA_Oil_Adamant_Temper"
+data "RootTemplate" "c61ea70a-fe24-4850-97aa-51cec6a83933"
+data "ValueOverride" "450"
+data "Rarity" "Legendary"
 
 new entry "KELA_Sussur_Oil"
 type "Object"
 using "_Potion"
-data "RootTemplate" "0fb12d15-1763-48d7-9af6-75a68af233a3"
+data "RootTemplate" "54a01073-e56a-47e1-bcf4-30e4d0d9b5fe"
 data "ValueOverride" "150"
 data "Rarity" "Rare"
 
@@ -113,45 +152,16 @@ data "Rarity" "Rare"
 // Слитки
 ////////////////////////////////////////////////////////
 
-new entry "KELA_Upgrading_Metalbar_Simple"
+new entry "KELA_AdamantineScrap_1"
 type "Object"
-using "OBJ_GenericLootItem"
-data "Rarity" "Uncommon"
-data "RootTemplate" "03c803b6-cf66-4cc0-8448-2484a924d619"
-data "ValueOverride" "150"
+using "REF_Primitives"
+data "RootTemplate" "3d6e790a-6454-4926-a2b0-21286c8f67a2"
 data "Weight" "3"
-
-new entry "KELA_Upgrading_Metalbar_Sussur"
+new entry "KELA_AdamantineScrap_2"
 type "Object"
-using "OBJ_GenericLootItem"
-data "Rarity" "Rare"
-data "RootTemplate" "c14c4c75-5e3a-4270-a4a8-87a1a9b96384"
-data "ValueOverride" "300"
-data "Weight" "4"
-
-new entry "OBJ_Metalbar_Rare"
-type "Object"
-using "OBJ_GenericLootItem"
-data "Rarity" "Rare"
-data "RootTemplate" "ee7d6638-bf5b-4599-995a-293137d038d3"
-data "ValueOverride" "300"
-data "Weight" "1"
-
-new entry "OBJ_Metalbar_VeryRare"
-type "Object"
-using "OBJ_GenericLootItem"
-data "Rarity" "VeryRare"
-data "RootTemplate" "45e5ff2c-b949-493c-a5f1-82ff5f5be435"
-data "ValueOverride" "600"
-data "Weight" "1"
-
-new entry "OBJ_Metalbar_Legendary"
-type "Object"
-using "OBJ_GenericLootItem"
-data "Rarity" "Legendary"
-data "RootTemplate" "d05837b8-526c-4d19-8ad9-354c352d32cc"
-data "ValueOverride" "1200"
-data "Weight" "1"
+using "REF_Primitives"
+data "RootTemplate" "8705b906-316d-4457-bc15-15a8ff568f67"
+data "Weight" "3"
 
 ////////////////////////////////////////////////////////
 // Кузнечные формы
@@ -179,3 +189,8 @@ data "MinAmount" "1"
 data "MaxAmount" "5"
 data "Priority" "1"
 data "MinLevel" "1"
+
+////////////////////////////////////////////////////////
+// OVERRIDE предметов для золотой трансмутации
+////////////////////////////////////////////////////////
+

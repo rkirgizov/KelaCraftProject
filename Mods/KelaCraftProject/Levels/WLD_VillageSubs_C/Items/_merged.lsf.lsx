@@ -20,7 +20,7 @@
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_VillageSubs_C" />
-					<attribute id="MapKey" type="FixedString" value="12aa7d8b-775b-4378-bd9b-b63f9709bd98" />
+					<attribute id="MapKey" type="FixedString" value="f485ae63-c7f0-4e79-a9db-15c73eb04de1" />
 					<attribute id="Name" type="LSString" value="KELA_DEBUG_Chest" />
 					<attribute id="TemplateName" type="FixedString" value="0e600db2-aa76-4c98-b4d5-a55c0853e7f1" />
 					<attribute id="Type" type="FixedString" value="item" />
@@ -51,7 +51,7 @@
 							</children>
 						</node>
 						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="84.17635 11.55409 75.5454" />
+							<attribute id="Position" type="fvec3" value="82.17635 11.55409 75.5454" />
 							<attribute id="RotationQuat" type="fvec4" value="0 -0.3442353 0 0.8389326" />
 							<attribute id="Scale" type="float" value="1.0" />
 						</node>
@@ -71,7 +71,7 @@
 						<node id="InventoryList">
 							<children>
 								<node id="InventoryItem">
-									<attribute id="Object" type="FixedString" value="TRE_KELA_Grinding_Oil" />
+									<attribute id="Object" type="FixedString" value="TRE_KELA_Weapon_Oil" />
 								</node>
 							</children>
 						</node>
@@ -173,7 +173,7 @@
 														<node id="Scalar">
 															<children>
 																<node id="double">
-																	<attribute id="double" type="double" value="3" />
+																	<attribute id="double" type="double" value="2" />
 																</node>
 															</children>
 														</node>
@@ -193,7 +193,7 @@
 														<node id="Scalar">
 															<children>
 																<node id="String">
-																	<attribute id="String" type="LSString" value="HiddenPerception_Medium_cd1800ab-1b11-4c7a-9f50-fdeb8d35481f" />
+																	<attribute id="String" type="LSString" value="Act1_HiddenPerception_Easy_10a7c9ba-bc09-4c30-8cfc-ce0c6766fac7" />
 																</node>
 															</children>
 														</node>
@@ -376,7 +376,7 @@
 						<node id="InventoryList">
 							<children>
 								<node id="InventoryItem">
-									<attribute id="Object" type="FixedString" value="TRE_BOOK_Kela_Recipe_Sharpening_Simple" />
+									<attribute id="Object" type="FixedString" value="TRE_BOOK_Kela_Recipe_Weapon_Oil" />
 								</node>
 							</children>
 						</node>

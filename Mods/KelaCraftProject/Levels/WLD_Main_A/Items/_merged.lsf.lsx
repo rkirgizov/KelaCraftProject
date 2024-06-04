@@ -4,6 +4,11 @@
 	<region id="Templates">
 		<node id="Templates">
 			<children>
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
 
 				<!-- Логово Этель ////////////////////////////////////////////////////////////////////////// -->
 				<!-- Сундук в логове тётушки Этель -->
@@ -23,7 +28,7 @@
 									<attribute id="Object" type="FixedString" value="HAG_Chest_Potions" />
 								</node>
 								<node id="InventoryItem">
-									<attribute id="Object" type="FixedString" value="TRE_KELA_Sussur_Oil" />
+									<attribute id="Object" type="FixedString" value="TRE_KELA_Oil_Sussur" />
 								</node>
 							</children>
 						</node>
@@ -59,7 +64,189 @@
 
 
 				<!-- Заброшенная деревня ////////////////////////////////////////////////////////////////////////// -->
+				<!-- Подвал алхимика -->
+				<!-- Рецепт трансмутации -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="5f0aeaa3-4c8d-48e6-9223-342d9ea97fb5" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Metall_Transmutation_001" />
+					<attribute id="TemplateName" type="FixedString" value="bd076ac4-4232-4966-9719-69e7c432a348" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="Tooltip" type="uint8" value="1" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b5ccefe6-4177-b85e-7e1d-06fab1f765b4" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-669.099 -0.2050018 -354.4879" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.2262884 -0.2684791 -0.0688763 0.9337926" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
 
+				<!-- Кузница -->
+				<!-- Сундук с чертежами Высокого утёса -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hf0d24ff6gd00bg4103g9994gd85b7f430df8" version="1" />
+					<attribute id="DisarmDifficultyClassID" type="guid" value="fa621d38-6f83-4e42-a55c-6aa651a75d46" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsTrap" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<!-- <attribute id="MapKey" type="FixedString" value="2f1d600a-918d-4986-943c-11f5173134ba" /> kelamor -->
+					<attribute id="MapKey" type="FixedString" value="a99fec8f-c388-4d27-972b-73b08f8be0f5" /> origin
+					<attribute id="Name" type="LSString" value="S_FOR_MasterworkChest" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="Stats" type="FixedString" value="OBJ_Chest_Wood_Small" />
+					<attribute id="TemplateName" type="FixedString" value="8c5f95d0-64d7-48ce-a871-48cd43c1e019" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="Gold_Meager" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_WPN_KELA_Masterwork" />
+								</node>
+							</children>
+						</node>
+						<node id="ItemList">
+							<children>
+								<node id="Item">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="Amount" type="int32" value="1" />
+									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CasualExplorer" type="bool" value="True" />
+									<attribute id="Classic" type="bool" value="True" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="HonorHardcore" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsTradeable" type="bool" value="False" />
+									<attribute id="ItemName" type="LSString" value="S_FOR_IncompleteMasterwork_Plans" />
+									<attribute id="LevelName" type="LSString" value="WLD_Main_A" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="TacticianHardcore" type="bool" value="True" />
+									<attribute id="TemplateID" type="FixedString" value="61b98c74-8f5c-4d05-b56c-0911b59c9078" />
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="UUID" type="FixedString" value="e2496600-f704-4160-be88-8cb38f001d0f" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="33fe87b9-33de-4260-81ec-50b0c15332d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="FixedString" value="2c5f9a87-60d0-c006-2b9e-946c2e36742b" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="DC" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="10" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="HardcoreOnly" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="IsInvestigation" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="IsOneShot" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="1" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="MinDistance" />
+													<attribute id="Type" type="int32" value="2" />
+													<attribute id="Value" type="LSString" value="5" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="RevealOnlyInTrigger" />
+													<attribute id="Type" type="int32" value="7" />
+													<attribute id="Value" type="LSString" value="0xbaadf00d" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="TrapProjectile" />
+													<attribute id="Type" type="int32" value="9" />
+													<attribute id="Value" type="LSString" value="Projectile_FOR_MasterworkChest_Trap" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-434.9655 11.63078 -373.1238" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.3760072 0 0.9266168" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Плавильная печь до завершения квеста с оружием суссура -->
 				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
@@ -71,7 +258,7 @@
 					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
 					<attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" />
 					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />				
 					<children>
 						<node id="LayerList">
 							<children>
@@ -114,9 +301,10 @@
 						</node>
 					</children>
 				</node>
-
-
+				<!-- После завершения квеста с оружием суссура -->
 				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
 					<attribute id="CanClickThrough" type="bool" value="False" />
 					<attribute id="CanClimbOn" type="bool" value="False" />
 					<attribute id="CanShootThrough" type="bool" value="False" />
@@ -125,14 +313,14 @@
 					<attribute id="IsPointerBlocker" type="bool" value="False" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="LoopSound" type="FixedString" value="" />
-					<attribute id="MapKey" type="FixedString" value="b8841077-d2c0-4312-ab07-cd14be7f5f38" />
+					<!-- <attribute id="MapKey" type="FixedString" value="11a24a21-355e-4b4d-a986-5fc1514527f4" /> kelamor -->
+					<attribute id="MapKey" type="FixedString" value="b8841077-d2c0-4312-ab07-cd14be7f5f38" /> origin
 					<attribute id="Name" type="LSString" value="S_FOR_MasterworkForge_AfterForgingWeapon" />
-					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
-					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
 					<attribute id="SoundAttenuation" type="int16" value="-1" />
 					<attribute id="SoundInitEvent" type="FixedString" value="" />
 					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
-					<attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" />
+					<!-- <attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" /> -->
+					<attribute id="TemplateName" type="FixedString" value="077573ae-45d0-4aeb-b6b1-a69e4b62d360" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="Wadable" type="bool" value="False" />
 					<attribute id="WalkOn" type="bool" value="False" />
@@ -158,6 +346,20 @@
 								</node>
 							</children>
 						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="-452.073 11.378 -377.863" />
 							<attribute id="RotationQuat" type="fvec4" value="0 -0.7071068 0 0.7071068" />
@@ -165,7 +367,6 @@
 						</node>
 					</children>
 				</node>
-
 				<!-- Кузнечные меха -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
@@ -631,27 +832,397 @@
 				</node>
 
 
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- Гримфордж   -->
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
 
+				<!-- Записка Корсара Греймона в Гримфордже о чертеже восстановления повреждённого доспеха тёмного юстициара  -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="b52dc642-37b6-4ea9-acd9-18f146426804" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Note_Corsar_Greymon_001" />
+					<attribute id="TemplateName" type="FixedString" value="8d4392f5-844f-4cbe-8dcd-6d466797368c" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960757763" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="1186705f-c239-e022-e3de-26132f651a17" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5421816e-51a1-46b5-4380-45f09dfe302e" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-632.3867 14.79496 322.5296" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.8" />
+						</node>
+					</children>
+				</node>
+
+				
+
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- Подземье   -->
+				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+
+
+				<!-- Идеальное суссурное масло закаливания на верхнем этаже башни волшебницы-->
+				<node id="GameObjects">
+					<attribute id="ConstellationConfigName" type="FixedString" value="PerceptionHelper" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="e041f5dc-0ca9-4abb-93af-05ef35c8ab22" />
+					<attribute id="Name" type="LSString" value="KELA_Oil_Sussur_Temper_Ideal_001" />
+					<attribute id="TemplateName" type="FixedString" value="1bf79430-e481-46ed-a514-d1a1ca37af73" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bfd2a9ad-d8b6-e2a7-5f7b-2f959a4e19ef" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41794b60-81f1-18ae-1b30-0ac91837fff0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="ConstellationConfigGlobalParameters">
+							<children>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="MaxRadius" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="double">
+																	<attribute id="double" type="double" value="2" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="DC" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<!-- <attribute id="String" type="LSString" value="HiddenPerception_Medium_cd1800ab-1b11-4c7a-9f50-fdeb8d35481f" /> -->
+																	<attribute id="String" type="LSString" value="Act1_HiddenPerception_Easy_10a7c9ba-bc09-4c30-8cfc-ce0c6766fac7" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Type" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Interactable" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-25.21996 53.32346 -273.7142" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.6622508 0 0.7492822" />
+							<attribute id="Scale" type="float" value="0.7" />
+						</node>
+					</children>
+				</node>
+
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
+
+				<!-- Рецепт суссурного масла закаливания в подвале башни волшебницы-->
+				<node id="GameObjects">
+					<attribute id="ConstellationConfigName" type="FixedString" value="PerceptionHelper" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="90a8804c-a652-4d13-ae49-1bcb7645090b" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Oil_Sussur_Temper_001" />
+					<attribute id="TemplateName" type="FixedString" value="2780f86c-1226-47b0-b9df-0d0ae6399414" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bfd2a9ad-d8b6-e2a7-5f7b-2f959a4e19ef" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b02cda34-7460-107f-6baa-2b8006ca0935" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bbebdf24-0552-7d94-356d-9494af55e182" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="ConstellationConfigGlobalParameters">
+							<children>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="MaxRadius" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="double">
+																	<attribute id="double" type="double" value="3" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="DC" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<!-- <attribute id="String" type="LSString" value="HiddenPerception_Medium_cd1800ab-1b11-4c7a-9f50-fdeb8d35481f" /> -->
+																	<attribute id="String" type="LSString" value="Act1_HiddenPerception_Easy_10a7c9ba-bc09-4c30-8cfc-ce0c6766fac7" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Type" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Invisible" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="160.7071 3.237582 -415.1419" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.7" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Сундук кузнеца возле башни волшебницы  -->
+				<!-- Кладём рецепт арбалета Ирре -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Key" type="FixedString" value="NO_KEY" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="LockDifficultyClassID" type="guid" value="8986db4d-09af-46ee-9781-ac88ec10fa0e" />
+					<!-- <attribute id="MapKey" type="FixedString" value="861a9f02-e325-4bb7-a612-df966ddd4b79" /> kelamor -->
+					<attribute id="MapKey" type="FixedString" value="c02cdd47-28c7-413f-b556-95e6a7329dae" /> origin
+					<attribute id="Name" type="LSString" value="UND_DuergarBlacksmith_Chest" />
+					<attribute id="TemplateName" type="FixedString" value="e08b2a75-424d-4827-a9c8-adf00a314f2b" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758162" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="UND_DuergarBlacksmith_Chest" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_WPN_KELA_UND_Irre_HeavyCrossbow" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="eae0a27d-0418-aff3-18b5-065bcb2d01d0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="28.33509 25.21221 -295.4108" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.5883927 0 0.8085753" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
 
 
 				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
 				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
 				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
-				<!-- MORE SUSSUR BARK  -->
+				<!-- MORE SUSSUR BARK AND FLOWERS  -->
 				<!-- Thanks for MaskedRPGFan https://www.nexusmods.com/baldursgate3/mods/902  -->
 				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
 				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
 				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
 				<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+
 				<node id="GameObjects">
-					<attribute id="MapKey" type="FixedString" value="e16f0e94-bc54-40b9-99e5-c05624341878" />
+					<attribute id="MapKey" type="FixedString" value="a304880f-edba-47f9-84d6-c8c84fbdc49e" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="CoverAmount" type="uint8" value="1" />
+					<attribute id="GravityType" type="uint8" value="1" />
+					<attribute id="RecieveDecal" type="bool" value="True" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurFlower_006" />
+					<attribute id="TemplateName" type="FixedString" value="8706eab3-e05b-478d-833e-308379972dad" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="1" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bfd2a9ad-d8b6-e2a7-5f7b-2f959a4e19ef" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="UND_ANCIENTSUSSURTREEANTIMAGIC_AURA" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-36.93967 36.31125 -158.3285" />
+							<attribute id="RotationQuat" type="fvec4" value="1.0 0.0 0.0 0.0" />
+							<attribute id="Scale" type="float" value="0.7" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="ConstellationConfigName" type="FixedString" value="PerceptionHelper" />
+					<attribute id="MapKey" type="FixedString" value="0904fff8-640d-44fd-b0ca-e9c26588d95f" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
 					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
-					<attribute id="Amount" type="int32" value="2" />
+					<attribute id="Amount" type="int32" value="1" />
 					<children>
 						<node id="LayerList">
 							<children>
@@ -672,36 +1243,64 @@
 								</node>
 							</children>
 						</node>
-						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="-36.93967 36.31125 -158.3285" />
-							<attribute id="RotationQuat" type="fvec4" value="1.0 0.0 0.0 0.0" />
-							<attribute id="Scale" type="float" value="1" />
-						</node>
-					</children>
-				</node>
-
-				<node id="GameObjects">
-					<attribute id="MapKey" type="FixedString" value="53f003d8-6cc6-4160-8684-7df324d17a13" />
-					<attribute id="Flag" type="int32" value="1" />
-					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
-					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
-					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
-					<attribute id="Amount" type="int32" value="2" />
-					<children>
-						<node id="LayerList">
+						<node id="ConstellationConfigGlobalParameters">
 							<children>
-								<node id="Layers">
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="MaxRadius" />
 									<children>
-										<node id="Object">
-											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+										<node id="Value">
 											<children>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="double">
+																	<attribute id="double" type="double" value="5" />
+																</node>
+															</children>
+														</node>
+													</children>
 												</node>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="DC" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<!-- <attribute id="String" type="LSString" value="HiddenPerception_Medium_cd1800ab-1b11-4c7a-9f50-fdeb8d35481f" /> -->
+																	<attribute id="String" type="LSString" value="Act1_HiddenPerception_Easy_10a7c9ba-bc09-4c30-8cfc-ce0c6766fac7" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Type" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Invisible" />
+																</node>
+															</children>
+														</node>
+													</children>
 												</node>
 											</children>
 										</node>
@@ -712,21 +1311,70 @@
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="-13.66556 37.91898 -138.0025" />
 							<attribute id="RotationQuat" type="fvec4" value="-0.3806096 -0.03944651 0.3652711 0.8486209" />
-							<attribute id="Scale" type="float" value="1" />
+							<attribute id="Scale" type="float" value="0.7" />
 						</node>
 					</children>
 				</node>
 
 
 				<node id="GameObjects">
-					<attribute id="MapKey" type="FixedString" value="ec48462b-e7bf-4bf6-8f59-16d6cacf8c96" />
+					<attribute id="MapKey" type="FixedString" value="b825f7cf-9ec3-41e4-98ce-94e0489eac65" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="CoverAmount" type="uint8" value="1" />
+					<attribute id="GravityType" type="uint8" value="1" />
+					<attribute id="RecieveDecal" type="bool" value="True" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurFlower_007" />
+					<attribute id="TemplateName" type="FixedString" value="8706eab3-e05b-478d-833e-308379972dad" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="1" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bfd2a9ad-d8b6-e2a7-5f7b-2f959a4e19ef" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="UND_ANCIENTSUSSURTREEANTIMAGIC_AURA" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-14.19517 35.44447 -116.7451" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.1806096 -0.13944651 -0.3652711 -0.8486209" />
+							<attribute id="Scale" type="float" value="0.7" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="ConstellationConfigName" type="FixedString" value="PerceptionHelper" />
+					<attribute id="MapKey" type="FixedString" value="53e21fdd-df82-41b4-9ba4-f457edaf8d70" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
 					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
-					<attribute id="Amount" type="int32" value="2" />
+					<attribute id="Amount" type="int32" value="1" />
 					<children>
 						<node id="LayerList">
 							<children>
@@ -747,36 +1395,64 @@
 								</node>
 							</children>
 						</node>
-						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="-14.19517 35.44447 -116.7451" />
-							<attribute id="RotationQuat" type="fvec4" value="-0.1806096 -0.13944651 -0.3652711 -0.8486209" />
-							<attribute id="Scale" type="float" value="1" />
-						</node>
-					</children>
-				</node>
-
-				<node id="GameObjects">
-					<attribute id="MapKey" type="FixedString" value="ad55df25-06f7-4a8e-aada-52a83bea3be3" />
-					<attribute id="Flag" type="int32" value="1" />
-					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
-					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
-					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
-					<attribute id="Amount" type="int32" value="2" />
-					<children>
-						<node id="LayerList">
+						<node id="ConstellationConfigGlobalParameters">
 							<children>
-								<node id="Layers">
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="MaxRadius" />
 									<children>
-										<node id="Object">
-											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+										<node id="Value">
 											<children>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="double">
+																	<attribute id="double" type="double" value="5" />
+																</node>
+															</children>
+														</node>
+													</children>
 												</node>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="DC" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<!-- <attribute id="String" type="LSString" value="HiddenPerception_Medium_cd1800ab-1b11-4c7a-9f50-fdeb8d35481f" /> -->
+																	<attribute id="String" type="LSString" value="Act1_HiddenPerception_Easy_10a7c9ba-bc09-4c30-8cfc-ce0c6766fac7" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Type" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Invisible" />
+																</node>
+															</children>
+														</node>
+													</children>
 												</node>
 											</children>
 										</node>
@@ -787,20 +1463,69 @@
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="-24.78968 26.28859 -132.1202" />
 							<attribute id="RotationQuat" type="fvec4" value="-0.3806096 -0.03944651 0.3652711 0.8486209" />
-							<attribute id="Scale" type="float" value="1" />
+							<attribute id="Scale" type="float" value="0.7" />
 						</node>
 					</children>
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="MapKey" type="FixedString" value="06c1d7fa-4517-4d49-917c-fe58554d6b45" />
+					<attribute id="MapKey" type="FixedString" value="b4ecaf2d-f486-4ba0-80c5-9efd962de44f" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="CoverAmount" type="uint8" value="1" />
+					<attribute id="GravityType" type="uint8" value="1" />
+					<attribute id="RecieveDecal" type="bool" value="True" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurFlower_008" />
+					<attribute id="TemplateName" type="FixedString" value="8706eab3-e05b-478d-833e-308379972dad" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<attribute id="Amount" type="int32" value="1" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bfd2a9ad-d8b6-e2a7-5f7b-2f959a4e19ef" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="UND_ANCIENTSUSSURTREEANTIMAGIC_AURA" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-17.41564 36.73778 -141.6207" />
+							<attribute id="RotationQuat" type="fvec4" value="1.0 0.0 0.0 0.0" />
+							<attribute id="Scale" type="float" value="0.7" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="ConstellationConfigName" type="FixedString" value="PerceptionHelper" />
+					<attribute id="MapKey" type="FixedString" value="8060e9c2-9567-40cc-aa1a-2ce032d36762" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
 					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
-					<attribute id="Amount" type="int32" value="2" />
+					<attribute id="Amount" type="int32" value="1" />
 					<children>
 						<node id="LayerList">
 							<children>
@@ -821,36 +1546,64 @@
 								</node>
 							</children>
 						</node>
-						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="-17.41564 36.73778 -141.6207" />
-							<attribute id="RotationQuat" type="fvec4" value="1.0 0.0 0.0 0.0" />
-							<attribute id="Scale" type="float" value="1" />
-						</node>
-					</children>
-				</node>
-
-				<node id="GameObjects">
-					<attribute id="MapKey" type="FixedString" value="69e7331c-c6c2-450b-8181-f246ca9b79e7" />
-					<attribute id="Flag" type="int32" value="1" />
-					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
-					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
-					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
-					<attribute id="Amount" type="int32" value="2" />
-					<children>
-						<node id="LayerList">
+						<node id="ConstellationConfigGlobalParameters">
 							<children>
-								<node id="Layers">
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="MaxRadius" />
 									<children>
-										<node id="Object">
-											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+										<node id="Value">
 											<children>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="double">
+																	<attribute id="double" type="double" value="5" />
+																</node>
+															</children>
+														</node>
+													</children>
 												</node>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="DC" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<!-- <attribute id="String" type="LSString" value="HiddenPerception_Medium_cd1800ab-1b11-4c7a-9f50-fdeb8d35481f" /> -->
+																	<attribute id="String" type="LSString" value="Act1_HiddenPerception_Easy_10a7c9ba-bc09-4c30-8cfc-ce0c6766fac7" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Type" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Invisible" />
+																</node>
+															</children>
+														</node>
+													</children>
 												</node>
 											</children>
 										</node>
@@ -861,20 +1614,24 @@
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="-22.3 27.0 -143.7" />
 							<attribute id="RotationQuat" type="fvec4" value="-0.1806096 -0.13944651 -0.3652711 -0.8486209" />
-							<attribute id="Scale" type="float" value="1" />
+							<attribute id="Scale" type="float" value="0.7" />
 						</node>
 					</children>
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="MapKey" type="FixedString" value="01890fe5-d09a-4472-9f03-76108973c1d6" />
+					<attribute id="MapKey" type="FixedString" value="00565aa7-1b2f-47b5-a28f-9c9acba9109a" />
 					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="CoverAmount" type="uint8" value="1" />
+					<attribute id="GravityType" type="uint8" value="1" />
+					<attribute id="RecieveDecal" type="bool" value="True" />
+					<attribute id="WalkThrough" type="bool" value="False" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
-					<attribute id="Name" type="LSString" value="S_UND_SussurBark" />
-					<attribute id="TemplateName" type="FixedString" value="ea99e006-80e1-414a-8995-c03d92eaf170" />
+					<attribute id="Name" type="LSString" value="S_UND_SussurFlower_006" />
+					<attribute id="TemplateName" type="FixedString" value="8706eab3-e05b-478d-833e-308379972dad" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
-					<attribute id="Amount" type="int32" value="2" />
+					<attribute id="Amount" type="int32" value="1" />
 					<children>
 						<node id="LayerList">
 							<children>
@@ -884,10 +1641,10 @@
 											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
 											<children>
 												<node id="Layer">
-													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-3a29-f33a6f06b158" />
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
 												</node>
 												<node id="Layer">
-													<attribute id="Object" type="guid" value="9c534e69-2e0a-3b0b-d574-a5cb9d3de00c" />
+													<attribute id="Object" type="guid" value="bfd2a9ad-d8b6-e2a7-5f7b-2f959a4e19ef" />
 												</node>
 											</children>
 										</node>
@@ -895,10 +1652,17 @@
 								</node>
 							</children>
 						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="UND_ANCIENTSUSSURTREEANTIMAGIC_AURA" />
+								</node>
+							</children>
+						</node>
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="-18.5 28.0 -141.5" />
 							<attribute id="RotationQuat" type="fvec4" value="-0.1806096 -0.13944651 -0.3652711 -0.8486209" />
-							<attribute id="Scale" type="float" value="1" />
+							<attribute id="Scale" type="float" value="0.7" />
 						</node>
 					</children>
 				</node>

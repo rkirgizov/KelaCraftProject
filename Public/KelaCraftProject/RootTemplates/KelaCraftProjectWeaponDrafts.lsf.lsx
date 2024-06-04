@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="900" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- /////////////////////////////////////////////////// -->
+				<!-- ЧЕРТЕЖИ -->
+				<!-- /////////////////////////////////////////////////// -->
+
+				<!-- Чертёж тяжёлого арбалета Ирре из волешбной башни в Подземье -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="981ff967-3151-4b9d-8978-ce2406d80282" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Draft_Irre_HeavyCrossbow_4_Slots" />
+					<attribute id="DisplayName" type="TranslatedString" handle="he4b501e2ad7449aeb6a7fff5fd38ce7ea688" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h87a4a4985179481397f3ce506be2047f924d" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h95dd9a9164c4444dad7e69dca22fa6125f3f" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_UNI_FOR_MasterworkPlans" />
+					<attribute id="ParentTemplateId" type="FixedString" value="61b98c74-8f5c-4d05-b56c-0911b59c9078" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="43b7eda5-3b02-dc99-43c6-436bd19446e0" />
+					<attribute id="VisualTemplate" type="FixedString" value="1655ed96-510c-78ae-dedb-f9ea83fcf27e" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Draft_Irre_HeavyCrossbow_4_Slots" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="Consume" type="bool" value="false" />
+											<attribute id="SkillID" type="FixedString" value="Target_Use_Draft_Workbench_4_Slots" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Чертежи Высокого утёса (дополнительный чертёж для создания, основной не срабатывает) -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="080a27af-9d04-4d85-af4f-c48fbd5f448d" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Draft_MasterworkPlans_3_Slots" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h204498bb9a8649128e3db9b5c42e8adb243d" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h89933f408b15438b9cda28850c1a7c8a257g" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h305c57431bf047cb9dc63a609568115f5409" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_UNI_FOR_MasterworkPlans" />
+					<attribute id="ParentTemplateId" type="FixedString" value="61b98c74-8f5c-4d05-b56c-0911b59c9078" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="43b7eda5-3b02-dc99-43c6-436bd19446e0" />
+					<attribute id="VisualTemplate" type="FixedString" value="1655ed96-510c-78ae-dedb-f9ea83fcf27e" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Draft_MasterworkPlans_3_Slots" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_SUSSUR_FORGE_AURA_ACTIVE', context.Source)" />
+											<attribute id="Consume" type="bool" value="false" />
+											<attribute id="SkillID" type="FixedString" value="Target_Use_Draft_Anvil_3_Slots" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+			</children>
+		</node>
+	</region>
+</save>

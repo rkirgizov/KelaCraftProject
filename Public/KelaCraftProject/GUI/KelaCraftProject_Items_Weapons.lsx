@@ -29,7 +29,7 @@
                    <attribute id="V2" type="float" value="0.25"/> Bottom
                </node>
                <node id="IconUV">
-                   <attribute id="MapKey" type="FixedString" value="MySweetMod_2_Icon"/> 2
+                   <attribute id="MapKey" type="FixedString" value="Item_WPN_KELA_Olams_Shadow_Protection_Shield_A"/> 2
                    <attribute id="U1" type="float" value="0.25"/> Left
                    <attribute id="U2" type="float" value="0.5"/> Right
                    <attribute id="V1" type="float" value="0.0"/> Top

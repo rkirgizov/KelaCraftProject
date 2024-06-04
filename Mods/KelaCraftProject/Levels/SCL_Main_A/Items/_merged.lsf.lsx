@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
+
+				<!-- Лунные башни //////////////////////////////////////////////////////// -->
+				<!-- Добавляем доспехи ревнителя в сундук с конфискатом -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h043858bbgfb7dg4327g9522g3962ec7bd601" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Key" type="FixedString" value="MOO_PrisonCells" />
+					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
+					<attribute id="LockDifficultyClassID" type="guid" value="89f0acd4-346f-479d-8b7a-1a3eb5382f6d" />
+					<!-- <attribute id="MapKey" type="FixedString" value="8b3cce00-c296-4194-89d7-da4bedae2bc7" /> kelamor -->
+					<attribute id="MapKey" type="FixedString" value="3c6a641f-169e-453c-b4ee-234ca670abcc" /> origin
+					<attribute id="Name" type="LSString" value="S_MOO_PrisonChest" />
+					<attribute id="Stats" type="FixedString" value="OBJ_ImmutableContainer" />
+					<attribute id="TemplateName" type="FixedString" value="0b90bf9d-66fd-4741-be1f-39181efca97a" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209030" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="MOO_ConfiscatedGoods" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_ARM_Plate_Body_Zealot" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="eb3fa5f9-f73d-24a5-c27a-506ccc571403" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="84930bb1-a014-8060-9792-d2421768ed26" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="254c29d7-b24e-679f-d950-51d6824946f2" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="568.176 32.86795 -654.2139" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.8140523 0 0.5807917" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Таверна Последний свет ///////////////////////////////////////// -->
+				<!-- Кузнечные меха Даммона -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
+					<!-- <attribute id="MapKey" type="FixedString" value="d1b38756-1b17-4617-82d1-4ee7c20842ac" /> kelamor -->
+					<attribute id="MapKey" type="FixedString" value="f0e2aeee-55fe-4825-9060-2c22920d53a8" /> origin
+					<attribute id="Description" type="TranslatedString" handle="h76b156c156164869b6d1404c8b8a28e25g3g" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h14269a39de00441cbac7af7fe1c1eaf3b9a4" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="hd32c8648gc96eg4ea0g987eg15213bc01bf2" version="1" />
+					<attribute id="Name" type="LSString" value="S_HAV_DammonBellow" />
+					<attribute id="TemplateName" type="FixedString" value="9d2a0431-7c4f-49c3-ae69-9179697ea1f9" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209018" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5155fad3-4d34-3798-f8ca-8a7942d22a05" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="157cc332-d964-3e9f-38d4-63524bb4b6d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="StatsId" type="FixedString" value="KELA_TRY_BELLOW_CHANGE_FIRE" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-32.37939 27.31788 164.1142" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9444106 0 -0.3287684" />
+							<attribute id="Scale" type="float" value="0.7" />
+						</node>
+					</children>
+				</node>
+
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
+
+				<!-- Угли для кузницы Даммона -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
+					<attribute id="AnubisConfigName" type="FixedString" value="FOR_MeltingFurnace" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="81951740-d4f0-4e02-98c8-e6769731f3a9" />
+					<attribute id="Name" type="LSString" value="HAV_Forge_Dammon" />
+					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
+					<!-- <attribute id="TemplateName" type="FixedString" value="f28577c7-5187-4834-884e-1408af935648" /> -->
+					<attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" /> origin
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />				
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5155fad3-4d34-3798-f8ca-8a7942d22a05" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="157cc332-d964-3e9f-38d4-63524bb4b6d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-36.17939 27.91 166.1242" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.99 0 -0.3287684" />
+							<attribute id="Scale" type="float" value="0.42" />
+						</node>
+					</children>
+				</node>
+
+
+				<!-- Новая юзабельная наковальня Даммона -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="826b9086-3edf-47dc-ab01-2f397f89a45c" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Anvil_SCL_Main_A_002" />
+					<attribute id="TemplateName" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209019" />
+
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5155fad3-4d34-3798-f8ca-8a7942d22a05" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="157cc332-d964-3e9f-38d4-63524bb4b6d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-34.386 27.3057 167.8463" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9819172 0 -0.1893107" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+					</children>
+				</node>
+				<!-- Скрываем старую -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="1939b3f5-898f-4b6c-ac74-e0810f8c281e" />
+					<attribute id="Name" type="LSString" value="S_HAV_DammonsAnvil" />
+					<!-- <attribute id="TemplateName" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" /> -->
+					<attribute id="TemplateName" type="FixedString" value="84dc46a0-eb7e-43fb-b3cd-9200bd017a15" /> origin
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="Tooltip" type="uint8" value="1" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="91450084-e118-ff17-bf5d-ec7212c70b99" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="20be695a-e1c2-b459-4c27-1c5db7721226" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="e01380cf-941f-b701-691e-e174dbaa1e2e" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-34.386 27.3057 167.8463" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9819172 0 -0.1893107" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Точильное колесо -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsInteractionDisabled" type="bool" value="False" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="4b21a973-74c7-4cfb-832b-16e0f7233a89" />
+					<attribute id="Name" type="LSString" value="HAV_KELA_Useful_Whetstone_Wheel_002" />
+					<attribute id="TemplateName" type="FixedString" value="9c961b81-496f-48fe-9265-125b084bcde5" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5155fad3-4d34-3798-f8ca-8a7942d22a05" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="157cc332-d964-3e9f-38d4-63524bb4b6d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-26.34295 27.31766 164.3923" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.5410503 0 0.8409754" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+					</children>
+				</node>
+				<!-- Скрываем старое -->
+				<node id="GameObjects">
+					<attribute id="DevComment" type="LSString" value="Used for Dammon world behaviour animation." />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsInteractionDisabled" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="e9af18c3-67a7-45d7-889a-90880a5426c4" />
+					<attribute id="Name" type="LSString" value="S_HAV_DammonGrindingStone" />
+					<attribute id="TemplateName" type="FixedString" value="985bb624-6726-4243-bc6a-9274a95bf5fd" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144537400540922156" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5155fad3-4d34-3798-f8ca-8a7942d22a05" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="157cc332-d964-3e9f-38d4-63524bb4b6d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="b42d9aed-e11e-8137-ba8d-b6863d151e24" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-26.34295 27.31766 164.3923" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.5410503 0 0.8409754" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+
+				<!-- Дом целителей -->
+				<node id="GameObjects">
+					<attribute id="Fadeable" type="bool" value="True" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="HierarchyOnlyFade" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="8e388e2e-f9c0-4222-854d-52b14f6888c1" /> kela
+					<attribute id="Name" type="LSString" value="WPN_KELA_Olams_Shadow_Protection_Shield_A" />
+					<attribute id="SeeThrough" type="bool" value="True" />
+					<attribute id="TemplateName" type="FixedString" value="80c618fa-b06b-43ec-9b65-02bb1dbc9ab8" /> kelamor
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="GravityType" type="uint8" value="2" />
+					<attribute id="FreezeGravity" type="bool" value="False" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115209550692654" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="1afdce5a-4c84-f16d-29c8-faec3ee4f4b3" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c059d77c-23e5-9d0f-2fd6-8fbb16efd0db" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="49.59268 26.39502 -1012.936" />
+							<attribute id="RotationQuat" type="fvec4" value="0.5 -0.1572827 0 0.9875536" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>				
+
+
+
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
+
+
+
+			</children>
+		</node>
+	</region>
+</save>

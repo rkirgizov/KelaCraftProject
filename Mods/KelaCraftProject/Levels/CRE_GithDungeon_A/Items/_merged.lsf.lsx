@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="CRE_GithDungeon_A" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="7528df5f-3e51-4a20-b9d4-0683d5012eff" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_GITHDUNGEON_001" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CRE_GithDungeon_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="d55801c3-94e1-e2ae-19a5-a2d976d2f21e" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="f9c14095-6ff8-7845-ed44-8d7dabc34fa1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="40df776f-15d6-556b-3b46-61831254d4fc" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-65.75835 -1.354044 -0.001276851" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.7515745 0 0.6596483" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Маркер лаборатории -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="CRE_GithDungeon_A" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="7f7c4057-7b14-4d78-b055-e0497455e7fd" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_GITHDUNGEON_002" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CRE_GithDungeon_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="d55801c3-94e1-e2ae-19a5-a2d976d2f21e" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="f9c14095-6ff8-7845-ed44-8d7dabc34fa1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="40df776f-15d6-556b-3b46-61831254d4fc" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-64.82742 -1.314821 -21.21784" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</children>
+		</node>
+	</region>
+</save>

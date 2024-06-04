@@ -19,27 +19,6 @@
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h0b5c4cd7g0864g4245g9367g35497bf61e9b" version="1" />
-					<attribute id="UUID" type="FixedString" value="KELA_Blacksmith_Apprentice" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h19ea9ccdg442eg499fg82d3ga01a38b2802b" version="1" />
-					<attribute id="UUID" type="FixedString" value="KELA_Blacksmith_Expert" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="hc647883agd952g4c3egb6f2g9d390a473131" version="1" />
-					<attribute id="UUID" type="FixedString" value="KELA_Blacksmith_Master" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
 				<!-- Наковальня -->
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="hb290556f9c07493b9573649b9e1f95124gea" version="1" />
@@ -50,8 +29,24 @@
 				</node>
 				<!-- Точильное колесо -->
 				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="hbfefff07gb289g4128gae31gbd1f6d906b80" version="1" />
+					<attribute id="Content" type="TranslatedString" handle="h4978f265f7db4548b4f8ab78a7855be475a9" version="1" />
 					<attribute id="UUID" type="FixedString" value="KELA_Whetstone_Description" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<!-- Столярный верстак -->
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h5b32fed4375044ac919ba2275f4707bd8176" version="1" />
+					<attribute id="UUID" type="FixedString" value="KELA_Workbench_Description" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<!-- Ведро для закаливания -->
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hecf98ca0a4874740afa978bf09f3be1af6f9" version="1" />
+					<attribute id="UUID" type="FixedString" value="Kela_Bucket_Temper_Description" />
 					<attribute id="Speaker" type="FixedString" value="" />
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
@@ -65,6 +60,13 @@
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
 				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h3a5a1191a48d4343ba1f36ceb9ae151ad64e" version="1" />
+					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Not_Enough_Intelligence_17" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="h56fe4b95dd4d413cbb856c3a1919ee6f4696" version="1" />
 					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Potion_Healing" />
 					<attribute id="Speaker" type="FixedString" value="" />
@@ -72,15 +74,29 @@
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
 				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h20851f5c0c3742a6a368a5b7c21164b4gag3" version="1" />
+					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Metall_Transmutation" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="ha4b8c9c796de416884759505b32fb97a5b89" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Sharpening_Simple" />
+					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Weapon_Oil" />
 					<attribute id="Speaker" type="FixedString" value="" />
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="h3dce7d4b97684c5f99945311e9f2f2395gc3" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Sharpening_Sussur" />
+					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Oil_Sussur_Temper" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h91dc70d935614bd294f3179efc6fc3df6g40" version="1" />
+					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Oil_Adamant_Temper" />
 					<attribute id="Speaker" type="FixedString" value="" />
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
@@ -92,6 +108,7 @@
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
+				<!-- Записки -->
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="h96ac421fae3548a1a7cbd57b5caca37e9c98" version="1" />
 					<attribute id="UUID" type="FixedString" value="Kela_Note_Scrawny_Bugbear" />
@@ -102,6 +119,20 @@
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="hd47428e890114fb886b7b0279c301c8723be" version="1" />
 					<attribute id="UUID" type="FixedString" value="Kela_Note_Smithing_Skeleton" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hba0b1981490d42ec9479c658e0e79d1bed8e" version="1" />
+					<attribute id="UUID" type="FixedString" value="Kela_Note_Corsar_Greymon" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hd2f0dd936b3e48cfa9b82cd00a6f88518cc3" version="1" />
+					<attribute id="UUID" type="FixedString" value="Kela_Note_Baltazar_Pixi" />
 					<attribute id="Speaker" type="FixedString" value="" />
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />

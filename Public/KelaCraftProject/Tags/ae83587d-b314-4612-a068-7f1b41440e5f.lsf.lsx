@@ -3,12 +3,12 @@
 	<version major="4" minor="0" revision="4" build="201" lslib_meta="v1,bswap_guids" />
 	<region id="Tags">
 		<node id="Tags">
-			<attribute id="Description" type="LSString" value="A tag for a KELA WHETSTONE to define it in aura of WEAPON OIL" />
+			<attribute id="Description" type="LSString" value="A tag for a KELA Handmade armor" />
 			<attribute id="DisplayDescription" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0" />
-			<attribute id="DisplayName" type="TranslatedString" handle="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="1" />
 			<attribute id="Icon" type="FixedString" value="" />
-			<attribute id="Name" type="FixedString" value="KELAWHETSTONE" />
-			<attribute id="UUID" type="guid" value="b4be4d1e-7374-4809-af8a-0fcf248aa8f0" />
+			<attribute id="Name" type="FixedString" value="HANDMADEARMOR" />
+			<attribute id="UUID" type="guid" value="ae83587d-b314-4612-a068-7f1b41440e5f" />
 			<children>
 				<node id="Categories">
 					<children>
