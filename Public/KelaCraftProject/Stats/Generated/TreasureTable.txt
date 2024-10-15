@@ -85,6 +85,22 @@ new treasuretable "TRE_BOOK_Kela_Recipe_Oil_Sussur_Temper"
 new subtable "1,1"
 object category "I_BOOK_Kela_Recipe_Oil_Sussur_Temper",1,0,0,0,0,0,0,0
 
+new treasuretable "TRE_BOOK_Kela_Recipe_Oil_Adamant_Temper"
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Oil_Adamant_Temper",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Recipe_Oil_Infernal_Temper"
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Oil_Infernal_Temper",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Recipe_Oil_Infernal_Temper_CTY"
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Oil_Infernal_Temper_CTY",1,0,0,0,0,0,0,0
+
+new treasuretable "TRE_BOOK_Kela_Recipe_Oil_Stone_Temper"
+new subtable "1,1"
+object category "I_BOOK_Kela_Recipe_Oil_Stone_Temper",1,0,0,0,0,0,0,0
+
 new treasuretable "TRE_KELA_Oil_Sussur"
 new subtable "1,1"
 object category "I_KELA_Sussur_Oil",1,0,0,0,0,0,0,0
@@ -121,41 +137,61 @@ object category "I_ARM_Plate_Body_Zealot",1,0,0,0,0,0,0,0
 
 new treasuretable "KELA_DEBUG_Supply"
 new subtable "1,1"
+object category "I_MAG_DevilsBlackmith_ScaleMail_Completed",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_WPN_KELA_Favorite_LightHammer",1,0,0,0,0,0,0,0
+object category "I_MAG_DevilsBlackmith_Boots_Completed",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_BOOK_Kela_Blacksmith_Handbook",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_BOOK_Kela_Recipe_Oil_Sussur",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_BOOK_Kela_Recipe_Weapon_Oil",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_BOOK_Kela_Recipe_Oil_Sussur_Temper",1,0,0,0,0,0,0,0
-new subtable "10,1"
-object category "I_KELA_Sussur_Oil",1,0,0,0,0,0,0,0
-new subtable "10,1"
-object category "I_KELA_Weapon_Oil",1,0,0,0,0,0,0,0
-new subtable "10,1"
-object category "I_KELA_Oil_Sussur_Temper",1,0,0,0,0,0,0,0
-new subtable "10,1"
-object category "I_OBJ_GreaseBottle",1,0,0,0,0,0,0,0
-new subtable "10,1"
-object category "I_QUEST_FOR_SussurBark",1,0,0,0,0,0,0,0
-
-
-
+object category "I_MAG_DevilsBlackmith_Gloves_Completed",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_WPN_KELA_Favorite_LightHammer",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_BOOK_Kela_Blacksmith_Handbook",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_BOOK_Kela_Recipe_Potion_Healing",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_BOOK_Kela_Recipe_Oil_Sussur",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_BOOK_Kela_Recipe_Weapon_Oil",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_BOOK_Kela_Recipe_Oil_Sussur_Temper",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_BOOK_Kela_Recipe_Oil_Adamant_Temper",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_BOOK_Kela_Recipe_Oil_Infernal_Temper",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_BOOK_Kela_Recipe_Oil_Stone_Temper",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_KELA_Sussur_Oil",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_KELA_Weapon_Oil",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_KELA_Oil_Sussur_Temper",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_KELA_Oil_Adamant_Temper",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_KELA_Oil_Adamant_Temper_Ideal",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_KELA_Oil_Infernal_Temper",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_KELA_Oil_Infernal_Temper_Ideal",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_KELA_Oil_Stone_Temper",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_KELA_Oil_Stone_Temper_Ideal",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_OBJ_GreaseBottle",1,0,0,0,0,0,0,0
+// new subtable "10,1"
+// object category "I_QUEST_FOR_SussurBark",1,0,0,0,0,0,0,0
 
 
 new treasuretable "Weapon_Oil_Supply"
-new subtable "0,3;1,6;2,1"
+new subtable "0,4;1,3;2,1"
 object category "I_OBJ_GreaseBottle",1,0,0,0,0,0,0,0
-new subtable "0,5;1,4;2,1"
+new subtable "0,4;1,2;2,1"
 object category "I_KELA_Weapon_Oil",1,0,0,0,0,0,0,0
-new subtable "0,4;1,5;2,1"
+new subtable "0,4;1,2;2,1"
 object category "I_ALCH_Solution_Oil_AttackBuff",1,0,0,0,0,0,0,0
-new subtable "0,4;1,5;2,1"
+new subtable "0,4;1,2;2,1"
 object category "I_ALCH_Solution_Oil_DamageAttackBuff",1,0,0,0,0,0,0,0
 
 new treasuretable "GEN_Crate_Tools"
@@ -360,6 +396,35 @@ new subtable "1,1"
 object category "T_Weapon_Oil_Supply",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_BOOK_Kela_Recipe_Weapon_Oil",1,0,0,0,0,0,0,0
+
+// Сейф в подземелье Кассадора
+new treasuretable "TRE_Cazador_DungeonSafe"
+new subtable "-1"
+object category "I_UNI_LOW_Vellioth",1,0,0,0,0,0,0,0
+
+// Сейф в дьявольской кузне
+new treasuretable "TRE_DevilandSmith_BasementSafe"
+new subtable "-1"
+object category "I_KELA_Oil_Sussur_Temper",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_KELA_Oil_Adamant_Temper",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_KELA_Oil_Infernal_Temper",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_KELA_Oil_Stone_Temper",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_BOOK_Kela_Blacksmith_Handbook",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_BOOK_Kela_Draft_DevilsBlackmith_4_Slots",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_MAG_DevilsBlackmith_ScaleMail",1,0,0,0,0,0,0,0
+
+// Сейф в подвале Грушки
+new treasuretable "LOW_PeartreeBasement_Treasures"
+new subtable "2,1"
+object category "I_OBJ_InfernalPlate",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_KELA_Peartree_HalfPlate_Body_2",1,0,0,0,0,0,0,0
 
 // 3 Act Wyrm's Rock
 new treasuretable "WYR_AlchemyTrader"

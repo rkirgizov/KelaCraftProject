@@ -5,7 +5,637 @@
 		<node id="Templates">
 			<children>
 
+				<!-- ////////////////////////////////////////////////////////////////// -->
+				<!-- Кузня Девяти (Даммон) -->
+				<!-- ////////////////////////////////////////////////////////////////// -->
 
+				<!-- Новая юзабельная наковальня Даммона-->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsInteractionDisabled" type="bool" value="False" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="4265fa1a-d4d9-4b19-91f9-c1574483a9c4" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Anvil_004" />
+					<attribute id="TemplateName" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="f31d7608-1ae3-2b6a-6ed9-2a84dc0490be" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-0.2851855 39.97773 -5.400813" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.2912519 0 0.9566464" />
+							<attribute id="Scale" type="float" value="0.9" />
+						</node>
+					</children>
+				</node>
+				<!-- Скрываем старую -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="850f2a0f-50c4-4e41-bb33-704f3a5c5b4d" />
+					<attribute id="Name" type="LSString" value="TOOL_Smith_Anvil_B_002" />
+					<attribute id="TemplateName" type="FixedString" value="84dc46a0-eb7e-43fb-b3cd-9200bd017a15" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403208705" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="f31d7608-1ae3-2b6a-6ed9-2a84dc0490be" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-0.2851855 39.97773 -5.400813" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.2912519 0 0.9566464" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Кузнечные меха Даммона -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h76b156c156164869b6d1404c8b8a28e25g3g" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h14269a39de00441cbac7af7fe1c1eaf3b9a4" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="hd32c8648gc96eg4ea0g987eg15213bc01bf2" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<!-- <attribute id="MapKey" type="FixedString" value="d1b38756-1b17-4617-82d1-4ee7c20842ac" /> kelamor -->
+					<attribute id="MapKey" type="FixedString" value="883aa08d-4e9b-46ac-bc43-36730a3ee8dd" />
+					<attribute id="Name" type="LSString" value="DEC_GEN_Smith_Bellows_A" />
+					<attribute id="TemplateName" type="FixedString" value="9d2a0431-7c4f-49c3-ae69-9179697ea1f9" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209017" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="f31d7608-1ae3-2b6a-6ed9-2a84dc0490be" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="StatsId" type="FixedString" value="KELA_TRY_BELLOW_CHANGE_FIRE" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="0.146337 40.01414 -1.602278" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.6531177 0 0.7572564" />
+							<attribute id="Scale" type="float" value="0.9" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Угли для кузницы Даммона -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
+					<attribute id="AnubisConfigName" type="FixedString" value="FOR_MeltingFurnace" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="2d371eb2-80d5-420d-a846-19e65668a12f" />
+					<attribute id="Name" type="LSString" value="CTY_Forge_Dammon" />
+					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
+					<!-- Угли взяты из scenery с id dcb7b243-de2a-4c90-aa9f-2c1ffcb2589d, сами они скрыты -->
+					<attribute id="TemplateName" type="FixedString" value="4c7f8d3c-d2ee-4462-aec5-6d4cdfdd395e" /> kelamor
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />				
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="f31d7608-1ae3-2b6a-6ed9-2a84dc0490be" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="2.468 40.53935 -2.035449" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.3891058 0 0.9211932" />
+							<attribute id="Scale" type="float" value="0.6" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Ведро -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="cbf4299f-a6db-4e4d-8075-e66a929e936c" />
+					<attribute id="Name" type="LSString" value="DEC_KELA_Bucket_Empty_A_101" />
+					<attribute id="TemplateName" type="FixedString" value="158682d3-4b6a-4952-aa88-af74a256f880" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209006" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="f31d7608-1ae3-2b6a-6ed9-2a84dc0490be" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-0.416337 40.01414 -2.652278" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.6531177 0 0.7572564" />
+							<attribute id="Scale" type="float" value="1.2" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Рецепт инфернального закаливания в дьявольской кузнице -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<!-- <attribute id="MapKey" type="FixedString" value="0de7dc91-8c7c-462b-be55-145eef848d52" /> -->
+					<attribute id="MapKey" type="FixedString" value="a6aa83d4-891e-489c-8cbf-8bf7d6227a91" /> origin
+					<attribute id="Name" type="LSString" value="BOOK_GEN_Books_Row_Single_B_002" />
+					<attribute id="SeeThrough" type="bool" value="True" />
+					<attribute id="TemplateName" type="FixedString" value="09077016-0b2e-45a6-a2be-54b9e6d930fb" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144255925564211200" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="GEN_Book_Hell" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_BOOK_Kela_Recipe_Oil_Infernal_Temper_CTY" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="f31d7608-1ae3-2b6a-6ed9-2a84dc0490be" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="25a7e1c9-c697-df7e-aa92-69207c095abb" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-6.86815 46.42459 0.3669056" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9999977 0 -2.086163E-07" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+				<!-- ////////////////////////////////////////////////////////////////// -->
+				<!-- Кузня у стены -->
+				<!-- ////////////////////////////////////////////////////////////////// -->
+
+				<!-- Наковальня -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsInteractionDisabled" type="bool" value="False" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="8bffa93e-fe52-44e3-b994-553ccb054fb6" />
+					<attribute id="Name" type="LSString" value="KELA_Useful_Anvil_004" />
+					<attribute id="TemplateName" type="FixedString" value="df43b6fa-374d-4d92-8daf-1c4975b95de0" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-47.43994 23.85738 -80.05124" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.03759054 0 0.9992933" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+				<!-- Скрываем старую -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="dd97f96c-721f-4f48-98a8-2f80096bd4e0" />
+					<attribute id="Name" type="LSString" value="TOOL_Smith_Anvil_B_001" />
+					<attribute id="TemplateName" type="FixedString" value="84dc46a0-eb7e-43fb-b3cd-9200bd017a15" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209017" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-47.43994 23.85738 -80.05124" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.03759054 0 0.9992933" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Кузнечные меха -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h76b156c156164869b6d1404c8b8a28e25g3g" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h14269a39de00441cbac7af7fe1c1eaf3b9a4" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="hd32c8648gc96eg4ea0g987eg15213bc01bf2" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<!-- <attribute id="MapKey" type="FixedString" value="d1b38756-1b17-4617-82d1-4ee7c20842ac" /> kelamor -->
+					<attribute id="MapKey" type="FixedString" value="542e6431-3b75-4c08-9aff-573bcb4ac8f2" />
+					<attribute id="Name" type="LSString" value="DEC_GEN_Smith_Bellows_A_000" />
+					<attribute id="TemplateName" type="FixedString" value="9d2a0431-7c4f-49c3-ae69-9179697ea1f9" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209017" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="StatsId" type="FixedString" value="KELA_TRY_BELLOW_CHANGE_FIRE" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-44.39318 23.91553 -75.7376" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.4226992 0 0.9062701" />
+							<attribute id="Scale" type="float" value="0.9" />
+						</node>
+					</children>
+				</node>
+
+
+				<!-- Угли плавильной печи -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
+					<attribute id="AnubisConfigName" type="FixedString" value="FOR_MeltingFurnace" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="b1f15a19-fd27-4758-97db-936769bb6b71" />
+					<attribute id="Name" type="LSString" value="CTY_Forge_Wall_01" />
+					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
+					<attribute id="TemplateName" type="FixedString" value="4c7f8d3c-d2ee-4462-aec5-6d4cdfdd395e" /> kelamor
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />				
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-47.76466 24.87834 -77.05181" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.4" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
+					<attribute id="AnubisConfigName" type="FixedString" value="" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="b462da2b-c017-4f89-8938-505c97830e7a" />
+					<attribute id="Name" type="LSString" value="CTY_Forge_Wall_02" />
+					<attribute id="Stats" type="FixedString" value="" />
+					<attribute id="TemplateName" type="FixedString" value="4c7f8d3c-d2ee-4462-aec5-6d4cdfdd395e" /> kelamor
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />				
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-48.71036 24.81816 -77.05181" />
+							<attribute id="RotationQuat" type="fvec4" value="0 1 0 2.980235E-08" />
+							<attribute id="Scale" type="float" value="0.4" />
+						</node>
+					</children>
+				</node>
+
+				<!-- Точильное колесо переносим -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<!-- <attribute id="MapKey" type="FixedString" value="40ee8c56-32fa-44bd-8792-f87c4d92bd1c" /> kelamor -->
+					<attribute id="MapKey" type="FixedString" value="693701f0-e65c-41ba-99ac-7b15c3240f09" /> origin
+					<attribute id="Name" type="LSString" value="TOOL_Smith_Whetstone_Wheel_B_000" />
+					<attribute id="TemplateName" type="FixedString" value="27162cbf-ab57-401b-a578-cd9f34209926" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209017" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-42.77355 23.9196 -81.59389" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.6525024 0 0.7577868" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
+
+				<!-- Ведро -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="39f09a81-9130-4fa1-bd7f-2c2a2059a90f" />
+					<attribute id="Name" type="LSString" value="DEC_HAR_Bucket_Empty_A_102" />
+					<attribute id="TemplateName" type="FixedString" value="158682d3-4b6a-4952-aa88-af74a256f880" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209016" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="d83c22a0-f5d8-09c0-e8b1-3b57592865ac" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-46.53477 24.2004 -76.41916" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1.2" />
+						</node>
+					</children>
+				</node>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
 			
 				<!-- Маркер лаборатории -->
 				<node id="GameObjects">

@@ -43,6 +43,97 @@
 						</node>
 					</children>
 				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="BGH_SorcerersSundries_A_ART" />
+					<attribute id="MapKey" type="FixedString" value="01eb0efc-910e-4dcc-bea3-69c9a686e047" />
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_SORCERERSSUNDRIES_A_ART_002" />
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGH_SorcerersSundries_A_ART" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0b7f4489-a64e-3e0c-9052-1b9a9d38ac21" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="3c5c64b0-e94d-7053-f35c-4c7fab59655a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-9.923029 1.223004 -12.52735" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.4503238 0 0.8928654" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+
+
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
+
+				<!-- Полка за спиной Толны Книжницы, добавляю рецепт масла каменной закалки -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="GravityType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="BGH_SorcerersSundries_A_ART" />
+					<!-- <attribute id="MapKey" type="FixedString" value="775358f2-be35-41f2-a634-8ca593e702e5" /> -->
+					<attribute id="MapKey" type="FixedString" value="514da4ad-1aee-4017-9b03-d83d87ac6d74" /> origin
+					<attribute id="Name" type="LSString" value="BOOK_GEN_Books_Row_Multiple_I_003" />
+					<attribute id="TemplateName" type="FixedString" value="0f1c22e1-fe37-4b83-ad0c-71226fb8da48" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="GEN_Book_Magic" />
+								</node>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_BOOK_Kela_Recipe_Oil_Stone_Temper" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGH_SorcerersSundries_A_ART" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0b7f4489-a64e-3e0c-9052-1b9a9d38ac21" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="3c5c64b0-e94d-7053-f35c-4c7fab59655a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="19.64053 0 7.597815" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.5735767 0 0.8191519" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
 
 			</children>
 		</node>

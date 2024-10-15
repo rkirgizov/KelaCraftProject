@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="HLOD" type="guid" value="aec126f0-6aa0-781d-99e2-9f02b6529599" />
+					<attribute id="LevelName" type="FixedString" value="SCL_RuinsBattlefield_G" />
+					<attribute id="MapKey" type="FixedString" value="42b4bca9-9c66-40c2-b01b-cc23558a21d1" />
+					<attribute id="Name" type="LSString" value="DEC_GOB_Camp_Grill_A_Coals_A_006" />
+					<attribute id="TemplateName" type="FixedString" value="04b2473c-6968-46d3-a65c-11e8f2509eae" />
+					<attribute id="Type" type="FixedString" value="scenery" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241814" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_RuinsBattlefield_G" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="83ea6cac-3c8d-91e7-9ab4-7fee45d0f5c9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="07c55154-3345-00b6-9eb2-c15705c1f34d" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="90371e46-f63a-acb4-5345-195fe8a60154" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c5272cad-84c6-324d-3192-71f4f7a68340" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-37.03914 27.74762 166.357" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.004" />
+						</node>
+					</children>
+				</node>
+
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="HLOD" type="guid" value="aec126f0-6aa0-781d-99e2-9f02b6529599" />
+					<attribute id="LevelName" type="FixedString" value="SCL_RuinsBattlefield_G" />
+					<attribute id="MapKey" type="FixedString" value="02bbfd59-1e03-468b-845c-d7c54052566f" />
+					<attribute id="Name" type="LSString" value="DEC_GOB_Camp_Grill_A_Coals_A_007" />
+					<attribute id="TemplateName" type="FixedString" value="04b2473c-6968-46d3-a65c-11e8f2509eae" />
+					<attribute id="Type" type="FixedString" value="scenery" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241814" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_RuinsBattlefield_G" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="83ea6cac-3c8d-91e7-9ab4-7fee45d0f5c9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="07c55154-3345-00b6-9eb2-c15705c1f34d" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="90371e46-f63a-acb4-5345-195fe8a60154" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c5272cad-84c6-324d-3192-71f4f7a68340" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-36.17874 27.74762 166.357" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9998558 0 -0.01698848" />
+							<attribute id="Scale" type="float" value="0.004" />
+						</node>
+					</children>
+				</node>
+
+
+
+
+
+
+			</children>
+		</node>
+	</region>
+</save>

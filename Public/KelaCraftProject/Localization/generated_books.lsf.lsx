@@ -12,13 +12,7 @@
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h9eec2b47ac5348e49536d1e5fe5d30e858e0" version="1" />
-					<attribute id="UUID" type="FixedString" value="KELA_Blacksmith_Does_Not_Have_Main_Passive" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
+
 				<!-- Наковальня -->
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="hb290556f9c07493b9573649b9e1f95124gea" version="1" />
@@ -52,62 +46,6 @@
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
 				<!-- Рецепты алхимические -->
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h01cfa638201a43f296ab6c245518296d4b5b" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Not_Enough_Intelligence" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h3a5a1191a48d4343ba1f36ceb9ae151ad64e" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Not_Enough_Intelligence_17" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h56fe4b95dd4d413cbb856c3a1919ee6f4696" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Potion_Healing" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h20851f5c0c3742a6a368a5b7c21164b4gag3" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Metall_Transmutation" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="ha4b8c9c796de416884759505b32fb97a5b89" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Weapon_Oil" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h3dce7d4b97684c5f99945311e9f2f2395gc3" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Oil_Sussur_Temper" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h91dc70d935614bd294f3179efc6fc3df6g40" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Oil_Adamant_Temper" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="TranslatedString" handle="h374ff852ec0d4ed59c370cc20e24460052fg" version="1" />
-					<attribute id="UUID" type="FixedString" value="Kela_Recipe_Oil_Sussur" />
-					<attribute id="Speaker" type="FixedString" value="" />
-					<attribute id="ExtraData" type="LSString" value="" />
-					<attribute id="Stub" type="bool" value="True" />
-				</node>
 				<!-- Записки -->
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="h96ac421fae3548a1a7cbd57b5caca37e9c98" version="1" />

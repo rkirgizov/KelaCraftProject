@@ -6,6 +6,196 @@
 			<children>
 
 
+
+
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hb52d37fcg1409g461egaa95gb636aaf12ce2" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hf8322179g9868g416egb73eg3742c18daeaf" version="1" />
+					<attribute id="Key" type="FixedString" value="WYR_SharessCaress_RoomKey" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="09294af0-0c3b-42bd-9bc6-96c76eeb770f" />
+					<attribute id="Name" type="LSString" value="UNI_WYR_SharessCaress_RoomsKey1" />
+					<attribute id="ParentTemplateId" type="FixedString" value="0416d50f-a41a-4ba3-b201-d8fc6fed91f9" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725657" />
+				</node>
+
+				<!-- Шаблон для углей для плавильной печи Даммона в Нижнем городе -->
+				<node id="GameObjects">
+					<attribute id="AnubisConfigName" type="FixedString" value="FOR_MeltingFurnace" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CoverAmount" type="uint8" value="1" />
+					<attribute id="IsPointerBlocker" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LoopSound" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="4c7f8d3c-d2ee-4462-aec5-6d4cdfdd395e" />
+					<attribute id="Name" type="LSString" value="UNI_FOR_IncompleteMasterwork_Furnace" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f28577c7-5187-4834-884e-1408af935648" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="36d36fb9-27ee-590d-4d58-616a161229da" />
+					<attribute id="VisualTemplate" type="FixedString" value="9f656911-067e-4b17-24e0-963134aba667" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="SoundAttenuation" type="int16" value="-1" />
+					<attribute id="SoundInitEvent" type="FixedString" value="" />
+					<attribute id="Stats" type="FixedString" value="FOR_ForgeWithSussurBark" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="Wadable" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855921" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.05857804" />
+									<attribute id="Max" type="fvec3" value="0.1125558 0.02824199 0.07829055" />
+									<attribute id="Min" type="fvec3" value="-0.148746 -0.03033604 -0.08715585" />
+									<attribute id="Radius" type="float" value="0.07869343" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.05857804" />
+									<attribute id="Max" type="fvec3" value="0.05627788 0.02824199 0.03914528" />
+									<attribute id="Min" type="fvec3" value="-0.074373 -0.03033604 -0.04357792" />
+									<attribute id="Radius" type="float" value="0.03934672" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.05857804" />
+									<attribute id="Max" type="fvec3" value="0.1125558 0.02824199 0.07829055" />
+									<attribute id="Min" type="fvec3" value="-0.148746 -0.03033604 -0.08715585" />
+									<attribute id="Radius" type="float" value="0.07869343" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+						<node id="GameMaster" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="InsertSlots" type="int8" value="1" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="ScriptConfigGlobalParameters">
+							<children>
+								<node id="ScriptConfigParameter">
+									<attribute id="Name" type="LSString" value="firstStageBurningFX" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="VFX_Script_FOR_IncompleteMasterwork_Furnace_01_11557711-70a2-1bb7-89f8-41dfa62970f7" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ScriptConfigParameter">
+									<attribute id="Name" type="LSString" value="secondStageBurningFX" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="VFX_Script_FOR_IncompleteMasterwork_Furnace_02_581004a2-5b39-b8e7-4073-776a65de0556" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="FixedString" value="af32bbed-eb13-49e2-8901-7e8b73cba310" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="AllowUserInteraction" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="1" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="BurnEffect" />
+													<attribute id="Type" type="int32" value="3" />
+													<attribute id="Value" type="LSString" value="VFX_Script_Forge_Fire_01" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="BurnEffectBone" />
+													<attribute id="Type" type="int32" value="4" />
+													<attribute id="Value" type="LSString" value="Dummy_FUR_GEN_Smelting_Forge_Stone_Coals_A" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="EnableGameplayLight" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="GameplayLightRadius" />
+													<attribute id="Type" type="int32" value="2" />
+													<attribute id="Value" type="LSString" value="5" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="HardcoreOnly" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="IgnitionSound" />
+													<attribute id="Type" type="int32" value="3" />
+													<attribute id="Value" type="LSString" value="" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="LightSharpness" />
+													<attribute id="Type" type="int32" value="2" />
+													<attribute id="Value" type="LSString" value="0.1" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="StartLit" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+
+
+				<!-- Добавление статов для адамантинового шлака, чтобы можно было в рецепте использовать -->
 				<node id="GameObjects">
 					<attribute id="CanBeMoved" type="bool" value="True" />
 					<attribute id="CanBePickedUp" type="bool" value="True" />
@@ -72,7 +262,6 @@
 						</node>
 					</children>
 				</node>
-
 				<node id="GameObjects">
 					<attribute id="CanBeMoved" type="bool" value="True" />
 					<attribute id="CanBePickedUp" type="bool" value="True" />
@@ -453,7 +642,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="88f95a55-7bc5-4f12-b507-d6569d745856" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_SUSSUR', context.Target) and HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true))" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_SUSSUR', context.Target) and (HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('MAG_FIRE_ALWAYS_DIPPED_FIRE', GetActiveWeapon(context.Source, true)))" />
 											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_OIL_SUSSUR_TEMPER" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
@@ -467,7 +656,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="fab141d9-e068-4f2e-ba44-699b6d9b3636" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL', context.Target) and HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true))" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL', context.Target) and (HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('MAG_FIRE_ALWAYS_DIPPED_FIRE', GetActiveWeapon(context.Source, true)))" />
 											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_OIL_SUSSUR_IDEAL_TEMPER" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
@@ -483,7 +672,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="895ce382-397d-4b9a-9e8f-6ee3b1ff3a13" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_ADAMANT', context.Target) and HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true))" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_ADAMANT', context.Target) and (HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('MAG_FIRE_ALWAYS_DIPPED_FIRE', GetActiveWeapon(context.Source, true)))" />
 											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_OIL_ADAMANT_TEMPER" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
@@ -497,7 +686,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL', context.Target) and HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true))" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL', context.Target) and (HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('MAG_FIRE_ALWAYS_DIPPED_FIRE', GetActiveWeapon(context.Source, true)))" />
 											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_OIL_ADAMANT_IDEAL_TEMPER" />
 											<attribute id="StatusDuration" type="int32" value="0" />
 											<attribute id="Consume" type="bool" value="False" />
@@ -505,6 +694,68 @@
 										</node>
 									</children>
 								</node>
+							</children>
+							<children>
+								<!-- Инфернальная закалка -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="895ce382-397d-4b9a-9e8f-6ee3b1ff3a13" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_INFERNAL', context.Target) and (HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('MAG_FIRE_ALWAYS_DIPPED_FIRE', GetActiveWeapon(context.Source, true)))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_OIL_INFERNAL_TEMPER" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Идеальная Адамантиновая закалка -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_INFERNAL_IDEAL', context.Target) and (HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('MAG_FIRE_ALWAYS_DIPPED_FIRE', GetActiveWeapon(context.Source, true)))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_OIL_INFERNAL_IDEAL_TEMPER" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+							<children>
+								<!-- Каменная закалка -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="895ce382-397d-4b9a-9e8f-6ee3b1ff3a13" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_STONE', context.Target) and (HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('MAG_FIRE_ALWAYS_DIPPED_FIRE', GetActiveWeapon(context.Source, true)))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_OIL_STONE_TEMPER" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+								<!-- Идеальная Каменная закалка -->
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="HasStatus('KELA_WEAPON_OIL_USED_STONE_IDEAL', context.Target) and (HasStatus('DIPPED_FIRE', GetActiveWeapon(context.Source, true)) or HasStatus('MAG_FIRE_ALWAYS_DIPPED_FIRE', GetActiveWeapon(context.Source, true)))" />
+											<attribute id="StatsId" type="FixedString" value="KELA_WEAPON_OIL_STONE_IDEAL_TEMPER" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+							<children>
 								<!-- Описание -->
 								<node id="Action">
 									<attribute id="ActionType" type="int32" value="11" />
@@ -539,11 +790,19 @@
 					<attribute id="DisplayName" type="TranslatedString" handle="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="1" />
 					<attribute id="Icon" type="FixedString" value="Item_TOOL_Smith_Anvil_B" />
 					<attribute id="Stats" type="FixedString" value="KELA_Useful_Anvil" />
+					<attribute id="Description" type="TranslatedString" handle="h1a35bc767fc04402901b82b77a6273a35ggf" version="1" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="hcd87c806g2b79g4088ga2fegfb70a9dfd982" version="1" />
 					<attribute id="Tooltip" type="uint8" value="2" />
 					<attribute id="BookType" type="uint8" value="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="hd32c8648gc96eg4ea0g987eg15213bc01bf2" version="1" />
 					<attribute id="UseSound" type="FixedString" value="b6480614-cf5c-0b3b-af62-49fa03003d3c" />
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
 					<children>
 						<node id="Bounds">
 							<children>
@@ -808,6 +1067,13 @@
 											<attribute id="BookId" type="FixedString" value="KELA_Workbench_Description" />
 										</node>
 									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="KELA_WORKBENCH_AURA" />
 								</node>
 							</children>
 						</node>
@@ -1228,6 +1494,13 @@
 					<attribute id="BookType" type="uint8" value="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h89a534dfga0edg4e6egbf7dg3fafe3cf6eea" version="1" />
 					<attribute id="UseSound" type="FixedString" value="" />
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="False" />
+					<attribute id="CanClimbOn" type="bool" value="False" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="CanShootThrough" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="False" />
 					<children>
 						<node id="Bounds">
 							<children>
@@ -1314,6 +1587,13 @@
 								</node>
 							</children>
 						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="KELA_WHETSTONE_AURA" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
@@ -1347,6 +1627,13 @@
 						<node id="GameMaster">
 							<attribute id="GameMasterSpawnSection" type="int32" value="12" />
 							<attribute id="GameMasterSpawnSubSection" type="TranslatedString" handle="hae3b7d80gf59dg4a03g9461g581a4e5e3827" version="1" />
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="KELA_WHETSTONE_AURA" />
+								</node>
+							</children>
 						</node>
 						<node id="Tags">
 							<children>
@@ -1397,6 +1684,13 @@
 								<node id="LongHair" />
 								<node id="Visuals" />
 								<node id="ParentRace" />
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="KELA_WHETSTONE_AURA" />
+								</node>
 							</children>
 						</node>
 						<node id="Tags">

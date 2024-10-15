@@ -15,9 +15,9 @@
 					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h13a5791cg5ed8g40cfga717g39d7283f398f" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="h66e4ff13e2714fcb994acb8ef89fb9830d8f" version="0" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9ce93eefgd3d7g4d70g8050g40dd88e04c85" version="1" />
 					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="h66e4ff13e2714fcb994acb8ef89fb9830d8f" version="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
 					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Weapon_Oil_A" />
 					<attribute id="Stats" type="FixedString" value="KELA_Weapon_Oil" />
@@ -83,14 +83,13 @@
 					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h978bffa6g12f7g4051ga9a4g081b6c881fcb" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="h87cab18age3a8g4df2ga923gf0371e9e7a5d" version="1" />
-					<attribute id="TechnicalDescriptionParams" type="LSString" value="13;2" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hde9d6f92g4d12g42d6g80b7ga151cbda4d9e" version="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
 					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Sussur_Oil_A" />
 					<attribute id="Stats" type="FixedString" value="KELA_Oil_Sussur_Temper" />
 					<attribute id="Tooltip" type="uint8" value="2" />
-					<attribute id="BookType" type="uint8" value="1" />
 					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
 					<attribute id="DropSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
 					<attribute id="PickupSound" type="FixedString" value="c07d7d7b-78c1-3173-4250-df729da5276a" />
@@ -131,7 +130,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source)" />
+											<attribute id="Conditions" type="LSString" value="" />
 											<attribute id="Consume" type="bool" value="true" />
 											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Sussur" />
 										</node>
@@ -152,14 +151,13 @@
 					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h6c8162d4b4c34e55b42d89be03eef2bc1ab5" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="h463a7aa3aa2444dd9b5ff17e94b5b1ebf7be" version="1" />
-					<attribute id="TechnicalDescriptionParams" type="LSString" value="13;2" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hde9d6f92g4d12g42d6g80b7ga151cbda4d9e" version="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
 					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Sussur_Oil_A" />
 					<attribute id="Stats" type="FixedString" value="KELA_Oil_Sussur_Temper_Ideal" />
 					<attribute id="Tooltip" type="uint8" value="2" />
-					<attribute id="BookType" type="uint8" value="1" />
 					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
 					<attribute id="DropSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
 					<attribute id="PickupSound" type="FixedString" value="c07d7d7b-78c1-3173-4250-df729da5276a" />
@@ -200,7 +198,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and CharacterLevelGreaterThan(6, context.Source)" />
+											<attribute id="Conditions" type="LSString" value="" />
 											<attribute id="Consume" type="bool" value="true" />
 											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Sussur_Ideal" />
 										</node>
@@ -221,14 +219,13 @@
 					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h6126105877944e30825a4ebd7e0d5e01af5b" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="hb491ff5ee47b4220a2012ebe2ca08a2208ad" version="1" />
 					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
 					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Adamant_Oil_A" />
 					<attribute id="Stats" type="FixedString" value="KELA_Oil_Adamant_Temper" />
 					<attribute id="Tooltip" type="uint8" value="2" />
-					<attribute id="BookType" type="uint8" value="1" />
 					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
 					<attribute id="DropSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
 					<attribute id="PickupSound" type="FixedString" value="c07d7d7b-78c1-3173-4250-df729da5276a" />
@@ -269,7 +266,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source)" />
+											<attribute id="Conditions" type="LSString" value="" />
 											<attribute id="Consume" type="bool" value="true" />
 											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Adamant" />
 										</node>
@@ -290,14 +287,13 @@
 					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h7242b38a58cc4c43a99ec78f688edf8e0528" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="h1886689486f04a1fb1de9bb0e9e427e341c8" version="1" />
-					<attribute id="TechnicalDescriptionParams" type="LSString" value="13;2" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
 					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Adamant_Oil_A" />
 					<attribute id="Stats" type="FixedString" value="KELA_Oil_Adamant_Temper_Ideal" />
 					<attribute id="Tooltip" type="uint8" value="2" />
-					<attribute id="BookType" type="uint8" value="1" />
 					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
 					<attribute id="DropSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
 					<attribute id="PickupSound" type="FixedString" value="c07d7d7b-78c1-3173-4250-df729da5276a" />
@@ -338,7 +334,7 @@
 									<children>
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and CharacterLevelGreaterThan(6, context.Source)" />
+											<attribute id="Conditions" type="LSString" value="" />
 											<attribute id="Consume" type="bool" value="true" />
 											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Adamant_Ideal" />
 										</node>
@@ -348,6 +344,286 @@
 						</node>
 					</children>
 				</node>				
+
+
+				<!-- Инфернальное масло для закаливания -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="d06d6c03-f0a1-4490-92e3-2409aa3d0b0a" />
+					<attribute id="Name" type="LSString" value="KELA_Oil_Infernal_Temper" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h75042402d58c453ab265bf7ea6f7dfce5ae3" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hba40f36288324cec87497bb62dce9a90adcc" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Infernal_Oil_A" />
+					<attribute id="Stats" type="FixedString" value="KELA_Oil_Infernal_Temper" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
+					<attribute id="DropSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
+					<attribute id="PickupSound" type="FixedString" value="c07d7d7b-78c1-3173-4250-df729da5276a" />
+					<attribute id="UseSound" type="FixedString" value="a41724e5-f266-d2bc-f5b7-640a1e9d02db" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="Consume" type="bool" value="true" />
+											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Infernal" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Идеальное инфернальное масло закаливания -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="3e027991-2238-4d1c-a96c-1c902219d177" />
+					<attribute id="Name" type="LSString" value="KELA_Oil_Infernal_Temper_Ideal" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hb5517e65b6ea45eea5562377068ab75a171g" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h56c22647e96f454cb388debd604f7d180da0" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Infernal_Oil_A" />
+					<attribute id="Stats" type="FixedString" value="KELA_Oil_Infernal_Temper_Ideal" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
+					<attribute id="DropSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
+					<attribute id="PickupSound" type="FixedString" value="c07d7d7b-78c1-3173-4250-df729da5276a" />
+					<attribute id="UseSound" type="FixedString" value="a41724e5-f266-d2bc-f5b7-640a1e9d02db" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="Consume" type="bool" value="true" />
+											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Infernal_Ideal" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>		
+
+
+
+				<!-- Каменное масло для закаливания -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="3f0d122e-0c6e-4292-9a3c-2581e0ebe201" />
+					<attribute id="Name" type="LSString" value="KELA_Oil_Stone_Temper" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd5c661349454468985deb8fbd3ea5459b494" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hdc179b738d904e658456983373dd804eggd6" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Stone_Oil_A" />
+					<attribute id="Stats" type="FixedString" value="KELA_Oil_Stone_Temper" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
+					<attribute id="DropSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
+					<attribute id="PickupSound" type="FixedString" value="c07d7d7b-78c1-3173-4250-df729da5276a" />
+					<attribute id="UseSound" type="FixedString" value="a41724e5-f266-d2bc-f5b7-640a1e9d02db" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="Consume" type="bool" value="true" />
+											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Stone" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
+				<!-- Идеальное адамантиновое масло закаливания -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="b72f4f2b-c696-4931-a965-a68aa65354f6" />
+					<attribute id="Name" type="LSString" value="KELA_Oil_Stone_Temper_Ideal" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd17bf26853cc4969946433c689ebf4c4b826" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h72fec0a2c0844de782ff9b4257a53744gg5b" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hee8fa9449d1d4a75844462a32f1dcff7c10g" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Stone_Oil_A" />
+					<attribute id="Stats" type="FixedString" value="KELA_Oil_Stone_Temper_Ideal" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="InventoryMoveSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
+					<attribute id="DropSound" type="FixedString" value="299dcdc3-c9c9-5ba3-2e87-60800daf6ef6" />
+					<attribute id="PickupSound" type="FixedString" value="c07d7d7b-78c1-3173-4250-df729da5276a" />
+					<attribute id="UseSound" type="FixedString" value="a41724e5-f266-d2bc-f5b7-640a1e9d02db" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.05830131 -0.05670664 -0.3319795" />
+									<attribute id="Max" type="fvec3" value="0.05671947 0.08383667 0.3370807" />
+									<attribute id="Radius" type="float" value="0.114147" />
+									<attribute id="Height" type="float" value="0.418184" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="Consume" type="bool" value="true" />
+											<attribute id="SkillID" type="FixedString" value="Target_Use_Weapon_Oil_Stone_Ideal" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>				
+
+
+
+
+
 
 				<!-- Оружейная суссурная смазка -->
 				<node id="GameObjects">
@@ -359,9 +635,9 @@
 					<attribute id="VisualTemplate" type="FixedString" value="92285125-c63a-03b6-fc52-750c53b9489c" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="2103b46a-ea95-2c44-79f0-7e074f9bfc4f" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h31737c72fb2149d0b1d2d8c54d9ec586499d" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="hde9d6f92g4d12g42d6g80b7ga151cbda4d9e" version="1" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="hd501a488ffcd4eebbe6a0756c981c4bd3a15" version="1" />
-					<attribute id="TechnicalDescriptionParams" type="LSString" value="10;13;2" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hde9d6f92g4d12g42d6g80b7ga151cbda4d9e" version="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
 					<attribute id="Icon" type="FixedString" value="Item_CONS_Potion_Sussur_Oil_A" />
 					<attribute id="Stats" type="FixedString" value="KELA_Sussur_Oil" />

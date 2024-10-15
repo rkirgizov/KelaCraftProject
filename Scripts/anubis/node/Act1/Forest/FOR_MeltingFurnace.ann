@@ -248,7 +248,7 @@ game.states.FOR_MeltingFurnace = State{
                 elseif currentStage == "" then
                     helpers.RemoveBurningStatus()
                 end
-            elseif e.Level == "SCL_Main_A" then
+            elseif e.Level == "BGO_Main_A" or e.Level == "SCL_Main_A" or e.Level == "CTY_LowerCity_A" or e.Level == "CTY_Main_A" then
                 if not HasActiveStatus(me, "BURNING") then
                     ApplyStatus(me, "BURNING", true, -1.0)
                 end

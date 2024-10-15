@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="4" revision="0" build="200"/>
+    <region id="ConditionErrors">
+        <node id="root">
+            <children>
+                <!-- Алхимические рецепты -->
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hee80303755c64427983ef2560dcff8254503" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseAlchemyRecipe_False_"/>
+                    <attribute id="UUID" type="guid" value="ceb3d58b-48a2-47fb-afe5-2c263553be3b"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h37834f68e1de47a8b6e93551c18f0d40c943" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseAlchemyRecipe_False_Intelligence"/>
+                    <attribute id="UUID" type="guid" value="775890ba-3342-4bf3-81a7-ca85bf389841"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h2769f1b9bc014591896c4254f7ff05e329g7" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseAlchemyRecipe_False_IntelligenceLaboratory"/>
+                    <attribute id="UUID" type="guid" value="7e7b6c14-1959-47f2-98c8-6a93ebe5cba2"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb1641bf50376428cbdfdaa22de21e8a3e1ag" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseAlchemyRecipe_False_IntelligenceConcentration"/>
+                    <attribute id="UUID" type="guid" value="24acc657-7079-4c96-b842-e00ec11a01c5"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h072ac2161d3c448fa27ae37584dc48318ccf" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseAlchemyRecipe_False_IntelligenceLaboratoryConcentration"/>
+                    <attribute id="UUID" type="guid" value="b043cee6-d3d2-4fc8-9480-e5b78e383478"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hcfb20698fa3b47a8a83db7e64e92428agg7f" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseAlchemyRecipe_False_Laboratory"/>
+                    <attribute id="UUID" type="guid" value="3a06adb5-6d15-43da-bf6d-2f55bf4d9c8a"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0755a06d73e34799898b925d8ee01a1ed172" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseAlchemyRecipe_False_LaboratoryConcentration"/>
+                    <attribute id="UUID" type="guid" value="b11d0b2b-b425-4502-8ad1-d7a358ec7df0"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h86ec3792f4434625ad6897327c436cea2434" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseAlchemyRecipe_False_Concentration"/>
+                    <attribute id="UUID" type="guid" value="64168029-0135-40bc-984e-740dfb0fce4a"/>
+                </node>
+                <!-- Кузнечные чертежи -->
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hee80303755c64427983ef2560dcff8254503" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseForgeTools_False_"/>
+                    <attribute id="UUID" type="guid" value="950adb09-208b-49be-9e11-6b2f26f82fc8"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="he92a971c691545c68a1c634e90f95e13aegb" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseForgeTools_False_Blacksmith"/>
+                    <attribute id="UUID" type="guid" value="b8d5da36-f4c8-401a-8953-2543559a8e23"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb0381a232c434bf0a3b50e1065d36a9a161g" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseForgeTools_False_Level"/>
+                    <attribute id="UUID" type="guid" value="6772f63a-31c1-4ce1-9b3d-d68a6a249eb2"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h695b6d176daa4b65827dff2c2b707499g264" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseForgeTools_False_LevelForge"/>
+                    <attribute id="UUID" type="guid" value="cbf4f988-8447-4782-9b10-26c942d658b2"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h26475e360af54598aa40e5f20b92556815da" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseForgeTools_False_LevelConcentration"/>
+                    <attribute id="UUID" type="guid" value="167f7286-0376-43f3-a976-1cdf6ea60a1e"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hce78f800c0294edbb41c98181cd5bb1073da" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseForgeTools_False_LevelForgeConcentration"/>
+                    <attribute id="UUID" type="guid" value="dd8b175f-f1b5-4618-9ea2-e7295047a96c"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha9ccb2e5d06b430e986ef09d0cb667ff3cga" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseForgeTools_False_Forge"/>
+                    <attribute id="UUID" type="guid" value="80af23c0-31f7-44e4-b7f7-af7c97a8feb7"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb6e7b036179a4955bf61f89c952bfc34428g" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseForgeTools_False_ForgeConcentration"/>
+                    <attribute id="UUID" type="guid" value="2beb63f3-4dc8-43e5-9803-bb50944c6549"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="he85ed2410e74450c9217c6cae0c396f9fdbe" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseForgeTools_False_Concentration"/>
+                    <attribute id="UUID" type="guid" value="b6a380c5-6b18-4495-80b5-ec062ee2fa16"/>
+                </node>
+                <!-- Столярный верстак -->
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hee80303755c64427983ef2560dcff8254503" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWorkbenchDraft_False_"/>
+                    <attribute id="UUID" type="guid" value="eb7553e1-81cf-41aa-b76e-02a52b754c63"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hbe854868ed814f4b82552241d2b62bb19gg5" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWorkbenchDraft_False_CanUseWorkbench"/>
+                    <attribute id="UUID" type="guid" value="9f7ebb5b-29da-4b29-940f-b6c7fc8e59fd"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h8ad976c223cb4c9eb6089465f2c130350b3d" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWorkbenchDraft_False_Level"/>
+                    <attribute id="UUID" type="guid" value="3dadf19b-ab29-452a-9095-6d4a77326ff3"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h779477547f29429a93db389e6ecf1439dg27" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWorkbenchDraft_False_LevelWorkbench"/>
+                    <attribute id="UUID" type="guid" value="71c8af3f-8d12-4165-bb20-4bb22a0a30b7"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb2a0639cd4b048d5aa58856c41492e0eegc0" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWorkbenchDraft_False_LevelConcentration"/>
+                    <attribute id="UUID" type="guid" value="f3e9952d-5f83-46a4-ac2a-0c32dd6b2043"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc4a20dc6975949738c979bbec54cb4cd1430" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWorkbenchDraft_False_LevelWorkbenchConcentration"/>
+                    <attribute id="UUID" type="guid" value="59c3a041-f537-4c1d-aecd-76538f8ae8cd"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hbaa9fec7a2ab4dc0a91b61d0ff35bc5b9bae" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWorkbenchDraft_False_Workbench"/>
+                    <attribute id="UUID" type="guid" value="e2139064-c9a9-4f4d-8e8f-2e5043f1d927"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h22ee26c14ab54d099e16c67e96503dfe2298" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWorkbenchDraft_False_WorkbenchConcentration"/>
+                    <attribute id="UUID" type="guid" value="64ad8c38-623b-46e0-bf2e-051847cd3cb1"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc3876c7e8b354357957e01a1e9897f66gad4" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWorkbenchDraft_False_Concentration"/>
+                    <attribute id="UUID" type="guid" value="b29ab46e-7d07-421f-b314-bba352d6e656"/>
+                </node>
+                <!-- Стадии кузницы -->
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha2e0a0f650a042799e8b2ce798ac3c4f89gg" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="IsForgeFirstStage_False"/>
+                    <attribute id="UUID" type="guid" value="4e946b38-a109-43d9-8366-fe28fb8b01eb"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="he0d77825a73a4b4cb6c772dbd30211c7946d" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="IsForgeSecondStage_False"/>
+                    <attribute id="UUID" type="guid" value="53ce02c3-8130-4407-a9ec-dc14e106d900"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h744db3655c3d487cac5c200b8b6849e0bb73" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="IsForgeSussurStage_False"/>
+                    <attribute id="UUID" type="guid" value="b060ee17-3294-4947-9799-b53d6d9f0dc9"/>
+                </node>
+                <!-- Кузнечное масло -->
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3e5d307c10d04fb4946e4713a35e5cf6d584" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CanUseWeaponOil"/>
+                    <attribute id="UUID" type="guid" value="91afa43f-cf0b-46ed-a8b3-d7fece9cf54c"/>
+                </node>
+                <!-- Способности -->
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3e5ea688d80a4afe8cf47f9b1def05295gf2" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="StrengthEqualOrGreaterThan_True"/>
+                    <attribute id="UUID" type="guid" value="39a90ecb-aa21-421d-a28a-93b0902dd703"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3254b79ce288491f84cae053d7d06a2401aa" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="StrengthEqualOrGreaterThan_False"/>
+                    <attribute id="UUID" type="guid" value="01955c8e-4724-4d74-93fb-0a4091b4022d"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
+

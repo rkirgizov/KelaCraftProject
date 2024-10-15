@@ -6,6 +6,151 @@
 			<children>
 
 
+				<!-- Кузница Энглайрона -->
+
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
+
+
+				<!-- Кузнечные меха -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h76b156c156164869b6d1404c8b8a28e25g3g" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h14269a39de00441cbac7af7fe1c1eaf3b9a4" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="hd32c8648gc96eg4ea0g987eg15213bc01bf2" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="BGO_WyrmsCrossing_C" />
+					<attribute id="MapKey" type="FixedString" value="fc64cdfc-726b-45f9-a5c5-02787aacfaec" />
+					<attribute id="Name" type="LSString" value="DEC_GEN_Smith_Bellows_A_000" />
+					<attribute id="TemplateName" type="FixedString" value="9d2a0431-7c4f-49c3-ae69-9179697ea1f9" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209017" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGO_WyrmsCrossing_C" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="00abee45-43f0-1441-c51f-0a82a9943d51" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="feca33df-1c6f-bf0e-4282-e61f3e136959" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="639012d4-c152-cab6-47cb-52c6f8503aa2" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="StatsId" type="FixedString" value="KELA_TRY_BELLOW_CHANGE_FIRE" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="False" />
+											<attribute id="IsHiddenStatus" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-4.625666 49.0452 -45.58787" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9911792 0 -0.1325293" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+				
+				<!-- Угли плавильной печи -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
+					<attribute id="AnubisConfigName" type="FixedString" value="FOR_MeltingFurnace" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsPublicDomain" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="BGO_WyrmsCrossing_C" />
+					<attribute id="MapKey" type="FixedString" value="0ea070e0-8853-4130-841a-67b44a6b5515" />
+					<attribute id="Name" type="LSString" value="LTS_GEN_Smelting_Forge_Stone_A" />
+					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
+					<attribute id="TemplateName" type="FixedString" value="f28577c7-5187-4834-884e-1408af935648" /> origin
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />				
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="BGO_Main_A" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="FixedString" value="d289389c-882d-4695-a8d5-dda2a1351711" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="BurnEffect" />
+													<attribute id="Type" type="int32" value="3" />
+													<attribute id="Value" type="LSString" value="VFX_Environment_Smelting_Forge_Stone_A_01" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-4.815032 49.14584 -42.6146" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.3827114 0 0.9238679" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+
 				<!-- Делаем юзабельными INTERACT_TOOL_Smith_Whetstone_Wheel_B_001, INTERACT_TOOL_Smith_Whetstone_Wheel_B_000 -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
@@ -101,7 +246,6 @@
 						</node>
 					</children>
 				</node>
-
 				<!-- Скрываем -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
@@ -179,6 +323,7 @@
 						</node>
 					</children>
 				</node>
+
 			</children>
 		</node>
 	</region>

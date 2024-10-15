@@ -50,14 +50,14 @@
                    <attribute id="V2" type="float" value="0.25"/> Bottom
                </node>
                <node id="IconUV">
-                   <attribute id="MapKey" type="FixedString" value="MySweetMod_5_Icon"/> 1
+                   <attribute id="MapKey" type="FixedString" value="PassiveFeature_RedHammer_BonusAttack"/> 1
                    <attribute id="U1" type="float" value="0.0"/> Left
                    <attribute id="U2" type="float" value="0.25"/> Right
                    <attribute id="V1" type="float" value="0.25"/> Top
                    <attribute id="V2" type="float" value="0.5"/> Bottom
                </node>
                <node id="IconUV">
-                   <attribute id="MapKey" type="FixedString" value="MySweetMod_6_Icon"/> 2
+                   <attribute id="MapKey" type="FixedString" value="StatusFeature_Kela_DevilsBlacksmithComplect"/> 2
                    <attribute id="U1" type="float" value="0.25"/> Left
                    <attribute id="U2" type="float" value="0.5"/> Right
                    <attribute id="V1" type="float" value="0.25"/> Top

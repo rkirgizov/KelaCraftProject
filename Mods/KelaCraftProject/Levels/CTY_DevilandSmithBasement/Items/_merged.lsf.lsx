@@ -5,6 +5,211 @@
 		<node id="Templates">
 			<children>
 
+
+
+				<!-- Сейф в подвале дьявольской кузни -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h9f7c4ed0gd0cbg4a84g863dgff21c6c64add" version="3" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="GroupID" type="uint32" value="45392" />
+					<attribute id="Key" type="FixedString" value="NO_KEY" />
+					<attribute id="LevelName" type="FixedString" value="CTY_DevilandSmithBasement" />
+					<attribute id="LockDifficultyClassID" type="guid" value="60916b01-ba4c-418e-9f30-19a669704b4d" />
+					<attribute id="MapKey" type="FixedString" value="8e33a5c2-5aa7-466e-af57-5ae86a2b9ba7" />
+					<attribute id="Name" type="LSString" value="CTY_DevilandSmith_BasementSafe" />
+					<attribute id="SeeThrough" type="bool" value="True" />
+					<attribute id="TemplateName" type="FixedString" value="6091d0b3-8619-4a32-965c-c01d454d0205" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="TRE_DevilandSmith_BasementSafe" />
+								</node>
+							</children>
+						</node>
+						<node id="ItemList">
+							<children>
+								<node id="Item">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="Amount" type="int32" value="2" />
+									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsTradable" type="uint8" value="0" />
+									<attribute id="ItemName" type="LSString" value="LOOT_SoulCoin" />
+									<attribute id="LevelName" type="LSString" value="" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="TemplateID" type="FixedString" value="8c68e68d-96d4-45d6-804c-5f31ac948ff3" />
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="UUID" type="FixedString" value="" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_DevilandSmithBasement" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="36a76231-1734-c345-ad84-73d27a0132e8" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="INVISIBLE" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="5.465571 3.46454 -3.185986" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.6" />
+						</node>
+					</children>
+				</node>				
+
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
+
+
+				<!-- Плакат для сейфа -->
+				<node id="GameObjects">
+					<attribute id="ConstellationConfigName" type="FixedString" value="PerceptionHelper" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="GravityType" type="uint8" value="2" />
+					<attribute id="LevelName" type="FixedString" value="CTY_DevilandSmithBasement" />
+					<attribute id="MapKey" type="FixedString" value="78260809-e948-4ae1-8060-a3fd7d8ba3b5" />
+					<attribute id="Name" type="LSString" value="BOOK_GEN_Paper_Poster_E_100" />
+					<attribute id="SeeThrough" type="bool" value="True" />
+					<attribute id="TemplateName" type="FixedString" value="e13a8888-ca85-452b-b75d-a9f78f2e45c4" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209030" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_DevilandSmithBasement" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="36a76231-1734-c345-ad84-73d27a0132e8" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="ConstellationConfigGlobalParameters">
+							<children>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="MaxRadius" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="double">
+																	<attribute id="double" type="double" value="3" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="DC" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<!-- <attribute id="String" type="LSString" value="HiddenPerception_Easy_10a7c9ba-bc09-4c30-8cfc-ce0c6766fac7" /> -->
+																	<attribute id="String" type="LSString" value="HiddenPerception_Medium_cd1800ab-1b11-4c7a-9f50-fdeb8d35481f" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Type" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Highlight" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="5.445571 3.76454 -3.267986" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.01770728 0.706885 0.706885 -0.01770728" />
+							<attribute id="Scale" type="float" value="1.3" />
+						</node>
+					</children>
+				</node>
+
+
+
+
+
 				<!-- Маркер лаборатории -->
 				<node id="GameObjects">
 					<attribute id="LevelName" type="FixedString" value="CTY_DevilandSmithBasement" /> LEVEL NAME

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+
+				<!-- Прячем угли плавильной печи Даммона -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="HLOD" type="guid" value="f5d31dd5-d07d-f730-c006-0e7c2a51840f" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="dcb7b243-de2a-4c90-aa9f-2c1ffcb2589d" />
+					<attribute id="Name" type="LSString" value="S_LOW_DiabolicForge_ForgeCoal" />
+					<attribute id="TemplateName" type="FixedString" value="04b2473c-6968-46d3-a65c-11e8f2509eae" />
+					<attribute id="Type" type="FixedString" value="scenery" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209022" />
+					<children>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="2.468 40.45935 -2.035449" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.3891058 0 0.9211932" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+
+
+				<!-- Прячем угли плавильной печи кузни у стены -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="HLOD" type="guid" value="faaeb021-a0fe-0c45-3cfe-a14f3f9a15f3" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="89b1fd19-9f33-43be-afc9-976a9784ada7" />
+					<attribute id="Name" type="LSString" value="DEC_GOB_Camp_Grill_A_Coals_A_000" />
+					<attribute id="TemplateName" type="FixedString" value="04b2473c-6968-46d3-a65c-11e8f2509eae" />
+					<attribute id="Type" type="FixedString" value="scenery" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403208706" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-47.76466 24.42834 -77.05181" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.004" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="HLOD" type="guid" value="faaeb021-a0fe-0c45-3cfe-a14f3f9a15f3" />
+					<attribute id="LevelName" type="FixedString" value="CTY_LowerCity_A" />
+					<attribute id="MapKey" type="FixedString" value="9ac111c4-0c8f-4ffb-bec3-a62b8d6bf14d" />
+					<attribute id="Name" type="LSString" value="DEC_GOB_Camp_Grill_A_Coals_A_001" />
+					<attribute id="TemplateName" type="FixedString" value="04b2473c-6968-46d3-a65c-11e8f2509eae" />
+					<attribute id="Type" type="FixedString" value="scenery" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403208706" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CTY_LowerCity_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="41817aba-2c24-02aa-f8c8-69b9704c5513" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-48.71036 24.36816 -77.05181" />
+							<attribute id="RotationQuat" type="fvec4" value="0 1 0 2.980235E-08" />
+							<attribute id="Scale" type="float" value="0.004" />
+						</node>
+					</children>
+				</node>
+
+
+
+
+
+
+			</children>
+		</node>
+	</region>
+</save>

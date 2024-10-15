@@ -141,68 +141,6 @@
 					</children>
 				</node>
 
-				<!-- <node id="Transform"> -->
-				<!-- Position -->
-				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
-				<!-- Rotation -->
-				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
-
-				<!-- Угли для кузницы Даммона -->
-				<node id="GameObjects">
-					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
-					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
-					<attribute id="AnubisConfigName" type="FixedString" value="FOR_MeltingFurnace" />
-					<attribute id="Flag" type="int32" value="1" />
-					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
-					<attribute id="MapKey" type="FixedString" value="81951740-d4f0-4e02-98c8-e6769731f3a9" />
-					<attribute id="Name" type="LSString" value="HAV_Forge_Dammon" />
-					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
-					<!-- <attribute id="TemplateName" type="FixedString" value="f28577c7-5187-4834-884e-1408af935648" /> -->
-					<attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" /> origin
-					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />				
-					<children>
-						<node id="LayerList">
-							<children>
-								<node id="Layers">
-									<children>
-										<node id="Object">
-											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
-											<children>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="5155fad3-4d34-3798-f8ca-8a7942d22a05" />
-												</node>
-												<node id="Layer">
-													<attribute id="Object" type="guid" value="157cc332-d964-3e9f-38d4-63524bb4b6d3" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="OnUsePeaceActions">
-							<children>
-								<node id="Action">
-									<attribute id="ActionType" type="int32" value="8" />
-									<children>
-										<node id="Attributes">
-											<attribute id="Animation" type="FixedString" value="" />
-											<attribute id="Conditions" type="LSString" value="" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts" />
-						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="-36.17939 27.91 166.1242" />
-							<attribute id="RotationQuat" type="fvec4" value="0 -0.99 0 -0.3287684" />
-							<attribute id="Scale" type="float" value="0.42" />
-						</node>
-					</children>
-				</node>
-
 
 				<!-- Новая юзабельная наковальня Даммона -->
 				<node id="GameObjects">
@@ -403,6 +341,54 @@
 						</node>
 					</children>
 				</node>
+
+
+				<!-- Дебажный сундук для спавна -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="SCL_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="7fa51f96-94ca-457c-a2d1-5d7b050a6012" />
+					<attribute id="Name" type="LSString" value="SCL_KELA_DEBUG_Chest" />
+					<attribute id="TemplateName" type="FixedString" value="0e600db2-aa76-4c98-b4d5-a55c0853e7f1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="KELA_DEBUG_Supply" />
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5155fad3-4d34-3798-f8ca-8a7942d22a05" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="157cc332-d964-3e9f-38d4-63524bb4b6d3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-24.34295 27.31766 164.3923" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.5410503 0 0.8409754" />
+							<attribute id="Scale" type="float" value="0.8" />
+						</node>
+					</children>
+				</node>
+
+
 
 
 				<!-- Дом целителей -->

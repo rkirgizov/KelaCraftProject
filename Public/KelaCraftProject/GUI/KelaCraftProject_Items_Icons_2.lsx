@@ -22,14 +22,14 @@
        <node id="root">
            <children>
                <node id="IconUV">
-                   <attribute id="MapKey" type="FixedString" value="Item_UNI_LOOT_Forge_Kela_LightHammer_A"/> 1
+                   <attribute id="MapKey" type="FixedString" value="Item_BOOK_GEN_Draft_Armor_Medium"/> 1
                    <attribute id="U1" type="float" value="0.0"/> Left
                    <attribute id="U2" type="float" value="0.25"/> Right
                    <attribute id="V1" type="float" value="0.0"/> Top
                    <attribute id="V2" type="float" value="0.25"/> Bottom
                </node>
                <node id="IconUV">
-                   <attribute id="MapKey" type="FixedString" value="MySweetMod_2_Icon"/> 2
+                   <attribute id="MapKey" type="FixedString" value="Item_BOOK_GEN_Draft_HeavyCrossbow"/> 2
                    <attribute id="U1" type="float" value="0.25"/> Left
                    <attribute id="U2" type="float" value="0.5"/> Right
                    <attribute id="V1" type="float" value="0.0"/> Top

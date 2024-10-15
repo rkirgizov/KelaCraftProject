@@ -1,6 +1,52 @@
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
+// Статусы для описания предметов
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+new entry "KELA_POTION_OF_HEALING"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "KELA_POTION_OF_HEALING"
+    data "DisplayName" "haab1153e73bf4adbb7f194e50cae9d75gb39;1"
+    data "Description" "h0de9c62cc8b344e3ae9caff890c413ccf3de;1"
+new entry "KELA_METALBAR_GOLD"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "KELA_METALBAR_GOLD"
+    data "DisplayName" "h421b0016g619dg4f89gb4bcgfb0ab0d671c6;1"
+    data "Description" "hac5880008caf4c8e9e20822391625cdf8a2a;1"
+new entry "KELA_ITEM_ANVIL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "KELA_ITEM_ANVIL"
+    data "DisplayName" "h0f82f172gfa21g417agbcbcgced27f93de29;1"
+    data "Description" "hcd87c806g2b79g4088ga2fegfb70a9dfd982;1"
+new entry "KELA_ITEM_WHETSTONE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "KELA_ITEM_WHETSTONE"
+    data "DisplayName" "h85bd1eb56bff434484865d96e4fac326541a;1"
+    data "Description" "hbfefff07gb289g4128gae31gbd1f6d906b80;1"
+new entry "KELA_ITEM_WORKBENCH"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "KELA_ITEM_WORKBENCH"
+    data "DisplayName" "h030678cff0b84fb0bc43715940fa5803dg5b;1"
+    data "Description" "h6bd5fffef4cc45638cc227c817e365bfc55b;1"
+new entry "KELA_BLACKSMITH_FORGE_AURA"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "DisplayName" "h207aba440bcb4b27af5efa439154dd3c68cb;1"
+    data "Description" "h44cfce477cdc467a906a37d046f9f909472d;1"
+    data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+    data "StackId" "KELA_BLACKSMITH_FORGE_AURA"
+
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
 // Алхимия
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
@@ -11,8 +57,8 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "KELA_LABORATORY_AURA"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
-data "AuraRadius" "10"
-data "AuraStatuses" "TARGET:IF(Character() and AbilityGreaterThan('Intelligence',12)):ApplyStatus(KELA_LABORATORY_AURA_ACTIVE)"
+data "AuraRadius" "7"
+data "AuraStatuses" "TARGET:IF(Character() and Party()):ApplyStatus(KELA_LABORATORY_AURA_ACTIVE)"
 
 new entry "KELA_LABORATORY_AURA_ACTIVE"
 type "StatusData"
@@ -22,6 +68,7 @@ data "DisplayName" "hde737bfb31a14f60a0895cc0683c1c31c8fc;1"
 data "Description" "hd3b46269c355406fa1efb3e043909a89gd2d;1"
 data "StackId" "KELA_LABORATORY_AURA_ACTIVE"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
+
 
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
@@ -41,6 +88,34 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
+
+new entry "KELA_WHETSTONE_AURA"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "KELA_WHETSTONE_AURA"
+    data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+    data "AuraRadius" "7"
+    data "AuraStatuses" "IF(Character() and Party()):ApplyStatus(KELA_BLACKSMITH_FORGE_WHETSTONE_AURA,100,-1)"
+
+new entry "KELA_BLACKSMITH_FORGE_WHETSTONE_AURA"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+    data "StackId" "KELA_BLACKSMITH_FORGE_WHETSTONE_AURA"
+
+new entry "KELA_WORKBENCH_AURA"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "KELA_WORKBENCH_AURA"
+    data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+    data "AuraRadius" "7"
+    data "AuraStatuses" "IF(Party() and (HasPassive('PassiveFeature_KelaBlacksmith') or HasPassive('Background_GuildArtisan') or Tagged('DROWELF') or Tagged('ELF'))):ApplyStatus(KELA_BLACKSMITH_FORGE_WORKBENCH_AURA,100,-1)"
+
+new entry "KELA_BLACKSMITH_FORGE_WORKBENCH_AURA"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+    data "StackId" "KELA_BLACKSMITH_FORGE_WORKBENCH_AURA"
 
 // ------------------------------------------------------------------------
 // Подготовка точильного камня / наковальни / ремесленного стола
@@ -67,11 +142,11 @@ data "StatusType" "BOOST"
 data "StatusPropertyFlags" "ForceOverhead"
 data "DisplayName" "h978bffa6g12f7g4051ga9a4g081b6c881fcb;1"
 data "Description" "h87cab18age3a8g4df2ga923gf0371e9e7a5d;1"
-data "DescriptionParams" "13;2"
+data "DescriptionParams" ""
 data "Icon" "Item_CONS_Potion_Sussur_Oil_A"
 data "StackId" "KELA_WEAPON_OIL_USED_SUSSUR"
 data "RemoveEvents" "OnStatusApplied"
-data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL')"
+data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_STONE') or HasStatus('KELA_WEAPON_OIL_USED_STONE_IDEAL')"
 
 new entry "KELA_WEAPON_OIL_USED_SUSSUR_IDEAL"
 type "StatusData"
@@ -79,11 +154,11 @@ data "StatusType" "BOOST"
 data "StatusPropertyFlags" "ForceOverhead"
 data "DisplayName" "h6c8162d4b4c34e55b42d89be03eef2bc1ab5;1"
 data "Description" "h463a7aa3aa2444dd9b5ff17e94b5b1ebf7be;1"
-data "DescriptionParams" "13;2"
+data "DescriptionParams" ""
 data "Icon" "Item_CONS_Potion_Sussur_Oil_A"
 data "StackId" "KELA_WEAPON_OIL_USED_SUSSUR_IDEAL"
 data "RemoveEvents" "OnStatusApplied"
-data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL')"
+data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_STONE') or HasStatus('KELA_WEAPON_OIL_USED_STONE_IDEAL')"
 
 new entry "KELA_WEAPON_OIL_USED_ADAMANT"
 type "StatusData"
@@ -95,7 +170,7 @@ data "DescriptionParams" ""
 data "Icon" "Item_CONS_Potion_Adamant_Oil_A"
 data "StackId" "KELA_WEAPON_OIL_USED_ADAMANT"
 data "RemoveEvents" "OnStatusApplied"
-data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL')"
+data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_STONE') or HasStatus('KELA_WEAPON_OIL_USED_STONE_IDEAL')"
 
 new entry "KELA_WEAPON_OIL_USED_ADAMANT_IDEAL"
 type "StatusData"
@@ -107,7 +182,55 @@ data "DescriptionParams" ""
 data "Icon" "Item_CONS_Potion_Adamant_Oil_A"
 data "StackId" "KELA_WEAPON_OIL_USED_ADAMANT_IDEAL"
 data "RemoveEvents" "OnStatusApplied"
-data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT')"
+data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_STONE') or HasStatus('KELA_WEAPON_OIL_USED_STONE_IDEAL')"
+
+new entry "KELA_WEAPON_OIL_USED_INFERNAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "ForceOverhead"
+data "DisplayName" "h75042402d58c453ab265bf7ea6f7dfce5ae3;1"
+data "Description" "hba40f36288324cec87497bb62dce9a90adcc;1"
+data "DescriptionParams" ""
+data "Icon" "Item_CONS_Potion_Infernal_Oil_A"
+data "StackId" "KELA_WEAPON_OIL_USED_INFERNAL"
+data "RemoveEvents" "OnStatusApplied"
+data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_STONE') or HasStatus('KELA_WEAPON_OIL_USED_STONE_IDEAL')"
+
+new entry "KELA_WEAPON_OIL_USED_INFERNAL_IDEAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "ForceOverhead"
+data "DisplayName" "hb5517e65b6ea45eea5562377068ab75a171g;1"
+data "Description" "h56c22647e96f454cb388debd604f7d180da0;1"
+data "DescriptionParams" ""
+data "Icon" "Item_CONS_Potion_Infernal_Oil_A"
+data "StackId" "KELA_WEAPON_OIL_USED_INFERNAL_IDEAL"
+data "RemoveEvents" "OnStatusApplied"
+data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL') or HasStatus('KELA_WEAPON_OIL_USED_STONE') or HasStatus('KELA_WEAPON_OIL_USED_STONE_IDEAL')"
+
+new entry "KELA_WEAPON_OIL_USED_STONE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "ForceOverhead"
+data "DisplayName" "hd5c661349454468985deb8fbd3ea5459b494;1"
+data "Description" "hdc179b738d904e658456983373dd804eggd6;1"
+data "DescriptionParams" ""
+data "Icon" "Item_CONS_Potion_Stone_Oil_A"
+data "StackId" "KELA_WEAPON_OIL_USED_STONE"
+data "RemoveEvents" "OnStatusApplied"
+data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_STONE_IDEAL')"
+
+new entry "KELA_WEAPON_OIL_USED_STONE_IDEAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "ForceOverhead"
+data "DisplayName" "hd17bf26853cc4969946433c689ebf4c4b826;1"
+data "Description" "h72fec0a2c0844de782ff9b4257a53744gg5b;1"
+data "DescriptionParams" ""
+data "Icon" "Item_CONS_Potion_Stone_Oil_A"
+data "StackId" "KELA_WEAPON_OIL_USED_STONE_IDEAL"
+data "RemoveEvents" "OnStatusApplied"
+data "RemoveConditions" "HasStatus('KELA_WEAPON_OIL_USED_SUSSUR') or HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT') or HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL')  HasStatus('KELA_WEAPON_OIL_USED_INFERNAL') or HasStatus('KELA_WEAPON_OIL_USED_INFERNAL_IDEAL') or HasStatus('KELA_WEAPON_OIL_USED_STONE')"
 
 // ------------------------------------------------------------------------
 // Уменьшение длительности действия масла
@@ -124,14 +247,21 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
 data "StackId" "KELA_WEAPON_OIL_USED_REDUCE_3"
-data "OnApplyFunctors" "IF(HasStatus('KELA_WEAPON_OIL_USED_SIMPLE')):SetStatusDuration(KELA_WEAPON_OIL_USED_SIMPLE,-3,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_SUSSUR')):SetStatusDuration(KELA_WEAPON_OIL_USED_SUSSUR,-3,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_ADAMANT')):SetStatusDuration(KELA_WEAPON_OIL_USED_ADAMANT,-3,Add)"
+data "OnApplyFunctors" "IF(HasStatus('KELA_WEAPON_OIL_USED_SIMPLE')):SetStatusDuration(KELA_WEAPON_OIL_USED_SIMPLE,-3,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_SUSSUR')):SetStatusDuration(KELA_WEAPON_OIL_USED_SUSSUR,-3,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_ADAMANT')):SetStatusDuration(KELA_WEAPON_OIL_USED_ADAMANT,-3,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_INFERNAL')):SetStatusDuration(KELA_WEAPON_OIL_USED_INFERNAL,-3,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_STONE')):SetStatusDuration(KELA_WEAPON_OIL_USED_STONE,-3,Add)"
 
 new entry "KELA_WEAPON_OIL_USED_REDUCE_5"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
 data "StackId" "KELA_WEAPON_OIL_USED_REDUCE_5"
-data "OnApplyFunctors" "IF(HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL')):SetStatusDuration(KELA_WEAPON_OIL_USED_SUSSUR_IDEAL,-5,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL')):SetStatusDuration(KELA_WEAPON_OIL_USED_ADAMANT_IDEAL,-5,Add)"
+data "OnApplyFunctors" "IF(HasStatus('KELA_WEAPON_OIL_USED_SUSSUR')):SetStatusDuration(KELA_WEAPON_OIL_USED_SUSSUR,-5,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_ADAMANT')):SetStatusDuration(KELA_WEAPON_OIL_USED_ADAMANT,-5,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_INFERNAL')):SetStatusDuration(KELA_WEAPON_OIL_USED_INFERNAL,-5,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_STONE')):SetStatusDuration(KELA_WEAPON_OIL_USED_STONE,-5,Add)"
+
+new entry "KELA_WEAPON_OIL_USED_REDUCE_7"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisablePortraitIndicator;DisableCombatlog"
+data "StackId" "KELA_WEAPON_OIL_USED_REDUCE_7"
+data "OnApplyFunctors" "IF(HasStatus('KELA_WEAPON_OIL_USED_SUSSUR_IDEAL')):SetStatusDuration(KELA_WEAPON_OIL_USED_SUSSUR_IDEAL,-7,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_ADAMANT_IDEAL')):SetStatusDuration(KELA_WEAPON_OIL_USED_ADAMANT_IDEAL,-7,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_INFERNAL_IDEAL')):SetStatusDuration(KELA_WEAPON_OIL_USED_INFERNAL_IDEAL,-7,Add);IF(HasStatus('KELA_WEAPON_OIL_USED_STONE_IDEAL')):SetStatusDuration(KELA_WEAPON_OIL_USED_STONE_IDEAL,-7,Add)"
 
 // ------------------------------------------------------------------------
 // Оружие обработано (общий технический признак)
@@ -176,10 +306,7 @@ data "StackId" "KELA_WEAPON_UPGRADE_BY_LEVEL"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "AuraRadius" "3"
 data "AuraStatuses" "TARGET:IF(Item() and (Tagged('KELAWHETSTONE') or Tagged('KELAANVIL') or Tagged('WORKBENCH'))):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_3,100,0)"
-// data "OnApplyFunctors" "IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and CharacterLevelGreaterThan(4, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_10,100,0)"
-data "OnApplyFunctors" "IF(not HasPassive('PassiveFeature_KelaBlacksmith', context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_15,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and not CharacterLevelGreaterThan(5, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_12,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and CharacterLevelGreaterThan(5, context.Target) and not CharacterLevelGreaterThan(6, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_10,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and CharacterLevelGreaterThan(6, context.Target) and not CharacterLevelGreaterThan(7, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_8,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and CharacterLevelGreaterThan(7, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_6,100,0)"
-
-HasPassive('PassiveFeature_KelaBlacksmith', context.Source) and CharacterLevelGreaterThan(6, context.Source)
+data "OnApplyFunctors" "IF(not HasPassive('PassiveFeature_KelaBlacksmith', context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_15,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and not CharacterLevelGreaterThan(4, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_12,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and CharacterLevelGreaterThan(4, context.Target) and not CharacterLevelGreaterThan(6, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_10,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and CharacterLevelGreaterThan(6, context.Target) and not CharacterLevelGreaterThan(8, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_8,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and CharacterLevelGreaterThan(8, context.Target) and not CharacterLevelGreaterThan(10, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_6,100,0);IF(HasPassive('PassiveFeature_KelaBlacksmith', context.Target) and CharacterLevelGreaterThan(10, context.Target)):ApplyStatus(KELA_WEAPON_UPGRADE_OIL_4,100,0)"
 
 // Заточка без масла: только обычная заточка
 new entry "KELA_WEAPON_UPGRADE_WITHOUT_OIL_18"
@@ -210,7 +337,7 @@ data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 15)"
 data "OnApplySuccess" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_SIMPLE, 100, -1)"
 data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
-// Есть черта Кузнец, по 5 уровень: только обычная заточка
+// Есть черта Кузнец, 4 уровень: только обычная заточка
 new entry "KELA_WEAPON_UPGRADE_OIL_12"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -225,7 +352,7 @@ data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 12)"
 data "OnApplySuccess" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_SIMPLE, 100, -1)"
 data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
-// Есть черта Кузнец, 6 уровень: обычная и профи заточка 
+// Есть черта Кузнец, 5-6 уровень: обычная и профи заточка 
 new entry "KELA_WEAPON_UPGRADE_OIL_10"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -240,7 +367,7 @@ data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 10)"
 data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_PROFI, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_SIMPLE, 100, -1)"
 data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
-// Есть черта Кузнец, 7 уровень: профи и экспертная заточка 
+// Есть черта Кузнец, 7-8 уровень: профи и экспертная заточка 
 new entry "KELA_WEAPON_UPGRADE_OIL_8"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -255,7 +382,7 @@ data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 8)"
 data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_EXPERT, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_PROFI, 100, -1)"
 data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
 
-// Есть черта Кузнец, с 8 уровня: экспертная и мастерская заточка 
+// Есть черта Кузнец, 9-10 уровень: экспертная и мастерская заточка 
 new entry "KELA_WEAPON_UPGRADE_OIL_6"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -269,6 +396,22 @@ data "TooltipSave" "Dexterity"
 data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 6)"
 data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_MASTER, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_EXPERT, 100, -1)"
 data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
+
+// Есть черта Кузнец, с 11 уровня: мастерская заточка и заточка великого мастера
+new entry "KELA_WEAPON_UPGRADE_OIL_4"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hbd846f350c62433cb60c39a7096b9bffc0cf;1"
+data "Description" "h2edb5a6d04ef49b7bc87b66c144e18136dc0;1"
+data "DescriptionParams" "4"
+data "StackId" "KELA_WEAPON_UPGRADE_OIL_4"
+// data "StatusPropertyFlags" "ForceOverhead;DisablePortraitIndicator"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "TooltipSave" "Dexterity"
+data "OnApplyRoll" "SavingThrow(Ability.Dexterity, 4)"
+data "OnApplySuccess" "IF(IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_GREATMASTER, 100, -1);IF(not IsProficientWith(context.Target, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_MASTER, 100, -1)"
+data "OnApplyFail" "ApplyEquipmentStatus(MainHand, KELA_WEAPON_UPGRADED_BAD, 100, -1)"
+
 
 new entry "KELA_WEAPON_UPGRADED_SIMPLE"
 type "StatusData"
@@ -322,6 +465,19 @@ data "TooltipDamage" "DealDamage(3, Piercing)"
 data "Boosts" "WeaponAttackRollBonus(2);IF(IsDamageTypeSlashing()):WeaponDamage(3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(3,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(3,Bludgeoning)"
 data "OnApplyFunctors" "ApplyStatus(KELA_WEAPON_UPGRADED,100,-1);IF(HasPassive('Background_GuildArtisan', GetOwner(context.Target))):ApplyStatus(KELA_GUILD_ARTISAN_BONUS, 100, -1)"
 
+new entry "KELA_WEAPON_UPGRADED_GREATMASTER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
+data "StackId" "KELA_WEAPON_UPGRADED_GREATMASTER"
+data "Icon" "Tooltip_Upgraded_Good"
+data "DisplayName" "hbe8a5c3796c6404dbbf50e8edf0037a1eag5;1"
+data "Description" "hacd9e5c1g7238g46c8gae66gabaf8658d06b;1"
+data "DescriptionParams" "3;3"
+data "TooltipDamage" "DealDamage(3, Piercing)"
+data "Boosts" "WeaponAttackRollBonus(3);IF(IsDamageTypeSlashing()):WeaponDamage(3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(3,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(3,Bludgeoning)"
+data "OnApplyFunctors" "ApplyStatus(KELA_WEAPON_UPGRADED,100,-1);IF(HasPassive('Background_GuildArtisan', GetOwner(context.Target))):ApplyStatus(KELA_GUILD_ARTISAN_BONUS, 100, -1)"
+
 new entry "KELA_WEAPON_UPGRADED_BAD"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -340,10 +496,10 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "h870ca004dd7141b5ad33d8f889500a6a0ad0;1"
 data "Description" "h11f3882be1c6455187e2ea7cd83be7db7935;1"
-data "DescriptionParams" "1"
+data "DescriptionParams" "2"
 data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
 data "Icon" "Guild_Artisan_Bonus"
-data "Boosts" "WeaponAttackRollBonus(1)"
+data "Boosts" "WeaponAttackRollBonus(2)"
 data "StackId" "KELA_GUILD_ARTISAN_BONUS"
 
 // ------------------------------------------------------------------------
@@ -355,7 +511,7 @@ data "StatusType" "BOOST"
 data "StackId" "KELA_WEAPON_OIL_SUSSUR_TEMPER"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "AuraRadius" "3"
-data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_3,100,0)"
+data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_5,100,0)"
 data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_SUSSUR_OIL_TEMPERED_WEAPON, 100, -1)"
 // ------------------------------------------------------------------------
 // ИДЕАЛЬНАЯ Закалка/пропитка маслом с суссуром
@@ -366,7 +522,7 @@ data "StatusType" "BOOST"
 data "StackId" "KELA_WEAPON_OIL_SUSSUR_IDEAL_TEMPER"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "AuraRadius" "3"
-data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_5,100,0)"
+data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_7,100,0)"
 data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_SUSSUR_OIL_TEMPERED_WEAPON_IDEAL, 100, -1)"
 
 // ------------------------------------------------------------------------
@@ -378,7 +534,7 @@ data "StatusType" "BOOST"
 data "StackId" "KELA_WEAPON_OIL_ADAMANT_TEMPER"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "AuraRadius" "3"
-data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_3,100,0)"
+data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_5,100,0)"
 data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_ADAMANT_OIL_TEMPERED_WEAPON, 100, -1)"
 // ------------------------------------------------------------------------
 // ИДЕАЛЬНАЯ Закалка/пропитка маслом с адамантином
@@ -389,8 +545,54 @@ data "StatusType" "BOOST"
 data "StackId" "KELA_WEAPON_OIL_ADAMANT_IDEAL_TEMPER"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "AuraRadius" "3"
-data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_5,100,0)"
+data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_7,100,0)"
 data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL, 100, -1)"
+
+// ------------------------------------------------------------------------
+// Закалка/пропитка инфернальным маслом 
+// ------------------------------------------------------------------------
+new entry "KELA_WEAPON_OIL_INFERNAL_TEMPER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "KELA_WEAPON_OIL_INFERNAL_TEMPER"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "AuraRadius" "3"
+data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_5,100,0)"
+data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_INFERNAL_OIL_TEMPERED_WEAPON, 100, -1)"
+// ------------------------------------------------------------------------
+// ИДЕАЛЬНАЯ Закалка/пропитка инфернальным маслом 
+// ------------------------------------------------------------------------
+new entry "KELA_WEAPON_OIL_INFERNAL_IDEAL_TEMPER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "KELA_WEAPON_OIL_INFERNAL_IDEAL_TEMPER"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "AuraRadius" "3"
+data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_7,100,0)"
+data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_INFERNAL_OIL_TEMPERED_WEAPON_IDEAL, 100, -1)"
+
+// ------------------------------------------------------------------------
+// Закалка/пропитка каменным маслом
+// ------------------------------------------------------------------------
+new entry "KELA_WEAPON_OIL_STONE_TEMPER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "KELA_WEAPON_OIL_STONE_TEMPER"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "AuraRadius" "3"
+data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_5,100,0)"
+data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_STONE_OIL_TEMPERED_WEAPON, 100, -1)"
+// ------------------------------------------------------------------------
+// ИДЕАЛЬНАЯ Закалка/пропитка каменным маслом
+// ------------------------------------------------------------------------
+new entry "KELA_WEAPON_OIL_STONE_IDEAL_TEMPER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "KELA_WEAPON_OIL_STONE_IDEAL_TEMPER"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "AuraRadius" "3"
+data "AuraStatuses" "TARGET:IF(Item() and Tagged('BUCKET')):ApplyStatus(KELA_WEAPON_OIL_USED_REDUCE_7,100,0)"
+data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_STONE_OIL_TEMPERED_WEAPON_IDEAL, 100, -1)"
 
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
@@ -480,9 +682,9 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "h4202e76fa4214de580ad6c0964690e7f92d6;1"
 data "Description" "ha5e32c8b9cea411d949a8246af53019e6e7g;1"
-data "DescriptionParams" "1"
+data "DescriptionParams" ""
 data "Icon" "Item_CONS_Potion_Adamant_Oil_A"
-data "Boosts" "WeaponAttackRollBonus(1);IF(IsDamageTypeSlashing()):WeaponDamage(1,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(1,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(1,Bludgeoning)"
+// data "Boosts" "WeaponAttackRollBonus(1);IF(IsDamageTypeSlashing()):WeaponDamage(1,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(1,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(1,Bludgeoning)"
 data "AuraRadius" "1"
 data "AuraStatuses" "TARGET:IF(Self() and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetActiveWeapon(context.Source, true)) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetActiveWeapon(context.Source, false)))):ApplyStatus(SELF,KELA_ADAMANT_OIL_TEMPERED_WEAPON_OWNER)"
 data "StackId" "KELA_ADAMANT_OIL_TEMPERED_WEAPON"
@@ -492,10 +694,10 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "h4202e76fa4214de580ad6c0964690e7f92d6;1"
 data "Description" "ha5e32c8b9cea411d949a8246af53019e6e7g;1"
-data "DescriptionParams" "1"
-data "StatusPropertyFlags" "IgnoreResting"
+data "DescriptionParams" ""
 data "Icon" "Item_CONS_Potion_Adamant_Oil_A"
-data "Boosts" "WeaponAttackRollBonus(1);IF(IsDamageTypeSlashing()):WeaponDamage(1,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(1,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(1,Bludgeoning)"
+data "StatusPropertyFlags" "IgnoreResting"
+// data "Boosts" "WeaponAttackRollBonus(1);IF(IsDamageTypeSlashing()):WeaponDamage(1,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(1,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(1,Bludgeoning)"
 data "AuraRadius" "1"
 data "AuraStatuses" "TARGET:IF(Self() and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetActiveWeapon(context.Source, true)) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetActiveWeapon(context.Source, false)))):ApplyStatus(SELF,KELA_ADAMANT_OIL_TEMPERED_WEAPON_OWNER)"
 data "StackId" "KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL"
@@ -503,10 +705,92 @@ data "StackId" "KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL"
 new entry "KELA_ADAMANT_OIL_TEMPERED_WEAPON_OWNER"
 type "StatusData"
 data "StatusType" "BOOST"
+data "DisplayName" "h4202e76fa4214de580ad6c0964690e7f92d6;1"
+data "Description" "ha5e32c8b9cea411d949a8246af53019e6e7g;1"
+data "DescriptionParams" ""
 data "Icon" "Item_CONS_Potion_Adamant_Oil_A"
-data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
-data "Boosts" "IF(IsDamageTypePiercing() and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetAttackWeapon()) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetAttackWeapon()))):IgnoreResistance(Piercing, Resistant);IF(IsDamageTypeSlashing() and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetAttackWeapon()) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetAttackWeapon()))):IgnoreResistance(Slashing, Resistant);IF(IsDamageTypeBludgeoning() and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetAttackWeapon()) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetAttackWeapon()))):IgnoreResistance(Bludgeoning, Resistant);IF(Item(context.Target) and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetAttackWeapon()) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetAttackWeapon())) and IsWeaponAttack()):CriticalHit(AttackRoll,Success, ForcedAlways)"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+data "Boosts" "IF(IsWeaponAttack() and HasStatus('MAG_ATTACK_DEBUFF', context.Target)):Advantage(AttackRoll);IF(IsDamageTypePiercing() and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetAttackWeapon()) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetAttackWeapon()))):IgnoreResistance(Piercing, Resistant);IF(IsDamageTypeSlashing() and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetAttackWeapon()) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetAttackWeapon()))):IgnoreResistance(Slashing, Resistant);IF(IsDamageTypeBludgeoning() and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetAttackWeapon()) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetAttackWeapon()))):IgnoreResistance(Bludgeoning, Resistant);IF(Item(context.Target) and (HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON', GetAttackWeapon()) or HasStatus('KELA_ADAMANT_OIL_TEMPERED_WEAPON_IDEAL', GetAttackWeapon())) and IsWeaponAttack()):CriticalHit(AttackRoll,Success, ForcedAlways)"
 data "StackId" "KELA_ADAMANT_OIL_TEMPERED_WEAPON_OWNER"
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Инфернальное масло закалки
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+new entry "KELA_INFERNAL_OIL_TEMPERED_WEAPON"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hfffbb63c12e64bfd861fb1d61232b014a762;1"
+data "Description" "hda9aa868786e4d12baa65e9bec1cd389984b;1"
+data "DescriptionParams" "2"
+data "Icon" "Item_CONS_Potion_Infernal_Oil_A"
+// data "Boosts" "IF(not Tagged('TIEFLING', context.Source)):WeaponDamage(1d4,Fire);IF(Tagged('TIEFLING', context.Source)):WeaponDamage(1d6,Fire)"
+data "AuraRadius" "1"
+data "AuraStatuses" "TARGET:IF(Self() and (HasStatus('KELA_INFERNAL_OIL_TEMPERED_WEAPON', GetActiveWeapon(context.Source, true)) or HasStatus('KELA_INFERNAL_OIL_TEMPERED_WEAPON', GetActiveWeapon(context.Source, false)))):ApplyStatus(SELF,KELA_INFERNAL_OIL_TEMPERED_WEAPON_OWNER)"
+data "StackId" "KELA_INFERNAL_OIL_TEMPERED_WEAPON"
+
+new entry "KELA_INFERNAL_OIL_TEMPERED_WEAPON_IDEAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hfffbb63c12e64bfd861fb1d61232b014a762;1"
+data "Description" "hda9aa868786e4d12baa65e9bec1cd389984b;1"
+data "DescriptionParams" "2"
+data "Icon" "Item_CONS_Potion_Infernal_Oil_A"
+data "StatusPropertyFlags" "IgnoreResting"
+// data "Boosts" "IF(not Tagged('TIEFLING', context.Source)):WeaponDamage(1d4,Fire);IF(Tagged('TIEFLING', context.Source)):WeaponDamage(1d6,Fire)"
+data "AuraRadius" "1"
+data "AuraStatuses" "TARGET:IF(Self() and (HasStatus('KELA_INFERNAL_OIL_TEMPERED_WEAPON_IDEAL', GetActiveWeapon(context.Source, true)) or HasStatus('KELA_INFERNAL_OIL_TEMPERED_WEAPON_IDEAL', GetActiveWeapon(context.Source, false)))):ApplyStatus(SELF,KELA_INFERNAL_OIL_TEMPERED_WEAPON_OWNER)"
+data "StackId" "KELA_INFERNAL_OIL_TEMPERED_WEAPON_IDEAL"
+
+new entry "KELA_INFERNAL_OIL_TEMPERED_WEAPON_OWNER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hfffbb63c12e64bfd861fb1d61232b014a762;1"
+data "Description" "hda9aa868786e4d12baa65e9bec1cd389984b;1"
+data "DescriptionParams" "2"
+data "Icon" "Item_CONS_Potion_Infernal_Oil_A"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+data "Boosts" "IF(IsWeaponAttack() and (HasStatus('BURNING', context.Target) or HasStatus('SEARING_SMITE', context.Target) or HasStatus('FLAMING_SPHERE', context.Target) or HasStatus('WALLOFFIRE_AURA', context.Target))):Advantage(AttackRoll);IF(IsWeaponAttack() and Character(context.Target) and (Tagged('ABERRATION', context.Target) or Tagged('FIEND', context.Target))):RollBonus(Attack,2);IF(IsWeaponAttack() and IsDamageTypeFire() and (HasStatus('KELA_INFERNAL_OIL_TEMPERED_WEAPON', GetAttackWeapon()) or HasStatus('KELA_INFERNAL_OIL_TEMPERED_WEAPON_IDEAL', GetAttackWeapon()))):IgnoreResistance(Fire, Resistant)"
+data "StackId" "KELA_INFERNAL_OIL_TEMPERED_WEAPON_OWNER"
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Каменное масло закалки
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+new entry "KELA_STONE_OIL_TEMPERED_WEAPON"
+type "StatusData"
+data "StatusType" "BOOST"
+using "DIPPED_POISON"
+data "DisplayName" "h3ed8be9c35984c22930e4122520c1370c435;1"
+data "Description" "h6758819c07f6455d992661d58fdc7ebe6115;1"
+data "DescriptionParams" "13"
+data "Icon" "Item_CONS_Potion_Stone_Oil_A"
+data "StatusEffectOverride" ""
+data "Boosts" ""
+data "Passives" "KELA_Stone_Oil_Tempered_Passive"
+data "StackId" "KELA_STONE_OIL_TEMPERED_WEAPON"
+
+new entry "KELA_STONE_OIL_TEMPERED_WEAPON_IDEAL"
+type "StatusData"
+data "StatusType" "BOOST"
+using "DIPPED_POISON"
+data "DisplayName" "h3ed8be9c35984c22930e4122520c1370c435;1"
+data "Description" "h6758819c07f6455d992661d58fdc7ebe6115;1"
+data "DescriptionParams" "13"
+data "StatusPropertyFlags" "IgnoreResting"
+data "Icon" "Item_CONS_Potion_Stone_Oil_A"
+data "StatusEffectOverride" ""
+data "Boosts" ""
+data "Passives" "KELA_Stone_Oil_Tempered_Passive"
+data "StackId" "KELA_STONE_OIL_TEMPERED_WEAPON_IDEAL"
 
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
@@ -571,7 +855,6 @@ data "StatusPropertyFlags" "IgnoreResting"
 data "StackId" "PROTECTION_FROM_EVIL"
 data "Boosts" "IF(Tagged('ABERRATION', context.Source) or Tagged('FEY', context.Source) or Tagged('FIEND', context.Source) or Tagged('UNDEAD', context.Source) or Tagged('UNDEAD_BEAST', context.Source) or Tagged('SHADOW', context.Source)):Disadvantage(AttackTarget)"
 
-
 new entry "PROTECTION_FROM_EVIL_TECHNICAL"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -592,8 +875,6 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "StackId" "PROTECTION_FROM_EVIL_TECHNICAL_TARGET"
-
-// data "AuraStatuses" "IF(Enemy() and not Self() and Character()):ApplyStatus(PROTECTION_FROM_EVIL_TECHNICAL_TARGET)"
 
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
@@ -636,6 +917,7 @@ new entry "ABSOLUTE_AMULET"
     data "DisplayName" "ha168ea5a660e495881d1f5a48639c079bc90;1"
     data "Description" "h85d4bdd115424fd5993415f000c67d8003e3;1"
     data "DescriptionParams" "Distance(7)"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;IgnoreResting"
     data "StackId" "ABSOLUTE_AMULET"
 new entry "ABSOLUTE_AMULET_A"
     type "StatusData"
@@ -645,6 +927,7 @@ new entry "ABSOLUTE_AMULET_A"
     data "DisplayName" "ha168ea5a660e495881d1f5a48639c079bc90;1"
     data "Description" "h85d4bdd115424fd5993415f000c67d8003e3;1"
     data "DescriptionParams" "Distance(9)"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;IgnoreResting"
     data "StackId" "ABSOLUTE_AMULET_A"
 new entry "ABSOLUTE_AMULET_B"
     type "StatusData"
@@ -654,6 +937,7 @@ new entry "ABSOLUTE_AMULET_B"
     data "DisplayName" "ha168ea5a660e495881d1f5a48639c079bc90;1"
     data "Description" "h85d4bdd115424fd5993415f000c67d8003e3;1"
     data "DescriptionParams" "Distance(11)"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;IgnoreResting"
     data "StackId" "ABSOLUTE_AMULET_B"
 
 new entry "ABSOLUTE_AMULET_TECHNICAL_MARKER_AID"
@@ -682,6 +966,209 @@ new entry "ABSOLUTE_AMULET_TECHNICAL_REMOVE_STATUSES"
     data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
     data "StackId" "ABSOLUTE_AMULET_TECHNICAL_REMOVE_STATUSES"   
 
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Кольцо Гаррота
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+new entry "CHARM_GARROT"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "CHARMED"
+    data "DisplayName" "h06fb21dd2bd9486d93579e98953c8a4f529c;1"
+    data "Description" "hf4f0e56004f045e782700ebef7f7409a6edc;1"
+    data "StackId" "CHARM_GARROT"
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Мастерские доспехи
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+new entry "DEVILSBLACKSMITH_ARMOR_TECHNICAL_AURA"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "AuraRadius" "1"
+    data "AuraStatuses" "TARGET:IF(Self() and HasStatus('DEVILSBLACKSMITH_GLOVES_TECHNICAL', context.Source) and HasStatus('DEVILSBLACKSMITH_BOOTS_TECHNICAL', context.Source)):ApplyStatus(SELF,DEVILSBLACKSMITH_COMPLECT)"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+    data "StackId" "DEVILSBLACKSMITH_ARMOR_TECHNICAL_AURA"
+new entry "DEVILSBLACKSMITH_ARMOR_TECHNICAL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+    data "StackId" "DEVILSBLACKSMITH_ARMOR_TECHNICAL"
+new entry "DEVILSBLACKSMITH_GLOVES_TECHNICAL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+    data "StackId" "DEVILSBLACKSMITH_GLOVES_TECHNICAL"
+new entry "DEVILSBLACKSMITH_BOOTS_TECHNICAL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+    data "StackId" "DEVILSBLACKSMITH_BOOTS_TECHNICAL"
+new entry "DEVILSBLACKSMITH_COMPLECT"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "DisplayName" "h843bd087d1894d549ba52d3248a87d75f091;1"
+    data "Description" "hc68ca7be396d45efb0313cbfb371a2c2eaf0;1"
+    data "DescriptionParams" "3"
+    data "Icon" "StatusFeature_Kela_DevilsBlacksmithComplect"
+    data "StatusPropertyFlags" "IgnoreResting"
+    data "StackId" "DEVILSBLACKSMITH_COMPLECT"
+    data "Boosts" "Resistance(Fire, Immune);StatusImmunity(BURNING);DamageReduction(All, Flat, 3)"
+new entry "DEVILSBLACKSMITH_GLOVES_FIRE_DIPPED"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "DIPPED_FIRE"
+    data "StackPriority" "1"
+    data "StackType" "Ignore"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+    
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Топор Джинглшада
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+new entry "EXHAUSTED_JHINGLESHOD_TECHNICAL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "AuraRadius" "1"
+    data "AuraStatuses" "TARGET:IF(Self() and HasStatus('EXHAUSTED_JHINGLESHOD_TECHNICAL', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand, context.Source)) and not AbilityGreaterThan('Strength', 24)):ApplyStatus(SELF,EXHAUSTED_KELA)"
+    data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+    data "StackId" "EXHAUSTED_JHINGLESHOD_TECHNICAL"
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Адский самовзводный арбалет 
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+new entry "EXHAUSTED_WATCHERCROSSBOW_TECHNICAL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "AuraRadius" "1"
+    data "AuraStatuses" "TARGET:IF(Self() and HasStatus('EXHAUSTED_WATCHERCROSSBOW_TECHNICAL', GetItemInEquipmentSlot(EquipmentSlot.RangedMainHand, context.Source)) and not AbilityGreaterThan('Strength', 17)):ApplyStatus(SELF,EXHAUSTED_KELA)"
+    data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+    data "StackId" "EXHAUSTED_WATCHERCROSSBOW_TECHNICAL"
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Обессиленность из-за слишком тяжёлой аммуниции
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+new entry "EXHAUSTED_KELA"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "ENCUMBERED_HEAVY"
+    data "DisplayName" "ha7b77d73cb5942b8b328a3b39356ea08e260;1"
+    data "Description" "h0083f7d209894425b972e41b2bc0abd3af2e;1"
+    data "DescriptionParams" ""
+    data "Icon" "Status_Exhaustion"
+    data "StillAnimationType" "Weakened"
+    data "StillAnimationPriority" "Weakened"
+    data "SoundVocalStart" "WEAK"
+    data "StatusPropertyFlags" "ForceOverhead;IgnoreResting"
+    data "Boosts" "ActionResourceConsumeMultiplier(Movement,1,0);Advantage(AttackTarget);Disadvantage(AttackRoll);Disadvantage(AllAbilities);Disadvantage(SavingThrow,Dexterity);Disadvantage(SavingThrow,Strength);Disadvantage(SavingThrow,Constitution);JumpMaxDistanceMultiplier(0);MovementSpeedLimit(Stroll);RollBonus(Attack,-12);DamageBonus(-2d12,,false)"
+    data "StackId" "EXHAUSTED_KELA"
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Cейф Кассадора, проверяет, есть ли в руках посох Несчастье, 
+// а на пальце фамильное кольцо Зарров
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+// На кольце статус
+new entry "SZARRRING_TECHNICAL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "SZARRRING_TECHNICAL"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+// На сейфе статус
+new entry "CAZADORSAFE_SEEINVIS_CHECK"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "CAZADORSAFE_SEEINVIS_CHECK"
+    data "StackPriority" "5"
+    data "StackType" "Ignore"
+    data "AuraRadius" "9"
+    data "AuraStatuses" "IF(HasStatus('SZARRRING_TECHNICAL') and HasPassive('MAG_LC_CazadorVampiric_Quarterstaff_Passive') and not Dead()):ApplyStatus(SELF,CAZADORSAFE_SEE_INVISIBILITY)"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+new entry "CAZADORSAFE_SEE_INVISIBILITY"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "CAZADORSAFE_SEE_INVISIBILITY"
+    data "AuraRadius" "6"
+    data "AuraStatuses" "TARGET:IF(HasStatus('CAZADORSAFE_SEEINVIS_CHECK')):ApplyStatus(CAZADORSAFE_SEE_INVISIBILITY_SEEN)"
+    data "AuraFlags" "CanAffectInvisibleItems;AIIgnoreOnSelf;DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+new entry "CAZADORSAFE_SEE_INVISIBILITY_SEEN"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StackId" "CAZADORSAFE_SEE_INVISIBILITY_SEEN"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+    data "OnApplyFunctors" "RemoveStatus(INVISIBLE_CAZADORSAFE)"
+    data "OnRemoveFunctors" "ApplyStatus(INVISIBLE_CAZADORSAFE,100,-1)"
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Кольцо Велиота, проверяет
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// Проверяет, что нет союзников. кроме саммонов
+new entry "VELLIOTH_RING_TECHNICAL_AURA"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "AuraRadius" "1"
+    data "AuraStatuses" "TARGET:IF(Self() and not HasNotSummonWithinRange(5) and not HasAllyWithinRange(nil,5,nil,nil,context.Source,context.Target) and not HasAnyHasteNoBloodlust()):ApplyStatus(SELF,LESSONS_OF_THE_VELLIOTH_KNOWER);IF(Self() and (HasNotSummonWithinRange(5) or HasAllyWithinRange(nil,5,nil,nil,context.Source,context.Target) or HasAnyHasteNoBloodlust())):ApplyStatus(SELF,LESSONS_OF_THE_VELLIOTH_IGNORANT)"
+    data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+    data "StackId" "VELLIOTH_RING_TECHNICAL_AURA"
+
+new entry "LESSONS_OF_THE_VELLIOTH_IGNORANT"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    // data "DisplayName" "ha305c14d4a8f4f7bb33b6bd86ec0816a6830;1"
+    // data "Description" "h348928a8f4a14d73acf27b538ba8131ec1gc;1"
+    // data "DescriptionParams" "1"
+    // data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+    data "Boosts" "Ability(Wisdom, -3, 15);Ability(Intelligence, -3, 15)"
+    data "StackId" "LESSONS_OF_THE_VELLIOTH_IGNORANT"
+
+new entry "LESSONS_OF_THE_VELLIOTH_KNOWER"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    // data "DisplayName" "ha305c14d4a8f4f7bb33b6bd86ec0816a6830;1"
+    // data "Description" "h348928a8f4a14d73acf27b538ba8131ec1gc;1"
+    // data "DescriptionParams" "1"
+    // data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
+    data "Boosts" "Ability(Wisdom, 3, 23);Ability(Intelligence, 3, 23)"
+    data "StackId" "LESSONS_OF_THE_VELLIOTH_KNOWER"
+
+
+
+
+
+
+
+
 
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
@@ -699,8 +1186,14 @@ data "DisplayName" "h6c3aefd2g3755g43c6gb316g62d263501dc9;1"
 data "Description" "h2fc48659g0959g4b97g845agea24e7781a09;1"
 data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
 data "Icon" "Status_Burning"
-data "AuraRadius" "10"
-data "AuraStatuses" "IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_STATUS_BURNING_1,100,-1)"
+data "AuraRadius" "7"
+data "AuraStatuses" "IF(Character() and HasPassive('PassiveFeature_KelaBlacksmith')):ApplyStatus(KELA_BLACKSMITH_FORGE_FIRSTSTAGE_AURA,100,-1);IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_STATUS_BURNING_1,100,-1)"
+
+new entry "KELA_BLACKSMITH_FORGE_FIRSTSTAGE_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "StackId" "KELA_BLACKSMITH_FORGE_FIRSTSTAGE_AURA"
 
 new entry "KELA_SMELTINGFORGE_STATUS_BURNING_1"
 type "StatusData"
@@ -719,8 +1212,14 @@ data "DisplayName" "hefafb9b42596469eb82d599499b6dcd13a5f;1"
 data "Description" "h2fc48659g0959g4b97g845agea24e7781a09;1"
 data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
 data "Icon" "Status_Burning"
-data "AuraRadius" "10"
-data "AuraStatuses" "IF(Character() and HasPassive('PassiveFeature_KelaBlacksmith')):ApplyStatus(KELA_CAN_POUR_METALBARS,100,-1);IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_STATUS_BURNING_2,100,-1)"
+data "AuraRadius" "7"
+data "AuraStatuses" "IF(Character() and HasPassive('PassiveFeature_KelaBlacksmith')):ApplyStatus(KELA_BLACKSMITH_FORGE_SECONDSTAGE_AURA,100,-1);IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_STATUS_BURNING_2,100,-1)"
+
+new entry "KELA_BLACKSMITH_FORGE_SECONDSTAGE_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "StackId" "KELA_BLACKSMITH_FORGE_SECONDSTAGE_AURA"
 
 new entry "KELA_SMELTINGFORGE_STATUS_BURNING_2"
 type "StatusData"
@@ -740,7 +1239,7 @@ data "Description" "hcaf00deaed8145788db410f1e5486fd54dd2;1"
 data "Icon" "UND_SussurTreeFlower_C"
 data "StackId" "KELA_SUSSUR_FORGE_AURA"
 data "StatusPropertyFlags" "DisableCombatlog"
-data "AuraRadius" "10"
+data "AuraRadius" "7"
 data "AuraStatuses" "TARGET:IF(Character() and HasPassive('PassiveFeature_KelaBlacksmith')):ApplyStatus(KELA_SUSSUR_FORGE_AURA_ACTIVE)"
 
 new entry "KELA_SUSSUR_FORGE_AURA_ACTIVE"
@@ -767,14 +1266,16 @@ data "StackId" "KELA_TECHNICAL_BURNING"
 
 
 
-new entry "KELA_CAN_POUR_METALBARS"
-type "StatusData"
-data "StatusType" "BOOST"
-// data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
-data "DisplayName" "h1c1bc272995e4faa9d51366249c8257f4bb6;1"
-data "Description" "he395c0e475be40388fb4e24b20fa0e7f9db5;1"
-data "Icon" "Item_LOOT_GEN_Metalbar_Gold_A"
-data "StackId" "KELA_CAN_POUR_METALBARS"
+
+
+
+
+
+
+
+
+
+
 
 
 // ------------------------------------------------------------------------
@@ -792,7 +1293,7 @@ data "StatusPropertyFlags" "ForceOverhead"
 data "DisplayName" "hcba0c20538774cfc887a0a8946f34770f09g;1"
 data "Description" "h5534901635e1475bb3e79c42278e0adbgcb0;1"
 data "DescriptionParams" ""
-data "Icon" "Item_UNI_FOR_MasterworkPlans"
+data "Icon" "Item_BOOK_GEN_Paper_Sheet_D"
 data "StackId" "KELA_DRAFT_USED_2_SLOTS"
 data "RemoveEvents" "OnStatusApplied"
 
@@ -803,7 +1304,7 @@ data "StatusPropertyFlags" "ForceOverhead"
 data "DisplayName" "h885e54df750f446e93c6679661efb29b9f6a;1"
 data "Description" "hb79a7baf257c4797a852f18e221fe816a559;1"
 data "DescriptionParams" ""
-data "Icon" "Item_UNI_FOR_MasterworkPlans"
+data "Icon" "Item_BOOK_GEN_Paper_Sheet_D"
 data "StackId" "KELA_DRAFT_USED_3_SLOTS"
 data "RemoveEvents" "OnStatusApplied"
 
@@ -814,65 +1315,13 @@ data "StatusPropertyFlags" "ForceOverhead"
 data "DisplayName" "h74b6a0e0981645d590511b3b2c520509g5c6;1"
 data "Description" "h68890ca1b6574b9ab2722f41b6205d89c464;1"
 data "DescriptionParams" ""
-data "Icon" "Item_UNI_FOR_MasterworkPlans"
+data "Icon" "Item_BOOK_GEN_Paper_Sheet_D"
 data "StackId" "KELA_DRAFT_USED_4_SLOTS"
 data "RemoveEvents" "OnStatusApplied"
 
 
 
 
-
-
-new entry "KELA_HANDMADE_WEAPON"
-type "StatusData"
-data "StatusType" "BOOST"
-data "Icon" "Handmade_Weapon"
-data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog;IgnoreResting"
-data "OnApplyFunctors" "ApplyStatus(KELA_HANDMADE_WEAPON_FINISHED, 100, -1);ApplyStatus(KELA_HANDMADE_WEAPON_READY_FOR_TEMPERING, 100, 5)"
-data "StackId" "KELA_HANDMADE_WEAPON"
-data "RemoveEvents" "OnStatusApplied"
-data "RemoveConditions" "HasStatus('KELA_HANDMADE_WEAPON_READY_FOR_TEMPERING')"
-
-new entry "KELA_HANDMADE_WEAPON_READY_FOR_TEMPERING"
-type "StatusData"
-data "StatusType" "BOOST"
-using "DIPPED_FIRE"
-data "StackId" "KELA_HANDMADE_WEAPON_READY_FOR_TEMPERING"
-data "Icon" "Action_DippedFire_Melee"
-data "DisplayName" "h5097edda8d45401e942eb8e90c7872c42f69;1"
-data "Description" "hf8abf007e62b43d9a76003eaeafa53e2130a;1"
-
-
-new entry "KELA_HANDMADE_WEAPON_FINISHED"
-type "StatusData"
-data "StatusType" "BOOST"
-// data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;IgnoreResting"
-// data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
-data "DisplayName" "ha7dcdd6fc1eb44eb97ca9daf3baaccb19815;1"
-data "Description" "hb2c59f5bg830ag452bg936cgf18fd2c48b19;1"
-data "Icon" "Tooltip_Weapon_Upgraded"
-data "StackId" "KELA_HANDMADE_WEAPON_FINISHED"
-data "Passives" "KELA_Handmade_Weapon_Passive"
-
-
-
-new entry "KELA_BLACKSMITH_BUCKETOIL_USED"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "KELA_BLACKSMITH_BUCKETOIL_USED"
-data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
-// data "StatusPropertyFlags" "ExecuteFunctorsOnOwner"
-data "OnApplyFunctors" "ApplyEquipmentStatus(MainHand, KELA_HANDMADE_WEAPON_READY_FOR_FINISHING, 100, 10)"
-
-
-
-new entry "KELA_HANDMADE_WEAPON_READY_FOR_FINISHING"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "KELA_HANDMADE_WEAPON_READY_FOR_FINISHING"
-data "DisplayName" "hf9c4ebeca2b540e6bfd12a8cb7b356e1f1gc;1"
-data "Description" "hf8abf007e62b43d9a76003eaeafa53e2130a;1"
-data "OnApplyFunctors" "RemoveStatus(DIPPED_FIRE)"
 
 
 

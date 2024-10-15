@@ -360,8 +360,8 @@
 					</children>
 				</node>				
 
-
-
+				<!-- Дом исцеления -->
+				<!-- Перчатки хирурга в доме исцеления -->
 				<node id="GameObjects">
 					<attribute id="Fadeable" type="bool" value="True" />
 					<attribute id="Flag" type="int32" value="1" />
@@ -388,48 +388,129 @@
 
 
 
+				<!-- Таверна Последний свет -->
 
+				<!-- <node id="Transform"> -->
+				<!-- Position -->
+				<!-- <attribute id="Position" type="fvec3" value="Запад<->Восток Низ<->Верх Юг<->Север" /> -->
+				<!-- Rotation -->
+				<!-- <attribute id="RotationQuat" type="fvec4" value="0 <горизонт> 0 0.7389326" /> -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+				<!-- Угли для кузницы Даммона -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
+					<attribute id="AnubisConfigName" type="FixedString" value="FOR_MeltingFurnace" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="SCL_RuinsBattlefield_G" />
+					<attribute id="MapKey" type="FixedString" value="dcd94df9-4131-4b8d-a738-b08bbe2396ed" />
+					<attribute id="Name" type="LSString" value="HAV_Forge_Dammon_1" />
+					<attribute id="Stats" type="FixedString" value="FOR_BlacksmithForge" />
+					<attribute id="TemplateName" type="FixedString" value="4c7f8d3c-d2ee-4462-aec5-6d4cdfdd395e" />
+					<!-- <attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" /> origin -->
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />				
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_RuinsBattlefield_G" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="83ea6cac-3c8d-91e7-9ab4-7fee45d0f5c9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="9f043750-9a11-17ed-9527-72672962f9aa" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="706667d1-cccb-9e3b-914f-6c206c00e3b2" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-36.17874 27.94762 166.357" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9998558 0 -0.01698848" />
+							<attribute id="Scale" type="float" value="0.4" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hc4cdf541bfd84dbaa03aa623d7fcfcb65fg1" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h6267bb8860024786a3e0f81870f8d0c39g0g" version="1" />
+					<attribute id="AnubisConfigName" type="FixedString" value="" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="SCL_RuinsBattlefield_G" />
+					<attribute id="MapKey" type="FixedString" value="f24a2f81-a4f9-4c24-be93-cd869fc7c4a9" />
+					<attribute id="Name" type="LSString" value="HAV_Forge_Dammon_2" />
+					<attribute id="Stats" type="FixedString" value="" />
+					<attribute id="TemplateName" type="FixedString" value="4c7f8d3c-d2ee-4462-aec5-6d4cdfdd395e" />
+					<!-- <attribute id="TemplateName" type="FixedString" value="b269ae5b-54d7-4558-9d4a-c288aaaa6b79" /> origin -->
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855907" />				
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_RuinsBattlefield_G" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="83ea6cac-3c8d-91e7-9ab4-7fee45d0f5c9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="9f043750-9a11-17ed-9527-72672962f9aa" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="706667d1-cccb-9e3b-914f-6c206c00e3b2" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="8" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-37.03914 27.94762 166.357" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.4" />
+						</node>
+					</children>
+				</node>
 
 
 
@@ -551,6 +632,47 @@
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="-141.4703 42.6069 -169.5959" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0.8430954 0 0.537764" />
+							<attribute id="Scale" type="float" value="0.001" />
+						</node>
+					</children>
+				</node>
+				<!-- Лунные башни 1 этаж, алхимичка дроу -->
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="SCL_RuinsBattlefield_G" /> LEVEL NAME
+					<attribute id="MapKey" type="FixedString" value="2c857ec9-d04e-4ca2-88dc-8c0d3a9f1e4b" /> NEW UUID
+					<attribute id="Name" type="LSString" value="KELA_MARKER_LABORATORY_AURA_RUINSBATTLEFIELD_G_4" /> NAME WITH SUFFIX LEVEL NAME
+					<attribute id="TemplateName" type="FixedString" value="65421cc5-882e-4d6f-9403-ddb4441b98a2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790665" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="SCL_RuinsBattlefield_G" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="83ea6cac-3c8d-91e7-9ab4-7fee45d0f5c9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="aadd25ce-9c78-4e3c-67be-cf965728c499" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="6b2b5197-a7b0-fe84-9237-d7a05ec6078e" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b1ee6b89-33b9-015e-d5a9-f3daacb3a15f" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-125.5781 22.91949 -193.818" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.4411519 0 0.8974325" />
 							<attribute id="Scale" type="float" value="0.001" />
 						</node>
 					</children>

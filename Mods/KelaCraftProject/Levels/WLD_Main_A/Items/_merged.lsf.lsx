@@ -67,6 +67,7 @@
 				<!-- Подвал алхимика -->
 				<!-- Рецепт трансмутации -->
 				<node id="GameObjects">
+					<attribute id="ConstellationConfigName" type="FixedString" value="PerceptionHelper" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="5f0aeaa3-4c8d-48e6-9223-342d9ea97fb5" />
@@ -88,6 +89,70 @@
 												</node>
 												<node id="Layer">
 													<attribute id="Object" type="guid" value="b5ccefe6-4177-b85e-7e1d-06fab1f765b4" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="ConstellationConfigGlobalParameters">
+							<children>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="MaxRadius" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="double">
+																	<attribute id="double" type="double" value="2" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="DC" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Act1_HiddenPerception_Easy_10a7c9ba-bc09-4c30-8cfc-ce0c6766fac7" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Type" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Invisible" />
+																</node>
+															</children>
+														</node>
+													</children>
 												</node>
 											</children>
 										</node>
@@ -705,6 +770,115 @@
 						</node>
 					</children>
 				</node>
+
+				<!-- Рецепт инфернального масла закаливания в пещере Зевлора -->
+				<node id="GameObjects">
+					<attribute id="ConstellationConfigName" type="FixedString" value="PerceptionHelper" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="d6399464-ea72-4517-8177-9fe362626aa6" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Recipe_Oil_Infernal_Temper_001" />
+					<attribute id="TemplateName" type="FixedString" value="4fe5b087-06fb-4aa8-9406-e0819a7d017b" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209015" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="46bf2460-7de1-6bba-140d-dd1238dbe671" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="a215920c-765a-871f-c7cf-2c7fc99847bd" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="83f58f59-20a8-2f27-6e05-58f2674ce61a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="ConstellationConfigGlobalParameters">
+							<children>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="MaxRadius" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="double">
+																	<attribute id="double" type="double" value="2" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="DC" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Act1_HiddenPerception_Easy_10a7c9ba-bc09-4c30-8cfc-ce0c6766fac7" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Type" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Invisible" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-56.50769 -11.7078 71.49395" />
+							<attribute id="RotationQuat" type="fvec4" value="0.003285386 -0.4024254 0.02107631 0.9152042" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+
+
 
 				<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
 				<!-- END Лагерь друидов -->

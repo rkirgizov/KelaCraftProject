@@ -16,16 +16,15 @@
 					<attribute id="ReadinessFlags" type="uint32" value="128" />
 					<attribute id="Name" type="LSString" value="BOOK_Kela_Draft_ChainShirt_Justiciar_Recovered_4_Slots" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h1fae98ab751a41e19d00ad7ffa8b13b6fa32" version="1" />
-					<attribute id="Description" type="TranslatedString" handle="hf44d6d0456464713b2ef29457a04478b5a2a" version="1" />
-					<attribute id="TechnicalDescription" type="TranslatedString" handle="h51c8c949140f4b728c66aa0857484bceb6ag" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h51c8c949140f4b728c66aa0857484bceb6ag" version="1" />					
 					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="habc35aba2e8746f8b83e35644180a1a8d55a" version="1" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
-					<attribute id="Icon" type="FixedString" value="Item_UNI_FOR_MasterworkPlans" />
-					<attribute id="ParentTemplateId" type="FixedString" value="61b98c74-8f5c-4d05-b56c-0911b59c9078" />
-					<attribute id="PhysicsTemplate" type="FixedString" value="43b7eda5-3b02-dc99-43c6-436bd19446e0" />
-					<attribute id="VisualTemplate" type="FixedString" value="1655ed96-510c-78ae-dedb-f9ea83fcf27e" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Draft_Armor_Medium" />
+					<attribute id="ParentTemplateId" type="FixedString" value="23f65dff-a1ca-42fb-91ee-4cbb69450336" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="94ca09da-30c5-43be-620e-caf0a979e543" />
+					<attribute id="VisualTemplate" type="FixedString" value="f4107260-09b1-fa4f-0683-2f7b3ae6194e" />
 					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Draft_ChainShirt_Justiciar_Recovered_4_Slots" />
-					<attribute id="StoryItem" type="bool" value="True" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="BookType" type="uint8" value="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
@@ -48,6 +47,45 @@
 						</node>
 					</children>
 				</node>
+
+				<!-- Чертёж доработки нежеланных мастерских брони, сапог, перчаток -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="2c8950a2-5e77-4e7e-9561-257523e1962b" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="Name" type="LSString" value="BOOK_Kela_Draft_DevilsBlackmith_4_Slots" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h07028742a0d84f88ab3ff3a0beaadeb1dee0" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hc5f4464671fb45b7aaf9c2a2800d3e25c108" version="1" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hf9f76cd281db48dba5655e68473fe0ceec97" version="1" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h7bc5ce8cg43c8g485egb796ge39230edd345" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Draft_Armor_Medium" />					
+					<attribute id="ParentTemplateId" type="FixedString" value="23f65dff-a1ca-42fb-91ee-4cbb69450336" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="94ca09da-30c5-43be-620e-caf0a979e543" />
+					<attribute id="VisualTemplate" type="FixedString" value="f4107260-09b1-fa4f-0683-2f7b3ae6194e" />
+					<attribute id="Stats" type="FixedString" value="BOOK_Kela_Draft_DevilsBlackmith_4_Slots" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="BookType" type="uint8" value="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209027" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="Consume" type="bool" value="false" />
+											<attribute id="SkillID" type="FixedString" value="Target_Use_Draft_Anvil_4_Slots" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+
 
 			</children>
 		</node>
